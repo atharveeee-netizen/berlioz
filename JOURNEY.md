@@ -123,11 +123,12 @@ Rather than running generic LLM prompt loops against the verifier, we executed t
 | `57569888` | Oct 23, 2026 | `TuringIRL(akshit)` | Initial QROM Tower42 probe | Graded | `5.75763` |
 | `57589367` | Oct 24, 2026 | `TuringIRL(akshit)` | Rotation calibration baseline | Graded | `5.78629` |
 | `57711436` | Oct 27, 2026 | `TuringIRL(akshit)` | Narrowed 877Q DQI + progressive R10 | Graded | `21.87976` |
-| `57800637` | Oct 30, 2026 (14:47 IST) | `TuringIRL(akshit)` | Syzygy Vault 22.99: 62Q Invsqrt + 889Q DQI + B143/C60 Chem | **Graded** | **`22.99562`** |
-| `57811741` | Oct 30, 2026 (22:15 IST) | `TuringIRL(akshit)` | Syzygy Peak-Ratio Apex: 63Q Invsqrt (23.28x) + 889Q DQI + R8 Champion Chem | **Pending** | *Evaluating...* |
+| `57800637` | Oct 30, 2026 (14:47 IST) | `TuringIRL(akshit)` | Syzygy Vault 22.99: 62Q Invsqrt + 889Q DQI + B143/C60 Chem | **Graded** | **`22.99562`** (Best) |
+| `57811741` | Oct 30, 2026 (22:15 IST) | `TuringIRL(akshit)` | Syzygy Peak-Ratio Apex: 63Q Invsqrt (23.28x) + 889Q DQI + R8 Champion Chem | **Graded** | `22.80575` |
 
 ### Current Standing
-* **Public Rank:** **#220** out of **1,677 teams** (**Top 13.12%**)
+* **Public Score:** **`22.99562`** (Rank retained at historical peak)
+* **Public Rank:** **#275** out of **1,697 teams** (**Top 16.2%**)
 * **Submissions Used Today:** 2
 * **Submissions Remaining Today:** 3 (out of 5 daily allowance)
 
@@ -207,10 +208,10 @@ Every single package was verified using [`validate_submission.py`](file:///C:/Us
 ## 9. Masterloop 13: Mathematical Proofs & Live Submission Verification
 
 ### Verified Milestones
-1. **Live Deployment (Submission 57811741):**
-   - Slot 2 (`submission_slot2_peak_ratio.zip`) deployed to Kaggle competition API.
-   - Projected composite score: **`25.43`** (targeting World Top 5, Rank 5 `25.44` / Rank 1 `26.76`).
-   - Status actively monitored under polling harness.
+1. **Live Deployment Outcome (Submission 57811741):**
+   - Slot 2 (`submission_slot2_peak_ratio.zip`) graded on Kaggle with score **`22.80575`**.
+   - Analysis: While Invsqrt improved to $23.276\times$ (63Q), the official verifier applies the one-sided Clopper-Pearson repetition surcharge $R(\epsilon^+) = 1.19126$, yielding the exact known cluster score `22.80575`.
+   - Team leaderboard standing remains intact at **`22.99562`** (Kaggle always retains historical peak score).
 2. **Reformulated Inversionless Berlekamp-Massey (RiBM):**
    - Implemented and proved zero-inversion key equation solver in `src/dqi/`.
    - Verified 100% root correctness against standard BM across boundary positions ($0, 4094$), boundary values ($1, 4095$), and randomized multi-error vectors up to code capacity ($t=35$).
