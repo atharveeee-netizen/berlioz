@@ -58,7 +58,8 @@ $$\text{Ratio}_i = \frac{\text{RefCost}_i}{\text{SubmittedCost}_i}$$
 * **Goal**: Low-energy simulation of FeMoCo active nitrogenase catalytic site (76 orbitals, 113 electrons) from a 128 MB FCIDUMP.
 * **Cost Function**: $\text{Cost} = \lambda_{\text{eff}} \times Q_{\text{total}} \times T_{\text{chem}}$.
   * Constraints: $e_1 \le 20.0\text{ mHa}$, $e_2 \le 20.0\text{ mHa}$, $E_{\text{gap}} \in [3.8, 4.0]\text{ Ha}$, $Q_{\text{angle}} \le 126$.
-* **The Breakthrough**: Merged-group $(R=10, B=129, C=60)$ factorization with L-BFGS refits achieves $\lambda_{\text{eff}} = \mathbf{48.0311}$ (down from 74.62). Signed half-open Givens gauge + 4-address pebble QROM (`src/chem/angles_qrom.py`) achieves **$13.00\times – 13.50\times$** improvement. Aggressive refinement to $R=7$ unlocks the **$25.0\times$** target.
+* **Live Champion**: The live submission (`submission_2299.zip`) uses an $R=8, B=143, C=60$ factor matrix with 15 angle circuits generated via 4-address pebble QROM, totaling only 4,168 1-pass Toffolis (8,336 2-pass), $\lambda_{\text{eff}} = 48.32$, achieving **$9.928\times$** improvement (Score: 337.99M).
+* **Masterloop 11 Finding**: The $R=10, B=129, C=60$ factor matrix with $J=7$ achieves **$5.993\times$** (Score: 559.89M, saving 5,764 Toffolis over $J=5$). Although $R=10$ has a slightly lower continuous $\lambda_{\text{eff}} = 48.03$, its expanded address table forces 2-address mode, proving that continuous and discrete optimization must be co-designed. Table-native basis permutation and sign gauge optimization delivers a 12.11% reduction in QROM Hamming distance with zero chemical drift.
 
 ---
 

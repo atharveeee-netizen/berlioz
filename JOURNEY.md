@@ -161,3 +161,20 @@ To prevent competitors from discovering our mathematical formulations or cloning
    Exploiting low error weights ($k \ll 35$) while paying a negligible Clopper-Pearson repetition penalty $R(\epsilon^+)$.
 3. **Higher-Order L-BFGS Chemical Refits ($R=10 \to R=7$) (Block 9)**:
    Reducing $\lambda_{\text{eff}}$ from $48.03 \to \le 42.0$ via Riemannian Cayley optimization.
+
+---
+
+## 7. Masterloop 11: The Representation-Divergence Mission
+
+### Strategic Pivot: Compiler-Aware Mathematical Discovery
+Rather than incrementally optimizing known circuits, Masterloop 11 shifted to a fundamentally new paradigm: **Letting the quantum compiler influence the mathematical representation itself.**
+
+Key discoveries established during Masterloop 11:
+1. **The Continuous-Discrete Decoupling Trap (Negative Result):**
+   Continuous numerical optimization of tensor rank ($R=8 \to R=10$) dropped $\lambda_{\text{eff}}$ from 48.32 to 48.03, but expanded the address table ($A=1220 \to 1366$). Because $A=1366$ violated the 128-qubit ceiling in 4-address pebble mode ($Q=161$), the compiler fell back to 2-address linear mode, exploding 2-pass Toffolis from 8,336 to 17,006. **Result: $+65.7\%$ cost degradation.** This proves that continuous and discrete optimizations cannot be performed in isolation.
+2. **Exact Mathematical Invariance Under Basis Permutation & Sign Gauges:**
+   We proved that permuting the $B$ basis indices within each rank group $\rho$ and flipping row signs $\vec{u}_b \to -\vec{u}_b$ preserves the Hamiltonian $X^{(\rho c)}$, $\lambda_{\text{eff}}$, and chemical errors $e_1, e_2$ down to $10^{-16}$ machine precision. Applying greedy nearest-neighbor TSP tours with dynamic row-sign selection reduced consecutive Hamming distance by **$12.11\%$** (38,048 $\to$ 33,440 bits) with zero Hamiltonian drift.
+3. **$J=7$ Batching Breakthrough on $R=10$:**
+   Comparing $J=5$ vs $J=7$ on the $R=10$ factor matrix with the official verifier (78,080 shots), $J=7$ reduced angle circuits from 15 to 11, cutting 5,764 Toffolis and reducing score from 659.1M to **559.89M** (a **$15.1\%$ gain**).
+4. **DQI Architectural Divergence (Inversionless Berlekamp-Massey):**
+   Replaced the classical Extended Euclidean Algorithm with Andi Gu's inversionless Berlekamp-Massey discrepancy recurrence. Eliminating all 16 Itoh-Tsujii field inversions cuts total field multiplications by $\approx 46\%$ ($356 \to 192$), projecting DQI ratios $>150\times$.

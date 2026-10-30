@@ -1,0 +1,63 @@
+{
+  "version": "1.0.0",
+  "masterloop": 11,
+  "north_star_target": 50.0,
+  "current_live_score": 22.99562,
+  "current_leaderboard_rank": 220,
+  "total_teams": 1677,
+  "percentile": "Top 13.12%",
+  "pareto_points": [
+    {
+      "id": "LIVE_SUBMISSION",
+      "name": "Live Graded Submission (Ref 57800637)",
+      "date": "2026-10-30T09:17:01Z",
+      "ratios": {
+        "invsqrt": 20.561,
+        "dqi": 59.568,
+        "dfthcsos": 9.928
+      },
+      "composite_score": 22.99562,
+      "archive_source": "submission_2299.zip",
+      "status": "LIVE_GRADED"
+    },
+    {
+      "id": "VERIFIED_CANDIDATE_1",
+      "name": "42-Product Tensor DQI + Live Chemistry & Invsqrt",
+      "date": "2026-10-30T21:00:00Z",
+      "ratios": {
+        "invsqrt": 20.561,
+        "dqi": 75.570,
+        "dfthcsos": 9.928
+      },
+      "composite_score": 24.894,
+      "projected_rank": 142,
+      "status": "READY_FOR_INTEGRATION"
+    },
+    {
+      "id": "HORIZON_CANDIDATE_2",
+      "name": "Inversionless Berlekamp-Massey + J=7 Optimized Chem",
+      "date": "2026-10-30T21:30:00Z",
+      "ratios": {
+        "invsqrt": 22.000,
+        "dqi": 160.000,
+        "dfthcsos": 14.500
+      },
+      "composite_score": 37.089,
+      "projected_rank": 15,
+      "status": "IN_DESIGN"
+    },
+    {
+      "id": "NORTH_STAR_HORIZON",
+      "name": "North Star Target Score 50",
+      "date": "Target",
+      "ratios": {
+        "invsqrt": 25.000,
+        "dqi": 250.000,
+        "dfthcsos": 20.000
+      },
+      "composite_score": 50.000,
+      "projected_rank": 1,
+      "status": "NORTH_STAR"
+    }
+  ]
+}

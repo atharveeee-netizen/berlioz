@@ -35,7 +35,7 @@ $$\text{Score} = \left(\text{Ratio}_{\text{invsqrt}} \times \text{Ratio}_{\text{
 | :--- | :--- | :--- | :--- | :--- |
 | **`invsqrt`** | $2{,}076{,}774.23$ | $101{,}002.48$ | **$20.561\times$** | 62-Qubit Newton-Raphson Seed Table (Verified on 200.5M shots) |
 | **`dqi`** | $24{,}439{,}463{,}583{,}673$ | $4.1026 \times 10^{11}$ | **$59.57\times$** | 889Q Stream Decoder + 42-AND Bilinear Tensor ($\to 75.57\times$) |
-| **`dfthcsos`**| $3{,}355{,}599{,}588.32$ | $3.3799 \times 10^8$ | **$9.928\times$** | $R=10$ Factorization ($\lambda_{\text{eff}} = 48.0311$) + $J=7$ Batching |
+| **`dfthcsos`**| $3{,}355{,}599{,}588.32$ | $3.3799 \times 10^8$ | **$9.928\times$** | $R=8$ Factorization + 4-Address Pebble QROM ($9.928\times$) [Live] / $R=10, J=7$ ($5.993\times$) |
 | **Product** | — | — | **$\text{GM} = \mathbf{22.99562}$** | **Product $= 12{,}158$** |
 
 ---
@@ -49,7 +49,9 @@ $$\text{Score} = \left(\text{Ratio}_{\text{invsqrt}} \times \text{Ratio}_{\text{
 3. **42-Product Bilinear Tensor in $\text{GF}(2^{12})$ (`src/dqi/tower42.py`)**:
    Decomposed Galois field multiplication into a subfield tower $\text{GF}(8)[v]/(v^4+v+1)$ with 42 bilinear products and free Frobenius squarings.
 4. **Signed Half-Open Givens Gauge & $J=7$ Batching (`fact/`, `src/chem/`)**:
-   Enforced `bit(7) == bit(6)` to eliminate sign bits during QROM loading, and proved $J=7$ ($Q=125 \le 126$) is the global maximum batch size under the 128-qubit ceiling.
+   Enforced `bit(7) == bit(6)` to eliminate sign bits during QROM loading, and proved $J=7$ ($Q=124 \le 126$) is the global maximum batch size under the 128-qubit ceiling for 2-address mode.
+5. **Table-Native Representation Co-Design (`research/block11_representation_divergence.md`)**:
+   Proved exact machine-precision Hamiltonian invariance under basis permutations and discrete row-sign flips. Joint greedy TSP tour and dynamic sign gauge selection cuts consecutive QROM Hamming distance by **12.11%** (38,048 $\to$ 33,440 bits) with zero chemical drift.
 
 ---
 

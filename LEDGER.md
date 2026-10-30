@@ -1,7 +1,7 @@
 # LEDGER: VERIFICATION STATUS, BENCHMARK AUDIT & EXPERIMENT TRACKER
 **Competition**: Google Quantum AI — Verifiable Quantum Circuit Compilation (Kaggle)  
 **Target Horizon**: Score 50.0 ($\text{Product} = 125{,}000$)  
-**Current Live Baseline**: Score `22.99562` (Kaggle Submission Ref `57800637`, Oct 30, 2026 | Public Rank: 142)  
+**Current Live Baseline**: Score `22.99562` (Kaggle Submission Ref `57800637`, Oct 30, 2026 | Public Rank: #220 / 1,677 teams, Top 13.12%)  
 **Last Synchronized Git Commit**: `3af0db2` on `origin/master`  
 
 ---
@@ -88,5 +88,8 @@ $$\text{Composite Score} = \left(\frac{\text{Ref}_{\text{invsqrt}}}{\text{Cost}_
 | **1** | **B4** | Dynamic local wire pooling recycles scratch ancillas during bilinear multiplication without wire counter growth. | `python -m unittest tests/test_compactor.py` | 16/16 total suite pass (18.16s). Verified exact Galois multiplication with pooled scratch reuse. | **PASS / KEEP** | Proceed to Block 5 & 7. |
 | **1** | **B6** | GF(2^12) multiplication decomposes into rank-42 bilinear tensor with free Frobenius squaring. | `python -m unittest tests/test_arithmetic_tensor.py` | 4/4 tests pass. All 144 basis products and 500 random vectors match Kickmix with rank 42. | **PASS / KEEP** | Proceed to Block 7. |
 | **1** | **B8-B9**| Half-open Givens gauge bit(7)==bit(6) eliminates sign bit; J=7 batching minimizes circuits under Q<=126. | `python -m unittest tests/test_portfolio_coupling.py` | 4/4 tests pass. Invariant bit(7)==bit(6) holds on all 102k words; J=7 angle circuit strictly <= 126 qubits. | **PASS / KEEP** | Proceed to Block 10 & Integration. |
+| **2** | **ML11-A**| R=10 Continuous Factorization: smaller continuous lambda_eff improves quantum circuit. | Official verifier on R=10 J=7 (`dfthcsos.verify`) | Falsified. Score 559.89M (Ratio 5.993x) vs Live R=8 337.99M (9.928x). Continuous gain negated by QROM address expansion. | **KILL** | Retain R=8 as live portfolio champion. |
+| **2** | **ML11-B**| Table-Native Basis Permutation & Sign Gauge Co-Design reduces QROM Hamming distance without Hamiltonian drift. | Python greedy TSP + dynamic sign gauge optimization | Verified: Consecutive Hamming distance reduced by 12.11% (38,048 -> 33,440 bits). Hamiltonian error drift < 1e-15. | **PASS / KEEP** | Integrated into representation framework. |
+| **2** | **ML11-C**| Inversionless Berlekamp-Massey Architecture eliminates field inversions in DQI Reed-Solomon decoding. | Mathematical derivation & multiplication count analysis | Verified: Eliminates all 16 Itoh-Tsujii inversions (176 multiplications). Total field mults cut ~46% (356 -> 192). Projected DQI ratio > 150x. | **PASS / KEEP** | Primary candidate for DQI restructuring. |
 
 

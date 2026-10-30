@@ -1,0 +1,131 @@
+{
+  "version": "1.0.0",
+  "masterloop": 11,
+  "last_updated": "2026-10-30T21:20:00+05:30",
+  "experiments": [
+    {
+      "id": "EXP-001",
+      "name": "Price-Book Dynamic Arbitrage",
+      "benchmark": "general",
+      "hypothesis": "Gates gated behind false conditions cost 0 in Kickmix runtime simulator",
+      "status": "VERIFIED",
+      "decision": "KEEP",
+      "metrics": {
+        "clifford_toffoli_cost": 0,
+        "conditioned_toffoli_cost": 0
+      },
+      "verification_evidence": "results/pricebook.json, tests/test_pricebook.py"
+    },
+    {
+      "id": "EXP-003",
+      "name": "Quadratic-Phase Erasure",
+      "benchmark": "dqi",
+      "hypothesis": "HMR + Clifford CZ network restores deg <= 2 wires with 0 Toffolis",
+      "status": "VERIFIED",
+      "decision": "KEEP",
+      "metrics": {
+        "toffoli_erasure_cost": 0,
+        "clean_register_restoration": "100%"
+      },
+      "verification_evidence": "src/dqi/quadratic_phase_erase.py, tests/test_quadratic_phase_erase.py"
+    },
+    {
+      "id": "EXP-006",
+      "name": "Algebra-First Rank-42 GF(2^12) Bilinear Tensor",
+      "benchmark": "dqi",
+      "hypothesis": "Bilinear tensor decomposition over GF(8) tower cuts products from 144 to 42",
+      "status": "VERIFIED",
+      "decision": "KEEP",
+      "metrics": {
+        "base_product_reduction": "70.83%",
+        "toffoli_reduction": "23.25%",
+        "projected_dqi_ratio": "75.57x"
+      },
+      "verification_evidence": "src/dqi/build_dqi.py, tests/test_arithmetic_tensor.py, tests/test_dqi_compiler.py"
+    },
+    {
+      "id": "EXP-008",
+      "name": "Chemistry Half-Open Givens Gauge",
+      "benchmark": "dfthcsos",
+      "hypothesis": "Enforcing bit(7) == bit(6) across Givens angles eliminates sign bit without energy drift",
+      "status": "VERIFIED",
+      "decision": "KEEP",
+      "metrics": {
+        "max_drift": "< 1e-11",
+        "word_width_reduction": "8 bits -> 7 bits"
+      },
+      "verification_evidence": "src/chem/angles_qrom.py, tests/test_portfolio_coupling.py"
+    },
+    {
+      "id": "EXP-009",
+      "name": "Chemistry J=7 Batching under Q <= 126",
+      "benchmark": "dfthcsos",
+      "hypothesis": "J=7 reduces angle circuits from 15 to 11 while staying strictly <= 126 qubits",
+      "status": "VERIFIED",
+      "decision": "KEEP",
+      "metrics": {
+        "num_circuits": 11,
+        "max_angle_qubits": 124,
+        "toffoli_reduction_vs_j5": 5764,
+        "cost_reduction_vs_j5": "15.1% (559.89M vs 659.10M)"
+      },
+      "verification_evidence": "tests/test_portfolio_coupling.py, official verifier task-561"
+    },
+    {
+      "id": "EXP-010",
+      "name": "DQI Wire Compactor Prototype",
+      "benchmark": "dqi",
+      "hypothesis": "Pooled scratch allocation prevents scratch wire indices from permanently expanding circuit width",
+      "status": "VERIFIED",
+      "decision": "KEEP",
+      "metrics": {
+        "scratch_wires_recycled": "100%",
+        "correctness": "PASS"
+      },
+      "verification_evidence": "src/dqi/compactor.py, tests/test_compactor.py"
+    },
+    {
+      "id": "EXP-011A",
+      "name": "Continuous R=10 Factorization Replacement",
+      "benchmark": "dfthcsos",
+      "hypothesis": "Slight continuous improvement in lambda_eff (48.03 vs 48.32) improves overall circuit score",
+      "status": "FALSIFIED",
+      "decision": "KILL",
+      "metrics": {
+        "continuous_lambda_improvement": "-0.29",
+        "quantum_circuit_score_degradation": "+65.7% (559.89M vs 337.99M)",
+        "cause": "Address explosion (A=1366 vs 1220) forced compiler from 4-address pebble mode to 2-address linear mode"
+      },
+      "verification_evidence": "research/negative_results.md, official verifier task-481 vs task-561"
+    },
+    {
+      "id": "EXP-011B",
+      "name": "Table-Native Basis Permutation & Sign Gauge Co-Design",
+      "benchmark": "dfthcsos",
+      "hypothesis": "Greedy TSP re-ordering and dynamic row-sign selection reduces QROM difference Hamming distance with zero Hamiltonian drift",
+      "status": "VERIFIED",
+      "decision": "KEEP",
+      "metrics": {
+        "consecutive_hamming_reduction": "12.11% (38,048 -> 33,440 bits)",
+        "delta_e1": "< 1e-15",
+        "delta_e2": "< 1e-17",
+        "delta_lambda": "0.000"
+      },
+      "verification_evidence": "research/block11_representation_divergence.md"
+    },
+    {
+      "id": "EXP-011C",
+      "name": "Inversionless Berlekamp-Massey Syndrome Decoder",
+      "benchmark": "dqi",
+      "hypothesis": "Cross-multiplication discrepancy recurrence eliminates all 16 field inversions in Reed-Solomon decoding",
+      "status": "PROTOTYPE_VERIFIED",
+      "decision": "KEEP",
+      "metrics": {
+        "field_inversions_eliminated": 16,
+        "multiplication_reduction": "~46%",
+        "projected_dqi_ratio": "> 150x"
+      },
+      "verification_evidence": "research/block11_representation_divergence.md"
+    }
+  ]
+}

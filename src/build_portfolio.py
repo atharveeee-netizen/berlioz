@@ -30,15 +30,16 @@ def build_chemistry_r10(out_dir):
     print(f"[*] Processing R=10 factor ({words.shape[0]} addresses, brot={brot})...")
     canonical = AQ.canonical_words(words, edges, brot)
     
-    # Batch size J = 5 (15 circuits) or J = 7 (11 circuits)
-    J = 5
+    # Batch size J = 7 (11 circuits, Q=124 <= 126) saves 5,764 Toffolis over J = 5 (15 circuits)
+    J = 7
     deltas = AQ.batch_deltas(canonical, J)
     K = len(deltas)
-    print(f"[*] Generating {K} angle circuits for J={J}...")
+    print(f"[*] Generating {K} angle circuits for J={J} (maximal batch under Q <= 126)...")
     
     t0 = time.time()
     for k in range(K):
         c, rep = B.build_qroam2(deltas[k], brot, mode="linear", return_report=True)
+        assert c.num_qubits <= 126, f"Circuit exceeded 126 qubits: {c.num_qubits}"
         c.to_file(os.path.join(out_dir, f'angle_k_{k}.kmb'), format='kmb')
     print(f"[+] Chemistry angle circuits generated in {time.time()-t0:.2f}s")
     
