@@ -1,0 +1,42 @@
+{
+  "clifford_ops": {
+    "num_toffoli_like": 0,
+    "num_t_like": 0,
+    "num_non_clifford": 0,
+    "num_instructions": 4
+  },
+  "ccx": {
+    "num_toffoli_like": 1,
+    "num_t_like": 0,
+    "num_instructions": 1
+  },
+  "ccz": {
+    "num_toffoli_like": 1,
+    "num_t_like": 0,
+    "num_instructions": 1
+  },
+  "z_pow_half": {
+    "num_toffoli_like": 0,
+    "num_t_like": 0,
+    "num_non_clifford": 0
+  },
+  "z_pow_quarter_T": {
+    "num_toffoli_like": 0,
+    "num_t_like": 1,
+    "num_non_clifford": 1
+  },
+  "z_pow_one_sixteenth_rotation": {
+    "num_toffoli_like": 0,
+    "num_t_like": 0,
+    "num_non_clifford": 1,
+    "z_pow_hierarchy": {
+      "5": 1
+    }
+  },
+  "conditional_execution": {
+    "static_circuit_toffoli_like": 1,
+    "simulated_toffoli_when_false": 0,
+    "simulated_toffoli_when_true": 1,
+    "price_gap_verdict": "Dynamic execution: gates gated behind false conditions cost 0 in simulator"
+  }
+}

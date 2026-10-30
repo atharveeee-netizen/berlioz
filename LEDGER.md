@@ -82,5 +82,9 @@ $$\text{Composite Score} = \left(\frac{\text{Ref}_{\text{invsqrt}}}{\text{Cost}_
 
 | Round | Block | Hypothesis | Command / Script | Result / Metric | Verdict | Next Action |
 | :---: | :---: | :--- | :--- | :--- | :---: | :--- |
-| **0** | **P1-P5** | Reproduce reference baselines & reconcile cost models without error. | `python -m unittest discover -s tests -p "test_*.py" -v` | 12/12 unit tests pass in 10.43s. Costs reconciled. | **PASS** | Proceed to Block 1. |
-| **1** | **B1** | Price-book differences across conditional blocks and Z_POW rotation precision exist and are exploitable. | `tests/test_pricebook.py` (Micro-circuit probe) | Pending execution. | **QUEUED** | Execute Block 1 protocol. |
+| **0** | **P1-P5** | Reproduce reference baselines & reconcile cost models without error. | `python -m unittest discover -s tests -p "test_*.py" -v` | 12/12 unit tests pass in 98.57s. Costs reconciled. | **PASS** | Proceed to Block 1. |
+| **1** | **B1** | Price-book differences across conditional blocks and Z_POW rotation precision exist and are exploitable. | `python -m unittest tests/test_pricebook.py` | Marginal gate costs verified. Gated conditional blocks cost 0 Toffolis when false. | **PASS / KEEP** | Proceed to Block 2-3. |
+| **1** | **B3** | Bilinear registers can be erased with zero Toffolis using HMR + CZ Clifford correction networks. | `python -m unittest tests/test_quadratic_phase_erase.py` | 2/2 tests pass (0.083s). All basis states verified with 0 phase kickback and 0 uncompute Toffolis. | **PASS / KEEP** | Proceed to Block 4-5. |
+| **1** | **B6** | GF(2^12) multiplication decomposes into rank-42 bilinear tensor with free Frobenius squaring. | `python -m unittest tests/test_arithmetic_tensor.py` | 4/4 tests pass. All 144 basis products and 500 random vectors match Kickmix with rank 42. | **PASS / KEEP** | Proceed to Block 7. |
+| **1** | **B8-B9**| Half-open Givens gauge bit(7)==bit(6) eliminates sign bit; J=7 batching minimizes circuits under Q<=126. | `python -m unittest tests/test_portfolio_coupling.py` | 4/4 tests pass. Invariant bit(7)==bit(6) holds on all 102k words; J=7 angle circuit strictly <= 126 qubits. | **PASS / KEEP** | Proceed to Block 10 & Integration. |
+
