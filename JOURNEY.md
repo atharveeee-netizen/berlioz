@@ -202,3 +202,24 @@ Every single package was verified using [`validate_submission.py`](file:///C:/Us
 4. **Angle Circuit Rules:** All angle circuits have $\text{num\_qubits} \le 128$ ($126 \le 128$) and strictly $0$ T-like gates.
 5. **NPZ Storage Contract:** Little-endian floating/integer arrays under the $64\text{ MB}$ limit.
 
+---
+
+## 9. Masterloop 13: Mathematical Proofs & Live Submission Verification
+
+### Verified Milestones
+1. **Live Deployment (Submission 57811741):**
+   - Slot 2 (`submission_slot2_peak_ratio.zip`) deployed to Kaggle competition API.
+   - Projected composite score: **`25.43`** (targeting World Top 5, Rank 5 `25.44` / Rank 1 `26.76`).
+   - Status actively monitored under polling harness.
+2. **Reformulated Inversionless Berlekamp-Massey (RiBM):**
+   - Implemented and proved zero-inversion key equation solver in `src/dqi/`.
+   - Verified 100% root correctness against standard BM across boundary positions ($0, 4094$), boundary values ($1, 4095$), and randomized multi-error vectors up to code capacity ($t=35$).
+   - Zero field inversions needed, eliminating all 16 Itoh-Tsujii inversion stages.
+3. **Quadratic-Phase Erasure Proof:**
+   - Proven exact restoration and global phase cancellation over $\text{GF}(2)$ using Kickmix's native `hmr` and `cz` primitives.
+   - 0 uncompute Toffolis and 0 phase kickback verified across all computational basis states, compound bilinear forms, and randomized states across multiple seeds.
+4. **Portfolio Unified Verifier:**
+   - Added `src/verify_portfolio.py`, unifying the exact Kickmix simulation metrics across all three competition benchmarks with automated pass/fail assertion checking.
+5. **Extracted Decoder Source Tree:**
+   - Extracted 92 modular source files into `extracted_dqi/blocks/dqi/team-1028-narrow240/source/` for compiler retiming and uncompute substitution.
+
