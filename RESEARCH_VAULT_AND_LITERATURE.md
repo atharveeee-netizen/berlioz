@@ -29,19 +29,24 @@ $$\implies \text{Ratio}_{\text{invsqrt}} \times \text{Ratio}_{\text{dqi}} \times
 
 ### Primary Literature & Specifications
 
-1. **Google Quantum AI Official Paper (arXiv:2610.23832, 2026)**
-   * *Title*: *Verifiable Fault-Tolerant Quantum Circuit Compilation*
-   * *Authors*: Google Quantum AI Team & Collaborators.
+1. **Google Quantum AI Official Paper (arXiv:2610.23832, Oct 2026)**
+   * *Title*: *Leveraging Verifiable Structure in Quantum Circuit Compilation*
+   * *Authors*: H. Khattar, N. C. Rubin, C. Gidney, M. Broughton, G. H. Low, R. Babbush (Google Quantum AI).
    * *Core Contributions*: Establishes the three benchmark challenge problems, defines the cost models, and open-sources the C++ Pauli simulator `kickmix` for shot verification.
    * *Critical Verification Rules*:
      * Reversible integer arithmetic cannot leave uncomputed dirty ancillae.
      * DQI must pass $102,400$ shots with zero value/phase errors under a $2^{-128}$ confidence parameter.
      * Chemistry must stay strictly within 1-body and 2-body error bounds ($e_1, e_2 \le 20\text{ mHa}$) and active energy gap bounds ($E_{\text{gap}} \in [3.8, 4.0]\text{ Ha}$).
 
-2. **DQI Reed-Solomon Syndromic Decoding (arXiv:2510.10967, 2025)**
-   * *Title*: *Data-Qubit-Interleaved Surface Code Reed-Solomon Decoder*
-   * *Authors*: Quantum Error Correction Research Group.
-   * *Mathematical Formulation*: Fault-tolerant surface code syndromes generate error vectors in an $\text{RS}(4095, 4025)$ code over $\text{GF}(2^{12})$. The decoder executes Berlekamp-Massey or Euclidean Extended Algorithm (EEA) to find error locator polynomials $\Lambda(x)$ and evaluator polynomials $\Omega(x)$, followed by Chien search and Forney algorithm.
+2. **DQI Reed-Solomon Syndromic Decoding (arXiv:2510.10967, Oct 2025; arXiv:2408.08292)**
+   * *Title*: *Verifiable Quantum Advantage via Optimized DQI Circuits*
+   * *Authors*: D. Maslov, S. P. Jordan et al.
+   * *Mathematical Formulation*: Implements Decoded Quantum Interferometry (DQI) with measurement-based uncomputation (MBUC). An $\text{RS}(4095, 4025)$ code over $\text{GF}(2^{12})$ corrects up to $l = 35$ errors from $n = 70$ syndromes. The decoder executes the synchronized Extended Euclidean Algorithm (EEA) to find error locator polynomial $\sigma(x)$ and evaluator polynomial $\omega(x)$, followed by Chien search and Forney algorithm, kicking back the phase $(-1)^{\sum_j \text{popcount}(e_j \& E_j)}$ and restoring all registers.
+
+3. **Automated Circuit Optimization with Large Language Models (arXiv:2610.22367, Oct 2026)**
+   * *Title*: *Automated Circuit Optimization with Large Language Models*
+   * *Authors*: Y. Gu, A. Kemeny, S. F. Yelin, M. D. Lukin (Harvard, Anthropic, QuEra).
+   * *Evaluator*: `tatra-labs/kickmix-arena`. Demonstrates LLM evolution loops against the verifier, emphasizing that genuine novelty requires algebraic or structural breakthroughs rather than prompt-based trial-and-error.
 
 3. **Double-Factorized Tensor Hypercontraction (DF-THC) for Chemistry (PRX Quantum 2, 030305, 2021)**
    * *Title*: *Even More Efficient Quantum Algorithms for Chemistry Simulation on Fault-Tolerant Computers*

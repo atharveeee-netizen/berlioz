@@ -41,18 +41,18 @@ $$\text{Ratio}_i = \frac{\text{RefCost}_i}{\text{SubmittedCost}_i}$$
 ### Task Specifications
 
 #### 1. `invsqrt` (Fixed-Point Inverse Square Root)
-* **Goal**: Reversible calculation of $1/\sqrt{x}$ using Newton-Raphson iterations over fixed-point arithmetic.
-* **Cost Function**: $\text{Cost} = (T + C / 10) \times Q$, where $T$ is Toffoli count, $C$ is Clifford count, and $Q$ is active qubits.
-* **Current State**: 62-Qubit / 101-Toffoli implementation. Cost: $101{,}479.23 \implies \mathbf{20.465\times}$ improvement. Near the theoretical limit.
+* **Goal**: Reversible calculation of $1/\sqrt{x}$ using Newton-Raphson iterations over 22-bit fixed-point arithmetic across $x \in [1, 3{,}133{,}452]$.
+* **Cost Function**: $\text{Cost} = Q \times C = Q \times (\text{Toffolis} + T / 4)$, where Toffolis is mean CCX/CCZ per shot, $T$ is rotation synthesis cost ($0.56 \log_2(1/\epsilon) + 5.3$ T-gates per Z_POW rotation), and $Q$ is active qubits.
+* **Current State**: 62-Qubit implementation ($1{,}332.48$ mean Toffolis + $41$ rotations synthesizing to $1{,}186.36$ T-gates $\implies 1{,}629.07$ Toffoli-equivalents). Cost: $62 \times 1{,}629.07 = 101{,}002.48 \implies \mathbf{20.561\times}$ improvement. Verified across 200,540,928 shots with worst-case relative error $0.99932 \times \text{tol}$.
 
-#### 2. `dqi` (Data-Qubit-Interleaved Surface Code RS Decoder)
+#### 2. `dqi` (Decoded Quantum Interferometry RS Decoder)
 * **Goal**: Syndrome decoding of an $\text{RS}(4095, 4025)$ code in $\text{GF}(2^{12})$ across **102,400 verification shots**.
 * **Cost Function**: $\text{Cost} = R(\epsilon^+) \times Q^2 \times T_{\text{mean}}$.
-  * $R(\epsilon^+)$: Wilson score penalty on error rate $\epsilon$ across 102,400 shots. Zero errors yields $R \approx 1.191$.
+  * $R(\epsilon^+)$: Clopper-Pearson confidence penalty on error rate $\epsilon^+$ at $\delta = 2^{-128}$ across 102,400 shots. Zero errors yields $R \approx 1.191$.
   * $Q$: Peak active qubits.
   * $T_{\text{mean}}$: Mean Toffoli count per syndrome measurement shot.
 * **Baseline**: 889-qubit decoder using standard 63-AND polynomial multiplication. Cost: $4.1026 \times 10^{11} \implies \mathbf{59.57\times}$ improvement.
-* **The Breakthrough**: The 42-Product Karatsuba Bilinear Tensor (`src/dqi/tower42.py`) drops Toffolis by **21.18%**, boosting the ratio to **$75.57\times$**. Combining this with wire compaction ($Q \to 520$) unlocks the **$200.0\times$** target.
+* **Verified Arithmetic Lever**: The 42-Product Bilinear Tensor (`src/dqi/tower42.py`) drops Toffolis by **21.18%**, boosting the ratio to **$75.57\times$**. Combining this with prospective wire compaction ($Q \to 520$) forms our long-term research horizon towards **$200.0\times$**.
 
 #### 3. `dfthcsos` (Double-Factorized THC Chemistry Simulation)
 * **Goal**: Low-energy simulation of FeMoCo active nitrogenase catalytic site (76 orbitals, 113 electrons) from a 128 MB FCIDUMP.
