@@ -18,6 +18,15 @@ class TestSubmissionValidator(unittest.TestCase):
             raise unittest.SkipTest("submission_2299.zip not found")
         self.assertTrue(VS.validate_submission(str(zip_path)))
 
+    def test_all_four_generated_slots(self):
+        """Verify that all 4 generated submission slot archives pass all 5 competition rules."""
+        sub_dir = ROOT / 'build/submissions'
+        for slot in range(1, 5):
+            zips = list(sub_dir.glob(f'submission_slot{slot}_*.zip'))
+            self.assertTrue(len(zips) >= 1, f"Missing slot {slot} archive in {sub_dir}")
+            zip_path = zips[0]
+            self.assertTrue(VS.validate_submission(str(zip_path)), f"Slot {slot} archive failed validation: {zip_path}")
+
     def test_missing_path(self):
         """Verify that a nonexistent path fails gracefully without unhandled exceptions."""
         self.assertFalse(VS.validate_submission('nonexistent_path_xyz.zip'))

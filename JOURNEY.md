@@ -178,3 +178,26 @@ Key discoveries established during Masterloop 11:
    Comparing $J=5$ vs $J=7$ on the $R=10$ factor matrix with the official verifier (78,080 shots), $J=7$ reduced angle circuits from 15 to 11, cutting 5,764 Toffolis and reducing score from 659.1M to **559.89M** (a **$15.1\%$ gain**).
 4. **DQI Architectural Divergence (Inversionless Berlekamp-Massey):**
    Replaced the classical Extended Euclidean Algorithm with Andi Gu's inversionless Berlekamp-Massey discrepancy recurrence. Eliminating all 16 Itoh-Tsujii field inversions cuts total field multiplications by $\approx 46\%$ ($356 \to 192$), projecting DQI ratios $>150\times$.
+
+---
+
+## 8. Masterloop 12: Autonomous Multi-Package Synthesis & Verification
+
+### The 4-Slot Submission Portfolio (Certified October 30, 2026)
+Following an autonomous execution loop where each component was empirically benchmarked, verified against multi-shot official verifiers, and audited against the 5 competition rules, 4 distinct submission archives were generated, validated, and placed in `build/submissions/`:
+
+| Slot | Archive Name | Description | Invsqrt | DQI | Chem Factorization | Projected GM Score | Verification Status |
+| :---: | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **Slot 1** | [`submission_slot1_chem_champion.zip`](file:///C:/Users/noobg/.gemini/antigravity-ide/scratch/berlioz/build/submissions/submission_slot1_chem_champion.zip) | Syzygy Apex Chem Champion | 62Q (22.25x) | 889Q (71.16x) | R=8 B143 C60 (9.928x) | **25.05** | **100% PASS** (18 files) |
+| **Slot 2** | [`submission_slot2_peak_ratio.zip`](file:///C:/Users/noobg/.gemini/antigravity-ide/scratch/berlioz/build/submissions/submission_slot2_peak_ratio.zip) | Syzygy Peak-Ratio Apex | 63Q (23.28x) | 889Q (71.16x) | R=8 B143 C60 (9.928x) | **25.43** | **100% PASS** (18 files) |
+| **Slot 3** | [`submission_slot3_lowqubit_877.zip`](file:///C:/Users/noobg/.gemini/antigravity-ide/scratch/berlioz/build/submissions/submission_slot3_lowqubit_877.zip) | Syzygy Low-Qubit Explorer | 62Q (22.25x) | 877Q (54.80x) | R=8 B143 C60 (9.928x) | **22.97** | **100% PASS** (18 files) |
+| **Slot 4** | [`submission_slot4_v44_ensemble.zip`](file:///C:/Users/noobg/.gemini/antigravity-ide/scratch/berlioz/build/submissions/submission_slot4_v44_ensemble.zip) | Syzygy Robustness Ensemble | 63Q (23.28x) | 889Q (71.16x) | v44 Gluzdov (9.924x) | **25.42** | **100% PASS** (18 files) |
+
+### Certification & Rule Verification Audit
+Every single package was verified using [`validate_submission.py`](file:///C:/Users/noobg/.gemini/antigravity-ide/scratch/berlioz/src/validate_submission.py) and [`test_submission_validator.py`](file:///C:/Users/noobg/.gemini/antigravity-ide/scratch/berlioz/tests/test_submission_validator.py):
+1. **Archive Structure:** Exactly `{invsqrt.kmb, dqi.kmb, dfthcsos/submission.npz, dfthcsos/angle_k_*.kmb}` with continuous indexing.
+2. **Qubit/Bit ID Limit:** Top qubit and bit IDs strictly `< MAX_ID` ($699,050$).
+3. **Named Registers:** 100% string-named registers across all quantum/classical registers.
+4. **Angle Circuit Rules:** All angle circuits have $\text{num\_qubits} \le 128$ ($126 \le 128$) and strictly $0$ T-like gates.
+5. **NPZ Storage Contract:** Little-endian floating/integer arrays under the $64\text{ MB}$ limit.
+
