@@ -160,3 +160,124 @@ class TowerBuilder:
             b.del_and(control, original_lhs, masked)
             b.free(masked)
         self.replacements += 1
+
+
+class FullTowerBuilder(TowerBuilder):
+    """Full measurement-uncomputed tower-field adapter with scaffolded inverse and division."""
+    def __init__(self, builder, km, terms, field):
+        super().__init__(builder, km, terms)
+        self.field = field
+        self.inverse_records = {}
+        self.division_records = {}
+        self.inverse_replacements = 0
+        self.division_replacements = 0
+        self.linear_ops = {}
+        self.frobenius_tensors = {}
+
+    def frobenius_terms(self, power):
+        power %= 12
+        if power not in self.frobenius_tensors:
+            columns = [self.field.pow(1 << j, 1 << power) for j in range(12)]
+            transformed = [(sum(((a & c).bit_count() & 1) << j for j, c in enumerate(columns)), b, out)
+                           for a, b, out in self.terms]
+            self.frobenius_tensors[power] = order_terms(transformed)
+        return self.frobenius_tensors[power]
+
+    def linear_inplace(self, target, power):
+        power %= 12
+        if power not in self.linear_ops:
+            columns = [self.field.pow(1 << j, 1 << power) for j in range(12)]
+            rows = [sum(((c >> i) & 1) << j for j, c in enumerate(columns)) for i in range(12)]
+            ops = []
+            for col in range(12):
+                pivot = next(i for i in range(col, 12) if (rows[i] >> col) & 1)
+                if pivot != col:
+                    rows[col], rows[pivot] = rows[pivot], rows[col]
+                    ops.append(('swap', col, pivot))
+                for i in range(12):
+                    if i != col and (rows[i] >> col) & 1:
+                        rows[i] ^= rows[col]
+                        ops.append(('cx', col, i))
+            self.linear_ops[power] = tuple(reversed(ops))
+        for name, i, j in self.linear_ops[power]:
+            getattr(self.raw, name)(target[i], target[j])
+
+    def del_product(self, lhs, rhs, target, tensor=None):
+        b, km = self.raw, self.km
+        measurements = b.alloc_bits(12)
+        parity = b.alloc_bits(1)[0]
+        b.bit_store(parity, False)
+        b.hmr(target, measurements)
+        scratch = b.alloc_qubits(2)
+        previous_a = previous_b = 0
+        for am, bm, cm in (self.terms if tensor is None else tensor):
+            left = km.array([lhs[j] for j in range(12) if ((am ^ previous_a) >> j) & 1])
+            right = km.array([rhs[j] for j in range(12) if ((bm ^ previous_b) >> j) & 1])
+            b.cx(left, scratch[0])
+            b.cx(right, scratch[1])
+            for j in range(12):
+                if (cm >> j) & 1:
+                    b.cx(measurements[j], parity)
+            b.push_condition(parity)
+            b.cz(scratch[0], scratch[1])
+            b.pop_condition()
+            for j in range(12):
+                if (cm >> j) & 1:
+                    b.cx(measurements[j], parity)
+            previous_a, previous_b = am, bm
+        b.cx(km.array([rhs[j] for j in range(12) if (previous_b >> j) & 1]), scratch[1])
+        b.cx(km.array([lhs[j] for j in range(12) if (previous_a >> j) & 1]), scratch[0])
+        b.free(scratch)
+        b.free(measurements + km.array([parity]))
+
+    def init_gf2_inverse_with_scaffold(self, input, *, target='alloc', field=None):
+        field = self.field if field is None else field
+        if field.degree != 12 or field.modulus != self.field.modulus:
+            return self.raw.init_gf2_inverse_with_scaffold(input, target=target, field=field)
+        b, km = self.raw, self.km
+        if isinstance(target, str):
+            assert target == 'alloc'
+            target = b.alloc_qubits(12)
+        intermediates = [b.alloc_qubits(12) for _ in range(4)]
+        b2, b3, b5, b10 = intermediates
+        steps = [(input, 1, input, b2), (b2, 1, input, b3), (b3, 2, b2, b5),
+                 (b5, 5, b5, b10), (b10, 1, input, target)]
+        for src, power, rhs, out in steps:
+            self.ixor_gf2_mul(src, rhs, target=out, field=field, tensor=self.frobenius_terms(power))
+        self.linear_inplace(target, 1)
+        scaffold = km.array([q for reg in intermediates for q in reg])
+        self.inverse_records[tuple(target)] = steps
+        self.inverse_replacements += 1
+        return target, scaffold
+
+    def del_gf2_inverse_with_scaffold(self, input, *, target, scaffold, field=None):
+        steps = self.inverse_records.pop(tuple(target), None)
+        if steps is None:
+            return self.raw.del_gf2_inverse_with_scaffold(input, target=target, scaffold=scaffold, field=field)
+        b = self.raw
+        self.linear_inplace(target, 11)
+        for src, power, rhs, out in reversed(steps):
+            self.del_product(src, rhs, out, tensor=self.frobenius_terms(power))
+
+    def init_gf2_div_with_scaffold(self, lhs, rhs, *, target='alloc', field=None):
+        field = self.field if field is None else field
+        if field.degree != 12 or field.modulus != self.field.modulus:
+            return self.raw.init_gf2_div_with_scaffold(lhs, rhs, target=target, field=field)
+        b, km = self.raw, self.km
+        if isinstance(target, str):
+            assert target == 'alloc'
+            target = b.alloc_qubits(12)
+        inverse, chain = self.init_gf2_inverse_with_scaffold(rhs, field=field)
+        self.ixor_gf2_mul(lhs, inverse, target=target, field=field)
+        self.division_records[tuple(target)] = (inverse, chain)
+        self.division_replacements += 1
+        return target, chain + inverse
+
+    def del_gf2_div_with_scaffold(self, lhs, rhs, *, target, scaffold, field=None):
+        record = self.division_records.pop(tuple(target), None)
+        if record is None:
+            return self.raw.del_gf2_div_with_scaffold(lhs, rhs, target=target, scaffold=scaffold, field=field)
+        inverse, chain = record
+        self.del_product(lhs, inverse, target)
+        self.del_gf2_inverse_with_scaffold(rhs, target=inverse, scaffold=chain, field=field)
+
