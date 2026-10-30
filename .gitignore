@@ -1,0 +1,15 @@
+# Syzygy Apex .gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+*.zip
+*.xz
+*.fcidump
+*.log
+scratch/
+build/
+dist/
+.DS_Store
