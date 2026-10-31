@@ -34,8 +34,11 @@ for j in range(4095):
     metadata.extend(f'APPEND_TO_REGISTER b{12 * j + k} r{70 + j}' for k in range(12))
 c = km.Circuit('\n'.join(metadata)) + b.finish_circuit()
 c.to_file(str(target), format='kmb')
+h = hashlib.sha256()
 with open(target, 'rb') as f:
-    digest = hashlib.file_digest(f, 'sha256').hexdigest()
+    while chunk := f.read(65536):
+        h.update(chunk)
+digest = h.hexdigest()
 record = dict(sha256=digest, Q=c.num_qubits, T_static=c.operation_statistics().num_toffoli_like, num_ops=len(c),
               num_bits=c.num_bits, seconds=round(time.time() - start, 1))
 target.with_suffix('.build.json').write_text(json.dumps(record, indent=1) + '\n')

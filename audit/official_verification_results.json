@@ -1,11 +1,11 @@
 {
-  "archive_name": "submission_slot1_chem_champion.zip",
+  "archive_name": "submission.zip",
   "archive_sha256": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234",
   "archive_bytes": 78665545,
   "mode": "quick",
   "certification_status": "QUICK_TEST_PASS",
-  "verified_composite_score": 23.060806774028748,
-  "ideal_composite_score": 24.446127534247122,
+  "verified_composite_score": 23.060619671681895,
+  "ideal_composite_score": 24.44592919219092,
   "benchmarks": {
     "invsqrt": {
       "status": "PASS",
@@ -24,16 +24,16 @@
     "dqi": {
       "status": "PASS",
       "semantic_verified": true,
-      "verified_shots": 2048,
+      "verified_shots": 256,
       "num_qubits": 889,
-      "mean_toffolis": 433783.51171875,
+      "mean_toffolis": 433794.0703125,
       "value_errors": 0,
       "phase_errors": 0,
       "confidence_bound_eps": 0.0008660587301657926,
       "repetition_factor": 1.1912604648115832,
-      "cost": 408397703236.60944,
-      "ratio": 59.84231397480136,
-      "ideal_ratio": 71.28778276102257
+      "cost": 408407643922.0445,
+      "ratio": 59.84085740652262,
+      "ideal_ratio": 71.28604760881781
     },
     "chemistry": {
       "status": "PASS",
@@ -47,5 +47,5 @@
       "ratio": 9.927986642176107
     }
   },
-  "timestamp": "2026-10-30T17:49:43Z"
+  "timestamp": "2026-10-31T04:06:00Z"
 }
