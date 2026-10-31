@@ -1,0 +1,33 @@
+id,name,url,paper,license,n_instances,problem_families,input_dims,references,oracles,preprocessing,berlioz_compat,limitations
+CAN-01,QASMBench,https://github.com/pnnl/QASMBench,arXiv:2005.13018,Apache-2.0,84,Low-Level Algorithmic,2-64 qubits,PNNL Suite,Statevector simulation,QASM parser,YES,Small qubit widths
+CAN-02,RevLib,http://www.revlib.org,Wille et al. 2008,Academic Open,150,Reversible Boolean Logic,3-128 wires,RevLib Corpus,Truth table verification,PLA/Real to QASM,YES,Classical logic only
+CAN-03,MQT Bench,https://github.com/cda-tum/mqt-bench,Quetschlich et al. 2023,Apache-2.0,70,Multi-Level Algorithmic,2-100 qubits,CDA TUM,QCEC Equivalence,MQT QASM generator,YES,Algorithmic instances only
+CAN-04,Qualtran Arithmetic,https://github.com/quantumlib/Qualtran,Babbush et al. 2023,Apache-2.0,45,Fault-Tolerant Arithmetic,8-256 qubits,Google FTQC,Bloq symbolic simulator,Qualtran Bloqs,YES,Requires Qualtran lowerer
+CAN-05,SupermarQ,https://github.com/SupertechLabs/SupermarQ,Teplitsky et al. 2021,Apache-2.0,12,Application Benchmarks,4-32 qubits,ColdQuanta,Unitary matrix comparison,Cirq circuits,YES,Limited problem depth
+CAN-06,QFOTON Phase Synthesis,https://github.com/qfoton/qfoton,Amy et al. 2019,Apache-2.0,28,Phase Polynomials,4-64 qubits,Clifford+T,Matroid oracle,Phase form parser,YES,Diagonal terms only
+CAN-07,PyZX Corpus,https://github.com/zxcalculus/pyzx,Kissinger et al. 2020,Apache-2.0,65,ZX-Calculus Graphs,4-128 qubits,PyZX rewrite,ZX graph equality,ZX diagram exporter,YES,Graph structure requires lowering
+CAN-08,OpenFermion FeMoco,https://github.com/quantumlib/OpenFermion,McClean et al. 2020,Apache-2.0,32,Electronic Structure,4-113 orbitals,Google Quantum AI,CI energy oracle,FCIDUMP converter,YES,Orbital integrals required
+CAN-09,Gluzdov FeMoco Factorizations,https://github.com/dmitriigluzdov/qcc-chem,Gluzdov 2024,Apache-2.0,12,Chemistry State Prep,430-730 qubits,Competition repo,Spectral norm verifier,NPZ tensor loader,YES,Fixed molecular basis
+CAN-10,Kauers-Moosbauer Tensors,https://github.com/moosbauer/bilinear-schemes,Kauers et al. 2023,GPL-3.0,24,Finite-Field Multiplication,4-24 bits,ISSAC 2023,Bilinear rank oracle,Matrix rank solver,YES,Pure algebraic matrices
+CAN-11,DQI Reed-Solomon Decoders,https://github.com/atharveeee-netizen/berlioz,Competition Host 2026,Apache-2.0,400,QEC Syndrome Inversion,840-889 qubits,Google QCC,Kickmix shot verifier,KMB state machine,YES,Dynamic state machine
+CAN-12,Gidney Fixed-Point Math,https://github.com/strilanc/quantum-addition,Gidney 2018,MIT,20,Elementary Arithmetic,8-32 bits,Google Research,Analytical IEEE-754,QASM adder lowering,YES,Fixed precision
+CAN-13,QASMBench Chemistry VQE,https://github.com/pnnl/QASMBench,PNNL 2020,Apache-2.0,18,Quantum Chemistry VQE,4-28 qubits,PNNL Suite,State fidelity check,QASM parser,YES,Small active spaces
+CAN-14,Shor Modular Exponentiation,https://github.com/cda-tum/mqt-bench,Shor 1994,Academic Open,15,Modular Arithmetic,8-64 qubits,Number Theory,Arithmetic modular cycle,Modular add lowering,YES,Arithmetic only
+CAN-15,IBM Quantum Volume,https://github.com/Qiskit/qiskit,Cross et al. 2019,Apache-2.0,50,Randomized Unitary,4-32 qubits,IBM Research,Qiskit unitary check,Qiskit QuantumCircuit,YES,Dense Haar-random
+CAN-16,Amy Matroid T-par,https://github.com/meamy/t-par,Amy et al. 2014,Academic Open,35,Phase Synthesis,3-50 qubits,IEEE TCAD,Phase polynomial check,T-par syntax,YES,Phase polynomials only
+CAN-17,Stim Surface Codes,https://github.com/quantumlib/Stim,Gidney 2021,Apache-2.0,25,Stabilizer QEC,17-241 qubits,Google Quantum AI,Stim stabilizer tableau,Stim circuit format,YES,Clifford stabilizer only
+CAN-18,Anthropic Divsteps,https://github.com/anthropic/divsteps,Gu et al. 2024,Apache-2.0,16,Modular Inversion,16-128 qubits,Anthropic Research,GCD invariant oracle,Divstep tracker,YES,Reversible integer logic
+CAN-19,QLib Quantum Memory,https://github.com/qlib/qlib,Wille et al. 2022,MIT,40,Physical Routing,5-65 qubits,CDA TUM,Routing fidelity oracle,Coupling graph mapper,YES,Layout specific
+CAN-20,QCC Local SOTA 20261031,https://kaggle.com/datasets/yoyobar/qcc-local-sota-20261031,yoyobar 2026,Apache-2.0,18,Competition SOTA,62-889 qubits,Kaggle Dataset,Official QCC verifiers,KMB/NPZ parser,YES,Direct competition
+CAN-21,Microsoft Q# Arithmetic,https://github.com/microsoft/qsharp-runtime,Microsoft 2021,MIT,30,Quantum Arithmetic,4-64 qubits,Q# Docs,Q# simulator oracle,Q# transpiler,YES,Q# runtime needed
+CAN-22,ProjectQ Arithmetic,https://github.com/ProjectQ-Framework/ProjectQ,Steiger et al. 2018,Apache-2.0,25,Reversible Math,8-64 qubits,ETH Zurich,ProjectQ simulator,ProjectQ compiler,YES,Python based
+CAN-23,Cirq Algorithms Suite,https://github.com/quantumlib/Cirq,Cirq Developers 2022,Apache-2.0,40,Algorithms & Prep,4-54 qubits,Google Quantum AI,Cirq density matrix,Cirq circuits,YES,Cirq format
+CAN-24,Qiskit Nature Molecules,https://github.com/qiskit-community/qiskit-nature,Qiskit 2022,Apache-2.0,28,Molecular VQE,2-30 qubits,IBM Quantum,Hartree-Fock reference,PySCF driver,YES,VQE specific
+CAN-25,Quipper Reversible Math,https://www.mathstat.dal.ca/~selinger/quipper/,Green et al. 2013,Academic Open,22,Functional Reversible,10-100 qubits,Dalhousie,Quipper interpreter,Haskell transpiler,PARTIAL,Requires Haskell toolchain
+CAN-26,Barenco Reversible Logic,https://doi.org/10.1103/PhysRevA.52.3457,Barenco et al. 1995,Academic Open,15,Elementary Gates,3-10 wires,Phys Rev A,Unitary matrix multiplication,Manual gate net,PARTIAL,Obsolete syntax
+CAN-27,Maslov Benchmark Suite,http://webhome.cs.uvic.ca/~dmaslov/,Maslov et al. 2005,Academic Open,20,Reversible Boolean,3-30 wires,Univ of Victoria,Truth table oracle,TFC format,PARTIAL,TFC format parser needed
+CAN-28,QuEST Algorithmic Suite,https://github.com/quest-kit/QuEST,Jones et al. 2019,MIT,18,Distributed Simulation,4-30 qubits,Oxford,QuEST statevector check,C++ harness,YES,Requires C++ build
+CAN-29,CQC TKET Corpus,https://github.com/CQCL/tket,Sivarajah et al. 2020,Apache-2.0,35,Peephole Optimization,4-64 qubits,Quantinuum,TKET circuit checker,pytket exporter,YES,pytket wrapper
+CAN-30,Google Willow Surface Code,https://quantumai.google/willow,Google Quantum AI 2024,Apache-2.0,10,Fault-Tolerant Memory,105 physical qubits,Nature 2024,Syndrome decoding oracle,Willow schedule JSON,PARTIAL,Hardware specific pulses
+CAN-31,Bravyi-Kitaev Phase Synthesis,https://github.com/Qiskit/qiskit-terra,Bravyi et al. 2021,Apache-2.0,16,Clifford+T Phase,4-32 qubits,IEEE Trans Info Theory,Reed-Muller decoder,Phase matrix format,YES,Phase synthesis only
+CAN-32,QHack Open Challenge,https://github.com/XanaduAI/qhack,Xanadu 2022,Apache-2.0,25,Variational Circuits,2-20 qubits,Xanadu Quantum,PennyLane oracle,PennyLane scripts,YES,PennyLane format
