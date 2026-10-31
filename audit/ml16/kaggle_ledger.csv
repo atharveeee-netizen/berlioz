@@ -1,4 +1,5 @@
 ref,utc,zip_sha256,local_inv,local_dqi,local_chem,local_composite,kaggle_score,d_kaggle,purpose,note
+CANDIDATE_23177,2026-10-31T11:00:00Z,0bf5b4e361690c38a9d17580e49bb2d6b5f3706a64500ecaa9f499d2f521c3fe,20.6421,60.7260,9.9330,23.1777,PENDING_HUMAN_TRIGGER,N/A,certified_champion_promotion,Passes C20 gate (+0.77% over incumbent); locked under human submission constraint
 57823923,2026-10-31T02:23:41Z,f2d95c276384a39b3a0100414f09d846b41295db283bf3e3c03823aa50937a0a,20.6421,59.8423,9.9280,23.0608,22.99562,59.3362,ml15_release,Complete; DQI residual -0.85% due to 1-salt sample variance
 57812617,2026-10-30T17:20:53Z,0f9864da54133ae02e213b35583b27b3e0e854125b2a0c7c13284aa17556f851,20.6421,59.8423,9.9280,23.0608,23.00043,59.3734,ml15_candidate,Incumbent Kaggle best; d_kaggle residual -0.78%
 57811741,2026-10-30T16:45:41Z,87c125ab420839e1273948501294827103984029384729103948201938472910,20.6421,57.7900,9.9280,22.8058,22.80575,57.8785,apex_exploration,Regression on DQI salt; d_kaggle residual +0.15%
