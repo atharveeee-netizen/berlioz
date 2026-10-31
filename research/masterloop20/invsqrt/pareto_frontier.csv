@@ -1,0 +1,4 @@
+candidate_id,qubits,t_equiv,cost,ratio_vs_ref,status,notes
+Berlioz Champion,62,1622.72,100608.7,20.6421,ACTIVE_SOTA,Minimal 62Q footprint with 99.93% tolerance saturation; active global frontier
+Yoyobar 62Q,62,1636.75,101478.5,20.4652,SUPERSEDED,Slightly higher rotation synthesis overhead
+Busyaprime 63Q,63,1636.5,103100.0,20.1433,SUPERSEDED,1 extra qubit increases Q factor by +1.6%

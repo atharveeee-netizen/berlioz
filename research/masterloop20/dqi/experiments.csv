@@ -1,0 +1,7 @@
+experiment_id,architecture,qubits,toffolis,r_factor,cost,ratio_vs_ref,pareto_optimal,evidence_level,notes
+EXP-DQI-01,SomeJoint Baseline Confluent Hermite,889,474308.0,1.191260465,446554763112.0,54.7290,False,OFFICIAL_SCORE_VERIFIED,Public baseline decoder
+EXP-DQI-02,Ahmed Berat Özer Narrowed 877Q,877,482542.6,1.191260465,442121469507.0,55.2777,False,OFFICIAL_SCORE_VERIFIED,Early u->z register reuse saves 12Q but increases Toffolis
+EXP-DQI-03,Artem1410 Paired-v6 Decoder,881,1116995.0,1.191260465,1032784429000.0,23.6636,False,OFFICIAL_SCORE_VERIFIED,Paired inversion reduces Q to 881 but blows up Toffolis to 1.1M (strictly dominated)
+EXP-DQI-04,Berlioz ML16 Incumbent (Frozen),889,427471.2,1.191260465,402454799603.0,60.7260,True,FULL_BENCHMARK_VERIFIED,Incumbent champion in submission.zip with phase compaction
+EXP-DQI-05,Berlioz 889Q + Tower42 Inlined,889,409711.0,1.191260465,385732120400.0,63.3586,True,COMPONENT_VERIFIED,Tower42 drops 33.3% of Toffolis at dynamic multiplication sites
+EXP-DQI-06,Berlioz 877Q + Tower42 + Jet Reclamation,877,412000.0,1.191260465,377488920100.0,64.7422,True,THEORETICAL,Fused 877Q register schedule with 42-term bilinear tensor

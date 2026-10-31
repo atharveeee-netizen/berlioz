@@ -27,7 +27,7 @@ graph TD
     subgraph "Masterloop 17: 20-Dataset Generalization Initiative"
         D1["20 Benchmark Suites / 1,159 Instances"]
         D2["100% Correctness / 0 Regressions"]
-        D3["+11.37% Mean Resource Reduction"]
+        D3["+10.84% Mean Resource Reduction across 20 suites"]
     end
     subgraph "Masterloop 18: Berlioz 2.0 Autonomous Platform"
         B1["Math-IR & Two-Level Compiler"]
@@ -52,9 +52,9 @@ graph TD
 ### 2.2 Masterloop 17: The 20-Dataset Generalization Initiative
 1. **Corpus Construction:** Built and verified a multi-domain corpus of 20 distinct benchmarks (`research/dataset_generalization/DATASET_CATALOG.md`) encompassing low-level logic, finite-field tensors, molecular Hamiltonians, modular arithmetic, and quantum error correction.
 2. **Empirical Results (1,159 Instances):**
-   - Correctness: **100.0%** (0 failures).
-   - Breadth: 20 out of 20 benchmark families demonstrated positive resource reduction.
-   - Mean Improvement: **+11.37%** (best case **+70.83%** on Kauers bilinear tensors).
+   - Correctness: **100.0%** (0 failures across 1,159 instances).
+   - Breadth: **19 of 20** benchmark families demonstrated positive resource reduction (1 invariant zero-overhead Clifford suite).
+   - Mean Improvement: **+10.84%** (best case **+70.83%** on Kauers bilinear tensors; +11.41% conditional on non-zero suites).
 3. **Hypothesis Confirmation:** Proved conclusively that Berlioz's compiler passes represent invariant algebraic transformations that transfer seamlessly out-of-distribution.
 
 ### 2.3 Masterloop 18: Berlioz 2.0 Autonomous Architecture

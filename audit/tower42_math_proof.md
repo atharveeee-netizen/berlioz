@@ -1,7 +1,7 @@
 # TOWER-42 GF(2^12) MULTIPLIER MATHEMATICAL PROOF & TENSOR DECOMPOSITION
 
 **Field:** $\text{GF}(2^{12})$  
-**Modulus:** $p(x) = x^{12} + x^7 + x^6 + x^5 + x^3 + x + 1$ over $\text{GF}(2)$  
+**Modulus:** $p(x) = x^{12} + x^6 + x^4 + x + 1$ (`0x1053`, decimal 4179) over $\text{GF}(2)$  
 **Tower Construction:** $\text{GF}(2) \subset \text{GF}(8) \subset \text{GF}(2^{12}) \cong \text{GF}(8)[v]/(v^4 + v + 1)$  
 **Bilinear Rank:** Exactly 42 Toffolis (vs 144 Schoolbook, vs 60 Standard Karatsuba)  
 

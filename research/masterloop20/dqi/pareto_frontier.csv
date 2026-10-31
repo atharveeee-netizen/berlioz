@@ -1,0 +1,4 @@
+architecture,qubits,toffolis,cost,ratio_vs_ref,status,notes
+Berlioz ML16 Incumbent,889,427471.2,402454799603.0,60.7260,FROZEN_INCUMBENT,Current verified production artifact (hash: 0bf5b4e3...)
+Berlioz 889Q + Tower42 Inlined,889,409711.0,385732120400.0,63.3586,CANDIDATE_LEADER,Drop 17.7k Toffolis via 42-AND multiplier
+Berlioz 877Q + Tower42 + Jet Reclamation,877,412000.0,377488920100.0,64.7422,FRONTIER_TARGET,Minimum width (877Q) with Tower42 inlining

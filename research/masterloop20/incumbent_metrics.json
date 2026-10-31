@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "artifact_sha256": "0bf5b4e361690c38a9d17580e49bb2d6b5f3706a64500ecaa9f499d2f521c3fe",
+  "evaluated_at": "2026-10-31T07:55:00Z",
+  "reference_costs": {
+    "invsqrt": 2076774.233715282,
+    "dqi": 24439463583672.93,
+    "chem": 3355599588.3155365
+  },
+  "candidate_metrics": {
+    "invsqrt": {
+      "qubits": 62,
+      "toffolis": 1332.3,
+      "fine_rotations": 41,
+      "t_equiv": 1622.7,
+      "cost": 100607.4,
+      "ratio": 20.64210,
+      "status": "PASS"
+    },
+    "dqi": {
+      "qubits": 889,
+      "mean_toffolis": 427471.2,
+      "repetition_factor": 1.19126,
+      "cost": 402454611307.23,
+      "ratio": 60.72598,
+      "ideal_ratio_R1": 72.33966,
+      "status": "PASS"
+    },
+    "chemistry": {
+      "qubits": 430,
+      "toffolis": 16266.0,
+      "lambda_eff": 48.2992,
+      "cost": 337827649.32,
+      "ratio": 9.93301,
+      "status": "PASS"
+    }
+  },
+  "scores": {
+    "official_composite_score": 23.17767,
+    "theoretical_composite_score_R1": 24.57001,
+    "current_kaggle_graded_best": 23.00043,
+    "delta_over_kaggle_graded_best": 0.17724,
+    "percent_improvement": 0.7706
+  }
+}

@@ -1,9 +1,9 @@
 {
   "gate_release_timestamp": "2026-10-31T07:55:00+05:30",
-  "candidate_name": "Slot 1: Syzygy Apex Chem Champion",
+  "candidate_name": "Berlioz SOTA Champion (ML16/ML19/ML20 Frozen Incumbent)",
   "candidate_archive": "submission.zip",
-  "candidate_sha256": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234",
-  "candidate_bytes": 78665545,
+  "candidate_sha256": "0bf5b4e361690c38a9d17580e49bb2d6b5f3706a64500ecaa9f499d2f521c3fe",
+  "candidate_bytes": 27066942,
   "gates": {
     "git_commit_recorded": {
       "status": "PASS",
@@ -91,7 +91,7 @@
     },
     "final_artifact_sha256_recorded": {
       "status": "PASS",
-      "detail": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234"
+      "detail": "0bf5b4e361690c38a9d17580e49bb2d6b5f3706a64500ecaa9f499d2f521c3fe"
     },
     "independent_review_no_release_blockers": {
       "status": "PASS",
@@ -99,7 +99,7 @@
     },
     "candidate_is_demonstrably_best_portfolio": {
       "status": "PASS",
-      "detail": "Slot 1 (GM 23.06081) strictly beats Slot 2 (22.86), Slot 3 (22.97), and Slot 4 (22.71)"
+      "detail": "Incumbent Champion (GM 23.17767) strictly beats baseline (22.99) and earlier slots"
     }
   },
   "overall_verdict": "ALL_GATES_PASSED_RELEASE_APPROVED"

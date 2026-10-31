@@ -21,10 +21,10 @@ class Register:
 @dataclass
 class MathOp:
     """Base class for mathematical operations in Math-IR."""
-    op_type: str
     name: str
     inputs: List[str]
     outputs: List[str]
+    op_type: str = "generic"
     ancilla: List[str] = field(default_factory=list)
     metadata: Dict[str, Any] = field(default_factory=dict)
 
@@ -101,6 +101,28 @@ class QuantumMathIR:
         for r in all_refs:
             if r not in self.registers:
                 raise KeyError(f"Operation references unknown register: '{r}'")
+
+        if isinstance(op, FieldOp):
+            if len(op.inputs) < 2 or len(op.outputs) < 1:
+                raise ValueError("FieldOp requires at least 2 input registers and 1 output register.")
+            if self.registers[op.inputs[0]].size != op.field_degree:
+                raise ValueError(f"Input register '{op.inputs[0]}' size ({self.registers[op.inputs[0]].size}) does not match field degree ({op.field_degree}).")
+            if self.registers[op.inputs[1]].size != op.field_degree:
+                raise ValueError(f"Input register '{op.inputs[1]}' size ({self.registers[op.inputs[1]].size}) does not match field degree ({op.field_degree}).")
+            if self.registers[op.outputs[0]].size != op.field_degree:
+                raise ValueError(f"Output register '{op.outputs[0]}' size ({self.registers[op.outputs[0]].size}) does not match field degree ({op.field_degree}).")
+
+        elif isinstance(op, LinearOp):
+            dim = len(op.matrix_f2)
+            if dim == 0:
+                raise ValueError("LinearOp must have non-empty matrix_f2.")
+            for row in op.matrix_f2:
+                if len(row) != dim:
+                    raise ValueError(f"LinearOp matrix must be square, got row length {len(row)} for dim {dim}.")
+            target_reg = op.outputs[0] if op.outputs else op.inputs[0]
+            if self.registers[target_reg].size != dim:
+                raise ValueError(f"Target register '{target_reg}' size ({self.registers[target_reg].size}) does not match matrix dimension ({dim}).")
+
         self.operations.append(op)
 
     @property

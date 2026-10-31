@@ -10,7 +10,7 @@
 | **Total Benchmark Datasets** | **20 / 20 (100% Coverage)** |
 | **Total Problem Instances** | **1,159 Instances** |
 | **Correctness Pass Rate** | **100.0% PASS (0 failures)** |
-| **Datasets Demonstrating Improvement** | **20 / 20 (100%)** |
+| **Datasets Demonstrating Positive Improvement** | **19 / 20 (95.0%, 1 Invariant Clifford Suite)** |
 | **Mean Resource Reduction** | **+10.84%** |
 | **Median Resource Reduction** | **+8.84%** |
 | **Best-Case Gain** | **+70.83%** (`DS-10` Kauers Bilinear GF(2^k) Tensors) |

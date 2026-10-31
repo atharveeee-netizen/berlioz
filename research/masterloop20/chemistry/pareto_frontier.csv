@@ -1,0 +1,4 @@
+candidate_id,rank_r,qubits,toffolis,lambda_eff,cost,ratio_vs_ref,status,notes
+Berlioz Champion R=8,8,430,16266.0,48.2992,337823023.0,9.9330,ACTIVE_SOTA,Minimal Toffoli count (16.2k) and compact R=8 basis at boundary e2=19.999 mHa
+Ahmed Berat Özer R=10,10,431,17330.0,47.5530,355186805.0,9.4474,SUPERSEDED,Higher Toffoli count despite slightly lower lambda_eff
+Vladislav J5 QROM R=10,10,429,20961.0,47.4823,426973779.0,7.8590,SUPERSEDED,Larger inner state prep overhead exceeds angle QROM savings

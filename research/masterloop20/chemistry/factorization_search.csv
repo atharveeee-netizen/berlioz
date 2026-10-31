@@ -1,0 +1,6 @@
+candidate_id,author,rank_r,b_dim,c_dim,lambda_eff,e1_mha,e2_mha,toffolis,qubits,cost,ratio_vs_ref,pareto_optimal,status
+CHEM-01,Ahmed Berat Özer Group Compression,26,60,30,52.4000,18.2,19.5,14120.0,432,319409664.0,10.5056,False,SUPERSEDED
+CHEM-02,Michael Rustad L-BFGS,10,129,60,48.0300,19.1,19.8,24500.0,431,507028755.0,6.6182,False,SUPERSEDED
+CHEM-03,Kirill / Vladislav J5 5-Word QROM,10,255,46,47.4823,18.91,19.997,20961.0,429,426973779.0,7.8590,False,INFERIOR_STATE_PREP
+CHEM-04,Ahmed Berat Özer Progressive R10,10,129,46,47.5530,18.8,19.8,17330.0,431,355186805.0,9.4474,False,SUPERSEDED
+CHEM-05,Berlioz Champion (Frozen R=8),8,143,60,48.2992,19.05,19.999,16266.0,430,337823023.0,9.9330,True,ACTIVE_SOTA

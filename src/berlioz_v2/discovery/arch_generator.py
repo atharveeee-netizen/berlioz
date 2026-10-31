@@ -190,3 +190,40 @@ class ArchitectureGenerator:
         )
 
         return candidates
+
+    def generate_arithmetic_candidates(
+        self,
+        precision_bits: int = 16,
+    ) -> List[ArchitectureCandidate]:
+        """Discovers alternative architectures for elementary arithmetic (addition, modular operations)."""
+        candidates = []
+
+        # Candidate 1: Reversible Ripple-Carry Adder with Single Carry Ancilla per Bit
+        ir_add = QuantumMathIR(f"add_{precision_bits}_ripple")
+        ir_add.add_register("a", precision_bits, "quantum")
+        ir_add.add_register("b", precision_bits, "quantum")
+        ir_add.add_register("out", precision_bits, "quantum")
+        ir_add.add_register("scratch", precision_bits + 1, "ancilla")
+        ir_add.add_operation(
+            ArithmeticOp(
+                op_type="arithmetic",
+                name="ripple_carry_add",
+                inputs=["a", "b"],
+                outputs=["out"],
+                ancilla=["scratch"],
+                precision_bits=precision_bits,
+                metadata={"adder_type": "ripple_carry", "ancillae_needed": precision_bits + 1},
+            )
+        )
+        candidates.append(
+            ArchitectureCandidate(
+                candidate_id="ADD-RIPPLE",
+                name="Reversible Ripple-Carry Adder",
+                strategy="minimal_depth",
+                ir_spec=ir_add,
+                ancilla_bound=precision_bits + 1,
+                theoretical_toffoli_bound=6 * precision_bits,
+                notes="Reversible full adder chain with clean carry uncomputation.",
+            )
+        )
+        return candidates

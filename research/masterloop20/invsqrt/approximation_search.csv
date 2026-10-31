@@ -1,0 +1,8 @@
+candidate_id,author,qubits,toffolis,fine_rotations,t_equiv,worst_err_pct,cost,ratio_vs_ref,pareto_optimal,status
+INV-01,Google Reference Baseline,82,1480.0,41,1842.0,82.4,151044.0,13.7495,False,SUPERSEDED
+INV-02,Phuc Thai EXP-225a,82,1380.0,41,1684.09,88.1,138095.0,15.0387,False,SUPERSEDED
+INV-03,Rudra Direct Poly Phasing,95,134.0,44,1393.7,91.2,132401.5,15.6855,False,DOMINATED_BY_Q95
+INV-04,mrmeows Hybrid Horner,63,1348.5,44,1643.59,96.4,103546.2,20.0565,False,SUPERSEDED
+INV-05,Busyaprime Re-synthesized,63,1340.0,41,1636.5,97.8,103100.0,20.1433,False,SUPERSEDED
+INV-06,Yoyobar Reversible Seed,62,1336.0,41,1636.75,98.5,101478.5,20.4652,False,SUPERSEDED
+INV-07,Berlioz Champion (Frozen),62,1332.0,41,1622.72,99.93,100608.7,20.6421,True,ACTIVE_SOTA
