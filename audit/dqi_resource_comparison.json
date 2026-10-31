@@ -1,0 +1,29 @@
+{
+  "benchmark": "DQI (Reed-Solomon MBUC Syndrome Decoder)",
+  "reference_cost": 24439463583672.93,
+  "confidence_parameter_delta": "2^-128",
+  "candidates": [
+    {
+      "name": "dqi_889q_champion",
+      "path": "build/dqi.kmb",
+      "qubits": 889,
+      "mean_toffolis": 433783.5,
+      "confidence_factor_r0": 1.19126046,
+      "cost": 408401363222.0,
+      "ratio": 59.84231,
+      "pareto_rank": 1,
+      "evidence": "OFFICIAL_SCORE_VERIFIED"
+    },
+    {
+      "name": "dqi_877q_explorer",
+      "path": "build/dqi_877q.kmb",
+      "qubits": 877,
+      "mean_toffolis": 451200.0,
+      "confidence_factor_r0": 1.19126046,
+      "cost": 413382100544.0,
+      "ratio": 59.12075,
+      "pareto_rank": 2,
+      "evidence": "COMPONENT_VERIFIED"
+    }
+  ]
+}

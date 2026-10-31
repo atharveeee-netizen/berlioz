@@ -1,0 +1,12 @@
+{
+  "source_directory": "extracted_dqi\\blocks\\dqi\\team-1028-narrow240\\source",
+  "manifest_path": "extracted_dqi\\blocks\\dqi\\team-1028-narrow240\\source\\source_sha256.json",
+  "total_files_in_manifest": 86,
+  "verified_files": 86,
+  "missing_files_count": 0,
+  "missing_files": [],
+  "mismatched_files_count": 0,
+  "mismatches": [],
+  "windows_crlf_note": "Files matched byte-exact against manifest under standard Unix LF newline normalization.",
+  "integrity_status": "PASS"
+}

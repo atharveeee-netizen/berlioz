@@ -1,0 +1,86 @@
+{
+  "0": {
+    "failed_shots": 0,
+    "total_shots": 102400,
+    "empirical_rate": 0.0,
+    "eps_plus": 0.0008660587301657926,
+    "repetition_factor": 1.1912604648115832
+  },
+  "1": {
+    "failed_shots": 1,
+    "total_shots": 102400,
+    "empirical_rate": 9.765625e-06,
+    "eps_plus": 0.0009104197583220583,
+    "repetition_factor": 1.1967314991687559
+  },
+  "2": {
+    "failed_shots": 2,
+    "total_shots": 102400,
+    "empirical_rate": 1.953125e-05,
+    "eps_plus": 0.0009488155716079551,
+    "repetition_factor": 1.2013880602795501
+  },
+  "3": {
+    "failed_shots": 3,
+    "total_shots": 102400,
+    "empirical_rate": 2.9296875e-05,
+    "eps_plus": 0.000983909102617945,
+    "repetition_factor": 1.2055843238398525
+  },
+  "4": {
+    "failed_shots": 4,
+    "total_shots": 102400,
+    "empirical_rate": 3.90625e-05,
+    "eps_plus": 0.001016763883917165,
+    "repetition_factor": 1.209464049815962
+  },
+  "5": {
+    "failed_shots": 5,
+    "total_shots": 102400,
+    "empirical_rate": 4.8828125e-05,
+    "eps_plus": 0.0010479495500463393,
+    "repetition_factor": 1.2131052140444296
+  },
+  "6": {
+    "failed_shots": 6,
+    "total_shots": 102400,
+    "empirical_rate": 5.859375e-05,
+    "eps_plus": 0.0010778188064556199,
+    "repetition_factor": 1.2165566016754124
+  },
+  "7": {
+    "failed_shots": 7,
+    "total_shots": 102400,
+    "empirical_rate": 6.8359375e-05,
+    "eps_plus": 0.0011066102023661202,
+    "repetition_factor": 1.2198515004832777
+  },
+  "8": {
+    "failed_shots": 8,
+    "total_shots": 102400,
+    "empirical_rate": 7.8125e-05,
+    "eps_plus": 0.0011344950381555927,
+    "repetition_factor": 1.2230139975925918
+  },
+  "10": {
+    "failed_shots": 10,
+    "total_shots": 102400,
+    "empirical_rate": 9.765625e-05,
+    "eps_plus": 0.0011880300543224117,
+    "repetition_factor": 1.2290105323528842
+  },
+  "15": {
+    "failed_shots": 15,
+    "total_shots": 102400,
+    "empirical_rate": 0.000146484375,
+    "eps_plus": 0.0013123183411957856,
+    "repetition_factor": 1.2425853445604913
+  },
+  "20": {
+    "failed_shots": 20,
+    "total_shots": 102400,
+    "empirical_rate": 0.0001953125,
+    "eps_plus": 0.0014272228658721716,
+    "repetition_factor": 1.254754318850276
+  }
+}

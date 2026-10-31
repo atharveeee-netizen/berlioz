@@ -12,4 +12,6 @@ env/
 scratch/
 build/
 dist/
+audit/baseline_vault/
 .DS_Store
+

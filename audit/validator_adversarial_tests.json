@@ -1,0 +1,64 @@
+{
+  "test_suite": "tests/test_submission_validator.py",
+  "total_tests": 8,
+  "passed_tests": 8,
+  "failed_tests": 0,
+  "duration_seconds": 17.442,
+  "adversarial_cases": [
+    {
+      "test_case": "test_adversarial_path_traversal",
+      "attack_type": "Directory traversal via '..' in zip member names",
+      "expected_outcome": "REJECT",
+      "actual_outcome": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "test_case": "test_adversarial_absolute_path",
+      "attack_type": "Arbitrary file write via absolute Windows path (C:\\evil.kmb)",
+      "expected_outcome": "REJECT",
+      "actual_outcome": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "test_case": "test_adversarial_corrupt_zip",
+      "attack_type": "Malformed and truncated zip archive headers",
+      "expected_outcome": "REJECT",
+      "actual_outcome": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "test_case": "test_adversarial_bad_npz_shape",
+      "attack_type": "Chemistry orbital dimensionality corruption (N=50 instead of N=76)",
+      "expected_outcome": "REJECT",
+      "actual_outcome": "REJECT",
+      "status": "PASS"
+    }
+  ],
+  "production_archive_validations": [
+    {
+      "archive": "build/submissions/submission_slot1_chem_champion.zip",
+      "valid": true,
+      "files_checked": 18
+    },
+    {
+      "archive": "build/submissions/submission_slot2_peak_ratio.zip",
+      "valid": true,
+      "files_checked": 18
+    },
+    {
+      "archive": "build/submissions/submission_slot3_lowqubit_877.zip",
+      "valid": true,
+      "files_checked": 18
+    },
+    {
+      "archive": "build/submissions/submission_slot4_v44_ensemble.zip",
+      "valid": true,
+      "files_checked": 18
+    },
+    {
+      "archive": "submission.zip",
+      "valid": true,
+      "files_checked": 18
+    }
+  ]
+}

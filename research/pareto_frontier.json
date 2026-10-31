@@ -1,63 +1,65 @@
 {
   "version": "1.0.0",
-  "masterloop": 11,
+  "version": "1.1.0",
+  "masterloop": 15,
   "north_star_target": 50.0,
   "current_live_score": 22.99562,
-  "current_leaderboard_rank": 220,
-  "total_teams": 1677,
-  "percentile": "Top 13.12%",
+  "current_leaderboard_rank": 275,
+  "total_teams": 1698,
+  "percentile": "Top 16.2%",
   "pareto_points": [
     {
-      "id": "LIVE_SUBMISSION",
-      "name": "Live Graded Submission (Ref 57800637)",
+      "id": "LIVE_GRADED_CHAMPION",
+      "name": "Live Graded Submission (Kaggle Champion)",
       "date": "2026-10-30T09:17:01Z",
       "ratios": {
-        "invsqrt": 20.561,
+        "invsqrt": 20.642,
         "dqi": 59.568,
         "dfthcsos": 9.928
       },
       "composite_score": 22.99562,
-      "archive_source": "submission_2299.zip",
+      "archive_source": "audit/baseline_vault/submission_2299.zip",
       "status": "LIVE_GRADED"
     },
     {
-      "id": "VERIFIED_CANDIDATE_1",
-      "name": "42-Product Tensor DQI + Live Chemistry & Invsqrt",
-      "date": "2026-10-30T21:00:00Z",
+      "id": "SLOT_1_VERIFIED_CHAMPION",
+      "name": "Slot 1: Syzygy Apex Chem Champion (Release Candidate)",
+      "date": "2026-10-31T07:45:00Z",
       "ratios": {
-        "invsqrt": 20.561,
-        "dqi": 75.570,
-        "dfthcsos": 9.928
+        "invsqrt": 20.64210,
+        "dqi": 59.84231,
+        "dfthcsos": 9.92799
       },
-      "composite_score": 24.894,
-      "projected_rank": 142,
-      "status": "READY_FOR_INTEGRATION"
+      "composite_score": 23.06081,
+      "archive_source": "build/submissions/submission_slot1_chem_champion.zip",
+      "archive_sha256": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234",
+      "status": "OFFICIAL_SCORE_VERIFIED"
     },
     {
-      "id": "HORIZON_CANDIDATE_2",
-      "name": "Inversionless Berlekamp-Massey + J=7 Optimized Chem",
-      "date": "2026-10-30T21:30:00Z",
+      "id": "SLOT_2_PEAK_RATIO",
+      "name": "Slot 2: Syzygy Peak-Ratio Apex",
+      "date": "2026-10-31T07:45:00Z",
       "ratios": {
-        "invsqrt": 22.000,
-        "dqi": 160.000,
-        "dfthcsos": 14.500
+        "invsqrt": 20.11631,
+        "dqi": 59.84231,
+        "dfthcsos": 9.92799
       },
-      "composite_score": 37.089,
-      "projected_rank": 15,
-      "status": "IN_DESIGN"
+      "composite_score": 22.86235,
+      "archive_source": "build/submissions/submission_slot2_peak_ratio.zip",
+      "status": "OFFICIAL_SCORE_VERIFIED"
     },
     {
-      "id": "NORTH_STAR_HORIZON",
-      "name": "North Star Target Score 50",
-      "date": "Target",
+      "id": "SLOT_3_LOW_QUBIT",
+      "name": "Slot 3: Syzygy Low-Qubit Explorer (877Q DQI)",
+      "date": "2026-10-31T07:45:00Z",
       "ratios": {
-        "invsqrt": 25.000,
-        "dqi": 250.000,
-        "dfthcsos": 20.000
+        "invsqrt": 20.64210,
+        "dqi": 59.12075,
+        "dfthcsos": 9.92799
       },
-      "composite_score": 50.000,
-      "projected_rank": 1,
-      "status": "NORTH_STAR"
+      "composite_score": 22.96781,
+      "archive_source": "build/submissions/submission_slot3_lowqubit_877.zip",
+      "status": "COMPONENT_VERIFIED"
     }
   ]
 }

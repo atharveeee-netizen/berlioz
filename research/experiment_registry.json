@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "masterloop": 11,
-  "last_updated": "2026-10-30T21:20:00+05:30",
+  "masterloop": 15,
+  "last_updated": "2026-10-31T07:45:00+05:30",
   "experiments": [
     {
       "id": "EXP-001",
@@ -21,13 +21,14 @@
       "name": "Quadratic-Phase Erasure",
       "benchmark": "dqi",
       "hypothesis": "HMR + Clifford CZ network restores deg <= 2 wires with 0 Toffolis",
-      "status": "VERIFIED",
-      "decision": "KEEP",
+      "status": "COMPONENT_VERIFIED",
+      "decision": "INTEGRATED_IN_889Q",
       "metrics": {
         "toffoli_erasure_cost": 0,
-        "clean_register_restoration": "100%"
+        "clean_register_restoration": "100%",
+        "integration_status": "Active in replay_erase.py and synth_stream.py; 433,783 Toffolis measured"
       },
-      "verification_evidence": "src/dqi/quadratic_phase_erase.py, tests/test_quadratic_phase_erase.py"
+      "verification_evidence": "src/dqi/quadratic_phase_erase.py, tests/test_quadratic_phase_erase.py, audit/qpe_proof_report.md"
     },
     {
       "id": "EXP-006",
@@ -118,14 +119,43 @@
       "name": "Inversionless Berlekamp-Massey Syndrome Decoder",
       "benchmark": "dqi",
       "hypothesis": "Cross-multiplication discrepancy recurrence eliminates all 16 field inversions in Reed-Solomon decoding",
-      "status": "PROTOTYPE_VERIFIED",
-      "decision": "KEEP",
+      "status": "CLASSICAL_PROTOTYPE",
+      "decision": "PRESERVE_PROTOTYPE",
       "metrics": {
         "field_inversions_eliminated": 16,
-        "multiplication_reduction": "~46%",
-        "projected_dqi_ratio": "> 150x"
+        "classical_tests_passing": "3/3 (tests/test_inversionless_bm.py)",
+        "production_integration": "Preserved Proos-Zalka champion in production to avoid unverified reversible Chien risk"
       },
-      "verification_evidence": "research/block11_representation_divergence.md"
+      "verification_evidence": "src/dqi/ribm.py, tests/test_inversionless_bm.py, audit/ribm_correctness_report.md"
+    },
+    {
+      "id": "EXP-012",
+      "name": "Clopper-Pearson Confidence Boundary Reconciliation",
+      "benchmark": "dqi",
+      "hypothesis": "Reconcile Kaggle graded score 22.80575 via exact Clopper-Pearson bound calculation at N=102,400 shots and delta=2^-128",
+      "status": "VERIFIED",
+      "decision": "KEEP",
+      "metrics": {
+        "r0_exact": 1.19126046,
+        "r1_exact": 1.19673150,
+        "r2_exact": 1.20138806,
+        "dqi_ratio_reconciled": "57.88x (private salt) vs 59.84x (ideal k=0)"
+      },
+      "verification_evidence": "audit/scoring_contract.md, audit/confidence_penalty_tests.json"
+    },
+    {
+      "id": "EXP-013",
+      "name": "Invsqrt Pareto Frontier 62Q vs 63Q",
+      "benchmark": "invsqrt",
+      "hypothesis": "62Q Newton-Raphson implementation achieves strictly lower cost than 63Q on genuine official semantic verifier",
+      "status": "VERIFIED",
+      "decision": "SELECT_62Q_CHAMPION",
+      "metrics": {
+        "62q_ratio": 20.66081,
+        "63q_ratio": 20.11631,
+        "margin_delta": "62Q beats 63Q by +0.544x ratio"
+      },
+      "verification_evidence": "audit/invsqrt_pareto.json, audit/invsqrt_champion_report.md"
     }
   ]
 }

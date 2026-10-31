@@ -1,0 +1,51 @@
+{
+  "starting_commit": "2508ca1143d7aaa5eb443dd3120d2fc982a66e73",
+  "branch": "master",
+  "dirty_working_tree": false,
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "kickmix_version": "0.1.0",
+  "os": "Windows 11 AMD64 (build 10.0.26100)",
+  "benchmark_versions": {
+    "invsqrt": "ProblemSpecInvSqrt(n_p=10, width=22, max_x=3133452)",
+    "dqi": "ProblemSpecDQI(m=4095, n=70, degree=12, r=2016, num_shots=102400, log2_delta=-128.0)",
+    "chemistry": "FeMoCo76o113e (N_orbitals=76, N_electrons=113, brot=16, R=8)"
+  },
+  "reference_costs": {
+    "invsqrt": 2076774.233715282,
+    "dqi": 24439463583672.93,
+    "chemistry": 3355599588.3155365
+  },
+  "public_leaderboard_champion": {
+    "submission_id": "57811741",
+    "graded_score": 22.80575,
+    "best_previous_graded_score": 22.99562,
+    "rank": 275,
+    "percentile": 16.2
+  },
+  "verified_baseline_components": {
+    "invsqrt": {
+      "circuit": "fact/components/invsqrt_62q.kmb",
+      "num_qubits": 62,
+      "toffoli_equivalent": 1622.7,
+      "cost": 100608.7,
+      "ratio": 20.64210
+    },
+    "dqi": {
+      "circuit": "build/dqi.kmb",
+      "num_qubits": 889,
+      "mean_toffolis": 433783.5,
+      "clopper_pearson_overhead_r0": 1.19126046,
+      "cost": 408401363222.0,
+      "ratio": 59.84231
+    },
+    "chemistry": {
+      "source_dir": "fact/r8_champion",
+      "num_qubits": 430,
+      "total_toffolis": 16266.0,
+      "lambda_eff": 48.323602,
+      "cost": 337993822.4,
+      "ratio": 9.92799
+    }
+  },
+  "composite_geometric_mean": 23.06081
+}

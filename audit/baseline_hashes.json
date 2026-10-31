@@ -1,0 +1,38 @@
+{
+  "submission.zip": {
+    "original_source": "submission.zip",
+    "vault_path": "audit\\baseline_vault\\submission.zip",
+    "size_bytes": 78664522,
+    "sha256": "49639de9ed012661b919ce5faa1313094402c2706156f95a99337fee95b72fe6"
+  },
+  "invsqrt.kmb": {
+    "original_source": "build\\invsqrt.kmb",
+    "vault_path": "audit\\baseline_vault\\invsqrt.kmb",
+    "size_bytes": 468143,
+    "sha256": "a568bc79348165bad5be2349960d200300c5639ffd2142aca6d548e764a399d9"
+  },
+  "dqi.kmb": {
+    "original_source": "build\\dqi.kmb",
+    "vault_path": "audit\\baseline_vault\\dqi.kmb",
+    "size_bytes": 544419428,
+    "sha256": "7a378f4755605e0c5fa6117f808891bf8dcf0797d047155e6d4c9e75e3c99421"
+  },
+  "submission_slot1_chem_champion.zip": {
+    "original_source": "build\\submissions\\submission_slot1_chem_champion.zip",
+    "vault_path": "audit\\baseline_vault\\submission_slot1_chem_champion.zip",
+    "size_bytes": 78665545,
+    "sha256": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234"
+  },
+  "submission_slot2_peak_ratio.zip": {
+    "original_source": "build\\submissions\\submission_slot2_peak_ratio.zip",
+    "vault_path": "audit\\baseline_vault\\submission_slot2_peak_ratio.zip",
+    "size_bytes": 78664522,
+    "sha256": "49639de9ed012661b919ce5faa1313094402c2706156f95a99337fee95b72fe6"
+  },
+  "submission_2299.zip": {
+    "original_source": "..\\quantum-competition\\submission_2299.zip",
+    "vault_path": "audit\\baseline_vault\\submission_2299.zip",
+    "size_bytes": 28504284,
+    "sha256": "891e55a6710587f0517b3d462966b1af23f05eccf95ea3fe408e8813b37e6fa2"
+  }
+}

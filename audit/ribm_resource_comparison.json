@@ -1,0 +1,23 @@
+{
+  "algorithm": "Reformulated Inversionless Berlekamp-Massey (RiBM)",
+  "evidence_level": "CLASSICAL_PROTOTYPE",
+  "implementation_file": "src/dqi/ribm.py",
+  "test_file": "tests/test_inversionless_bm.py",
+  "comparison_against_production": {
+    "production_circuit": {
+      "name": "build/dqi.kmb",
+      "architecture": "Extended Euclidean Algorithm (Proos-Zalka) with Selective QPE",
+      "status": "INTEGRATED_AND_OFFICIALLY_VERIFIED",
+      "qubits": 889,
+      "mean_toffolis": 433783.5,
+      "ratio": 59.84231
+    },
+    "ribm_quantum_prototype": {
+      "status": "NOT_INTEGRATED",
+      "reason": "Classical locator polynomial match established; reversible circuit synthesis incomplete.",
+      "estimated_qubits": 950,
+      "estimated_toffolis": 420000,
+      "decision": "DO_NOT_DEPLOY (Preserve production champion)"
+    }
+  }
+}

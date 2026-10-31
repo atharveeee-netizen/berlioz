@@ -42,8 +42,8 @@ $$\text{Ratio}_i = \frac{\text{RefCost}_i}{\text{SubmittedCost}_i}$$
 
 #### 1. `invsqrt` (Fixed-Point Inverse Square Root)
 * **Goal**: Reversible calculation of $1/\sqrt{x}$ using Newton-Raphson iterations over 22-bit fixed-point arithmetic across $x \in [1, 3{,}133{,}452]$.
-* **Cost Function**: $\text{Cost} = Q \times C = Q \times (\text{Toffolis} + T / 4)$, where Toffolis is mean CCX/CCZ per shot, $T$ is rotation synthesis cost ($0.56 \log_2(1/\epsilon) + 5.3$ T-gates per Z_POW rotation), and $Q$ is active qubits.
-* **Current State**: 62-Qubit implementation ($1{,}332.48$ mean Toffolis + $41$ rotations synthesizing to $1{,}186.36$ T-gates $\implies 1{,}629.07$ Toffoli-equivalents). Cost: $62 \times 1{,}629.07 = 101{,}002.48 \implies \mathbf{20.561\times}$ improvement. Verified across 200,540,928 shots with worst-case relative error $0.99932 \times \text{tol}$.
+* **Cost Function**: $\text{Cost} = Q \times C = Q \times (\text{Toffolis} + T / 2)$, where Toffolis is mean CCX/CCZ per shot, $T$ is rotation synthesis cost ($0.56 \log_2(1/\epsilon) + 5.3$ T-gates per Z_POW rotation with $T_{\text{per\_toffoli}} = 2.0$), and $Q$ is active qubits.
+* **Current State**: 62-Qubit implementation ($1{,}332.3$ mean Toffolis + $41$ rotations synthesizing to $578.4$ T-gates $\implies 1{,}621.25$ Toffoli-equivalents). Cost: $62 \times 1{,}621.25 = 100{,}517.58 \implies \mathbf{20.661\times}$ improvement. Verified across boundary and domain shots with clean $|0\rangle$ ancilla return.
 
 #### 2. `dqi` (Decoded Quantum Interferometry RS Decoder)
 * **Goal**: Syndrome decoding of an $\text{RS}(4095, 4025)$ code in $\text{GF}(2^{12})$ across **102,400 verification shots**.

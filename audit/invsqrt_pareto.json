@@ -1,0 +1,44 @@
+{
+  "build\\invsqrt.kmb": {
+    "status": "PASS",
+    "semantic_verified": true,
+    "verified_shots": 1024,
+    "worst_error_ratio": 0.8676711823537203,
+    "worst_x": 980922,
+    "num_qubits": 62,
+    "num_toffoli_like": 1332.2861328125,
+    "num_t_like": 6.94140625,
+    "rotation_count": 41.0,
+    "rotation_eps": 6.10215611757137e-13,
+    "cost": 100517.57856870443,
+    "ratio": 20.660806430944746
+  },
+  "fact\\components\\invsqrt_63q.kmb": {
+    "status": "PASS",
+    "semantic_verified": true,
+    "verified_shots": 1024,
+    "worst_error_ratio": 0.8367077064623234,
+    "worst_x": 3055952,
+    "num_qubits": 63,
+    "num_toffoli_like": 1348.259765625,
+    "num_t_like": 1.0,
+    "rotation_count": 41.0,
+    "rotation_eps": 4.266173800535093e-13,
+    "cost": 103238.32357007991,
+    "ratio": 20.116311093578858
+  },
+  "fact\\components\\invsqrt_62q.kmb": {
+    "status": "PASS",
+    "semantic_verified": true,
+    "verified_shots": 1024,
+    "worst_error_ratio": 0.8676711823537203,
+    "worst_x": 980922,
+    "num_qubits": 62,
+    "num_toffoli_like": 1332.2861328125,
+    "num_t_like": 6.94140625,
+    "rotation_count": 41.0,
+    "rotation_eps": 6.10215611757137e-13,
+    "cost": 100517.57856870443,
+    "ratio": 20.660806430944746
+  }
+}

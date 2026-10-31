@@ -1,0 +1,18 @@
+{
+  "source_path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source",
+  "build_entry": "build.py",
+  "target_output_sha256": "6349d2bc82eb1ef3a4e8c52c71a312823d756532517463b5e18eb25cc81195a8",
+  "source_hash_integrity": "PASS (86/86 files verified)",
+  "official_verifier_results": {
+    "status": "PASS",
+    "qubits": 889,
+    "mean_toffolis": 433783.5,
+    "verified_shots": 2048,
+    "value_errors": 0,
+    "phase_errors": 0,
+    "repetition_factor_r0": 1.19126046,
+    "official_dqi_cost": 408401363222.0,
+    "official_dqi_ratio": 59.84231
+  },
+  "acceptance_decision": "ACCEPTED_AS_PRODUCTION_CHAMPION"
+}

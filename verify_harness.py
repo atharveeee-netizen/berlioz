@@ -95,21 +95,19 @@ def main():
     if args.bench in ('all', 'invsqrt'):
         tgt = Path(args.target) if args.target else ROOT / 'build/invsqrt.kmb'
         if not tgt.exists():
-            tgt = Path('C:/Users/noobg/.gemini/antigravity-ide/scratch/quantum-competition/sample_submission/invsqrt.kmb')
+            tgt = ROOT / 'fact/components/invsqrt_62q.kmb'
         if tgt.exists():
-            verify_invsqrt(tgt, salts=min(args.salts, 1)) # invsqrt 200M shots takes 60s per salt
-            
+            verify_invsqrt(tgt, salts=min(args.salts, 1))
+
     if args.bench in ('all', 'dqi'):
         tgt = Path(args.target) if args.target else ROOT / 'build/dqi.kmb'
-        if not tgt.exists():
-            tgt = Path('C:/Users/noobg/.gemini/antigravity-ide/scratch/quantum-competition/sample_submission/dqi.kmb')
         if tgt.exists():
             verify_dqi(tgt, salts=args.salts, num_shots=args.dqi_shots)
 
     if args.bench in ('all', 'chem'):
-        tgt = Path(args.target) if args.target else ROOT / 'build/dfthcsos'
+        tgt = Path(args.target) if args.target else ROOT / 'fact/r8_champion'
         if not tgt.exists():
-            tgt = Path('C:/Users/noobg/.gemini/antigravity-ide/scratch/quantum-competition/sample_submission/dfthcsos')
+            tgt = ROOT / 'build/dfthcsos'
         if tgt.exists():
             verify_chem(tgt, salts=min(args.salts, 1))
 

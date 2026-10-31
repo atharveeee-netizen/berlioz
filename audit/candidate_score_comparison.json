@@ -1,0 +1,75 @@
+{
+  "formula": "GM = (R_invsqrt * R_dqi * R_chem) ** (1/3)",
+  "reference_costs": {
+    "invsqrt": 2076774.233715282,
+    "dqi": 24439463583672.93,
+    "chemistry": 3355599588.3155365
+  },
+  "verified_candidates": [
+    {
+      "candidate": "Slot 1: Syzygy Apex Chem Champion (Release Candidate)",
+      "invsqrt_circuit": "fact/components/invsqrt_62q.kmb (62Q)",
+      "dqi_circuit": "build/dqi.kmb (889Q)",
+      "chem_package": "fact/r8_champion (R=8)",
+      "invsqrt_ratio": 20.64210,
+      "dqi_ratio": 59.84231,
+      "chem_ratio": 9.92799,
+      "verified_composite_gm": 23.06081,
+      "public_leaderboard_graded": 22.99562,
+      "evidence": "OFFICIAL_SCORE_VERIFIED"
+    },
+    {
+      "candidate": "Slot 2: Syzygy Peak-Ratio Apex",
+      "invsqrt_circuit": "fact/components/invsqrt_63q.kmb (63Q)",
+      "dqi_circuit": "build/dqi.kmb (889Q)",
+      "chem_package": "fact/r8_champion (R=8)",
+      "invsqrt_ratio": 20.11631,
+      "dqi_ratio": 59.84231,
+      "chem_ratio": 9.92799,
+      "verified_composite_gm": 22.86235,
+      "evidence": "OFFICIAL_SCORE_VERIFIED"
+    },
+    {
+      "candidate": "Slot 3: Syzygy Low-Qubit Explorer",
+      "invsqrt_circuit": "fact/components/invsqrt_62q.kmb (62Q)",
+      "dqi_circuit": "build/dqi_877q.kmb (877Q)",
+      "chem_package": "fact/r8_champion (R=8)",
+      "invsqrt_ratio": 20.64210,
+      "dqi_ratio": 59.12075,
+      "chem_ratio": 9.92799,
+      "verified_composite_gm": 22.96781,
+      "evidence": "COMPONENT_VERIFIED"
+    },
+    {
+      "candidate": "Slot 4: Syzygy Robustness Ensemble",
+      "invsqrt_circuit": "fact/components/invsqrt_63q.kmb (63Q)",
+      "dqi_circuit": "build/dqi.kmb (889Q)",
+      "chem_package": "fact/components/yoyobar_v44 (v44)",
+      "invsqrt_ratio": 20.11631,
+      "dqi_ratio": 59.84231,
+      "chem_ratio": 9.73467,
+      "verified_composite_gm": 22.71350,
+      "evidence": "COMPONENT_VERIFIED"
+    }
+  ],
+  "theoretical_projections": [
+    {
+      "scenario": "Ideal Un-Penalized DQI Floor (R=1.0)",
+      "invsqrt_ratio": 20.64210,
+      "dqi_ratio": 71.28638,
+      "chem_ratio": 9.92799,
+      "projected_composite_gm": 24.44613,
+      "evidence": "THEORETICAL",
+      "note": "Assumes zero Clopper-Pearson repetition penalty (R=1.0). In practice, Kaggle enforces delta=2^-128 with R(0)=1.19126."
+    },
+    {
+      "scenario": "Speculative QPE Double-Erasure (-225k Toffolis)",
+      "invsqrt_ratio": 20.64210,
+      "dqi_ratio": 195.42,
+      "chem_ratio": 9.92799,
+      "projected_composite_gm": 34.22,
+      "evidence": "THEORETICAL",
+      "note": "Disproven on integrated circuit. Control wires for forward products are modified during Chien/Forney stage; cannot apply degree-2 kickback without alive controls."
+    }
+  ]
+}

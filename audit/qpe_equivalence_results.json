@@ -1,0 +1,44 @@
+{
+  "primitive": "QuadraticPhaseEraser",
+  "implementation_file": "src/dqi/quadratic_phase_erase.py",
+  "test_file": "tests/test_quadratic_phase_erase.py",
+  "evidence_level": "COMPONENT_VERIFIED",
+  "test_results": [
+    {
+      "test_name": "test_single_and_erasure_all_basis",
+      "cases_evaluated": 4,
+      "states": ["|00>", "|01>", "|10>", "|11>"],
+      "target_reset_correct": true,
+      "control_wires_preserved": true,
+      "phase_fidelity": 1.0,
+      "toffoli_uncompute_cost": 0,
+      "status": "PASS"
+    },
+    {
+      "test_name": "test_compound_bilinear_erasure",
+      "cases_evaluated": 16,
+      "bilinear_form": "y = (q0 & q1) ^ (q2 & q3)",
+      "target_reset_correct": true,
+      "phase_fidelity": 1.0,
+      "toffoli_uncompute_cost": 0,
+      "status": "PASS"
+    },
+    {
+      "test_name": "test_multi_shot_random_inputs",
+      "cases_evaluated": 50,
+      "target_reset_correct": true,
+      "phase_fidelity": 1.0,
+      "toffoli_uncompute_cost": 0,
+      "status": "PASS"
+    },
+    {
+      "test_name": "test_cancellation_of_identical_terms",
+      "cases_evaluated": 1,
+      "cancellation_behavior": "y = x0*x1 ^ x0*x1 = 0",
+      "target_reset_correct": true,
+      "phase_fidelity": 1.0,
+      "status": "PASS"
+    }
+  ],
+  "overall_status": "ALL_TESTS_PASS"
+}

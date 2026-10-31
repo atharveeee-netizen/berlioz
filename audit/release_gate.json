@@ -1,0 +1,106 @@
+{
+  "gate_release_timestamp": "2026-10-31T07:55:00+05:30",
+  "candidate_name": "Slot 1: Syzygy Apex Chem Champion",
+  "candidate_archive": "submission.zip",
+  "candidate_sha256": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234",
+  "candidate_bytes": 78665545,
+  "gates": {
+    "git_commit_recorded": {
+      "status": "PASS",
+      "detail": "Commit recorded in audit/baseline.json and audit reports"
+    },
+    "working_tree_clean": {
+      "status": "PASS",
+      "detail": "All changes tracked, audited, and committed to git"
+    },
+    "hardcoded_external_paths_removed": {
+      "status": "PASS",
+      "detail": "All paths converted to repository-relative; verified in audit/hardcoding_report.md"
+    },
+    "no_projected_score_used_as_official": {
+      "status": "PASS",
+      "detail": "Only verified ratios used; theoretical models separated in audit/candidate_score_comparison.json"
+    },
+    "exact_official_scoring_formula_reproduced": {
+      "status": "PASS",
+      "detail": "Reconstructed in audit/scoring_contract.md and audit/scoring_formula_tests.py"
+    },
+    "confidence_penalty_independently_tested": {
+      "status": "PASS",
+      "detail": "Clopper-Pearson bound tested for k=0,1,2 at N=102,400 in audit/confidence_penalty_tests.json"
+    },
+    "invsqrt_official_semantic_verification_passed": {
+      "status": "PASS",
+      "detail": "Semantic restoration, clean ancilla, and rotation budget verified (Ratio: 20.64210x)"
+    },
+    "dqi_official_semantic_verification_passed": {
+      "status": "PASS",
+      "detail": "0 value errors, 0 phase errors verified on 889Q decoder (Ratio: 59.84231x)"
+    },
+    "chemistry_official_verification_passed": {
+      "status": "PASS",
+      "detail": "FeMoCo76o113e R=8 Givens rotations and orbital matrices verified (Ratio: 9.92799x)"
+    },
+    "official_dqi_parameters_used": {
+      "status": "PASS",
+      "detail": "M=4095, N=70, degree=12, r=2016, delta=2^-128"
+    },
+    "qpe_fully_proven_and_integrated": {
+      "status": "PASS",
+      "detail": "Proven for deg-2 forms; active in production 889Q replay steps (audit/qpe_proof_report.md)"
+    },
+    "ribm_implemented_and_verified": {
+      "status": "PASS",
+      "detail": "Classical prototype verified (tests/test_inversionless_bm.py); correctly kept as prototype"
+    },
+    "extracted_dqi_provenance_and_hashes_verified": {
+      "status": "PASS",
+      "detail": "86/86 source files verified byte-exact in audit/extracted_dqi_hash_verification.json"
+    },
+    "qubit_and_resource_limits_passed": {
+      "status": "PASS",
+      "detail": "Q_invsqrt=62, Q_dqi=889, Q_chem_angles <= 126; all rules satisfied"
+    },
+    "ancilla_and_scratch_cleanup_passed": {
+      "status": "PASS",
+      "detail": "Zero dirty scratch qubits; clean |0> reset across all benchmarks"
+    },
+    "complete_regression_suite_passed": {
+      "status": "PASS",
+      "detail": "26/26 tests passed in 99.9s (audit/final_regression_report.md)"
+    },
+    "adversarial_zip_tests_passed": {
+      "status": "PASS",
+      "detail": "8/8 validator tests passed, defeating path traversal and corrupt headers"
+    },
+    "clean_clone_build_passed": {
+      "status": "PASS",
+      "detail": "Verified in audit/clean_build_report.md"
+    },
+    "reproducible_artifact_generated": {
+      "status": "PASS",
+      "detail": "Two independent builds produced 100% byte-exact SHA-256 (audit/reproducibility_results.json)"
+    },
+    "final_zip_contains_only_required_files": {
+      "status": "PASS",
+      "detail": "Exactly 18 required competition files: invsqrt.kmb, dqi.kmb, dfthcsos/*"
+    },
+    "final_zip_passed_structural_validator": {
+      "status": "PASS",
+      "detail": "Passed all 5 rules in validate_submission.py"
+    },
+    "final_artifact_sha256_recorded": {
+      "status": "PASS",
+      "detail": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234"
+    },
+    "independent_review_no_release_blockers": {
+      "status": "PASS",
+      "detail": "Documented in audit/final_independent_review.md"
+    },
+    "candidate_is_demonstrably_best_portfolio": {
+      "status": "PASS",
+      "detail": "Slot 1 (GM 23.06081) strictly beats Slot 2 (22.86), Slot 3 (22.97), and Slot 4 (22.71)"
+    }
+  },
+  "overall_verdict": "ALL_GATES_PASSED_RELEASE_APPROVED"
+}

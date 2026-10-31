@@ -1,0 +1,1190 @@
+{
+  "metadata": {
+    "title": "Masterloop 14 Repository Freeze & Inventory",
+    "git_commit": "2508ca1143d7aaa5eb443dd3120d2fc982a66e73",
+    "timestamp": "2026-10-30T22:55:00Z",
+    "total_tracked_files": 208,
+    "total_tracked_bytes": 16576099
+  },
+  "tracked_files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 142,
+      "sha256": "01cbfadc64537f9130af020e771d3e035c77f89d744b94ac6368cab2f400d7f2"
+    },
+    {
+      "path": "HANDOVER.md",
+      "size_bytes": 8345,
+      "sha256": "3e12cfc5e2a8f23f2a1d5d03769946113bef0370fce984e15b5292fd5fd160de"
+    },
+    {
+      "path": "JOURNEY.md",
+      "size_bytes": 18376,
+      "sha256": "a0daa3a088fdbdb8d77c9aa551f5a3cc650ae9e194ffa9b8b133a4ce07202d26"
+    },
+    {
+      "path": "LEDGER.md",
+      "size_bytes": 12976,
+      "sha256": "44faedc901e2422c97ead275873136dd5222032e296fecdfaac5951e4c58e55a"
+    },
+    {
+      "path": "Makefile",
+      "size_bytes": 237,
+      "sha256": "274698efec9da0411dc5c03e719c70de767cc61ada57256ed79e71e46ddf947f"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 4541,
+      "sha256": "233abb027f95b79424da79a7c7c0f5b8b6b3f65facf17b6489f4f93f5c9ce01d"
+    },
+    {
+      "path": "RESEARCH_VAULT_AND_LITERATURE.md",
+      "size_bytes": 10650,
+      "sha256": "b80ac48ef1e6d864885eba3e942ffecbd42b754c62bf24288d70b76f7cb2a214"
+    },
+    {
+      "path": "extracted_dqi/LICENSE",
+      "size_bytes": 11560,
+      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/build.py",
+      "size_bytes": 1895,
+      "sha256": "580a1d76cbc7cfe32dec0f856a3bb658ff043c1e6f77805664d224cc37e47555"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/chart_retimed.py",
+      "size_bytes": 1353,
+      "sha256": "f1b696c5a7ea7b97cf21a1b854009396b487ed1bcccb1a48992a786fabb5ec79"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/converter.py",
+      "size_bytes": 7620,
+      "sha256": "252bc048b6ec950dee364738fe40a899d28c7d6d43d094f5e1073a4c11c5089e"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/core90.py",
+      "size_bytes": 2830,
+      "sha256": "9fd87a9dbcacfbc3e1388f22c699786617ce07bafe11e792e93078be40fc533b"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/decode_retimed.py",
+      "size_bytes": 1748,
+      "sha256": "f646e2704d86cdbacd129b97b3c66435d20ef5d467d77944a6507685b2662ff0"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/direct_converter.py",
+      "size_bytes": 6576,
+      "sha256": "77c62933255426ae176ebb07ce14cc36774c202da256b23db6a53c971a49a79c"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/direct_kernels.py",
+      "size_bytes": 3492,
+      "sha256": "c3b9ef7e48b88b7c8630f1c203c3d9a8a94ab038a9839303e86211d1d8516801"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/frozen_chart.py",
+      "size_bytes": 8066,
+      "sha256": "1452de12d3417175a5a73744a23b54b041d37100a2f52e7f09f0362e16987ea5"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/high_stream.py",
+      "size_bytes": 4615,
+      "sha256": "f2fce237208f10296c6ca31eeab9500d4182871368eac5a2d92fadabedf6204b"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/measured_heads.py",
+      "size_bytes": 5125,
+      "sha256": "51b931fe49d81622d038b3d9de8932961ca7b244c08cf1cd4b9a9542eb8c1d14"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/permutations3.json",
+      "size_bytes": 6185,
+      "sha256": "e4b1ba659998672225497da7b03254668c1363829e23c08283016f11b75eb9df"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/phase_core.py",
+      "size_bytes": 1157,
+      "sha256": "863180f18d3140fc7c5ec7d95edc7b298abdcb3a76bd0de0c78f6450a6127e27"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/phase_quantum.py",
+      "size_bytes": 1137,
+      "sha256": "b2c9ac687c29a7f252316744e830299ff967db7c5524490b030d35edfecfe57d"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/rational.py",
+      "size_bytes": 4540,
+      "sha256": "19e8b92010943f01fcf9b8dcf33015cdffc0df012dab3bbcbf4de4d94cd6c6ea"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/replay_erase.py",
+      "size_bytes": 5080,
+      "sha256": "b0b4b1dcd36ec5201107524cf3b487192930a7258115cf75e988b8725b44f533"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/retimed.py",
+      "size_bytes": 5127,
+      "sha256": "dd1ce88f2483f537a4d10fddb15302944034ec68c3ccf8dc616f76cde4cc87ef"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/root_fusion.py",
+      "size_bytes": 2612,
+      "sha256": "adf560592f73875a1dcd995ece40395e8612aed3aa8cda74c0a50edd0ad989ed"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/streamed.py",
+      "size_bytes": 11898,
+      "sha256": "8dfe04af11b121f67458ce4f46a9940f0910e303594dbe07e0c13106d491d3f1"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/synth_stream.py",
+      "size_bytes": 1981,
+      "sha256": "bef9a273ffa58254463ad61ad89a463780b0a7b4021cbb1c84074f7a5e7ac960"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/truncated_converter.py",
+      "size_bytes": 1175,
+      "sha256": "7bd9d9c4582c5555a94340243471071f6a9031f08aeb70f2b7506ef7cab9f862"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/exp/r-main/narrow240/truncated_small.py",
+      "size_bytes": 4372,
+      "sha256": "850787b63ab166d5916a28b289a721df8280102210a8b3d77640da480f645c46"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/decode.py",
+      "size_bytes": 3777,
+      "sha256": "bd5d16fcd5e81fb2b6089466c29cdec99eed75479510a4eb7e37148b7416b2b7"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/alternating_gauge/even_fold.py",
+      "size_bytes": 1724,
+      "sha256": "d899c015e8f6651a6d4dee1f55bcd1fa7586f07a776532089ad3abfe0a637151"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/alternating_gauge/kernel.py",
+      "size_bytes": 3070,
+      "sha256": "2e73020345f1522292fb63e5ebf1f4a6349326607074f7c195cb649ac8850c41"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/alternating_gauge/scalar.py",
+      "size_bytes": 2551,
+      "sha256": "a992d49d71e09641cf0f22b849c39484fac29bf879d80aa963f5a9a78e85a8f4"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/arithmetic/division.py",
+      "size_bytes": 7844,
+      "sha256": "ba82e77ea4b20c3411da590b82bc8577fbb0114a61b7f6acb0950a3d9a4b2082"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/arithmetic/field.py",
+      "size_bytes": 19992,
+      "sha256": "c2bc44298be77b1228ff2167ddf91ed5a592a211fb3789e073e028740ad448ee"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/arithmetic/lowwidth.py",
+      "size_bytes": 6917,
+      "sha256": "ea342e70880a0ec1c3940699d7439ca3d0564ad05c9fec5ebd22795d673b56af"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/confluent_extract/kernel.py",
+      "size_bytes": 2614,
+      "sha256": "7a91cb6fffde961fc9fd230ae518f88b04039c3c8ec908e644ef0281b53a4d37"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/confluent_extract/model.py",
+      "size_bytes": 9999,
+      "sha256": "c71b5db7dc7ffe3864033d326bd0135a93b66371e1c364ac46c7e9ff1322af20"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/confluent_synthesis/kernel.py",
+      "size_bytes": 975,
+      "sha256": "1f11bb4f53dae58bee312be65dadf51a07c3f6c00750c5a8a1468c348cb95071"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/convert/convert.py",
+      "size_bytes": 6066,
+      "sha256": "36b1b9e80c0b97860ad798a82d01822f8d429bd57ae6152ab6d1945b4a7709a7"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/convert/hankel_check.py",
+      "size_bytes": 3169,
+      "sha256": "fff4fdb53fcf14ba87bcfbc9af04491d0f1cc4aa321ace7f8b89120ff55be4a4"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/convert/kernels.py",
+      "size_bytes": 3121,
+      "sha256": "40647249e9afbe48851b29fa4594e9014f278c6ef180ba5be669dc41c64f4668"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/convert/repair.py",
+      "size_bytes": 5554,
+      "sha256": "86b8c8929792e8a3e10c49347271efdb251d845cdb494e10abfd9256094b8d9a"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/convert_short_hankel/kernel.py",
+      "size_bytes": 4011,
+      "sha256": "8907e95e88cfd21effcb168e7da86381e59b6dea94cc27b0c7fe5ea8a05783b6"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/convert_short_hankel/phase34.py",
+      "size_bytes": 1830,
+      "sha256": "c0e80de67cd6ad2490458f7f91ef68f4eab42c0458fe9884afe2e25927a3b335"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/decoder/common.py",
+      "size_bytes": 4571,
+      "sha256": "3ebfc5620aa111df14e26d322c3ab5376b710fa3b72bf1e44a7f2c8b5fc8c0af"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/decoder/extract.py",
+      "size_bytes": 1755,
+      "sha256": "706fe12b9cafcdf1dc43ac0ac92f068946f0d3df044e681424919d4e02d0eea8"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/decoder/safe_bridge.py",
+      "size_bytes": 1608,
+      "sha256": "9caf0330ad94fb2e56ccacd9218439c9c3353a695382e0e8486ad4a786198f0d"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/decoder/synthesis.py",
+      "size_bytes": 7033,
+      "sha256": "0ba29b88b734bb93f4b76e36efa300965152e54580058137d87381bb581da896"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/fold_cached_norm/kernel.py",
+      "size_bytes": 4070,
+      "sha256": "c375ab71a7270c055b861ea2cbec4c072a028f4a8ab796bb5393c41a17132be7"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/fold_cached_norm/phase34.py",
+      "size_bytes": 243,
+      "sha256": "96e015a77c02070b244eb84b62b72dc1056ae7a6571bf40e0ab631b83cc7440e"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/fold_joint/divide.py",
+      "size_bytes": 2957,
+      "sha256": "042725fe1793ccc30949fcdadb1cda3dd63841935e45e484c318c58e95b9fc47"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/fold_joint/kernel.py",
+      "size_bytes": 5290,
+      "sha256": "4fa895150d544f7b571d2db985681535b499b9246fe39820bcb0d6fd67ceda76"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/inverse12_escape/joint.py",
+      "size_bytes": 5323,
+      "sha256": "f3e1c4fb80857f37dc4b22f2c96579f7c37da5808b57c57c44be8e1f1f400e45"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/inverse12_escape/zero1.py",
+      "size_bytes": 2648,
+      "sha256": "57e4f89562b719bab93ddf75adc15820c5f995e53948d96730ed345a680805f9"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/inverse12_escape/zero_layout.json",
+      "size_bytes": 355,
+      "sha256": "a2f41a33fb34ddbbc64b09453c0c53db84edfed9a13053bbf5c98e31474e855a"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/inverse19_joint/kernel.py",
+      "size_bytes": 4412,
+      "sha256": "6b6b7657d92fd3244a32adb2a3c206cbc2c63fc6e30f6ef48f545158c33a2cb7"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/inverse19_joint/layout.json",
+      "size_bytes": 842,
+      "sha256": "d836ac30e52dfbd9e35a38a8766d267ad93e468bea2fba873c1be1b231578c7d"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/inverse_search/baseline.py",
+      "size_bytes": 812,
+      "sha256": "562cd711f53345a90fe67b54009c1fe89b543e997469be57e376c086c4b9317e"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/inverse_search/inverse20.py",
+      "size_bytes": 6997,
+      "sha256": "20cd2c53904451341d5b7bbbda44fb6c5cd4a4853a6d07f23b81c9cd796b3b4c"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/inverse_search/inverse20_iso.py",
+      "size_bytes": 3581,
+      "sha256": "ff79db31dbe6becc99c370e2ffa007b45c10831b86ff5840abc70af64d72b54d"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/inverse_search/optimized.json",
+      "size_bytes": 1062,
+      "sha256": "ab26a269708f89c52752d5099ae0f3aad10f0608fa5e177def5ab8641235ecbc"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/inverse_search/optimized_isotopy2.json",
+      "size_bytes": 1092,
+      "sha256": "dd47e6206364852b5691af3cdcd69e44f742bd3a69e4e68464071d8b88c6dbb3"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/inverse_width/kernel.py",
+      "size_bytes": 5156,
+      "sha256": "46a55d9009a043419f4bdd0f4ab00e76fa888e02cec98ad6387410689b40b1dd"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/inverse_width/partial5.json",
+      "size_bytes": 541,
+      "sha256": "fa3d55f2e226e53e3b542df410082c7414aa5aa199654af54ff3c3ea822d28fb"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/inverse_width_subspaces/inverse19.json",
+      "size_bytes": 942,
+      "sha256": "5c234431675325907d48969f8316c81f184d2d167f2fc2d472cb8b5797f3d4af"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/inverse_width_subspaces/kernel19.py",
+      "size_bytes": 3538,
+      "sha256": "9a0052c525809a771d900c599d9843057cad6d283b7ef28e3fa28982f271ac9e"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/jet24/kernel.py",
+      "size_bytes": 5611,
+      "sha256": "4d2a313ffc7262658717266882a05df7c893f020ed9e31351a485882369bd7dc"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/jet24/pro_jet.py",
+      "size_bytes": 17465,
+      "sha256": "9c05239b30de7cc565709d53a83ec38f80feb5b32af6cd4f94b78a9df15bd823"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/mask_projection/kernel.py",
+      "size_bytes": 3818,
+      "sha256": "027a726e0969f76d60fafb3b57bb6d5b8435a8c1190c360938b652ccaf6247bd"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/mul99/kernels.py",
+      "size_bytes": 3234,
+      "sha256": "92fdc4731c1186a2e92094b7336ca154ff47ef41025bd0e0ded088a83b759005"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/mul99/phase36.py",
+      "size_bytes": 2671,
+      "sha256": "46088d0d762796ef81b65273ff63bba276ebf248966d1a79bfb55c64a9b580cb"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/mul99/schedules.py",
+      "size_bytes": 3125,
+      "sha256": "33792810b3bd3ccd6e4b4f898fa4b3795f7334417ac929b4eaea3f9101972c84"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/noscratch/kernels.py",
+      "size_bytes": 2072,
+      "sha256": "08340eb9e69e897ee0031707586a195ebb05386d7f4ffdc012713823540df0bd"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/noscratch/phase39.py",
+      "size_bytes": 2688,
+      "sha256": "0043327e03f218ac5b37eabee2b0c0240ce28b6a585bd17246b036b9a912bb3f"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/noscratch/schedules.py",
+      "size_bytes": 2293,
+      "sha256": "331c1da6718bdc04098ae8ec7f6f88306fb4e3a4d0005ea85a942bac57407c98"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/partial_gauge/prefix.py",
+      "size_bytes": 2915,
+      "sha256": "89252a831c2f4ec43269312a05d4c8089c326363a5283567170d0aebfe9dad31"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/partial_gauge/scalar.py",
+      "size_bytes": 1209,
+      "sha256": "9ee75b947d6944d4728588d1f312f7b91d4e37372e73203371d496fd452b0979"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/partial_gauge/synthesis_noflag.py",
+      "size_bytes": 7033,
+      "sha256": "c74c7cbacb69955df13a5470c641e934a8bf6ad4f31ea81e17f3683b44d04b90"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/partial_gauge/tail.py",
+      "size_bytes": 1864,
+      "sha256": "22d0560073c84edb2d62a1f510112d9bbf7dff31b0cc9ebf992cfaf1ef5dcf9c"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/phase24_tradeoff/kernel.py",
+      "size_bytes": 5950,
+      "sha256": "d2152e8daf4692c4c76c343f59fc5146e7860c05aaa1241eea35725ab76d03c8"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/phase24_tradeoff/phase6_six_search.json",
+      "size_bytes": 3117,
+      "sha256": "540e51142ae13116adb99b2e7248961b8e07259ec1bff475b2f4ae72090632be"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/phase24_tradeoff/phase6small.py",
+      "size_bytes": 3324,
+      "sha256": "a64f592b924debaac7cce386446f002727e300e9f376bd5103470413edeee8e1"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/safe_scalar/converter.py",
+      "size_bytes": 8191,
+      "sha256": "9196a19993f8d67b71a5e6a234d1d86c107337ab82c4a3e37100649f53161463"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/safe_scalar/kernel.py",
+      "size_bytes": 1698,
+      "sha256": "6b824321b3b46eea2e3d26080df78e5383b7345a2cd3ef3019b5218a7f049058"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/safe_scalar/phase.py",
+      "size_bytes": 2822,
+      "sha256": "b6ea989f615e4ef44d7a777cc61af39c57317f112d8009bfd11d49cab09747ff"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/scan/scan.py",
+      "size_bytes": 2088,
+      "sha256": "b9a67c396a0356a7ee45dde62aaa6e7378b599169b9dfeb09d494bbfd1ee7809"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/tail_alias/divide.py",
+      "size_bytes": 929,
+      "sha256": "299c6dc55c6f00c5b83dfe61b142d262eae94431c0da13915bce5a268cc428d0"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/tail_alias/kernel.py",
+      "size_bytes": 4114,
+      "sha256": "3f1aaa3dac8e518f2a0eaa27ed91ba1a85b0fc8bf3530c1b38aeb10ec6657e0e"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/exp/zero_padding_synthesis/kernel.py",
+      "size_bytes": 3630,
+      "sha256": "140ae441e59289a0b3738bf32b5bc81351761dcb03f5e76b3b6084662e51f2f2"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/final_decoder/conversion.py",
+      "size_bytes": 9010,
+      "sha256": "b1e7fca4e4913a6b2b1f12d2b46acc9d239bba50dc057f26f4ee1ddc3c3525b8"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/final_decoder/decode.py",
+      "size_bytes": 19347,
+      "sha256": "71dc58dd9cb0bc22c3c803b0362e6af00f3b5b5e1add19ce9a2caad90368be5b"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/final_decoder/synthesis.py",
+      "size_bytes": 5844,
+      "sha256": "7882bbc330b246fd627ff2a5c0fb2dfd6814c0b626611109f06bf3e076296540"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/playbook/kit/decoder/playbook/exp/cf_check/audit.py",
+      "size_bytes": 7216,
+      "sha256": "1ada69eaa0e3e4a219a6194594b12496581f8df4adaafca52f67c62f57b4e750"
+    },
+    {
+      "path": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/source_sha256.json",
+      "size_bytes": 10274,
+      "sha256": "e021ebf392ac90d8616fd7239aad48a1d1ca18ac92566d1987a0a78375b76376"
+    },
+    {
+      "path": "extracted_dqi/notebooks/check-submission",
+      "size_bytes": 3111,
+      "sha256": "41bd2516b20bd2de47448bb2f264657cff8505c76929e315f7c9578a48b0915b"
+    },
+    {
+      "path": "extracted_dqi/notebooks/extra-format.py",
+      "size_bytes": 1738,
+      "sha256": "58bc7b9331f7c20aae3321c33f4338559258316a040d48b8c6b2bc884864e6ce"
+    },
+    {
+      "path": "extracted_dqi/notebooks/launch.py",
+      "size_bytes": 549,
+      "sha256": "1f29d7474b5b9bc38dccd64968d7b68c1e554d4667dbfb91aea03a939e13c458"
+    },
+    {
+      "path": "extracted_dqi/notebooks/take.py",
+      "size_bytes": 3005,
+      "sha256": "572061b5731006f3c0ca1d25d13bd7d892994142bbfc6fd18343e9936e02f88d"
+    },
+    {
+      "path": "fact/dfthc_r10_b129_c60_brot8.npz",
+      "size_bytes": 3062892,
+      "sha256": "27dda66f38c60821665cfc74e51d1bd2bfd2a7f0d902dbaffcdc5b26543dadad"
+    },
+    {
+      "path": "fact/r8_champion/angle_k_0.kmb",
+      "size_bytes": 400395,
+      "sha256": "9c31da0c1d047e7dcac638df807d3cef96eac6f736a8838a0ae6943e9c46c74f"
+    },
+    {
+      "path": "fact/r8_champion/angle_k_1.kmb",
+      "size_bytes": 400453,
+      "sha256": "39b8d10098be097f75148639ee302249bdabe112a9278a48565eadb0cb86810b"
+    },
+    {
+      "path": "fact/r8_champion/angle_k_10.kmb",
+      "size_bytes": 352755,
+      "sha256": "e75f6b0685d754bf76f3f4d62589bf1d07b118faeeb0ab8745833733286db2fc"
+    },
+    {
+      "path": "fact/r8_champion/angle_k_11.kmb",
+      "size_bytes": 308137,
+      "sha256": "773e54f6f0d7c3f769db433f263d541cdcff1076fb75109740907e3249996141"
+    },
+    {
+      "path": "fact/r8_champion/angle_k_12.kmb",
+      "size_bytes": 352979,
+      "sha256": "d86ca7ddd984059ded765b953cc936388517a7ca5789676ae90910a2be89769d"
+    },
+    {
+      "path": "fact/r8_champion/angle_k_13.kmb",
+      "size_bytes": 308119,
+      "sha256": "50d82cf65116f06c0fe469ebba312f72675b277263461ab88b4d15eca947c050"
+    },
+    {
+      "path": "fact/r8_champion/angle_k_14.kmb",
+      "size_bytes": 352701,
+      "sha256": "ae2070998e31b7e05d01183914df20b6974c1760bddf90d1adac86ea75c7bf3f"
+    },
+    {
+      "path": "fact/r8_champion/angle_k_2.kmb",
+      "size_bytes": 394618,
+      "sha256": "2e8dfdeb69c496e9e510fe99722153663760980d45c35ad9b72e79ba799dde49"
+    },
+    {
+      "path": "fact/r8_champion/angle_k_3.kmb",
+      "size_bytes": 396782,
+      "sha256": "13817cf8d36ea112e62d7863edde2193aa5907dd0605612c4f0e1e54bacc173b"
+    },
+    {
+      "path": "fact/r8_champion/angle_k_4.kmb",
+      "size_bytes": 356137,
+      "sha256": "8dce8f4a380998d818bf8a08e4f3daa62aaeb31a25d084aa57549f931a937f3d"
+    },
+    {
+      "path": "fact/r8_champion/angle_k_5.kmb",
+      "size_bytes": 310562,
+      "sha256": "42cf7d76ef0f0b36640a9e65005214fdd4d9a9bb82b8cef6e658dbbdd8417099"
+    },
+    {
+      "path": "fact/r8_champion/angle_k_6.kmb",
+      "size_bytes": 351298,
+      "sha256": "7fd7bd333b1427ecf546b0c27717ed9428e255e5165c4db14e5f95f8af45c838"
+    },
+    {
+      "path": "fact/r8_champion/angle_k_7.kmb",
+      "size_bytes": 304732,
+      "sha256": "809a775b98836ee00e8783d3f616bb8517bb3a3621978bc704d20b543a8df4ec"
+    },
+    {
+      "path": "fact/r8_champion/angle_k_8.kmb",
+      "size_bytes": 352967,
+      "sha256": "42d0deb376981d0470bebdd370ca2adf79685b4bf3e6909be262e2beced030ec"
+    },
+    {
+      "path": "fact/r8_champion/angle_k_9.kmb",
+      "size_bytes": 307434,
+      "sha256": "f1c49e7cf8e4f3a9adaffe167d2bbe21497a52eca2c7d09f765fc5a125e304c3"
+    },
+    {
+      "path": "fact/r8_champion/submission.npz",
+      "size_bytes": 1999484,
+      "sha256": "6503daaba4b703c74e4469d077c276215e43a4d238e7be719eba50a85504973b"
+    },
+    {
+      "path": "research/00_landscape.md",
+      "size_bytes": 7666,
+      "sha256": "1814fcd2678bfcf955d39bef0636a0de5dcdc3ce14409877d57dacf00bf11b60"
+    },
+    {
+      "path": "research/02_falsification_and_compaction_plan.md",
+      "size_bytes": 1833,
+      "sha256": "611043f357c160ebdffc16ab8667067ca2759c007817193d00df1c1adc2d342f"
+    },
+    {
+      "path": "research/block01_pricebook_arbitrage.md",
+      "size_bytes": 1911,
+      "sha256": "913b64d1bedcfbe9c699f1773d9ced9fb29d6859815d76c9738d0d623e0edf94"
+    },
+    {
+      "path": "research/block03_quadratic_phase_erasure.md",
+      "size_bytes": 2184,
+      "sha256": "2ba7a444323859f312b5e67011784ea9bf49688ea823ee8b1efffacf9f897347"
+    },
+    {
+      "path": "research/block06_algebra_first_decoder.md",
+      "size_bytes": 2142,
+      "sha256": "b1194cf537103fb8fdf8ac608fd4c37eceb81c07086b2fc08964e3395defe49c"
+    },
+    {
+      "path": "research/block08_table_content_codesign.md",
+      "size_bytes": 2356,
+      "sha256": "2a47be0da2c4a7070423907e37b134f0e275602403585fa1c7210ad772911f0a"
+    },
+    {
+      "path": "research/block11_representation_divergence.md",
+      "size_bytes": 12266,
+      "sha256": "0223d4a7e8fd1db4efcaeca41a25d974e9fe09dae5d028daa05b93a373da75e0"
+    },
+    {
+      "path": "research/experiment_registry.json",
+      "size_bytes": 4912,
+      "sha256": "4353c88e8749cc44cffaeb22e1363d33ac99c9042c8aff83024edd5a8ebc1e33"
+    },
+    {
+      "path": "research/negative_results.md",
+      "size_bytes": 4774,
+      "sha256": "58daa6f73f18102b39bc1ae34aaedbceeddaffa3cb5777b34a17a01ba4b0d873"
+    },
+    {
+      "path": "research/pareto_frontier.json",
+      "size_bytes": 1589,
+      "sha256": "d521bfff22fd0de8c6dae716a1d6ffe522bc0af4d6fadd698c0c062cdd4682b8"
+    },
+    {
+      "path": "research_log.md",
+      "size_bytes": 20389,
+      "sha256": "e571afd29ef01a34f4e970a42ab3ce510a426fa3650607b589f01dd32dffe882"
+    },
+    {
+      "path": "results/pricebook.json",
+      "size_bytes": 959,
+      "sha256": "76805502cb04918671af84a33ab50f67e6f96c0f9e3e81939b77df414ae307bb"
+    },
+    {
+      "path": "scripts/check_rank.py",
+      "size_bytes": 1192,
+      "sha256": "03a8e36cbc91b83e22bdc42ffaf05ed8130273ce3d16f575321ad34a0fdcae5b"
+    },
+    {
+      "path": "src/build_all_submissions.py",
+      "size_bytes": 6149,
+      "sha256": "af6539b058565417769d63ec06ae58e6fe6d5627a015fed9ab03bc674fc1e83c"
+    },
+    {
+      "path": "src/build_portfolio.py",
+      "size_bytes": 2683,
+      "sha256": "60a56d56fcfff75babd3b7ef8e2a3b6717a9071df1cb932f4afbd5c4e3b03b99"
+    },
+    {
+      "path": "src/build_slot1.py",
+      "size_bytes": 1249,
+      "sha256": "0fc00da54badff8b77f1caece7a2a4fc930d837a5790fba449585811e62124ee"
+    },
+    {
+      "path": "src/chem/angles_qrom.py",
+      "size_bytes": 5978,
+      "sha256": "ff1812013fa2cf09e13afd2ea525e47015c2ab3345c1616b6290bd6808f1657e"
+    },
+    {
+      "path": "src/chem/banked_lab.py",
+      "size_bytes": 16558,
+      "sha256": "bdcb616a21b11ec42fdf555dff3f94d5b8769a3936d7c9398c3937942f450b7a"
+    },
+    {
+      "path": "src/chem/build_dft_local.py",
+      "size_bytes": 1481,
+      "sha256": "462accfb92051d432c710fbd0847799dd4df5564f9d1da178453e2f587a8698e"
+    },
+    {
+      "path": "src/chem/canon_gauge.py",
+      "size_bytes": 1957,
+      "sha256": "e734c389f93d7ec1d9741759329c70a944d612611ff7938a883d2840c1be454d"
+    },
+    {
+      "path": "src/chem/chain_c44.sh",
+      "size_bytes": 896,
+      "sha256": "d1269fd964176ac6fa0a08fe6b5170aa35f1b7ba12b6f57f76fca9feda2c9556"
+    },
+    {
+      "path": "src/chem/chem_pipeline.sh",
+      "size_bytes": 716,
+      "sha256": "aff88b5e2ab47d75a73481949bc6139736c4b0118df9070fabb74e6e15f3b044"
+    },
+    {
+      "path": "src/chem/cont.py",
+      "size_bytes": 4169,
+      "sha256": "481641f62cb6e633cd8843ef78dbc6336d836da0761dd59446ee28823fddcb2a"
+    },
+    {
+      "path": "src/chem/cont_lbfgs.py",
+      "size_bytes": 3561,
+      "sha256": "1b3e45d2c91756145e164bc606aac0051f06d2465b5c95d113fdac6f54584dfd"
+    },
+    {
+      "path": "src/chem/ctrunc.py",
+      "size_bytes": 1420,
+      "sha256": "5d2371d55013acd90f0ed12e57a63da11943b931243ac3157eef3406db7708e4"
+    },
+    {
+      "path": "src/chem/dft_eval.py",
+      "size_bytes": 3565,
+      "sha256": "3012def920ba7e052e46c3b7d7ef7b20c670c76cd10a47b1732c54627d1ff4de"
+    },
+    {
+      "path": "src/chem/drop_group.py",
+      "size_bytes": 1929,
+      "sha256": "7a317702c28b1730f5546f6057b46a9568cee7651021acf13a848603fb19b086"
+    },
+    {
+      "path": "src/chem/finish.py",
+      "size_bytes": 7466,
+      "sha256": "f4df7260244e94ac5f1103324c707f922a479679549e0d9d654bebbee3af4d4b"
+    },
+    {
+      "path": "src/chem/flip.py",
+      "size_bytes": 7249,
+      "sha256": "153bbeeae2856b0ca4ea982de78fcbf18d930b75300b6085f2ac1ed8602ee562"
+    },
+    {
+      "path": "src/chem/gauge.py",
+      "size_bytes": 2908,
+      "sha256": "c29c26bd8c156fc9b68733a677c346f7f9077e97faa7d1ad27e5a17fb1c3289a"
+    },
+    {
+      "path": "src/chem/gauge_qrom.py",
+      "size_bytes": 6157,
+      "sha256": "40194411b1c3447b39deda51820f65a88d6dd70179bec6d5ae19f25480e9624e"
+    },
+    {
+      "path": "src/chem/grp_compress.py",
+      "size_bytes": 3104,
+      "sha256": "6a9c445570cec5918fd9819f67598fb5348cefaaba50ea5e017ddcf97bd7359c"
+    },
+    {
+      "path": "src/chem/lamopt.py",
+      "size_bytes": 4285,
+      "sha256": "19b3a326f52225bd09833e6cb4f8badbff85c25d70911a784c9530a7fce4b107"
+    },
+    {
+      "path": "src/chem/pq.py",
+      "size_bytes": 10002,
+      "sha256": "c718fcfab5d2a7704af6ac22ac8eb0d331e8b47f62f231bca42142ebc72a0c8c"
+    },
+    {
+      "path": "src/chem/pq_lb.py",
+      "size_bytes": 6594,
+      "sha256": "a912abd6f94a6fe8709b4f428914693d3a17c021144882f39b8d935824d8d17d"
+    },
+    {
+      "path": "src/chem/qat.py",
+      "size_bytes": 9201,
+      "sha256": "ae11ac9e5423c94967280b9d5cd4be17b56db0336e3c1e04bfce48783af7f33f"
+    },
+    {
+      "path": "src/dqi/build_compact_dqi.py",
+      "size_bytes": 4435,
+      "sha256": "c6e114783c3eecd6598960c52792993d7e6a0de0755f10de0364afddcf13fa65"
+    },
+    {
+      "path": "src/dqi/build_dqi.py",
+      "size_bytes": 2768,
+      "sha256": "cdece7a555f82c5f270100dd382b95db6536275c37239e2c66a67cd26714a910"
+    },
+    {
+      "path": "src/dqi/compactor.py",
+      "size_bytes": 3500,
+      "sha256": "dbe1f9fa4da3da1304b37490381bed030bcc77ac8048c5d6a5c627c09f9ee95f"
+    },
+    {
+      "path": "src/dqi/quadratic_phase_erase.py",
+      "size_bytes": 1689,
+      "sha256": "b010803176c4cbbaf49e4c615e1f55c10d939d4f136213535cad129599f74d48"
+    },
+    {
+      "path": "src/dqi/tower42.py",
+      "size_bytes": 12518,
+      "sha256": "100d56f3345a9a0a322cd591d8dbf925ca2553681ddf0e51a26c8341505cafba"
+    },
+    {
+      "path": "src/validate_submission.py",
+      "size_bytes": 4363,
+      "sha256": "dcbc080093f8274d3b12e8aeba2f9b8644dfdaef6bd4d7ef60a0ac30b1147096"
+    },
+    {
+      "path": "src/verify_portfolio.py",
+      "size_bytes": 7280,
+      "sha256": "7f865ac2dacba63fae2e71badd5e535286aad8d043527aeb98455bc3ea2675dd"
+    },
+    {
+      "path": "tests/test_arithmetic_tensor.py",
+      "size_bytes": 2591,
+      "sha256": "059a59f983ef64b4f27a2f797b0f7dff25deaf2ed551b076a9417ad3abfda2d6"
+    },
+    {
+      "path": "tests/test_compactor.py",
+      "size_bytes": 1347,
+      "sha256": "404a492ebd1af9e2d04c3dc5789bcbd42a1597d6bd1c7f70c8a3a9d88e2fbd63"
+    },
+    {
+      "path": "tests/test_dqi_compiler.py",
+      "size_bytes": 1311,
+      "sha256": "67d1133f8233191f04a6dd27ce5070e48eb8dcdc40ec30528e3b727765145f74"
+    },
+    {
+      "path": "tests/test_inversionless_bm.py",
+      "size_bytes": 6711,
+      "sha256": "d4a6ddaa32bbb77c0380a39ffd0f8c742ef08bf9b14be11417b25c3f02e9148f"
+    },
+    {
+      "path": "tests/test_portfolio_coupling.py",
+      "size_bytes": 2973,
+      "sha256": "60e56ad76bfdfe92e278acfa91b6308cdab7cdb984554f2356d65c9213394d81"
+    },
+    {
+      "path": "tests/test_pricebook.py",
+      "size_bytes": 5444,
+      "sha256": "94f0a6dc8872506d434f62889a3fdb567aec6719d8a36ed8cb34ecbfc5419aab"
+    },
+    {
+      "path": "tests/test_quadratic_phase_erase.py",
+      "size_bytes": 4645,
+      "sha256": "276ac7d3c25329cad02698bcacf129a8e07a885512dc52bbdce6fce9417749f5"
+    },
+    {
+      "path": "tests/test_ribm.py",
+      "size_bytes": 2785,
+      "sha256": "374c64269c7cb4c124c6f9a213538cf1dbd180471b23f785620655f6a7a6a5e7"
+    },
+    {
+      "path": "tests/test_submission_validator.py",
+      "size_bytes": 2039,
+      "sha256": "2b2d1a6e11f8b8c930957d98acd845d7c1a4163a8869affd61228734c70d0f19"
+    },
+    {
+      "path": "top_solutions/README.md",
+      "size_bytes": 3751,
+      "sha256": "241ab3ce12de8008dba2c1200901a10f3407aef2438cf7729435cd5717ff2e6f"
+    },
+    {
+      "path": "top_solutions/ahmedberatozer_quantum-ai-df-thc-group-compression.ipynb",
+      "size_bytes": 32639,
+      "sha256": "7ed19874acb9db9dca521fd0527e8e986c8630af42076a9083fbac175ec8010e"
+    },
+    {
+      "path": "top_solutions/ahmedberatozer_quantum-ai-df-thc-group-compression_clean.ipynb",
+      "size_bytes": 16562,
+      "sha256": "62a2988aec1b09907fc178d4c12aa0c448fca7d24d2ea63459f59ad00fe7c7af"
+    },
+    {
+      "path": "top_solutions/anazemcev_quantum-circuits-signed-digit-memory.ipynb",
+      "size_bytes": 329287,
+      "sha256": "dec60c0efa552b78efd2841d84ef70f51a566d3f842b00cbe5fa2abbe632159b"
+    },
+    {
+      "path": "top_solutions/anazemcev_quantum-circuits-signed-digit-memory_clean.ipynb",
+      "size_bytes": 161690,
+      "sha256": "78abe99bbe2fb3073cecc4509b0810f3fb6ef190d50437ec1b0ab65babc01e89"
+    },
+    {
+      "path": "top_solutions/atakanaldemir_qcc-888q-repair-and-native-chemistry-co-design.ipynb",
+      "size_bytes": 133693,
+      "sha256": "67d85bac45e14effc8fd795c17a97b55daf60c9ce3d0f91fcbe51e30669d528b"
+    },
+    {
+      "path": "top_solutions/avazaku_c60-gauge-descent-full-xor-qrom.ipynb",
+      "size_bytes": 76579,
+      "sha256": "1e89fea00e6d0b0b85549eb9b4dff32c1b6e82776171bf1316ca3d7159b4f8f7"
+    },
+    {
+      "path": "top_solutions/avazaku_c60-gauge-descent-full-xor-qrom_clean.ipynb",
+      "size_bytes": 38008,
+      "sha256": "4a3cb2c4c39f37571921f9085233216c174b934ad6f939327b1a8e8208526063"
+    },
+    {
+      "path": "top_solutions/avazaku_dqi-exact-42-and-arithmetic-full-verification.ipynb",
+      "size_bytes": 84635,
+      "sha256": "edc28912ea87d0109a3e2e163d279e3155a6d719804300b0f4d5bac1a2281a53"
+    },
+    {
+      "path": "top_solutions/avazaku_dqi-exact-42-and-arithmetic-full-verification_clean.ipynb",
+      "size_bytes": 43252,
+      "sha256": "ca507092ac1b9e65ad292fe37ac553590b26f2d4105dd4a9d485a0950013c31e"
+    },
+    {
+      "path": "top_solutions/avazaku_epigraph-rank-scales-889-qubit-dqi.ipynb",
+      "size_bytes": 192543,
+      "sha256": "a26682fb471d1c4360955c047c98f6b0afa0d4630332b9a50d64d4e90dab5b4d"
+    },
+    {
+      "path": "top_solutions/avazaku_gauge-prox-sign-copy-qrom.ipynb",
+      "size_bytes": 238051,
+      "sha256": "f7facd399ce02ee5b7f8b15bb16f6ef07a444e99b3331ea98c4b4e7b2f167860"
+    },
+    {
+      "path": "top_solutions/busyaprime_lb-22-86841-22x-cheaper-than-google-s-circuits.ipynb",
+      "size_bytes": 403287,
+      "sha256": "e077f74f7a6ca39b5ec8c5ea79cd45f261acca67abfe549175ca246483b401e1"
+    },
+    {
+      "path": "top_solutions/busyaprime_lb-22-86841-22x-cheaper-than-google-s-circuits_clean.ipynb",
+      "size_bytes": 200933,
+      "sha256": "f49f827a5221207f59ebf33189cc6f77fb160bf5a8aea485ca3bb8ff9cdc4805"
+    },
+    {
+      "path": "top_solutions/dmitriyab_vqcc-cand-0045-bit-identical-submission-rebuild.ipynb",
+      "size_bytes": 35317,
+      "sha256": "673d6c6df7c683520f4866ab52cf4af108611ca79fa6b2222e6ae5fd68ee85ce"
+    },
+    {
+      "path": "top_solutions/leotang09_vqcc-t7421-submission.ipynb",
+      "size_bytes": 4802,
+      "sha256": "9be3adbf275d95f796d486b21dfa04d137e4c8608608122bde20c7563275b9c7"
+    },
+    {
+      "path": "top_solutions/michaelrustad_vqcc-r10-merged-group-chemistry-12-87-lb.ipynb",
+      "size_bytes": 20173,
+      "sha256": "7c694231ac53a50586e5c8ba19ed291ccfedeccc072b20cce21bf121ab7fff0d"
+    },
+    {
+      "path": "top_solutions/michaelrustad_vqcc-r10-merged-group-chemistry-12-87-lb_clean.ipynb",
+      "size_bytes": 10126,
+      "sha256": "a8abc32e37d66da3c94fa22fae404cebc2dd4e962952128a7d9e7a6478c5c0ad"
+    },
+    {
+      "path": "top_solutions/sigmaborov_22-85569-lb-exact-gauge-search.ipynb",
+      "size_bytes": 1772063,
+      "sha256": "46b029a64850aebe3eefa3e7f8ee73afba3b36679560d47a70c4ec3299f7a25d"
+    },
+    {
+      "path": "top_solutions/somejoint_quantum-circuits-22-77-local-gm-889-qubit-dqi.ipynb",
+      "size_bytes": 1001023,
+      "sha256": "1f1427464c855d5077d712e42db897d763283ee2269bfa024d5e1e947d58d7d7"
+    },
+    {
+      "path": "top_solutions/somejoint_quantum-circuits-22-77-local-gm-889-qubit-dqi_clean.ipynb",
+      "size_bytes": 471459,
+      "sha256": "3974e6935d77b1047ae6670c24b1fc2622af4dee486842852ec9066891b259d7"
+    },
+    {
+      "path": "top_solutions/yoyobar_lb-22-99-invsqrt-101-62-qubits.ipynb",
+      "size_bytes": 10511,
+      "sha256": "a274ab3873836946612247a3104125b753b3aced55257d4e33319ffb6968a9e3"
+    },
+    {
+      "path": "top_solutions/yoyobar_lb-22-99-invsqrt-101-62-qubits_clean.ipynb",
+      "size_bytes": 5123,
+      "sha256": "937a3c2cfcea5e2f99dc0c3cde2c0c902783477f534b8482c11a17e537e62a0d"
+    },
+    {
+      "path": "verifiers/dfthcsos/FeMoCo76o113e.fixed_shifts.npz",
+      "size_bytes": 61028,
+      "sha256": "7b7facf63fe35a9d9d3d00787ffdb700c863fa845fe4724d7f7c54778151cd87"
+    },
+    {
+      "path": "verifiers/dfthcsos/SCORING_README.md",
+      "size_bytes": 22477,
+      "sha256": "c2228569f96e58e118419bc32be2be9e33d6abffb8117cb0b91e1fc25b2a0230"
+    },
+    {
+      "path": "verifiers/dfthcsos/__init__.py",
+      "size_bytes": 326,
+      "sha256": "81915e324cc0cade67f52a54b7a51991fd96abaea94d1f8a4d423dae20e57348"
+    },
+    {
+      "path": "verifiers/dfthcsos/example_submission/angle_k_reference_circuit.py",
+      "size_bytes": 10258,
+      "sha256": "8daccdca69f2d718b0176cd9281803df84a988ea5ac6c167fbb02e461ac2b371"
+    },
+    {
+      "path": "verifiers/dfthcsos/scoreinfra/__init__.py",
+      "size_bytes": 280,
+      "sha256": "be90e0d503d5c20dcac0102af638b9a4ccad0341daa5baa5d49216a259e4516f"
+    },
+    {
+      "path": "verifiers/dfthcsos/scoreinfra/circuits.py",
+      "size_bytes": 24418,
+      "sha256": "fc027b52fdcebe14404f403a089122485d097ed65d03e6d989623d620b1ab68c"
+    },
+    {
+      "path": "verifiers/dfthcsos/scoreinfra/costs_prepare.py",
+      "size_bytes": 8335,
+      "sha256": "7f1e190c42fc5325f3e6689fbbef51f95b0cb12f1c828cda92b6c088e72206da"
+    },
+    {
+      "path": "verifiers/dfthcsos/scoreinfra/dfthc_math.py",
+      "size_bytes": 17608,
+      "sha256": "ae82898d47a7a86b96378fb906e0f8a9f46003065cf19c7c09952a123b5b5af8"
+    },
+    {
+      "path": "verifiers/dfthcsos/scoreinfra/reference.py",
+      "size_bytes": 13180,
+      "sha256": "a2d5a63191d655729e29f0fde1e85fe4630bf896a91a63bb894d8d7daf71ed39"
+    },
+    {
+      "path": "verifiers/dfthcsos/verify.py",
+      "size_bytes": 31752,
+      "sha256": "0775be7a528922367caebe9e4d051d6199811f1aefeaa4b793eaaa4621b8ec9d"
+    },
+    {
+      "path": "verifiers/dqi/__init__.py",
+      "size_bytes": 87,
+      "sha256": "01c870aa9763f4e4357fc6654bff1d3296cec995bd0943f87b4a48946ada5b40"
+    },
+    {
+      "path": "verifiers/dqi/dqi_reference_circuit.py",
+      "size_bytes": 30450,
+      "sha256": "2b8e1b80a806157c333a7e308eaf2499ee09de499efbc05875202c327959959e"
+    },
+    {
+      "path": "verifiers/dqi/verify_submission_dqi.py",
+      "size_bytes": 20959,
+      "sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65"
+    },
+    {
+      "path": "verifiers/invsqrt/__init__.py",
+      "size_bytes": 84,
+      "sha256": "e9a6ecf253c343528578be5fa92eb820ccade63333aebb784552fb4ae75dbc0b"
+    },
+    {
+      "path": "verifiers/invsqrt/nr_reference_circuit.py",
+      "size_bytes": 18862,
+      "sha256": "bb90330dcf774f7b502de471293facba67f27952cc8808fe4a9970a9b1322e23"
+    },
+    {
+      "path": "verifiers/invsqrt/verify_submission_invsqrt.py",
+      "size_bytes": 17210,
+      "sha256": "ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a"
+    },
+    {
+      "path": "verify_harness.py",
+      "size_bytes": 5576,
+      "sha256": "81ed1b55c1f04d33cec9159bc9da9ef51245d0cdbe331bbe176e87641e638b21"
+    }
+  ],
+  "ignored_patterns": [
+    "__pycache__/",
+    "*.pyc",
+    "*.pyo",
+    "*.pyd",
+    ".venv/",
+    "env/",
+    "*.zip",
+    "*.xz",
+    "*.fcidump",
+    "*.log",
+    "scratch/",
+    "build/",
+    "dist/",
+    ".DS_Store"
+  ],
+  "build_entry_points": [
+    {
+      "script": "src/build_all_submissions.py",
+      "description": "Packages all 4 portfolio slot archives, validates them against 5 rules, writes build/submissions/manifest.json"
+    },
+    {
+      "script": "src/build_portfolio.py",
+      "description": "Synthesizes chemistry angle circuits for R=10 and packages portfolio archive"
+    },
+    {
+      "script": "src/build_slot1.py",
+      "description": "Synthesizes chemistry angles for Slot 1 and validates against verifier"
+    },
+    {
+      "script": "src/build_dqi.py",
+      "description": "Builds 42-product bilinear tensor DQI circuit"
+    },
+    {
+      "script": "src/dqi/build_compact_dqi.py",
+      "description": "Builds compact DQI decoder using wire pooling"
+    },
+    {
+      "script": "src/dqi/build_dqi.py",
+      "description": "Generates full tower42 DQI decoder"
+    },
+    {
+      "script": "extracted_dqi/blocks/dqi/team-1028-narrow240/source/build.py",
+      "description": "Compiles 889Q decoder from 92 modular source files into OUTPUT.kmb"
+    }
+  ],
+  "verification_entry_points": [
+    {
+      "script": "src/verify_portfolio.py",
+      "description": "Unified official verification engine for Invsqrt, DQI, and Chemistry with composite score computation"
+    },
+    {
+      "script": "verify_harness.py",
+      "description": "Multi-salt verification harness across all 3 competition benchmarks"
+    },
+    {
+      "script": "src/validate_submission.py",
+      "description": "Audits submission zip files against the 5 competition structural rules"
+    },
+    {
+      "script": "verifiers/invsqrt/verify_submission_invsqrt.py",
+      "description": "Official competition semantic and operation verifier for Benchmark I (Invsqrt)"
+    },
+    {
+      "script": "verifiers/dqi/verify_submission_dqi.py",
+      "description": "Official competition MBUC Reed-Solomon verifier for Benchmark II (DQI)"
+    },
+    {
+      "script": "verifiers/dfthcsos/verify.py",
+      "description": "Official competition chemistry orbital and angle verifier for Benchmark III (Chemistry)"
+    },
+    {
+      "script": "tests/",
+      "description": "22 unit test modules covering arithmetic tensor, compactor, RiBM, quadratic phase erasure, submission validator, and pricebook"
+    }
+  ],
+  "required_portfolio_artifacts": {
+    "invsqrt.kmb": {
+      "path": "build/invsqrt.kmb",
+      "size_bytes": 468143,
+      "sha256": "a568bc79348165bad5be2349960d200300c5639ffd2142aca6d548e764a399d9"
+    },
+    "dqi.kmb": {
+      "path": "build/dqi.kmb",
+      "size_bytes": 544419428,
+      "sha256": "7a378f4755605e0c5fa6117f808891bf8dcf0797d047155e6d4c9e75e3c99421"
+    },
+    "submission.npz": {
+      "path": "fact/r8_champion/submission.npz",
+      "size_bytes": 1999484,
+      "sha256": "6503daaba4b703c74e4469d077c276215e43a4d238e7be719eba50a85504973b"
+    },
+    "dfthc_r10_b129_c60_brot8.npz": {
+      "path": "fact/dfthc_r10_b129_c60_brot8.npz",
+      "size_bytes": 3062892,
+      "sha256": "27dda66f38c60821665cfc74e51d1bd2bfd2a7f0d902dbaffcdc5b26543dadad"
+    },
+    "submission_slot2_peak_ratio.zip": {
+      "path": "build/submissions/submission_slot2_peak_ratio.zip",
+      "size_bytes": 78664522,
+      "sha256": "49639de9ed012661b919ce5faa1313094402c2706156f95a99337fee95b72fe6"
+    },
+    "submission_slot1_chem_champion.zip": {
+      "path": "build/submissions/submission_slot1_chem_champion.zip",
+      "size_bytes": 78665545,
+      "sha256": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234"
+    },
+    "submission.zip": {
+      "path": "submission.zip",
+      "size_bytes": 78664522,
+      "sha256": "49639de9ed012661b919ce5faa1313094402c2706156f95a99337fee95b72fe6"
+    }
+  },
+  "external_dependencies": [
+    {
+      "dependency": "kickmix",
+      "type": "python_package",
+      "status": "INSTALLED",
+      "description": "Core quantum circuit simulator and compiler library"
+    },
+    {
+      "dependency": "numpy",
+      "type": "python_package",
+      "status": "INSTALLED",
+      "description": "Numerical arrays and linear algebra"
+    },
+    {
+      "dependency": "scipy",
+      "type": "python_package",
+      "status": "INSTALLED",
+      "description": "Scientific routines for chemistry and optimization"
+    },
+    {
+      "dependency": "ROOT.parent / 'quantum-competition'",
+      "type": "sibling_directory",
+      "status": "EXTERNAL_CONTAMINANT",
+      "description": "Used in build_all_submissions.py for 63Q invsqrt, 877Q DQI, and v44 chem. Must be internalized into berlioz."
+    }
+  ]
+}

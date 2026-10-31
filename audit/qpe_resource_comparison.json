@@ -1,0 +1,30 @@
+{
+  "comparison_name": "DQI Decoder Reversible Uncomputation vs Quadratic Phase Erasure",
+  "configurations": {
+    "legacy_mirrored_uncomputation": {
+      "method": "Bennett Mirrored Reversible Adjoint",
+      "forward_toffolis": 433783,
+      "reverse_uncompute_toffolis": 225804,
+      "total_toffolis": 659587,
+      "qubits": 889,
+      "dqi_ratio_projected": 39.34
+    },
+    "integrated_qpe_889q": {
+      "method": "Selective HMR + CZ Quadratic Phase Erasure in Replay Steps",
+      "forward_toffolis": 433783.5,
+      "reverse_uncompute_toffolis": 0,
+      "total_toffolis": 433783.5,
+      "qubits": 889,
+      "toffolis_eliminated": 225804,
+      "dqi_ratio_measured": 59.84231,
+      "evidence": "FULL_BENCHMARK_VERIFIED",
+      "status": "INTEGRATED_IN_PRODUCTION"
+    },
+    "speculative_double_erasure": {
+      "method": "Hypothetical additional uncompute erasure (disproven)",
+      "projected_toffolis": 208708,
+      "feasibility": "UNFEASIBLE_WITHOUT_FORWARD_CORRUPTION",
+      "reason": "Control registers for forward products are modified during Chien/Forney stage; cannot apply degree-2 kickback without alive controls."
+    }
+  }
+}

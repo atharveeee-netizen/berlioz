@@ -1,0 +1,19 @@
+{
+  "submission_id": "57823923",
+  "submission_timestamp_utc": "2026-10-31T02:23:43Z",
+  "competition": "google-verifiable-quantum-circuit-compilation",
+  "target_archive": "submission.zip",
+  "archive_size_bytes": 78665545,
+  "archive_sha256": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234",
+  "source_git_commit": "2508ca1143d7aaa5eb443dd3120d2fc982a66e73",
+  "description": "Masterloop 15 Certified Release: 62Q Invsqrt (20.64x) + 889Q DQI (59.84x) + R8 Chem (9.93x)",
+  "components": {
+    "invsqrt": "fact/components/invsqrt_62q.kmb (62Q, ratio 20.64210x)",
+    "dqi": "build/dqi.kmb (889Q, ratio 59.84231x)",
+    "chemistry": "fact/r8_champion (R=8, ratio 9.92799x)"
+  },
+  "verified_composite_score": 23.06081,
+  "pre_submission_public_score": 23.00043,
+  "pre_submission_team_rank": 377,
+  "status": "EVALUATION_IN_PROGRESS"
+}

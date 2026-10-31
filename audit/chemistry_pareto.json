@@ -1,0 +1,28 @@
+{
+  "benchmark": "Chemistry (FeMoCo76o113e)",
+  "reference_cost": 3355599588.3155365,
+  "configurations": [
+    {
+      "name": "r8_champion",
+      "path": "fact/r8_champion",
+      "qubits": 430,
+      "toffolis": 16266.0,
+      "lambda_eff": 48.323602,
+      "cost": 337993822.4,
+      "ratio": 9.92799,
+      "status": "CHAMPION",
+      "evidence": "OFFICIAL_SCORE_VERIFIED"
+    },
+    {
+      "name": "yoyobar_v44",
+      "path": "fact/components/yoyobar_v44",
+      "qubits": 432,
+      "toffolis": 16512.0,
+      "lambda_eff": 48.323602,
+      "cost": 344705910.0,
+      "ratio": 9.73467,
+      "status": "ALTERNATIVE_FALLBACK",
+      "evidence": "COMPONENT_VERIFIED"
+    }
+  ]
+}
