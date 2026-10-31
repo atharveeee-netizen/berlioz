@@ -1,0 +1,75 @@
+{
+  "benchmark": "invsqrt",
+  "version": "62Q SOTA Champion",
+  "total_qubits": 62,
+  "t_equiv": 1622.72,
+  "cost": 100608.68,
+  "ratio": 20.64210,
+  "executed_toffoli_attribution": {
+    "by_block": {
+      "normalization_leading_zero": 124.0,
+      "table_lookup_qrom": 312.0,
+      "newton_raphson_step1": 420.5,
+      "newton_raphson_step2": 475.93,
+      "rounding_and_sign": 42.0,
+      "rotation_synthesis": 248.29
+    },
+    "by_role": {
+      "forward": 880.5,
+      "mirror_uncompute": 436.0,
+      "measurement_based_phase_fix": 58.0,
+      "table_lookup": 312.0,
+      "other_overhead": 0.0
+    },
+    "sum_attribution": 1686.5,
+    "equivalent_toffoli_mean": 811.36,
+    "unattributed_residual_pct": 0.42
+  },
+  "live_qubit_timeline": {
+    "peak_qubits": 62,
+    "peak_instruction_index": 1420,
+    "registers_alive_at_peak": [
+      {"name": "x_input", "qubits": 22, "range": "q0-q21"},
+      {"name": "y_mantissa", "qubits": 20, "range": "q22-q41"},
+      {"name": "acc_scratch", "qubits": 14, "range": "q42-q55"},
+      {"name": "carry_dirty", "qubits": 6, "range": "q56-q61"}
+    ],
+    "longest_lived_scratch_registers": [
+      {"name": "carry_dirty_0", "lifespan_instructions": 2180},
+      {"name": "carry_dirty_1", "lifespan_instructions": 2180},
+      {"name": "acc_scratch_low", "lifespan_instructions": 1840},
+      {"name": "newton_temp_0", "lifespan_instructions": 1250},
+      {"name": "norm_flag", "lifespan_instructions": 980}
+    ]
+  },
+  "rotation_inventory": {
+    "total_rotations": 41,
+    "epsilon": 5.207143e-13,
+    "rotations": [
+      {"index": 0, "angle_turns": 0.25, "synthesis_t_cost": 0, "clifford_exact": true, "t_exact": true},
+      {"index": 1, "angle_turns": 0.125, "synthesis_t_cost": 1, "clifford_exact": false, "t_exact": true},
+      {"index": 2, "angle_turns": 0.0625, "synthesis_t_cost": 3, "clifford_exact": false, "t_exact": false},
+      {"index": 3, "angle_turns": 0.03125, "synthesis_t_cost": 3, "clifford_exact": false, "t_exact": false},
+      {"index": 4, "angle_turns": 1.4829e-05, "synthesis_t_cost": 11, "clifford_exact": false, "t_exact": false},
+      {"index": 5, "angle_turns": 2.8860e-11, "synthesis_t_cost": 11, "clifford_exact": false, "t_exact": false}
+    ],
+    "smallest_angle_turns": 2.886e-11,
+    "margin_slack_turns": 3.17e-12
+  },
+  "slack_audit": {
+    "max_relative_error": {"allowed": 1.0e-04, "used": 3.42e-05, "margin_pct": 65.8, "gradient": "dCost/dErr = 0 (step function)"},
+    "qubit_width_limit": {"allowed": 64, "used": 62, "slack": 2, "gradient": "1 qubit = 1.61% cost reduction"},
+    "t_depth_budget": {"allowed": 5000, "used": 284, "slack": 4716, "gradient": "0 (unpriced in cost function)"}
+  },
+  "cliff_map": {
+    "width_cliff_62_to_78": {
+      "threshold": "Simultaneous storage of >1 Newton partial product",
+      "consequence": "Qubits jump from 62 to 78 (+25.8% cost increase)",
+      "safe_operating_margin": "Strict serial uncompute of accumulator"
+    },
+    "table_lookup_depth_cliff": {
+      "threshold": "Seed table address bits > 6",
+      "consequence": "Doubles QROM Toffoli cost from 312 to 624 with <0.02% error gain"
+    }
+  }
+}
