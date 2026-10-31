@@ -1,0 +1,48 @@
+{
+  "benchmark": "chemistry",
+  "version": "430Q Voodoo v5 SOTA Champion",
+  "total_qubits": 430,
+  "total_toffolis": 16266.0,
+  "lambda_eff": 48.299209254045124,
+  "cost": 337823023.22230816,
+  "ratio": 9.933010356453261,
+  "executed_toffoli_attribution": {
+    "by_block": {
+      "select_qrom_loading": 7420.0,
+      "givens_orbital_rotations": 4180.0,
+      "state_prep_uncomputation": 3216.0,
+      "angle_circuit_phase_fix": 1450.0
+    },
+    "by_role": {
+      "forward": 11600.0,
+      "mirror_uncompute": 3216.0,
+      "angle_phase_correction": 1450.0
+    },
+    "sum_attribution": 16266.0,
+    "unattributed_residual_pct": 0.00
+  },
+  "lambda_eff_decomposition": {
+    "one_body_lambda_T": 12.4180,
+    "two_body_lambda_V": 35.8812,
+    "total_lambda_eff": 48.2992,
+    "voodoo_gauge_reduction": -0.0244,
+    "gauge_optimization_method": "SO(60) Riemannian gradient flow on orbital rotation manifold"
+  },
+  "slack_audit": {
+    "e1_one_electron_error_mHa": {"allowed": 20.0, "used": 19.9999989, "slack_mHa": 0.0000011, "margin_pct": 0.000005},
+    "e2_two_electron_error_mHa": {"allowed": 20.0, "used": 19.9999999, "slack_mHa": 0.0000001, "margin_pct": 0.0000005},
+    "energy_gap_E_gap_Ha": {"allowed_interval": [3.8, 4.0], "used": 3.8942, "slack_Ha": 0.0942, "status": "Centered in safe basin"},
+    "qubit_width_limit": {"allowed": 430, "used": 430, "slack": 0, "gradient": "1 qubit = 37.8 Toffolis = 0.23% cost"}
+  },
+  "cliff_map": {
+    "four_address_mode_cliff": {
+      "exact_threshold_A": 1228,
+      "tolerance_A": 2,
+      "description": "At A <= 1228, compiler operates in 4-address Select/Prepare QROM mode (16,266 Toffolis). At A >= 1230, compiler drops to 2-address mode, exploding Toffolis to 26,950 (+65.7% cost blowup)."
+    },
+    "angle_circuit_qubit_cliff": {
+      "threshold": "Q_angle <= 128 qubits",
+      "actual": "J=5 Banked ANF utilizes 126 qubits (2 qubits slack below physical bus ceiling)."
+    }
+  }
+}
