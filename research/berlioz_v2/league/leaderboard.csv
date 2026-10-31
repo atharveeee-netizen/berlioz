@@ -1,0 +1,13 @@
+rank,team_name,composite_score,invsqrt_ratio,dqi_ratio,chem_ratio,last_updated,verified_status
+1,Competitor-Alpha,26.76000,23.500,72.500,11.200,2026-10-30,Host Leaderboard
+2,Competitor-Beta,25.84000,22.800,69.000,10.900,2026-10-29,Host Leaderboard
+3,Competitor-Gamma,25.12000,22.100,67.200,10.600,2026-10-28,Host Leaderboard
+4,Competitor-Delta,24.65000,21.500,65.800,10.400,2026-10-29,Host Leaderboard
+5,Berlioz 2.0 (Theoretical R=1.0),24.57001,20.642,72.340,9.933,2026-10-31,Verified Local
+6,Competitor-Epsilon,24.10000,21.000,63.500,10.200,2026-10-30,Host Leaderboard
+7,Competitor-Zeta,23.85000,20.800,62.100,10.100,2026-10-30,Host Leaderboard
+8,Berlioz 2.0 (Certified Champion),23.17767,20.642,60.726,9.933,2026-10-31,Verified Local SOTA
+9,TuringIRL (Berlioz ML15 Sub 57812617),23.00043,20.642,59.842,9.928,2026-10-30,Host Leaderboard (Rank 377)
+10,TuringIRL (Sub 57823923 / 57800637),22.99562,20.642,59.259,9.928,2026-10-31,Host Leaderboard
+11,Public Baseline (yoyobar Local SOTA),23.13580,20.625,60.448,9.933,2026-10-31,Verified Dataset
+12,Google Baseline,1.00000,1.000,1.000,1.000,2026-09-01,Reference

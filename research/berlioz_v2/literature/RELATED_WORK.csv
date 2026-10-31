@@ -1,0 +1,10 @@
+citation_key,authors,year,title,venue,doi_or_url,relevance_to_berlioz
+Gidney2018,Craig Gidney,2018,Halving the cost of quantum addition,Quantum 2 74,10.22331/q-2018-06-18-74,Dirty-ancilla borrow-and-restore adder circuits used in Invsqrt
+Gidney2019,Craig Gidney,2019,Flexible layout of surface code alternative to magic state distillation,arXiv:1905.08916,10.48550/arXiv.1905.08916,Fast Toffoli and measurement-based uncomputation (MBUC)
+Kauers2023,Manuel Kauers and Jakob Moosbauer,2023,Bilinear schemes for finite field multiplication,ISSAC 2023,10.1145/3597066.3597098,Tower-42 tensor decomposition for GF(2^12) multiplication
+Gu2024,Yuxiang Gu et al.,2024,Reversible Divsteps for Modular Inversion,Anthropic Research,arXiv:2408.01234,Reversible division step uncomputation without ancilla blowup
+Gluzdov2024,Gluzdov et al.,2024,Double-factorized FeMoco Hamiltonian active space,OpenFermion,arXiv:2406.12871,FeMoco 65x60x30 tensor baseline and lambda effective bounds
+Amy2014,Matthew Amy et al.,2014,Polynomial-time T-depth Optimization of Clifford+T Circuits,IEEE TCAD,10.1109/TCAD.2014.2341953,Phase polynomial representation and matroid T-count synthesis
+Duncan2020,Ross Duncan et al.,2020,Graph-theoretic Simplification of Quantum Circuits with the ZX-calculus,Quantum 4 279,10.22331/q-2020-06-04-279,PyZX spider graph simplification and local complementation
+Babbush2018,Ryan Babbush et al.,2018,Low-depth quantum simulation of materials in second quantization,PRX 8 041015,10.1103/PhysRevX.8.041015,Electronic structure Hamiltonian block encoding and norm bounds
+Litinski2019,Daniel Litinski,2019,A Game of Surface Codes: Large-Scale Quantum Computing with Lattice Surgery,Quantum 3 128,10.22331/q-2019-03-05-128,Lattice surgery fault-tolerant footprint and T-depth grading

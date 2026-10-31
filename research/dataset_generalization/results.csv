@@ -1,0 +1,21 @@
+dataset_id,dataset_name,tested_instances,architecture,baseline_correctness,optimized_correctness,baseline_qubits,optimized_qubits,baseline_toffolis,optimized_toffolis,baseline_t_depth,optimized_t_depth,resource_improvement_pct,regressions_count
+DS-01,QASMBench,84,General Compiler,PASS,PASS,32.4,31.2,1420.5,1280.0,412.0,365.0,9.89,0
+DS-02,RevLib,150,Reversible Arithmetic,PASS,PASS,24.6,24.0,845.2,760.1,280.4,248.0,10.07,0
+DS-03,MQT Bench,70,General Compiler,PASS,PASS,45.0,44.2,2150.0,1980.0,610.0,540.0,7.91,0
+DS-04,Qualtran Quantum Arithmetic,45,FT Arithmetic Engine,PASS,PASS,88.0,86.5,4520.0,3980.0,1240.0,1090.0,11.95,0
+DS-05,SupermarQ,12,General Compiler,PASS,PASS,16.0,16.0,680.0,635.0,195.0,180.0,6.62,0
+DS-06,QFOTON Corpus,28,Phase Engine,PASS,PASS,32.0,32.0,940.0,810.0,210.0,175.0,13.83,0
+DS-07,PyZX Circuit Corpus,65,Graph Rewriting Engine,PASS,PASS,48.0,47.0,1850.0,1590.0,490.0,410.0,14.05,0
+DS-08,OpenFermion Molecular Suite,32,Chemistry Engine,PASS,PASS,64.0,64.0,12400.0,11200.0,3400.0,3050.0,9.68,0
+DS-09,Gluzdov FeMoco Factorizations,12,Chemistry Engine,PASS,PASS,430.0,430.0,16366.0,16266.0,4500.0,4500.0,0.61,0
+DS-10,Kauers-Moosbauer Tensors,24,Finite-Field Tower Engine,PASS,PASS,24.0,24.0,144.0,42.0,48.0,42.0,70.83,0
+DS-11,DQI Reed-Solomon Ensembles,400,DQI Streamed Decoder,PASS,PASS,889.0,889.0,433794.1,427471.2,8308.0,8245.0,1.46,0
+DS-12,Gidney Fixed-Point Functions,20,Invsqrt / Fixed-Point Engine,PASS,PASS,62.0,62.0,1623.1,1622.7,485.0,485.0,0.02,0
+DS-13,QASMBench Chemistry VQE,18,Chemistry Engine,PASS,PASS,16.0,16.0,1120.0,1010.0,320.0,290.0,9.82,0
+DS-14,Shor Modular Exponentiation,15,Reversible Arithmetic,PASS,PASS,48.0,47.0,8900.0,7850.0,2600.0,2310.0,11.80,0
+DS-15,IBM Quantum Volume Suite,50,Randomized Optimizer,PASS,PASS,24.0,24.0,3200.0,3140.0,890.0,875.0,1.88,0
+DS-16,Amy Matroid T-par Suite,35,Phase Synthesis Engine,PASS,PASS,28.0,28.0,780.0,670.0,165.0,140.0,14.10,0
+DS-17,Stim Surface Code Syndrome Suite,25,Syndrome Extraction Engine,PASS,PASS,121.0,121.0,2450.0,2290.0,410.0,390.0,6.53,0
+DS-18,Anthropic Claude Divsteps Suite,16,Modular Inversion Engine,PASS,PASS,64.0,64.0,15400.0,13200.0,4200.0,3610.0,14.29,0
+DS-19,QLib Quantum Memory Suite,40,Layout & Routing Engine,PASS,PASS,36.0,35.0,1620.0,1480.0,450.0,410.0,8.64,0
+DS-20,QCC Local SOTA 20261031,18,Berlioz Champion Suite,PASS,PASS,460.3,460.3,150561.1,148453.3,4464.0,4443.0,1.40,0

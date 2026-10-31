@@ -1,0 +1,27 @@
+{
+  "benchmark": "dqi",
+  "qubits": 889,
+  "mean_dynamic_toffolis": 427471.2,
+  "static_toffolis": 441968,
+  "cost": 402458332610.0,
+  "ratio": 60.72598,
+  "executed_toffoli_attribution": {
+    "extract": 64120.0,
+    "synthesis": 31540.0,
+    "convert": 58310.0,
+    "scan_root_search": 42910.0,
+    "unconvert": 57920.0,
+    "unsynthesis": 51880.0,
+    "unextract": 120791.2
+  },
+  "live_qubit_timeline": {
+    "syndrome_inputs": "W0-W839 (840 qubits, preserved throughout)",
+    "scratch_ancillas": "W840-W888 (49 qubits, peaked in tail_inplace)",
+    "peak_qubits": 889
+  },
+  "reserve_inventory": {
+    "pole_history": "1 qubit long-term quantum state (reduced from 3 qubits via HMR carry)",
+    "normalizer_scratch": "24 qubits, ephemeral",
+    "multiplier_workspace": "12 qubits, ephemeral"
+  }
+}

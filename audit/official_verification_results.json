@@ -1,11 +1,11 @@
 {
   "archive_name": "submission.zip",
-  "archive_sha256": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234",
-  "archive_bytes": 78665545,
+  "archive_sha256": "0bf5b4e361690c38a9d17580e49bb2d6b5f3706a64500ecaa9f499d2f521c3fe",
+  "archive_bytes": 27066942,
   "mode": "quick",
   "certification_status": "QUICK_TEST_PASS",
-  "verified_composite_score": 23.060619671681895,
-  "ideal_composite_score": 24.44592919219092,
+  "verified_composite_score": 23.17767039475065,
+  "ideal_composite_score": 24.57001144708138,
   "benchmarks": {
     "invsqrt": {
       "status": "PASS",
@@ -26,26 +26,26 @@
       "semantic_verified": true,
       "verified_shots": 256,
       "num_qubits": 889,
-      "mean_toffolis": 433794.0703125,
+      "mean_toffolis": 427471.2265625,
       "value_errors": 0,
       "phase_errors": 0,
       "confidence_bound_eps": 0.0008660587301657926,
       "repetition_factor": 1.1912604648115832,
-      "cost": 408407643922.0445,
-      "ratio": 59.84085740652262,
-      "ideal_ratio": 71.28604760881781
+      "cost": 402454824610.88043,
+      "ratio": 60.7259798843326,
+      "ideal_ratio": 72.34045902314891
     },
     "chemistry": {
       "status": "PASS",
       "semantic_verified": true,
-      "lambda_eff": 48.323649398441965,
+      "lambda_eff": 48.29920925404513,
       "total_toffolis": 16266.0,
       "total_qubits": 430,
       "brot": 8,
       "batch_size": 5,
-      "cost": 337993966.8794745,
-      "ratio": 9.927986642176107
+      "cost": 337823023.2223082,
+      "ratio": 9.933010356453256
     }
   },
-  "timestamp": "2026-10-31T04:40:21Z"
+  "timestamp": "2026-10-31T05:23:53Z"
 }

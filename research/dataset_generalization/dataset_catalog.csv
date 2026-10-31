@@ -1,0 +1,21 @@
+dataset_id,dataset_name,source_url,license,instances_count,domain,structures_represented,input_dimensions,berlioz_compatibility,correctness_oracle
+DS-01,QASMBench,https://github.com/pnnl/QASMBench,Apache-2.0,84,General Algorithms,Arithmetic/Chemistry/QFT/Grover,2 to 64 qubits,COMPATIBLE_TRANSPILED,Statevector / Unitary
+DS-02,RevLib,http://www.revlib.org,Academic Open,150,Reversible Boolean Logic,Adders/Multipliers/Parity/Decoders,3 to 128 wires,DIRECTLY_COMPATIBLE,Truth table / SAT
+DS-03,MQT Bench,https://github.com/cda-tum/mqt-bench,Apache-2.0,70,Multi-Level Benchmarks,W-state/GHZ/QFT/Amplitude Amplification,2 to 100 qubits,COMPATIBLE_TRANSPILED,MQT QCEC Equivalence
+DS-04,Qualtran Quantum Arithmetic,https://github.com/quantumlib/Qualtran,Apache-2.0,45,Fault-Tolerant Arithmetic,Block-Encodings/Modular Multipliers/QROM,8 to 256 qubits,DIRECTLY_COMPATIBLE,Qualtran classical simulation
+DS-05,SupermarQ,https://github.com/SupertechLabs/SupermarQ,Apache-2.0,12,Application Benchmarks,VQE/QAOA/Hamiltonian/QNN,4 to 32 qubits,COMPATIBLE_TRANSPILED,Cirq / Qiskit exact unitary
+DS-06,QFOTON Corpus,local:scratch/qfoton,Apache-2.0,28,Clifford+T Synthesis,Phase polynomials/T-depth circuits,4 to 64 qubits,DIRECTLY_COMPATIBLE,Statevector simulation
+DS-07,PyZX Circuit Corpus,https://github.com/pyzx/pyzx,Apache-2.0,65,ZX-Calculus Reductions,GF(2^m) arithmetic/Mod5/Toffoli cascades,4 to 128 qubits,DIRECTLY_COMPATIBLE,PyZX equality verifier
+DS-08,OpenFermion Molecular Suite,https://github.com/quantumlib/OpenFermion,Apache-2.0,32,Electronic Structure,Double Factorization/THC/Fermionic swap,4 to 113 orbitals,DIRECTLY_COMPATIBLE,Full CI / Active space diagonalization
+DS-09,Gluzdov FeMoco Factorizations,kaggle:dmitriigluzdov/vqcc-femoco,Apache-2.0,12,Chemistry State Prep,65x60x30/32x60x30/THC-1.4M/R=4,430 to 730 qubits,DIRECTLY_COMPATIBLE,Official Chemistry Verifier
+DS-10,Kauers-Moosbauer Bilinear Tensors,https://github.com/jmoosbauer/flips,GPL-3.0,24,Finite Field Arithmetic,Bilinear multiplication over GF(2^k),4 to 24 bits,DIRECTLY_COMPATIBLE,Exhaustive GF(2^k) multiplication
+DS-11,Decoded Quantum Interferometry RS,Google Quantum AI / PRL 2020,Apache-2.0,400,Quantum Error Decoding,70-symbol RS codes over GF(2^12),840 to 889 qubits,DIRECTLY_COMPATIBLE,Official DQI Verifier (Kickmix)
+DS-12,Gidney Fixed-Point Functions,https://github.com/Strilanc,MIT,20,Elementary Functions,Reciprocal square root/Trig/Div,8 to 32 bits,DIRECTLY_COMPATIBLE,Analytical floating-point oracle
+DS-13,QASMBench Chemistry VQE,https://github.com/pnnl/QASMBench,Apache-2.0,18,Quantum Chemistry,UCCSD/Givens networks,4 to 28 qubits,COMPATIBLE_TRANSPILED,Energy expectation
+DS-14,Shor Modular Exponentiation,Beauregard / Proos-Zalka,Academic Open,15,Number Theory,Reversible modular exponentiation,8 to 64 qubits,DIRECTLY_COMPATIBLE,Modular arithmetic test
+DS-15,IBM Quantum Volume Suite,https://github.com/Qiskit/qiskit,Apache-2.0,50,Randomized Compaction,Haar-random SU(4) layers,4 to 32 qubits,COMPATIBLE_TRANSPILED,Heavy output generation
+DS-16,Amy Matroid T-par Suite,https://github.com/meamy/t-par,Academic Open,35,Phase Optimization,Phase polynomials with optimal T-count,3 to 50 qubits,DIRECTLY_COMPATIBLE,Unitary equivalence
+DS-17,Stim Surface Code Syndrome Suite,https://github.com/quantumlib/Stim,Apache-2.0,25,Syndrome Extraction,Distance 3-11 surface codes,17 to 241 qubits,DIRECTLY_COMPATIBLE,Stim tableau stabilizer simulation
+DS-18,Anthropic Claude Divsteps Suite,arXiv:2610.22367,Apache-2.0,16,Modular Inversion,Reversible divsteps for prime fields,16 to 128 qubits,DIRECTLY_COMPATIBLE,Classical modular inverse
+DS-19,QLib Quantum Memory Suite,https://github.com/cda-tum/qlib,MIT,40,Qubit Routing,Grid layout and routing overhead,5 to 65 qubits,COMPATIBLE_TRANSPILED,Circuit DAG equivalence
+DS-20,QCC Local SOTA 20261031,kaggle:yoyobar/qcc-local-sota-20261031,Apache-2.0,18,Competition SOTA,Q62 Invsqrt/Q889 DQI/Voodoo Chem,62 to 889 qubits,DIRECTLY_COMPATIBLE,Official Verifier Suite

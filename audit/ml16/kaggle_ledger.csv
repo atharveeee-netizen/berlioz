@@ -1,0 +1,6 @@
+submission_id,timestamp_utc,zip_sha256,local_invsqrt_ratio,local_dqi_ratio,local_chem_ratio,local_composite,kaggle_score,implied_dqi_ratio,status,notes
+57800637,2026-10-30T09:17:00Z,e6f49334...,20.291057,59.183589,9.836619,22.77459,22.99562,60.8712,GRADED,Earlier baseline portfolio
+57811741,2026-10-30T16:45:00Z,46f7855e...,20.291057,59.183589,9.850574,22.78536,22.80575,59.3402,GRADED,63Q Invsqrt experiment
+57812617,2026-10-30T17:30:00Z,f2d95c2f...,20.642102,59.840857,9.927987,23.06062,23.00043,59.3701,GRADED,Historical best public champion
+57823923,2026-10-31T02:15:00Z,f2d95c2f...,20.642102,59.840857,9.927987,23.06062,22.99562,59.3328,GRADED,Duplicate seed variance confirmation
+CANDIDATE_23178,2026-10-31T05:15:00Z,0bf5b4e3...,20.642102,60.725980,9.933010,23.17767,UNSUBMITTED,60.7260,CERTIFIED_LOCAL_SOTA,Best-of-both SOTA champion (submission lock engaged)

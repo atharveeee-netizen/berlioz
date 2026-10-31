@@ -1,0 +1,11 @@
+experiment_id,timestamp,subsystem,hypothesis,baseline_metric,result_metric,relative_change_pct,verified,status
+EXP-ML15-01,2026-10-30T18:00:00Z,invsqrt,Dirty-ancilla carry uncomputation reduces 64Q to 62Q,1680.0 T_equiv,1622.7 T_equiv,-3.41%,True,MERGED
+EXP-ML15-02,2026-10-30T21:30:00Z,dqi,Fixed-salt calibration reduces error variance,433794.1 Mean T,433783.5 Mean T,-0.002%,True,MERGED
+EXP-ML15-03,2026-10-31T01:15:00Z,chemistry,Orbital rotation fine-tuning on FeMoco,48.3236 Lambda,48.3236 Lambda,0.00%,True,NO_GAIN
+EXP-ML16-01,2026-10-31T04:45:00Z,tools,Canonical score calculator with exact Clopper-Pearson,N/A,R(0)=1.19126,Exact,True,PROMOTED
+EXP-ML16-02,2026-10-31T06:20:00Z,dqi,One-carry pole history and infinity product reuse,433783.5 Mean T,427471.2 Mean T,-1.46%,True,PROMOTED
+EXP-ML16-03,2026-10-31T07:10:00Z,chemistry,Voodoo continuous gauge + SO(60) polish,48.3236 Lambda,48.2992 Lambda,-0.05%,True,PROMOTED
+EXP-ML16-04,2026-10-31T07:45:00Z,portfolio,Composite integration of SOTA portfolio,23.06062 Score,23.17767 Score,+0.51%,True,CHAMPION
+EXP-ML17-01,2026-10-31T08:30:00Z,corpus,20-dataset cross-benchmark evaluation,20 suites,1159 instances,100% PASS,True,BENCHMARKED
+EXP-ML18-01,2026-10-31T09:15:00Z,platform,Autonomous two-level compiler with Tower-42,144 T GF(2^12),42 T GF(2^12),-70.83%,True,OPERATIONAL
+EXP-ML18-02,2026-10-31T09:45:00Z,phase,MBUC dynamic uncomputation with Pauli feedforward,100% Unitary,MBUC Active,-35.0% Ancilla,True,OPERATIONAL

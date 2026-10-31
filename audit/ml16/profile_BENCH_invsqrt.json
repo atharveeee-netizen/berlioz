@@ -1,0 +1,29 @@
+{
+  "benchmark": "invsqrt",
+  "qubits": 62,
+  "t_equiv": 1622.7203009737732,
+  "cost": 100608.65866037394,
+  "ratio": 20.64210239325303,
+  "executed_toffoli_attribution": {
+    "normalization_leading_zero": 124.0,
+    "qrom_seed_lookup": 312.0,
+    "newton_raphson_multiplication": 896.43,
+    "rotations_synthesis": 410.0,
+    "uncomputation": 436.0
+  },
+  "live_qubit_timeline": {
+    "input_x": "q0-q21 (22 qubits, live throughout)",
+    "intermediate_newton": "q22-q49 (28 qubits, peaked during squaring)",
+    "mbuc_reset_qubits": ["q28", "q50"],
+    "peak_qubits": 62
+  },
+  "rotation_inventory": {
+    "total_rotations": 41,
+    "epsilon": 5.207143e-13,
+    "smallest_angle_turns": 2.886e-11,
+    "margin_slack_turns": 3.17e-12
+  },
+  "cliff_map": {
+    "width_coalesce_cliff": "Holding >1 term simultaneously increases Q from 62 to 78, incurring +25.8% width penalty."
+  }
+}

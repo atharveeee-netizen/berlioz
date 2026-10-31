@@ -1,0 +1,18 @@
+{
+  "benchmark": "chemistry",
+  "total_qubits": 430,
+  "total_toffolis": 16266.0,
+  "lambda_eff": 48.299209254045124,
+  "cost": 337823023.22230816,
+  "ratio": 9.933010356453261,
+  "chemical_accuracy": {
+    "e1_mha": 19.99999889999869,
+    "e2_mha": 19.99999990000014,
+    "threshold_mha": 20.0,
+    "margin_slack_mha": 0.0000011
+  },
+  "cliff_map": {
+    "angle_circuit_qubit_limit": "Q_angle <= 128 (actual J=5 Banked ANF: 126 qubits).",
+    "qrom_address_cliff": "J=7 forces linear unary addressing, exploding Toffolis to 15,400."
+  }
+}
