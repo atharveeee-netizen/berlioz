@@ -1,0 +1,65 @@
+{
+  "portfolio_comparisons": [
+    {
+      "portfolio_name": "PORTFOLIO-CHAMPION-BASELINE",
+      "invsqrt_candidate": "INVSQRT-CHAMPION-62Q",
+      "dqi_candidate": "DQI-CHAMPION-889Q",
+      "chem_candidate": "CHEM-R8-J5-BANKED-ANF",
+      "invsqrt_ratio": 20.64210239325303,
+      "dqi_ratio": 59.84085740652262,
+      "chem_ratio": 9.927986642176107,
+      "composite_score": 23.060619671681895,
+      "status": "NON_DOMINATED_CHAMPION",
+      "verified": true
+    },
+    {
+      "portfolio_name": "PORTFOLIO-TOWER42-EQUIVALENT",
+      "invsqrt_candidate": "INVSQRT-CHAMPION-62Q",
+      "dqi_candidate": "DQI-TOWER42-889Q",
+      "chem_candidate": "CHEM-R8-J5-BANKED-ANF",
+      "invsqrt_ratio": 20.64210239325303,
+      "dqi_ratio": 59.84085740652262,
+      "chem_ratio": 9.927986642176107,
+      "composite_score": 23.060619671681895,
+      "status": "NON_DOMINATED_EQUAL",
+      "verified": true,
+      "notes": "Reduces linear CNOTs by 85% in GF(2^12) multiplications; identical Toffoli and qubit cost."
+    },
+    {
+      "portfolio_name": "PORTFOLIO-COALESCED-INVSQRT",
+      "invsqrt_candidate": "INVSQRT-COALESCED-78Q",
+      "dqi_candidate": "DQI-CHAMPION-889Q",
+      "chem_candidate": "CHEM-R8-J5-BANKED-ANF",
+      "invsqrt_ratio": 18.7502,
+      "dqi_ratio": 59.8409,
+      "chem_ratio": 9.9280,
+      "composite_score": 22.3332,
+      "status": "DOMINATED",
+      "verified": false
+    },
+    {
+      "portfolio_name": "PORTFOLIO-LINEAR-CHEMISTRY",
+      "invsqrt_candidate": "INVSQRT-CHAMPION-62Q",
+      "dqi_candidate": "DQI-CHAMPION-889Q",
+      "chem_candidate": "CHEM-R8-J7-LINEAR-QROM",
+      "invsqrt_ratio": 20.6421,
+      "dqi_ratio": 59.8409,
+      "chem_ratio": 6.9230,
+      "composite_score": 20.4429,
+      "status": "DOMINATED",
+      "verified": false
+    },
+    {
+      "portfolio_name": "PORTFOLIO-SERIAL-DQI",
+      "invsqrt_candidate": "INVSQRT-CHAMPION-62Q",
+      "dqi_candidate": "DQI-SERIAL-878Q",
+      "chem_candidate": "CHEM-R8-J5-BANKED-ANF",
+      "invsqrt_ratio": 20.6421,
+      "dqi_ratio": 43.9858,
+      "chem_ratio": 9.9280,
+      "composite_score": 20.7937,
+      "status": "DOMINATED",
+      "verified": false
+    }
+  ]
+}

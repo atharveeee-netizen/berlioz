@@ -1,0 +1,69 @@
+{
+  "active_champion_portfolio": {
+    "composite_score": 23.060619671681895,
+    "archive_name": "submission.zip",
+    "sha256": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234",
+    "benchmarks": {
+      "invsqrt": {
+        "candidate": "INVSQRT-CHAMPION-62Q",
+        "qubits": 62,
+        "t_equiv": 1622.7203009737732,
+        "cost": 100608.65866037394,
+        "ratio": 20.64210239325303
+      },
+      "dqi": {
+        "candidate": "DQI-CHAMPION-889Q",
+        "qubits": 889,
+        "dynamic_mean_toffolis": 433794.0703125,
+        "repetition_factor": 1.1912604648115832,
+        "cost": 408407643922.0445,
+        "ratio": 59.84085740652262
+      },
+      "chemistry": {
+        "candidate": "CHEM-R8-J5-BANKED-ANF",
+        "qubits": 430,
+        "toffolis": 16266,
+        "lambda_eff": 48.323649398441965,
+        "cost": 337993966.8794745,
+        "ratio": 9.927986642176107
+      }
+    }
+  },
+  "pareto_frontiers_by_benchmark": {
+    "invsqrt": [
+      {
+        "id": "INVSQRT-CHAMPION-62Q",
+        "qubits": 62,
+        "t_equiv": 1622.72,
+        "ratio": 20.6421,
+        "status": "NON_DOMINATED"
+      }
+    ],
+    "dqi": [
+      {
+        "id": "DQI-CHAMPION-889Q",
+        "qubits": 889,
+        "dynamic_mean_toffolis": 433794.07,
+        "ratio": 59.8409,
+        "status": "NON_DOMINATED"
+      },
+      {
+        "id": "DQI-TOWER42-889Q",
+        "qubits": 889,
+        "dynamic_mean_toffolis": 433794.07,
+        "cnot_overhead": "-85% linear CNOTs",
+        "ratio": 59.8409,
+        "status": "NON_DOMINATED_EQUAL_COST"
+      }
+    ],
+    "chemistry": [
+      {
+        "id": "CHEM-R8-J5-BANKED-ANF",
+        "qubits": 430,
+        "toffolis": 16266,
+        "ratio": 9.9280,
+        "status": "NON_DOMINATED"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "package_name": "submission.zip",
+  "sha256": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234",
+  "size_bytes": 78665545,
+  "validation_checks": {
+    "path_traversal_free": true,
+    "absolute_paths_free": true,
+    "hidden_credentials_free": true,
+    "zip_bomb_free": true,
+    "kmb_binaries_present": true,
+    "chemistry_data_present": true,
+    "deterministic_hash_matches": true
+  },
+  "status": "PASS"
+}

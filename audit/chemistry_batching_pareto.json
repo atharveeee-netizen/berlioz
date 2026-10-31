@@ -1,0 +1,63 @@
+{
+  "benchmark": "chemistry",
+  "evaluated_configurations": [
+    {
+      "config_id": "CHEM-R8-J5-BANKED-ANF",
+      "brot": 8,
+      "batch_size": 5,
+      "angle_circuits": 16,
+      "total_qubits": 430,
+      "total_toffolis": 16266,
+      "angle_circuit_qubits": 126,
+      "angle_circuit_toffolis": 8336,
+      "lambda_eff": 48.323649398441965,
+      "cost": 337993966.8794745,
+      "ratio": 9.927986642176107,
+      "chemical_accuracy_mha": {
+        "e1": 19.99941,
+        "e2": 19.99944,
+        "threshold": 20.000
+      },
+      "status": "VERIFIED_CHAMPION"
+    },
+    {
+      "config_id": "CHEM-R8-J7-LINEAR-QROM",
+      "brot": 8,
+      "batch_size": 7,
+      "angle_circuits": 12,
+      "total_qubits": 438,
+      "total_toffolis": 23330,
+      "angle_circuit_qubits": 124,
+      "angle_circuit_toffolis": 15400,
+      "lambda_eff": 48.323649398441965,
+      "cost": 484700000.0,
+      "ratio": 6.9230,
+      "status": "DOMINATED",
+      "reason": "Address expansion forces linear QROM mode, increasing angle Toffolis by 84.7%."
+    },
+    {
+      "config_id": "CHEM-R10-J5-EXPANDED",
+      "brot": 10,
+      "batch_size": 5,
+      "angle_circuits": 16,
+      "total_qubits": 512,
+      "total_toffolis": 28140,
+      "lambda_eff": 47.12,
+      "cost": 678875000.0,
+      "ratio": 4.9428,
+      "status": "DOMINATED",
+      "reason": "Slight improvement in lambda_eff is completely wiped out by 19% wider registers and 73% more Toffolis."
+    },
+    {
+      "config_id": "CHEM-R7-J5-UNDERPRECISION",
+      "brot": 7,
+      "batch_size": 5,
+      "total_qubits": 410,
+      "total_toffolis": 14100,
+      "cost": null,
+      "ratio": null,
+      "status": "SEMANTIC_FAILURE",
+      "reason": "e1 = 23.41 mHa, e2 = 22.88 mHa; exceeds 20.000 mHa chemical accuracy threshold."
+    }
+  ]
+}

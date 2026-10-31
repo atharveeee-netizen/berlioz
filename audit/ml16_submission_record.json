@@ -1,0 +1,16 @@
+{
+  "submission_attempted": false,
+  "submissions_made": 0,
+  "reason": "Direct user constraint: 'do not submit anything ... no submission'.",
+  "active_champion_on_kaggle": {
+    "submission_id": "57812617",
+    "score": 23.00043,
+    "archive_sha256": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234"
+  },
+  "evaluated_submission_on_kaggle": {
+    "submission_id": "57823923",
+    "score": 22.99562,
+    "archive_sha256": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234"
+  },
+  "remaining_daily_submissions": 4
+}

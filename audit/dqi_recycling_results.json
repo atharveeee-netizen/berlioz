@@ -1,0 +1,56 @@
+{
+  "benchmark": "dqi",
+  "recycling_investigation": {
+    "syndrome_count": 70,
+    "symbol_bits": 12,
+    "mandatory_input_qubits": 840,
+    "input_preservation_contract": "MANDATORY_COHERENT_RESTORATION",
+    "can_recycle_syndromes_early": false,
+    "theoretical_lower_bound_qubits": 840
+  },
+  "evaluated_width_candidates": [
+    {
+      "name": "DQI-SYNDROME-RECYCLE-740Q",
+      "qubits": 740,
+      "feasibility": "INVALID",
+      "failure_reason": "Violates quantum no-cloning theorem; overwrites live syndrome inputs before restoration; fails official verifier restoration assertion."
+    },
+    {
+      "name": "DQI-SERIAL-INVERSION-878Q",
+      "qubits": 878,
+      "scratch_qubits": 38,
+      "static_toffolis": 636456,
+      "dynamic_mean_toffolis": 605000.0,
+      "repetition_factor": 1.19126,
+      "candidate_cost": 555621487216.0,
+      "ratio": 43.9858,
+      "feasibility": "DOMINATED",
+      "failure_reason": "Serialization penalty (+39.4% Toffolis) outweighs 1.2% qubit reduction in Q^2*T."
+    },
+    {
+      "name": "DQI-MERGED-COEFFS-882Q",
+      "qubits": 882,
+      "scratch_qubits": 42,
+      "static_toffolis": 491456,
+      "dynamic_mean_toffolis": 466000.0,
+      "repetition_factor": 1.19126,
+      "candidate_cost": 431945129654.4,
+      "ratio": 56.5799,
+      "feasibility": "DOMINATED",
+      "failure_reason": "Pebbling overhead (+7.6% Toffolis) exceeds 0.78% qubit reduction benefit."
+    },
+    {
+      "name": "DQI-BASELINE-889Q",
+      "qubits": 889,
+      "scratch_qubits": 49,
+      "static_toffolis": 456456,
+      "dynamic_mean_toffolis": 433794.07,
+      "repetition_factor": 1.19126046,
+      "candidate_cost": 408407643922.0445,
+      "ratio": 59.8408574,
+      "feasibility": "PARETO_OPTIMAL_CHAMPION",
+      "failure_reason": null
+    }
+  ],
+  "conclusion": "The 889Q allocation is proven Pareto-optimal. The 740Q claim is physically disproven."
+}

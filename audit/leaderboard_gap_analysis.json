@@ -1,0 +1,61 @@
+{
+  "competition": "google-verifiable-quantum-circuit-compilation",
+  "current_status": {
+    "local_composite": 23.060619671681895,
+    "kaggle_graded_champion": 23.00043,
+    "current_product": 12263.261895,
+    "ratios": {
+      "invsqrt": 20.64210239325303,
+      "dqi": 59.84085740652262,
+      "chemistry": 9.927986642176107
+    }
+  },
+  "targets": {
+    "top_10": {
+      "target_composite": 25.0,
+      "target_product": 15625.0,
+      "gap_ratio": 1.27413,
+      "single_benchmark_requirements": {
+        "dqi_alone": {
+          "required_ratio": 76.2415,
+          "required_cost": 3.2055e11,
+          "cost_reduction_percent": -21.51
+        },
+        "invsqrt_alone": {
+          "required_ratio": 26.3007,
+          "required_cost": 78962.0,
+          "cost_reduction_percent": -21.51
+        },
+        "chemistry_alone": {
+          "required_ratio": 12.6496,
+          "required_cost": 2.6527e8,
+          "cost_reduction_percent": -21.51
+        }
+      },
+      "balanced_codesign_improvement_per_benchmark_percent": 8.41
+    },
+    "rank_1": {
+      "target_composite": 26.8,
+      "target_product": 19248.832,
+      "gap_ratio": 1.56963,
+      "single_benchmark_requirements": {
+        "dqi_alone": {
+          "required_ratio": 93.9288,
+          "required_cost": 2.6019e11,
+          "cost_reduction_percent": -36.29
+        },
+        "invsqrt_alone": {
+          "required_ratio": 32.4005,
+          "required_cost": 64097.0,
+          "cost_reduction_percent": -36.29
+        },
+        "chemistry_alone": {
+          "required_ratio": 15.5834,
+          "required_cost": 2.1533e8,
+          "cost_reduction_percent": -36.29
+        }
+      },
+      "balanced_codesign_improvement_per_benchmark_percent": 16.22
+    }
+  }
+}

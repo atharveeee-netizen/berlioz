@@ -1,0 +1,45 @@
+{
+  "reference_costs": {
+    "invsqrt": 2076774.233715282,
+    "dqi": 24439463583672.93,
+    "chemistry": 3355599588.3155365
+  },
+  "champion_metrics": {
+    "invsqrt": {
+      "qubits": 62,
+      "num_toffoli_like": 1332.4349609375,
+      "num_t_like": 6.968359375,
+      "rotation_count": 41,
+      "rotation_eps": 5.207143008306073e-13,
+      "t_equiv": 1622.7203009737732,
+      "cost": 100608.65866037394,
+      "ratio": 20.64210239325303
+    },
+    "dqi": {
+      "qubits": 889,
+      "dynamic_mean_toffolis": 433794.0703125,
+      "static_toffolis": 456456,
+      "error_rate_bound": 0.0008660587301657926,
+      "repetition_factor": 1.1912604648115832,
+      "cost": 408407643922.0445,
+      "ratio": 59.84085740652262,
+      "ideal_zero_overhead_ratio": 71.28604760881781
+    },
+    "chemistry": {
+      "qubits": 430,
+      "toffolis": 16266,
+      "lambda_eff": 48.323649398441965,
+      "brot": 8,
+      "batch_size": 5,
+      "cost": 337993966.8794745,
+      "ratio": 9.927986642176107
+    }
+  },
+  "composite_scores": {
+    "local_verified_composite": 23.060619671681895,
+    "kaggle_graded_57812617": 23.00043,
+    "kaggle_graded_57823923": 22.99562,
+    "historical_static_estimate": 22.80575
+  },
+  "status": "OFFICIAL_SCORE_VERIFIED"
+}

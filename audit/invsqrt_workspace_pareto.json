@@ -1,0 +1,46 @@
+{
+  "benchmark": "invsqrt",
+  "evaluated_candidates": [
+    {
+      "candidate_id": "INVSQRT-CHAMPION-62Q",
+      "qubits": 62,
+      "num_toffoli_like": 1332.4349609375,
+      "num_t_like": 6.968359375,
+      "rotation_count": 41,
+      "t_equiv": 1622.7203009737732,
+      "cost": 100608.65866037394,
+      "ratio": 20.64210239325303,
+      "status": "PARETO_CHAMPION",
+      "worst_error_ratio": 0.8676711823537203
+    },
+    {
+      "candidate_id": "INVSQRT-COALESCED-78Q",
+      "qubits": 78,
+      "rotation_count": 4,
+      "t_equiv": 1420.0,
+      "cost": 110760.0,
+      "ratio": 18.7502,
+      "status": "DOMINATED",
+      "reason": "Width blowup (+25.8% qubits) exceeds rotation synthesis savings (-12.5% Toffolis)."
+    },
+    {
+      "candidate_id": "INVSQRT-PRUNED-36ROT",
+      "qubits": 62,
+      "rotation_count": 36,
+      "t_equiv": 1560.0,
+      "cost": 96720.0,
+      "ratio": null,
+      "status": "SEMANTIC_FAILURE",
+      "reason": "Exceeds error tolerance at x=161 (ratio 1.042 > 1.000). Rejected by verifier."
+    },
+    {
+      "candidate_id": "INVSQRT-COMPACT-58Q",
+      "qubits": 58,
+      "t_equiv": 2180.0,
+      "cost": 126440.0,
+      "ratio": 16.4249,
+      "status": "DOMINATED",
+      "reason": "Restricted scratch requires serialized carry ripples, ballooning Toffoli count by +34%."
+    }
+  ]
+}

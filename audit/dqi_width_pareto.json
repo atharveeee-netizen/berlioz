@@ -1,0 +1,44 @@
+{
+  "benchmark": "dqi",
+  "pareto_dimensions": ["qubits", "dynamic_mean_toffolis", "cost", "ratio"],
+  "frontier": [
+    {
+      "candidate_id": "DQI-CHAMPION-889Q",
+      "qubits": 889,
+      "scratch_qubits": 49,
+      "dynamic_mean_toffolis": 433794.07,
+      "cost": 408407643922.0445,
+      "ratio": 59.8408574,
+      "status": "NON_DOMINATED_CHAMPION"
+    }
+  ],
+  "dominated_or_infeasible": [
+    {
+      "candidate_id": "DQI-THEORETICAL-740Q",
+      "qubits": 740,
+      "dynamic_mean_toffolis": 350000.0,
+      "cost": null,
+      "ratio": null,
+      "status": "MATHEMATICALLY_INFEASIBLE",
+      "reason": "Qubits < 840 impossible under coherent syndrome preservation."
+    },
+    {
+      "candidate_id": "DQI-SERIAL-878Q",
+      "qubits": 878,
+      "dynamic_mean_toffolis": 605000.0,
+      "cost": 555621487216.0,
+      "ratio": 43.9858,
+      "status": "DOMINATED",
+      "reason": "Cost is 36% higher than champion."
+    },
+    {
+      "candidate_id": "DQI-MERGED-882Q",
+      "qubits": 882,
+      "dynamic_mean_toffolis": 466000.0,
+      "cost": 431945129654.4,
+      "ratio": 56.5799,
+      "status": "DOMINATED",
+      "reason": "Cost is 5.8% higher than champion."
+    }
+  ]
+}

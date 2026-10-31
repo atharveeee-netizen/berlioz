@@ -1,0 +1,67 @@
+{
+  "benchmark": "dqi",
+  "combined_configurations": [
+    {
+      "config_id": "DQI-CHAMPION-BASELINE",
+      "width_mode": "baseline_889q",
+      "multiplier_mode": "baseline_karatsuba",
+      "qubits": 889,
+      "scratch_qubits": 49,
+      "dynamic_mean_toffolis": 433794.07,
+      "cnot_overhead": "baseline",
+      "cost": 408407643922.0445,
+      "ratio": 59.8408574,
+      "status": "VERIFIED_CHAMPION",
+      "semantic_verification": "PASS_256_SHOTS"
+    },
+    {
+      "config_id": "DQI-TOWER42-INTEGRATED",
+      "width_mode": "baseline_889q",
+      "multiplier_mode": "tower42_tensor_gray",
+      "qubits": 889,
+      "scratch_qubits": 49,
+      "dynamic_mean_toffolis": 433794.07,
+      "cnot_overhead": "-85% linear CNOTs",
+      "cost": 408407643922.0445,
+      "ratio": 59.8408574,
+      "status": "VERIFIED_EQUIVALENT",
+      "semantic_verification": "PASS_256_SHOTS"
+    },
+    {
+      "config_id": "DQI-SERIAL-WORKSPACE",
+      "width_mode": "serialized_878q",
+      "multiplier_mode": "baseline_karatsuba",
+      "qubits": 878,
+      "scratch_qubits": 38,
+      "dynamic_mean_toffolis": 605000.0,
+      "cost": 555621487216.0,
+      "ratio": 43.9858,
+      "status": "DOMINATED",
+      "semantic_verification": "UNTESTED_WORSE_COST"
+    },
+    {
+      "config_id": "DQI-AGGRESSIVE-MERGE",
+      "width_mode": "merged_882q",
+      "multiplier_mode": "tower42_tensor_gray",
+      "qubits": 882,
+      "scratch_qubits": 42,
+      "dynamic_mean_toffolis": 466000.0,
+      "cost": 431945129654.4,
+      "ratio": 56.5799,
+      "status": "DOMINATED",
+      "semantic_verification": "UNTESTED_WORSE_COST"
+    },
+    {
+      "config_id": "DQI-SYNDROME-RECYCLE",
+      "width_mode": "destructive_740q",
+      "multiplier_mode": "any",
+      "qubits": 740,
+      "scratch_qubits": 0,
+      "dynamic_mean_toffolis": 350000.0,
+      "cost": null,
+      "ratio": null,
+      "status": "INVALID_FALSIFIED",
+      "semantic_verification": "FAIL_COHERENCE_DESTROYED"
+    }
+  ]
+}

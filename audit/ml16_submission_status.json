@@ -1,0 +1,18 @@
+{
+  "competition": "google-verifiable-quantum-circuit-compilation",
+  "platform": "Kaggle",
+  "audit_timestamp": "2026-10-31T09:55:00+05:30",
+  "reported_submission_id": "57823923",
+  "reported_submission_status": "COMPLETE",
+  "reported_submission_grade": 22.99562,
+  "historical_best_submission_id": "57812617",
+  "historical_best_public_score": 23.00043,
+  "current_champion_artifact": "submission.zip",
+  "current_champion_sha256": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234",
+  "daily_submission_limit": 5,
+  "daily_submissions_remaining": 4,
+  "submission_policy": "NO_SUBMISSION_PERMITTED",
+  "submission_lock_status": "ENGAGED",
+  "submission_gate_action": "RETAIN_CHAMPION_ZERO_SUBMISSION",
+  "reproducibility_status": "VERIFIED"
+}

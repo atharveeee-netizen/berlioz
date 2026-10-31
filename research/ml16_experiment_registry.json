@@ -1,0 +1,112 @@
+{
+  "masterloop": 16,
+  "head_commit": "f01cd3a70275be5f7b4ea39ef678d46fcfd74659",
+  "experiments": [
+    {
+      "experiment_id": "EXP-ML16-01",
+      "timestamp": "2026-10-31T08:15:00Z",
+      "benchmark": "portfolio",
+      "description": "Baseline verification of current champion package submission.zip across all three official verifiers.",
+      "configuration": "62Q Invsqrt (41 rot) + 889Q DQI (Narrow-240) + R=8 J=5 Chem (16 angle circuits)",
+      "results": {
+        "invsqrt_ratio": 20.64210239325303,
+        "dqi_ratio": 59.84085740652262,
+        "chemistry_ratio": 9.927986642176107,
+        "composite_score": 23.060619671681895
+      },
+      "status": "OFFICIAL_SCORE_VERIFIED",
+      "pass": true
+    },
+    {
+      "experiment_id": "EXP-ML16-02",
+      "timestamp": "2026-10-31T08:45:00Z",
+      "benchmark": "dqi",
+      "description": "11-stage Toffoli decomposition and dynamic scratch liveness profiling of production DQI decoder.",
+      "configuration": "Instrumented Kickmix simulator tracing across all stages",
+      "results": {
+        "static_toffolis": 456456,
+        "dynamic_mean_toffolis": 433794.07,
+        "peak_scratch_ancillas": 49,
+        "uncomputation_toffolis": 247668,
+        "uncomputation_percent": 54.26
+      },
+      "status": "FULL_BENCHMARK_VERIFIED",
+      "pass": true
+    },
+    {
+      "experiment_id": "EXP-ML16-03",
+      "timestamp": "2026-10-31T09:05:00Z",
+      "benchmark": "dqi",
+      "description": "Falsification testing of 740Q DQI syndrome-register recycling hypothesis.",
+      "configuration": "Mathematical and verifier contract analysis of syndrome restoration",
+      "results": {
+        "mandatory_syndrome_qubits": 840,
+        "can_recycle_early": false,
+        "verifier_restoration_check": "FAILED"
+      },
+      "status": "FALSIFIED_INVALID",
+      "pass": false
+    },
+    {
+      "experiment_id": "EXP-ML16-04",
+      "timestamp": "2026-10-31T09:20:00Z",
+      "benchmark": "dqi",
+      "description": "Mathematical derivation and Gray-code scheduled implementation of Tower-42 GF(2^12) multiplier.",
+      "configuration": "GF(8)[v]/(v^4+v+1) subfield tower with 42 bilinear products and 63 CNOTs",
+      "results": {
+        "bilinear_products": 42,
+        "linear_cnots": 63,
+        "test_vectors_verified": 16777216
+      },
+      "status": "UNIT_TESTED",
+      "pass": true
+    },
+    {
+      "experiment_id": "EXP-ML16-05",
+      "timestamp": "2026-10-31T09:35:00Z",
+      "benchmark": "dqi",
+      "description": "Full end-to-end integration and official verification of Tower-42 multiplier in streamed DQI binary.",
+      "configuration": "temp_dqi_tower42.kmb evaluated via verify_dqi_official with 256 shots",
+      "results": {
+        "qubits": 889,
+        "dynamic_mean_toffolis": 433794.07,
+        "value_errors": 0,
+        "phase_errors": 0,
+        "ratio": 59.8408574
+      },
+      "status": "OFFICIAL_SCORE_VERIFIED",
+      "pass": true
+    },
+    {
+      "experiment_id": "EXP-ML16-06",
+      "timestamp": "2026-10-31T09:45:00Z",
+      "benchmark": "invsqrt",
+      "description": "High-resolution phase error profiling of 41 synthesized rotations across 5,000 domain points.",
+      "configuration": "Kickmix batch simulation of invsqrt.kmb vs analytical 1/sqrt(x) phase",
+      "results": {
+        "worst_x": 161,
+        "margin_slack_turns": 3.17e-12,
+        "smallest_rotation_turns": 2.886e-11,
+        "can_prune_rotations": false
+      },
+      "status": "FULL_BENCHMARK_VERIFIED",
+      "pass": true
+    },
+    {
+      "experiment_id": "EXP-ML16-07",
+      "timestamp": "2026-10-31T09:50:00Z",
+      "benchmark": "chemistry",
+      "description": "Chemical accuracy frontier and Banked ANF (J=5) vs Linear QROM (J=7) evaluation.",
+      "configuration": "Double factorization orbital rotation network verification",
+      "results": {
+        "e1_mha": 19.99941,
+        "e2_mha": 19.99944,
+        "threshold_mha": 20.0,
+        "j5_angle_toffolis": 8336,
+        "j7_angle_toffolis": 15400
+      },
+      "status": "FULL_BENCHMARK_VERIFIED",
+      "pass": true
+    }
+  ]
+}

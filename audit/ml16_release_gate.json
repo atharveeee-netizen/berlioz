@@ -1,0 +1,13 @@
+{
+  "gate_id": "GATE-ML16",
+  "timestamp": "2026-10-31T09:55:00Z",
+  "candidate_sha256": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234",
+  "candidate_composite_score": 23.060619671681895,
+  "kaggle_submission_57823923_status": "COMPLETE",
+  "kaggle_submission_57823923_grade": 22.99562,
+  "kaggle_best_public_grade": 23.00043,
+  "daily_allowance_remaining": 4,
+  "user_submission_policy": "NO_SUBMISSION_PERMITTED",
+  "gate_decision": "ABORT_SUBMISSION_RETAIN_CHAMPION",
+  "justification": "User prompt explicitly commanded 'do not submit anything ... no submission'. Remaining 4 Kaggle daily submissions preserved intact."
+}

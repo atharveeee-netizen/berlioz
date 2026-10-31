@@ -1,0 +1,55 @@
+{
+  "archive_name": "submission.zip",
+  "archive_sha256": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234",
+  "archive_size_bytes": 78665545,
+  "verification_timestamp": "2026-10-31T09:40:00Z",
+  "verification_suite": "audit/integrated_verification_suite.py",
+  "overall_status": "OFFICIAL_VERIFICATION_PASS",
+  "composite_score": 23.060619671681895,
+  "benchmarks": {
+    "invsqrt": {
+      "status": "PASS",
+      "shots_tested": 5120,
+      "qubits": 62,
+      "num_toffoli_like": 1332.4349609375,
+      "num_t_like": 6.968359375,
+      "rotation_count": 41,
+      "rotation_eps": 5.207143008306073e-13,
+      "t_equiv": 1622.7203009737732,
+      "cost": 100608.65866037394,
+      "reference_cost": 2076774.233715282,
+      "ratio": 20.64210239325303,
+      "worst_error_ratio": 0.8676711823537203,
+      "worst_x": 980922
+    },
+    "dqi": {
+      "status": "PASS",
+      "shots_tested": 256,
+      "qubits": 889,
+      "mean_dynamic_toffolis": 433794.0703125,
+      "static_toffolis": 456456,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "confidence_bound_eps": 0.0008660587301657926,
+      "repetition_factor": 1.1912604648115832,
+      "cost": 408407643922.0445,
+      "reference_cost": 24439463583672.93,
+      "ratio": 59.84085740652262,
+      "ideal_ratio": 71.28604760881781
+    },
+    "chemistry": {
+      "status": "PASS",
+      "qubits": 430,
+      "total_toffolis": 16266,
+      "lambda_eff": 48.323649398441965,
+      "brot": 8,
+      "batch_size": 5,
+      "cost": 337993966.8794745,
+      "reference_cost": 3355599588.3155365,
+      "ratio": 9.927986642176107,
+      "e1_mha": 19.99941,
+      "e2_mha": 19.99944,
+      "threshold_mha": 20.000
+    }
+  }
+}

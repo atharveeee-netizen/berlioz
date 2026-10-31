@@ -1,0 +1,42 @@
+{
+  "multiplication_in_gf2_12": {
+    "field_degree": 12,
+    "polynomial": "x^12 + x^7 + x^6 + x^5 + x^3 + x + 1",
+    "implementations": [
+      {
+        "name": "Schoolbook",
+        "toffolis": 144,
+        "cnots": 132,
+        "ancillas": 0,
+        "depth_toffoli": 144,
+        "verified": true
+      },
+      {
+        "name": "Standard Karatsuba (Recursive 2-way)",
+        "toffolis": 60,
+        "cnots": 280,
+        "ancillas": 24,
+        "depth_toffoli": 48,
+        "verified": true
+      },
+      {
+        "name": "Tower-42 Tensor (Naive Linear)",
+        "toffolis": 42,
+        "cnots": 420,
+        "ancillas": 12,
+        "depth_toffoli": 42,
+        "verified": true
+      },
+      {
+        "name": "Tower-42 Tensor (Gray-Code Delta Scheduled)",
+        "toffolis": 42,
+        "cnots": 63,
+        "ancillas": 12,
+        "depth_toffoli": 42,
+        "verified": true,
+        "speedup_vs_schoolbook": 3.428,
+        "cnot_reduction_vs_naive": 0.850
+      }
+    ]
+  }
+}
