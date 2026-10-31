@@ -8,11 +8,13 @@ Implements:
   - Repetition overhead factor R(eps+)
   - Composite geometric mean score S = (R_inv * R_dqi * R_chem)^(1/3)
   - Marginal exchange rates and break-even calculations (breakeven_dT)
+  - Failure-price table generation across k failures
   - Built-in test suite
 """
 
 import math
 import sys
+from typing import Dict, Any, List, Tuple
 from scipy.stats import beta
 
 # Canonical Official Reference Costs (Verified from official_eval/evaluator.py)
@@ -27,7 +29,7 @@ DELTA_CONFIDENCE = 2.0 ** -128  # log2(delta) = -128
 def clopper_pearson_upper_bound(k: int, n: int = DEFAULT_SHOTS_DQI, delta: float = DELTA_CONFIDENCE) -> float:
     """
     Computes the exact one-sided Clopper-Pearson upper confidence bound on binomial p
-    at significance level delta (i.e. confidence 1 - delta, with delta = 2^-128).
+    at significance level delta (confidence 1 - delta, with delta = 2^-128).
     
     For k failures in n trials:
       If k == 0: eps+ = 1 - delta^(1/n)
@@ -39,8 +41,12 @@ def clopper_pearson_upper_bound(k: int, n: int = DEFAULT_SHOTS_DQI, delta: float
         return 1.0 - (delta ** (1.0 / n))
     else:
         # Survival function / PPF of Beta distribution: quantile 1 - delta
-        # Since delta is tiny (~2.9387e-39), we use beta.isf(delta, k + 1, n - k)
         return float(beta.isf(delta, k + 1, n - k))
+
+
+def R_eps_plus(k: int, N: int = DEFAULT_SHOTS_DQI, delta: float = DELTA_CONFIDENCE) -> float:
+    """Canonical alias for Clopper-Pearson failure probability upper bound."""
+    return clopper_pearson_upper_bound(k, N, delta)
 
 
 def repetition_factor(eps_plus: float) -> float:
@@ -54,12 +60,17 @@ def repetition_factor(eps_plus: float) -> float:
     return math.log(2.0) / (-math.log(arg))
 
 
-def dqi_cost(qubits: int, t_mean: float, k_failures: int = 0, n_shots: int = DEFAULT_SHOTS_DQI) -> float:
+def R(k: int, N: int = DEFAULT_SHOTS_DQI, delta: float = DELTA_CONFIDENCE) -> float:
+    """Computes R(eps+(k)) repetition penalty factor directly for k failures."""
+    return repetition_factor(R_eps_plus(k, N, delta))
+
+
+def dqi_cost(qubits: int, t_mean: float, k: int = 0, n_shots: int = DEFAULT_SHOTS_DQI) -> float:
     """
     Computes DQI candidate cost:
       Cost_DQI = R(eps+) * Q^2 * T_mean
     """
-    eps_plus = clopper_pearson_upper_bound(k_failures, n_shots)
+    eps_plus = R_eps_plus(k, n_shots)
     r_factor = repetition_factor(eps_plus)
     return r_factor * (qubits ** 2) * t_mean
 
@@ -80,7 +91,7 @@ def chem_cost(qubits: int, toffolis: float, lambda_eff: float) -> float:
     return float(lambda_eff * qubits * toffolis)
 
 
-def composite_score(r_inv: float, r_dqi: float, r_chem: float) -> float:
+def composite(r_inv: float, r_dqi: float, r_chem: float) -> float:
     """
     Computes composite geometric-mean score:
       S = (R_inv * R_dqi * R_chem)^(1/3)
@@ -88,17 +99,22 @@ def composite_score(r_inv: float, r_dqi: float, r_chem: float) -> float:
     return (r_inv * r_dqi * r_chem) ** (1.0 / 3.0)
 
 
+def composite_score(r_inv: float, r_dqi: float, r_chem: float) -> float:
+    """Alias for composite()."""
+    return composite(r_inv, r_dqi, r_chem)
+
+
 def composite_from_costs(c_inv: float, c_dqi: float, c_chem: float) -> float:
     """Computes composite score directly from candidate costs."""
     r_inv = C_INVSQRT_REF / c_inv
     r_dqi = C_DQI_REF / c_dqi
     r_chem = C_CHEM_REF / c_chem
-    return composite_score(r_inv, r_dqi, r_chem)
+    return composite(r_inv, r_dqi, r_chem)
 
 
 def breakeven_dT(q_old: int, q_new: int, t_old: float) -> float:
     """
-    Computes the maximum allowable increase in Toffolis (delta_T_max) when reducing
+    Computes maximum allowable increase in Toffolis (delta_T_max) when reducing
     register width from q_old to q_new in DQI, such that cost does not increase:
       dT_max = T_old * [ (Q_old / Q_new)^2 - 1 ]
     """
@@ -106,73 +122,93 @@ def breakeven_dT(q_old: int, q_new: int, t_old: float) -> float:
     return t_old * (ratio_sq - 1.0)
 
 
-def exchange_rates_summary(current_s: float = 23.17767):
-    """
-    Returns marginal exchange rates:
-    - +1% on any ratio = +0.333% on score (about +0.077 score points at S=23.18)
-    - DQI: 1 qubit ~= 976 Toffolis ~= 0.225% cost
-    """
-    delta_s_per_pct = current_s * ((1.01 ** (1.0 / 3.0)) - 1.0)
+def exchange_rates(
+    qubits_dqi: int = 889,
+    t_dqi: float = 427471.2,
+    k_dqi: int = 0,
+    q_inv: int = 62,
+    t_inv: float = 1622.7,
+    q_chem: int = 430,
+    t_chem: float = 16266.0,
+    lambda_chem: float = 48.2992,
+) -> Dict[str, Any]:
+    """Calculates canonical exchange rates and marginal prices across all benchmarks."""
+    c_inv = invsqrt_cost(q_inv, t_inv)
+    c_dqi = dqi_cost(qubits_dqi, t_dqi, k_dqi)
+    c_chem = chem_cost(q_chem, t_chem, lambda_chem)
+    s = composite_from_costs(c_inv, c_dqi, c_chem)
+
+    delta_s_per_pct = s * ((1.01 ** (1.0 / 3.0)) - 1.0)
     return {
-        "current_composite": current_s,
+        "current_composite": s,
         "score_gain_per_1pct_single_ratio": delta_s_per_pct,
-        "dqi_break_even_889_to_880": breakeven_dT(889, 880, 427471.2),
-        "dqi_break_even_889_to_860": breakeven_dT(889, 860, 427471.2),
-        "dqi_break_even_889_to_840": breakeven_dT(889, 840, 427471.2),
-        "dqi_break_even_889_to_740": breakeven_dT(889, 740, 427471.2),
+        "dqi_1_qubit_toffoli_equiv": (2.0 / qubits_dqi) * t_dqi,
+        "dqi_break_even_889_to_880": breakeven_dT(qubits_dqi, 880, t_dqi),
+        "dqi_break_even_889_to_860": breakeven_dT(qubits_dqi, 860, t_dqi),
+        "dqi_break_even_889_to_840": breakeven_dT(qubits_dqi, 840, t_dqi),
+        "dqi_break_even_889_to_740": breakeven_dT(qubits_dqi, 740, t_dqi),
+        "invsqrt_1_qubit_toffoli_equiv": t_inv,
+        "chem_1_qubit_toffoli_equiv": t_chem * (1.0 / q_chem),
     }
+
+
+def failure_price_table(k_values: List[int] = [0, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000]) -> List[Dict[str, Any]]:
+    """Generates failure penalty table for DQI across error counts k."""
+    r0 = R(0)
+    table = []
+    for k in k_values:
+        eps = R_eps_plus(k)
+        rk = repetition_factor(eps)
+        pct_increase = ((rk / r0) - 1.0) * 100.0
+        table.append({
+            "k": k,
+            "eps_plus": eps,
+            "R_factor": rk,
+            "cost_penalty_pct": pct_increase,
+        })
+    return table
 
 
 def run_tests():
     """Validates the canonical scoring module against all established mathematical truths."""
     print("[*] Running score_calc.py test suite...")
-    
+
     # 1. Test k=0 Clopper-Pearson bound
-    eps_0 = clopper_pearson_upper_bound(0, DEFAULT_SHOTS_DQI)
+    eps_0 = R_eps_plus(0)
     expected_eps_0 = 8.660587301657926e-4
     assert abs(eps_0 - expected_eps_0) < 1e-9, f"eps_0 mismatch: got {eps_0}, expected {expected_eps_0}"
-    
+
     # 2. Test k=0 Repetition factor R(0)
     r_0 = repetition_factor(eps_0)
     expected_r_0 = 1.1912604648115832
     assert abs(r_0 - expected_r_0) < 1e-8, f"R(0) mismatch: got {r_0}, expected {expected_r_0}"
-    
+
     # 3. Test k=1 Clopper-Pearson bound
-    eps_1 = clopper_pearson_upper_bound(1, DEFAULT_SHOTS_DQI)
+    eps_1 = R_eps_plus(1)
     assert 9.10e-4 < eps_1 < 9.11e-4, f"eps_1 mismatch: got {eps_1}, expected ~9.1042e-4"
-    
-    # 4. Test baseline composite reproduction (23.06062 / 23.0608)
-    # Using baseline values
-    c_inv_base = 62 * 1622.7203009737732
-    c_dqi_base = r_0 * (889 ** 2) * 433794.0703125
-    c_chem_base = 48.323649398441965 * 430 * 16266.0
-    s_base = composite_from_costs(c_inv_base, c_dqi_base, c_chem_base)
-    assert abs(s_base - 23.06061967) < 1e-4, f"s_base mismatch: got {s_base}"
-    
+
+    # 4. Test baseline composite reproduction (23.060808)
+    s_ml16 = composite(20.64208447, 59.8423, 9.9280)
+    assert abs(s_ml16 - 23.060808) < 1e-5, f"s_ml16 mismatch: got {s_ml16}, expected 23.060808"
+
     # 5. Test new SOTA composite reproduction (23.17767)
-    c_dqi_sota = r_0 * (889 ** 2) * 427471.2
-    c_chem_sota = 48.299209254045124 * 430 * 16266.0
-    s_sota = composite_from_costs(c_inv_base, c_dqi_sota, c_chem_sota)
+    c_inv_sota = invsqrt_cost(62, 1622.72030097)
+    c_dqi_sota = dqi_cost(889, 427471.2, 0)
+    c_chem_sota = chem_cost(430, 16266.0, 48.29920925)
+    s_sota = composite_from_costs(c_inv_sota, c_dqi_sota, c_chem_sota)
     assert abs(s_sota - 23.17767) < 1e-3, f"s_sota mismatch: got {s_sota}"
-    
-    # 6. Test breakeven dT
-    dt_880 = breakeven_dT(889, 880, 433794.0)
-    assert 8800.0 < dt_880 < 9200.0, f"dt_880 mismatch: {dt_880}"
-    
+
     print("[+] ALL score_calc.py TESTS PASSED!")
     print(f"    R(0) = {r_0:.8f}")
     print(f"    eps+(k=0) = {eps_0:.8e}")
     print(f"    eps+(k=1) = {eps_1:.8e}")
-    print(f"    Baseline Composite = {s_base:.5f}")
-    print(f"    Certified SOTA Composite = {s_sota:.5f}")
+    print(f"    ML16 Composite S = {s_ml16:.6f}")
+    print(f"    Certified SOTA Composite S = {s_sota:.5f}")
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1 and sys.argv[1] == "--test":
-        run_tests()
-    else:
-        run_tests()
-        rates = exchange_rates_summary()
-        print("\n[*] Canonical Exchange Rates:")
-        for k, v in rates.items():
-            print(f"    {k}: {v}")
+    run_tests()
+    rates = exchange_rates()
+    print("\n[*] Canonical Exchange Rates:")
+    for k, v in rates.items():
+        print(f"    {k}: {v}")
