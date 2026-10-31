@@ -7,13 +7,14 @@ remaining continuous angles and w are re-optimized with Adam. Output: words2 + w
   python src/pq.py IN.npz OUT.npz --brot 7 --stages 12 --steps 400
 """
 import argparse
+import os
 import sys
 import time
 
 import numpy as np
 import torch
 
-sys.path.insert(0, r"C:\Users\rusta\qcc\src")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import dft_eval as de  # noqa: E402
 from qat import Problem, decode, dev, DT, N  # noqa: E402
 

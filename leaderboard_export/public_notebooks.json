@@ -1,0 +1,1394 @@
+[
+  {
+    "ref": "ahmedberatozer/quantum-ai-df-thc-group-compression",
+    "title": "Quantum AI - DF-THC Group Compression",
+    "author": "Ahmed Berat \u00d6zer",
+    "votes": 102,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/ahmedberatozer/quantum-ai-df-thc-group-compression"
+  },
+  {
+    "ref": "somejoint/quantum-circuits-23-17-local-gm-889-qubit-dqi",
+    "title": "Quantum Circuits | 23.17 Local GM: 889-Qubit DQI",
+    "author": "Agniv Banerjee",
+    "votes": 89,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/somejoint/quantum-circuits-23-17-local-gm-889-qubit-dqi"
+  },
+  {
+    "ref": "dmitriigluzdov/quantum-circuit-compilation-from-source",
+    "title": "Quantum Circuit Compilation from Source",
+    "author": "Dmitrii Gluzdov",
+    "votes": 84,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/dmitriigluzdov/quantum-circuit-compilation-from-source"
+  },
+  {
+    "ref": "heliosli/the-dataset-is-public-now-enjoy",
+    "title": "The dataset is public now. Enjoy!\u2b50\u2b50\u2b50",
+    "author": "Heliosli",
+    "votes": 82,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/heliosli/the-dataset-is-public-now-enjoy"
+  },
+  {
+    "ref": "alexchilton/22-57-lb-verified-three-task-portfolio",
+    "title": "22.57 LB: Verified Three-Task Portfolio",
+    "author": "alex chilton",
+    "votes": 79,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/alexchilton/22-57-lb-verified-three-task-portfolio"
+  },
+  {
+    "ref": "kirilltym/quantum-circuits-exact-gauge-5-word-qrom",
+    "title": "Quantum Circuits | Exact Gauge + 5-Word QROM",
+    "author": "Kirill Tymchishin",
+    "votes": 61,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/kirilltym/quantum-circuits-exact-gauge-5-word-qrom"
+  },
+  {
+    "ref": "sohier/verifiable-circuit-compilation-starter",
+    "title": "Verifiable Circuit Compilation Starter",
+    "author": "Sohier Dane",
+    "votes": 59,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/sohier/verifiable-circuit-compilation-starter"
+  },
+  {
+    "ref": "lightningv08/bezout-schur-5-word-qrom",
+    "title": "Bezout-Schur + 5-Word QROM",
+    "author": "Vladislav Lavrentev",
+    "votes": 54,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/lightningv08/bezout-schur-5-word-qrom"
+  },
+  {
+    "ref": "manwithacat/the-real-150k-was-the-friends-we-made",
+    "title": "The Real $150K Was the Friends We Made",
+    "author": "manwithacat",
+    "votes": 53,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/manwithacat/the-real-150k-was-the-friends-we-made"
+  },
+  {
+    "ref": "mrmeows/21-0-circuits-let-s-all-reach-the-plateau",
+    "title": "21.0 circuits, let's all reach the plateau!",
+    "author": "mrmeows",
+    "votes": 49,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/mrmeows/21-0-circuits-let-s-all-reach-the-plateau"
+  },
+  {
+    "ref": "metric/google-quantum-ai-metric",
+    "title": "Google Quantum AI Metric",
+    "author": "Kaggle Competition Metrics",
+    "votes": 37,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/metric/google-quantum-ai-metric"
+  },
+  {
+    "ref": "busyaprime/lb-22-86841-22x-cheaper-than-google-s-circuits",
+    "title": "LB 22.86841 | 22x Cheaper Than Google's Circuits",
+    "author": "Akmal Xodarev (Busya PRIME)",
+    "votes": 32,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/busyaprime/lb-22-86841-22x-cheaper-than-google-s-circuits"
+  },
+  {
+    "ref": "phucthaiv02/qcc-verified-portfolio-df-thc-retraining-study",
+    "title": "QCC | Verified Portfolio + DF-THC Retraining Study",
+    "author": "DePie",
+    "votes": 29,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/phucthaiv02/qcc-verified-portfolio-df-thc-retraining-study"
+  },
+  {
+    "ref": "leoprovorov/the-unbearable-lightness-of-quantum-circuits",
+    "title": "\ud83e\udeb6 The Unbearable Lightness of Quantum Circuits",
+    "author": "AlekseiProvorov",
+    "votes": 28,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/leoprovorov/the-unbearable-lightness-of-quantum-circuits"
+  },
+  {
+    "ref": "anazemcev/quantum-circuits-source-exact-compilation",
+    "title": "Quantum Circuits | Source & Exact Compilation",
+    "author": "Artem1410",
+    "votes": 28,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/anazemcev/quantum-circuits-source-exact-compilation"
+  },
+  {
+    "ref": "yoyobar/lb-22-99-invsqrt-101-62-qubits",
+    "title": "LB 22.99 | invsqrt 101 - 62 qubits",
+    "author": "yoyobar",
+    "votes": 27,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/yoyobar/lb-22-99-invsqrt-101-62-qubits"
+  },
+  {
+    "ref": "evgendvorkin/google-quantum-ai-deep-eda-with-analogies",
+    "title": "\ud83e\udde0 Google Quantum AI | Deep EDA with Analogies",
+    "author": "\u0414\u0432\u043e\u0440\u043a\u0438\u043d \u0415\u0432\u0433\u0435\u043d\u0438\u0439 \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u0438\u0447",
+    "votes": 26,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/evgendvorkin/google-quantum-ai-deep-eda-with-analogies"
+  },
+  {
+    "ref": "atakanaldemir/quantum-circuits-iso-gap-dqi-h5",
+    "title": "Quantum Circuits: Iso-Gap + DQI h5",
+    "author": "Atakan Aldemir",
+    "votes": 19,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/atakanaldemir/quantum-circuits-iso-gap-dqi-h5"
+  },
+  {
+    "ref": "kozykappa/lb-21-38884-quantum-ai-q-circuits",
+    "title": "LB [21.38884] Quantum AI | Q. Circuits",
+    "author": "Kozykorpesh",
+    "votes": 19,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/kozykappa/lb-21-38884-quantum-ai-q-circuits"
+  },
+  {
+    "ref": "anazemcev/quantum-circuits-signed-digit-memory",
+    "title": "Quantum Circuits | Signed-Digit Memory",
+    "author": "Artem1410",
+    "votes": 19,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/anazemcev/quantum-circuits-signed-digit-memory"
+  },
+  {
+    "ref": "mpwolke/quantum-ai-kickmix-say-it-isn-t-so",
+    "title": "Quantum AI Kickmix: Say it isn't .So ",
+    "author": "Mar\u00edlia Prata",
+    "votes": 18,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/mpwolke/quantum-ai-kickmix-say-it-isn-t-so"
+  },
+  {
+    "ref": "rudrabhaskar/highest-public-score-direct-polynomial-phasing",
+    "title": "Highest Public Score | Direct Polynomial Phasing",
+    "author": "Rudra",
+    "votes": 17,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/rudrabhaskar/highest-public-score-direct-polynomial-phasing"
+  },
+  {
+    "ref": "saddamaditya/narrowed-877q-dqi-and-progressive-r10-chemistry",
+    "title": "Narrowed 877Q DQI and Progressive R10 Chemistry",
+    "author": "Maman Salto",
+    "votes": 16,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/saddamaditya/narrowed-877q-dqi-and-progressive-r10-chemistry"
+  },
+  {
+    "ref": "sigmaborov/22-85569-lb-exact-gauge-search",
+    "title": "22.85569 LB | Exact Gauge Search",
+    "author": "sigmaborov",
+    "votes": 15,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/sigmaborov/22-85569-lb-exact-gauge-search"
+  },
+  {
+    "ref": "anazemcev/quantum-circuits-thc-joint-norm-881q-dqi",
+    "title": "Quantum Circuits | THC Joint Norm + 881Q DQI",
+    "author": "Artem1410",
+    "votes": 15,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/anazemcev/quantum-circuits-thc-joint-norm-881q-dqi"
+  },
+  {
+    "ref": "kozykappa/quantum-ai-reproducible-verified-portfolio",
+    "title": "Quantum AI \u2014 reproducible verified portfolio",
+    "author": "Kozykorpesh",
+    "votes": 15,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/kozykappa/quantum-ai-reproducible-verified-portfolio"
+  },
+  {
+    "ref": "leoprovorov/but-some-q-squared-width-lab",
+    "title": "\ud83d\udf01 But Some Q Squared | Width Lab",
+    "author": "AlekseiProvorov",
+    "votes": 15,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/leoprovorov/but-some-q-squared-width-lab"
+  },
+  {
+    "ref": "avikdas567/fault-tolerant-kickmix-quantum-circuit-synthesis",
+    "title": "Fault-Tolerant Kickmix Quantum Circuit Synthesis",
+    "author": "Avik Das",
+    "votes": 15,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/avikdas567/fault-tolerant-kickmix-quantum-circuit-synthesis"
+  },
+  {
+    "ref": "anazemcev/quantum-circuits-881q-paired-dqi-r6-df-thc",
+    "title": "Quantum Circuits | 881Q Paired DQI + R6 DF-THC",
+    "author": "Artem1410",
+    "votes": 14,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/anazemcev/quantum-circuits-881q-paired-dqi-r6-df-thc"
+  },
+  {
+    "ref": "magmacot/quantum-circuits-clean-workspace-reuse",
+    "title": "Quantum Circuits | Clean Workspace Reuse",
+    "author": "Magmucot",
+    "votes": 13,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/magmacot/quantum-circuits-clean-workspace-reuse"
+  },
+  {
+    "ref": "mizeroluckygall/quantum-circuits-rotation-calibration",
+    "title": "Quantum Circuits | Rotation Calibration",
+    "author": "Mizero Lucky Gall",
+    "votes": 13,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/mizeroluckygall/quantum-circuits-rotation-calibration"
+  },
+  {
+    "ref": "avazaku/gauge-prox-sign-copy-qrom",
+    "title": "Gauge-Prox + Sign-Copy QROM",
+    "author": "Sargis Khachatryan",
+    "votes": 12,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/avazaku/gauge-prox-sign-copy-qrom"
+  },
+  {
+    "ref": "mizeroluckygall/quantum-circuits-rotation-calibration-39-char",
+    "title": "Quantum Circuits | Rotation Calibration (39 char)",
+    "author": "Mizero Lucky Gall",
+    "votes": 12,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/mizeroluckygall/quantum-circuits-rotation-calibration-39-char"
+  },
+  {
+    "ref": "avazaku/dqi-exact-42-and-arithmetic-full-verification",
+    "title": "DQI | Exact 42-AND Arithmetic + Full Verification",
+    "author": "Sargis Khachatryan",
+    "votes": 11,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/avazaku/dqi-exact-42-and-arithmetic-full-verification"
+  },
+  {
+    "ref": "manwithacat/vqcc-quantum-voodoo",
+    "title": "VQCC Quantum Voodoo",
+    "author": "manwithacat",
+    "votes": 10,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/manwithacat/vqcc-quantum-voodoo"
+  },
+  {
+    "ref": "leoprovorov/full-xor-chemistry-no-borrowed-bits",
+    "title": "\u269b\ufe0f Full-XOR Chemistry | No Borrowed Bits",
+    "author": "AlekseiProvorov",
+    "votes": 9,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/leoprovorov/full-xor-chemistry-no-borrowed-bits"
+  },
+  {
+    "ref": "zongaobian/quantum-circuits-signed-digits-bm-psi-qrom",
+    "title": "Quantum Circuits | Signed Digits, BM/Psi & QROM",
+    "author": "Zongao Bian",
+    "votes": 9,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/zongaobian/quantum-circuits-signed-digits-bm-psi-qrom"
+  },
+  {
+    "ref": "prvsiyan/verifier-guided-quantum-circuit-optimization",
+    "title": "Verifier-Guided Quantum Circuit Optimization",
+    "author": "prvsiyan",
+    "votes": 9,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/prvsiyan/verifier-guided-quantum-circuit-optimization"
+  },
+  {
+    "ref": "seyitkaangunes/verified-circuit-quick-wins",
+    "title": "Verified circuit quick wins",
+    "author": "Seyit kaan Gunes",
+    "votes": 8,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/seyitkaangunes/verified-circuit-quick-wins"
+  },
+  {
+    "ref": "seyitkaangunes/verified-portfolio-best-public-circuit-per-task",
+    "title": "Verified portfolio: best public circuit per task",
+    "author": "Seyit kaan Gunes",
+    "votes": 7,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/seyitkaangunes/verified-portfolio-best-public-circuit-per-task"
+  },
+  {
+    "ref": "sahangunasekara92/detailed-eda-visualizations-quantum-ai",
+    "title": "Detailed-EDA-&-Visualizations-Quantum-AI",
+    "author": "Sahan Gunasekara",
+    "votes": 7,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/sahangunasekara92/detailed-eda-visualizations-quantum-ai"
+  },
+  {
+    "ref": "mrmeows/qcc-14-50-everything-i-learned-open-circuits",
+    "title": "QCC 14.50 | Everything I learned + open circuits",
+    "author": "mrmeows",
+    "votes": 6,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/mrmeows/qcc-14-50-everything-i-learned-open-circuits"
+  },
+  {
+    "ref": "marculera/df-thc-merge-groups-before-dropping-them",
+    "title": "DF-THC: Merge Groups Before Dropping Them",
+    "author": "Lera",
+    "votes": 6,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/marculera/df-thc-merge-groups-before-dropping-them"
+  },
+  {
+    "ref": "avazaku/quantum-circuits-7-bit-bounds",
+    "title": "Quantum Circuits | 7-Bit Bounds",
+    "author": "Sargis Khachatryan",
+    "votes": 6,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/avazaku/quantum-circuits-7-bit-bounds"
+  },
+  {
+    "ref": "soukeaizenz/vqcc-from-source-gf2-banked-chemistry",
+    "title": "VQCC from Source + GF2-Banked Chemistry",
+    "author": "S\u014dsuke Aizen",
+    "votes": 6,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/soukeaizenz/vqcc-from-source-gf2-banked-chemistry"
+  },
+  {
+    "ref": "marculera/kickmix-from-scratch-build-check-debug-verify",
+    "title": "kickmix from scratch: build, check, debug, verify",
+    "author": "Lera",
+    "votes": 6,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/marculera/kickmix-from-scratch-build-check-debug-verify"
+  },
+  {
+    "ref": "manwithacat/vqcc-hedge-wizardry-notebook",
+    "title": "VQCC Hedge Wizardry Notebook",
+    "author": "manwithacat",
+    "votes": 5,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/manwithacat/vqcc-hedge-wizardry-notebook"
+  },
+  {
+    "ref": "avazaku/epigraph-rank-scales-889-qubit-dqi",
+    "title": "Epigraph Rank Scales + 889-Qubit DQI",
+    "author": "Sargis Khachatryan",
+    "votes": 5,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/avazaku/epigraph-rank-scales-889-qubit-dqi"
+  },
+  {
+    "ref": "avazaku/free-gap-sqp-889-qubit-dqi",
+    "title": "Free-Gap SQP + 889-Qubit DQI",
+    "author": "Sargis Khachatryan",
+    "votes": 5,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/avazaku/free-gap-sqp-889-qubit-dqi"
+  },
+  {
+    "ref": "avazaku/c60-gauge-descent-full-xor-qrom",
+    "title": "C60 Gauge Descent + Full-XOR QROM",
+    "author": "Sargis Khachatryan",
+    "votes": 5,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/avazaku/c60-gauge-descent-full-xor-qrom"
+  },
+  {
+    "ref": "michaelrustad/vqcc-r10-merged-group-chemistry-12-87-lb",
+    "title": "VQCC | R10 Merged-Group Chemistry | 12.87 LB",
+    "author": "Michael Rustad",
+    "votes": 5,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/michaelrustad/vqcc-r10-merged-group-chemistry-12-87-lb"
+  },
+  {
+    "ref": "dedquoc/quantum-circuit-synthesis-loop",
+    "title": "Quantum Circuit Synthesis Loop",
+    "author": "De DQ",
+    "votes": 5,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/dedquoc/quantum-circuit-synthesis-loop"
+  },
+  {
+    "ref": "kozykappa/quantum-circuits-sparse-sos-factors-and-circuit",
+    "title": "Quantum circuits | sparse SOS factors and circuit",
+    "author": "Kozykorpesh",
+    "votes": 5,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/kozykappa/quantum-circuits-sparse-sos-factors-and-circuit"
+  },
+  {
+    "ref": "chovyxu/quantum-eda-zh-en",
+    "title": "Quantum_EDA_ZH_EN",
+    "author": "Chovy",
+    "votes": 5,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/chovyxu/quantum-eda-zh-en"
+  },
+  {
+    "ref": "isabe11am00re/qcc-v47-submission",
+    "title": "QCC v47 submission",
+    "author": "Isabe11aM00re",
+    "votes": 4,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/isabe11am00re/qcc-v47-submission"
+  },
+  {
+    "ref": "avazaku/google-quantum-ai-r8-block-gauge-5-word-qrom",
+    "title": "Google Quantum AI | R8 Block Gauge + 5-Word QROM",
+    "author": "Sargis Khachatryan",
+    "votes": 4,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/avazaku/google-quantum-ai-r8-block-gauge-5-word-qrom"
+  },
+  {
+    "ref": "nilanjansaha123/21-87-fused-dqi-c46-chemistry-gold",
+    "title": "\ud83d\ude80 21.87+ Fused DQI & C46 Chemistry [Gold]",
+    "author": "Nilanjan_Saha123",
+    "votes": 4,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/nilanjansaha123/21-87-fused-dqi-c46-chemistry-gold"
+  },
+  {
+    "ref": "magmacot/qcc-76q-881q-dqi-verified-blend",
+    "title": "QCC 76Q | 881Q DQI | Verified Blend",
+    "author": "Magmucot",
+    "votes": 4,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/magmacot/qcc-76q-881q-dqi-verified-blend"
+  },
+  {
+    "ref": "orecord/quantum-circuit-compilation-pipeline",
+    "title": "Quantum circuit compilation pipeline ",
+    "author": "Or4k2!",
+    "votes": 4,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/orecord/quantum-circuit-compilation-pipeline"
+  },
+  {
+    "ref": "seshurajup/quantum-circuits-3-tasks-lb-19-2629",
+    "title": "Quantum Circuits | 3 Tasks | [LB 19.2629]",
+    "author": "SeshuRaju \ud83e\uddd8\u200d\u2642\ufe0f",
+    "votes": 4,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/seshurajup/quantum-circuits-3-tasks-lb-19-2629"
+  },
+  {
+    "ref": "manwithacat/9-12718-a-credited-circuit-portfolio",
+    "title": "9.12718: A Credited Circuit Portfolio",
+    "author": "manwithacat",
+    "votes": 4,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/manwithacat/9-12718-a-credited-circuit-portfolio"
+  },
+  {
+    "ref": "kchuang/quantum-ai-verifiable-circuit-compilation",
+    "title": "Quantum AI Verifiable Circuit Compilation",
+    "author": "Kuan-Chieh Huang",
+    "votes": 4,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/kchuang/quantum-ai-verifiable-circuit-compilation"
+  },
+  {
+    "ref": "malyshevdanil/verifiable-quantum-compilation-getting-started",
+    "title": "Verifiable Quantum Compilation | Getting Started",
+    "author": "Malyshev Danil",
+    "votes": 4,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/malyshevdanil/verifiable-quantum-compilation-getting-started"
+  },
+  {
+    "ref": "avazaku/slack-homotopy-897-qubit-dqi",
+    "title": "Slack Homotopy + 897-Qubit DQI",
+    "author": "Sargis Khachatryan",
+    "votes": 3,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/avazaku/slack-homotopy-897-qubit-dqi"
+  },
+  {
+    "ref": "chaitanyajamble/google-quantum-ai-verifiable-quantum-circuit-7",
+    "title": "Google Quantum AI - Verifiable Quantum Circuit 7",
+    "author": "Chaitanya Jamble",
+    "votes": 3,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/chaitanyajamble/google-quantum-ai-verifiable-quantum-circuit-7"
+  },
+  {
+    "ref": "chaitanyajamble/google-quantum-ai-verifiable-quantum-circuit-5",
+    "title": "\"Google Quantum AI - Verifiable Quantum Circuit 5",
+    "author": "Chaitanya Jamble",
+    "votes": 3,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/chaitanyajamble/google-quantum-ai-verifiable-quantum-circuit-5"
+  },
+  {
+    "ref": "rudrabhaskar/quantum-compilation-r113-verified-portfolio",
+    "title": "Quantum Compilation | R113 Verified Portfolio",
+    "author": "Rudra",
+    "votes": 3,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/rudrabhaskar/quantum-compilation-r113-verified-portfolio"
+  },
+  {
+    "ref": "clarelaurent/reciprocal-root-artifact-metric",
+    "title": "Reciprocal Root Artifact Metric",
+    "author": "Clare Laurent",
+    "votes": 3,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/clarelaurent/reciprocal-root-artifact-metric"
+  },
+  {
+    "ref": "vibhanshus/quantum-circuit-every-gate-counts",
+    "title": "Quantum Circuit | Every Gate Counts",
+    "author": "Vibhanshu Singh",
+    "votes": 3,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/vibhanshus/quantum-circuit-every-gate-counts"
+  },
+  {
+    "ref": "letusassume/verifiable-quantum-circuit-compilation-three-smal",
+    "title": "Verifiable Quantum Circuit Compilation: three smal",
+    "author": "Syed Shahed",
+    "votes": 3,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/letusassume/verifiable-quantum-circuit-compilation-three-smal"
+  },
+  {
+    "ref": "alexchilton/qcc-dqi-port-private",
+    "title": "QCC dqi port private",
+    "author": "alex chilton",
+    "votes": 3,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/alexchilton/qcc-dqi-port-private"
+  },
+  {
+    "ref": "sharif485/quantum-for-everyone-bits-qubits-eda",
+    "title": "Quantum for Everyone: Bits, Qubits & EDA",
+    "author": "zyvren",
+    "votes": 3,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/sharif485/quantum-for-everyone-bits-qubits-eda"
+  },
+  {
+    "ref": "isabe11am00re/qcc-v49-submission",
+    "title": "QCC v49 submission",
+    "author": "Isabe11aM00re",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/isabe11am00re/qcc-v49-submission"
+  },
+  {
+    "ref": "dmitriyab/vqcc-cand-0045-bit-identical-submission-rebuild",
+    "title": "VQCC cand-0045 bit identical submission rebuild",
+    "author": "Dmitry Abulkhanov",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/dmitriyab/vqcc-cand-0045-bit-identical-submission-rebuild"
+  },
+  {
+    "ref": "pablodiegoo/google-quantum-compilation-starter-notebook",
+    "title": "Google Quantum Compilation Starter Notebook",
+    "author": "Pablo Diego Pereira",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/pablodiegoo/google-quantum-compilation-starter-notebook"
+  },
+  {
+    "ref": "abisheksrivastav/quantum-circuit-portfolio-reproducibility-audit",
+    "title": "Quantum Circuit Portfolio: Reproducibility Audit",
+    "author": "Ak",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/abisheksrivastav/quantum-circuit-portfolio-reproducibility-audit"
+  },
+  {
+    "ref": "nilanjansaha123/auto-portfolio-drop-in-best-of-all-circuits",
+    "title": "Auto-Portfolio: Drop-In Best-of-All Circuits",
+    "author": "Nilanjan_Saha123",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/nilanjansaha123/auto-portfolio-drop-in-best-of-all-circuits"
+  },
+  {
+    "ref": "dennis6886/quantum-circuits-21-37712-fused-dqi-reproduction",
+    "title": "Quantum Circuits 21.37712 | Fused DQI Reproduction",
+    "author": "\u5976\u9f99",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/dennis6886/quantum-circuits-21-37712-fused-dqi-reproduction"
+  },
+  {
+    "ref": "clarelaurent/quantum-observatory-verified-metric",
+    "title": "Quantum Observatory Verified Metric",
+    "author": "Clare Laurent",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/clarelaurent/quantum-observatory-verified-metric"
+  },
+  {
+    "ref": "davidrolandpalsson/invsqrt-verifiable-quantum-circuit-compilation",
+    "title": "invsqrt \u2014 Verifiable Quantum Circuit Compilation",
+    "author": "David Roland Palsson ",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/davidrolandpalsson/invsqrt-verifiable-quantum-circuit-compilation"
+  },
+  {
+    "ref": "rushikeshpundkar/qcc-verified-portfolio-df-thc-retraining-study",
+    "title": "QCC | Verified Portfolio + DF-THC Retraining Study",
+    "author": "Rushikesh Pundkar",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/rushikeshpundkar/qcc-verified-portfolio-df-thc-retraining-study"
+  },
+  {
+    "ref": "haideptry/qcc-verified-portfolio-modern-dqi-study",
+    "title": "QCC | Verified Portfolio + Modern DQI Study",
+    "author": "haideptry",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/haideptry/qcc-verified-portfolio-modern-dqi-study"
+  },
+  {
+    "ref": "karthikyaddanapudix/quantum-dqi-matched-holdout-audit",
+    "title": "Quantum DQI Matched Holdout Audit",
+    "author": "Karthik Yaddanapudix ",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/karthikyaddanapudix/quantum-dqi-matched-holdout-audit"
+  },
+  {
+    "ref": "obstacledeveloper/qcc-9-12718-verified-three-task-walkthrough",
+    "title": "QCC 9.12718 | Verified Three-Task Walkthrough",
+    "author": "OBSTACLE DEVELOPER",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/obstacledeveloper/qcc-9-12718-verified-three-task-walkthrough"
+  },
+  {
+    "ref": "marsyas/vqcc-invsqrt-13-94x-full-source",
+    "title": "VQCC invsqrt 13.94x - full source",
+    "author": "Houssem Alayet",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/marsyas/vqcc-invsqrt-13-94x-full-source"
+  },
+  {
+    "ref": "songoku2005/google-quantum-ai-verifiable-quantum-circuit-com",
+    "title": "Google Quantum AI - Verifiable Quantum Circuit Com",
+    "author": "Suryansh Vashisth",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/songoku2005/google-quantum-ai-verifiable-quantum-circuit-com"
+  },
+  {
+    "ref": "syedinayatullah/verifiable-circuits-field-isomorphism-dqi-port",
+    "title": "Verifiable Circuits Field Isomorphism DQI Port",
+    "author": "Syed Inayatullah",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/syedinayatullah/verifiable-circuits-field-isomorphism-dqi-port"
+  },
+  {
+    "ref": "yangkuangou/quantum-gauge-workbench-exact-pair-descent",
+    "title": "Quantum Gauge Workbench: Exact Pair Descent",
+    "author": "Yang Kuang Ou",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/yangkuangou/quantum-gauge-workbench-exact-pair-descent"
+  },
+  {
+    "ref": "sakhawathossen/quntum-ai",
+    "title": "quntum ai ",
+    "author": "Sakhawat Hossen",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/sakhawathossen/quntum-ai"
+  },
+  {
+    "ref": "aamod06/verifier-guided-quantum-circuit-optimization",
+    "title": "Verifier-Guided Quantum Circuit Optimization",
+    "author": "Aamod06",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/aamod06/verifier-guided-quantum-circuit-optimization"
+  },
+  {
+    "ref": "mizeroluckygall/quantum-circuits-chemistry-weight-refit-41-char",
+    "title": "Quantum Circuits |Chemistry Weight Refit (41 char)",
+    "author": "Mizero Lucky Gall",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/mizeroluckygall/quantum-circuits-chemistry-weight-refit-41-char"
+  },
+  {
+    "ref": "vincentadithya/vqc-v10-verified-portfolio",
+    "title": "VQC v10 verified portfolio",
+    "author": "Adithya Dinesh",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/vincentadithya/vqc-v10-verified-portfolio"
+  },
+  {
+    "ref": "aditya24497/quantum-computing-a-starter-notebook",
+    "title": "Quantum Computing: A Starter Notebook",
+    "author": "Aditya Agrawal",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/aditya24497/quantum-computing-a-starter-notebook"
+  },
+  {
+    "ref": "b05204047elias/vqcc-submission-pitfalls-what-the-metric-checks",
+    "title": "VQCC submission pitfalls: what the metric checks",
+    "author": "Elias T.-H. Shieh",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/b05204047elias/vqcc-submission-pitfalls-what-the-metric-checks"
+  },
+  {
+    "ref": "mizeroluckygall/quantum-circuits-verified-peephole-optimizer-46",
+    "title": "Quantum Circuits| Verified Peephole Optimizer (46)",
+    "author": "Mizero Lucky Gall",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/mizeroluckygall/quantum-circuits-verified-peephole-optimizer-46"
+  },
+  {
+    "ref": "sumitchongder/notebook2f196e646b",
+    "title": "notebook2f196e646b",
+    "author": "Sumit Chongder",
+    "votes": 2,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/sumitchongder/notebook2f196e646b"
+  },
+  {
+    "ref": "avazaku/spectral-trust-epigraph-889-qubit-dqi",
+    "title": "Spectral Trust Epigraph + 889-Qubit DQI",
+    "author": "Sargis Khachatryan",
+    "votes": 1,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/avazaku/spectral-trust-epigraph-889-qubit-dqi"
+  },
+  {
+    "ref": "avazaku/probe-ranked-jacobi-889-qubit-dqi",
+    "title": "Probe-Ranked Jacobi + 889-Qubit DQI",
+    "author": "Sargis Khachatryan",
+    "votes": 1,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/avazaku/probe-ranked-jacobi-889-qubit-dqi"
+  },
+  {
+    "ref": "johnnykhan1/quantum-lb-math-what-a-qubit-is-worth",
+    "title": "Quantum LB Math: What a Qubit Is Worth",
+    "author": "John K",
+    "votes": 1,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/johnnykhan1/quantum-lb-math-what-a-qubit-is-worth"
+  },
+  {
+    "ref": "denpugovkin/twelve-bits-fails",
+    "title": "Twelve bits fails",
+    "author": "Den Pugovkin",
+    "votes": 1,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/denpugovkin/twelve-bits-fails"
+  },
+  {
+    "ref": "yashpalthakor/qubitopt-ai-guided-quantum-circuit-optimization",
+    "title": "QubitOpt \u2014 AI-Guided Quantum Circuit Optimization",
+    "author": "Yashpalsinh Thakor",
+    "votes": 1,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/yashpalthakor/qubitopt-ai-guided-quantum-circuit-optimization"
+  },
+  {
+    "ref": "manwithacat/is-the-63-qubit-inverse-square-root-optimal",
+    "title": "Is the 63-Qubit Inverse Square Root Optimal?",
+    "author": "manwithacat",
+    "votes": 1,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/manwithacat/is-the-63-qubit-inverse-square-root-optimal"
+  },
+  {
+    "ref": "avazaku/active-face-sqp-895-qubit-dqi",
+    "title": "Active-Face SQP + 895-Qubit DQI",
+    "author": "Sargis Khachatryan",
+    "votes": 1,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/avazaku/active-face-sqp-895-qubit-dqi"
+  },
+  {
+    "ref": "manwithacat/kickmix-quickstart",
+    "title": "kickmix quickstart",
+    "author": "manwithacat",
+    "votes": 1,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/manwithacat/kickmix-quickstart"
+  },
+  {
+    "ref": "muchat007/895q-streamed-decoder-measured-node-choices",
+    "title": "895Q Streamed Decoder: Measured Node Choices",
+    "author": "Mudit Chaturvedi",
+    "votes": 1,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/muchat007/895q-streamed-decoder-measured-node-choices"
+  },
+  {
+    "ref": "nilanjansaha123/auto-assemble-the-best-qcc-portfolio-22-70",
+    "title": "\ud83c\udfc6 Auto-Assemble the Best QCC Portfolio: 22.70+",
+    "author": "Nilanjan_Saha123",
+    "votes": 1,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/nilanjansaha123/auto-assemble-the-best-qcc-portfolio-22-70"
+  },
+  {
+    "ref": "geokocha/baseline-walkthrough",
+    "title": "baseline walkthrough",
+    "author": "Yuanchen Huang",
+    "votes": 1,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/geokocha/baseline-walkthrough"
+  },
+  {
+    "ref": "saurabhkumar234/quantum-portfolio-ledger",
+    "title": "Quantum Portfolio Ledger",
+    "author": "100rabh",
+    "votes": 1,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/saurabhkumar234/quantum-portfolio-ledger"
+  },
+  {
+    "ref": "chaitanyajamble/google-quantum-ai-verifiable-quantum-circuit-8",
+    "title": "Google Quantum AI - Verifiable Quantum Circuit 8",
+    "author": "Chaitanya Jamble",
+    "votes": 1,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/chaitanyajamble/google-quantum-ai-verifiable-quantum-circuit-8"
+  },
+  {
+    "ref": "povaj1/qcc-score-audit-local-vs-real-lb-scores",
+    "title": "QCC Score Audit: Local vs Real LB Scores",
+    "author": "ENES CAN",
+    "votes": 1,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/povaj1/qcc-score-audit-local-vs-real-lb-scores"
+  },
+  {
+    "ref": "manwithacat/kickmix-tools",
+    "title": "kickmix_tools",
+    "author": "manwithacat",
+    "votes": 1,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/manwithacat/kickmix-tools"
+  },
+  {
+    "ref": "anglolodorf/quantum-ai-frontier-v10",
+    "title": "Quantum AI Frontier v10",
+    "author": "ANGOUAH",
+    "votes": 1,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/anglolodorf/quantum-ai-frontier-v10"
+  },
+  {
+    "ref": "username1357/qcc-verified-21-34-portfolio",
+    "title": "QCC verified 21 34 portfolio",
+    "author": "username1357",
+    "votes": 1,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/username1357/qcc-verified-21-34-portfolio"
+  },
+  {
+    "ref": "avazaku/gauge-amplitude-cycle-888-qubit-dqi",
+    "title": "Gauge-Amplitude Cycle + 888-Qubit DQI",
+    "author": "Sargis Khachatryan",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/avazaku/gauge-amplitude-cycle-888-qubit-dqi"
+  },
+  {
+    "ref": "avazaku/column-epigraph-889-qubit-dqi",
+    "title": "Column Epigraph + 889-Qubit DQI",
+    "author": "Sargis Khachatryan",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/avazaku/column-epigraph-889-qubit-dqi"
+  },
+  {
+    "ref": "lucifer19/black-cat-quantum-heist",
+    "title": "Black Cat Quantum Heist ",
+    "author": "Agent Trainer",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/lucifer19/black-cat-quantum-heist"
+  },
+  {
+    "ref": "clarelaurent/three-programs-one-complete-submission",
+    "title": "Three Programs - One Complete Submission",
+    "author": "Clare Laurent",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/clarelaurent/three-programs-one-complete-submission"
+  },
+  {
+    "ref": "clarelaurent/tables-and-bit-flips-first-molecular-zip",
+    "title": "Tables and Bit Flips - First Molecular ZIP",
+    "author": "Clare Laurent",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/clarelaurent/tables-and-bit-flips-first-molecular-zip"
+  },
+  {
+    "ref": "clarelaurent/two-clues-a-decoder-submission-walkthrough",
+    "title": "Two Clues - A Decoder Submission Walkthrough",
+    "author": "Clare Laurent",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/clarelaurent/two-clues-a-decoder-submission-walkthrough"
+  },
+  {
+    "ref": "clarelaurent/a-quarter-turn-your-first-circuit-zip",
+    "title": "A Quarter Turn - Your First Circuit ZIP",
+    "author": "Clare Laurent",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/clarelaurent/a-quarter-turn-your-first-circuit-zip"
+  },
+  {
+    "ref": "kawh1111/qcomp-harvest-2298",
+    "title": "Qcomp harvest 2298",
+    "author": "kawh1111",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/kawh1111/qcomp-harvest-2298"
+  },
+  {
+    "ref": "clarelaurent/observatory-three-audited-circuit-studies",
+    "title": "Observatory - Three Audited Circuit Studies",
+    "author": "Clare Laurent",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/clarelaurent/observatory-three-audited-circuit-studies"
+  },
+  {
+    "ref": "clarelaurent/reciprocal-root-exact-gate-rewrite-study",
+    "title": "Reciprocal Root - Exact Gate Rewrite Study",
+    "author": "Clare Laurent",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/clarelaurent/reciprocal-root-exact-gate-rewrite-study"
+  },
+  {
+    "ref": "clarelaurent/syndrome-forge-iteration-budget-experiment",
+    "title": "Syndrome Forge - Iteration Budget Experiment",
+    "author": "Clare Laurent",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/clarelaurent/syndrome-forge-iteration-budget-experiment"
+  },
+  {
+    "ref": "clarelaurent/molecular-xor-reversible-parity-compiler",
+    "title": "Molecular XOR - Reversible Parity Compiler",
+    "author": "Clare Laurent",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/clarelaurent/molecular-xor-reversible-parity-compiler"
+  },
+  {
+    "ref": "clarelaurent/three-verified-circuits-a-reproducible-entry",
+    "title": "Three Verified Circuits - A Reproducible Entry",
+    "author": "Clare Laurent",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/clarelaurent/three-verified-circuits-a-reproducible-entry"
+  },
+  {
+    "ref": "dmitriyab/vqcc-cand-0044-bit-identical-submission-rebuild",
+    "title": "VQCC cand-0044 bit identical submission rebuild",
+    "author": "Dmitry Abulkhanov",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/dmitriyab/vqcc-cand-0044-bit-identical-submission-rebuild"
+  },
+  {
+    "ref": "dmitriyab/vqcc-cand-0040-bit-identical-submission-rebuild",
+    "title": "VQCC cand-0040 bit identical submission rebuild",
+    "author": "Dmitry Abulkhanov",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/dmitriyab/vqcc-cand-0040-bit-identical-submission-rebuild"
+  },
+  {
+    "ref": "hansleestahl/verifiable-circuit-compilation-round-8",
+    "title": "Verifiable Circuit Compilation \u2014 Round 8",
+    "author": "Hans Simmons",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/hansleestahl/verifiable-circuit-compilation-round-8"
+  },
+  {
+    "ref": "dmitriyab/vqcc-cand-0039-bit-identical-submission-rebuild",
+    "title": "VQCC cand-0039 bit identical submission rebuild",
+    "author": "Dmitry Abulkhanov",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/dmitriyab/vqcc-cand-0039-bit-identical-submission-rebuild"
+  },
+  {
+    "ref": "kawh1111/qcomp-harvest-v32",
+    "title": "Qcomp harvest v32",
+    "author": "kawh1111",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/kawh1111/qcomp-harvest-v32"
+  },
+  {
+    "ref": "atakanaldemir/qcc-888q-repair-and-native-chemistry-co-design",
+    "title": "QCC: 888Q Repair and Native Chemistry Co-design",
+    "author": "Atakan Aldemir",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/atakanaldemir/qcc-888q-repair-and-native-chemistry-co-design"
+  },
+  {
+    "ref": "hengck23/dqi-kmb-at-59-56854",
+    "title": "DQI: kmb at 59.56854",
+    "author": "hengck23",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/hengck23/dqi-kmb-at-59-56854"
+  },
+  {
+    "ref": "soucleberpaiva/what-does-not-move-this-baseline",
+    "title": "What does NOT move this baseline",
+    "author": "Cleber Paiva",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/soucleberpaiva/what-does-not-move-this-baseline"
+  },
+  {
+    "ref": "saurabhkumar234/chemistry-brot-cliff-measured-and-closed",
+    "title": "Chemistry Brot Cliff Measured And Closed",
+    "author": "100rabh",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/saurabhkumar234/chemistry-brot-cliff-measured-and-closed"
+  },
+  {
+    "ref": "ndaedzomukhuba/quantum-helios-front",
+    "title": "quantum-helios-front",
+    "author": "NDAEDZO MUKHUBA",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/ndaedzomukhuba/quantum-helios-front"
+  },
+  {
+    "ref": "manwithacat/tangfastic",
+    "title": "Tangfastic",
+    "author": "manwithacat",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/manwithacat/tangfastic"
+  },
+  {
+    "ref": "kawh1111/qcomp-hybrid-v44",
+    "title": "Qcomp hybrid v44",
+    "author": "kawh1111",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/kawh1111/qcomp-hybrid-v44"
+  },
+  {
+    "ref": "marculera/df-thc-10x-compact-groups-from-the-hamiltonian",
+    "title": "DF-THC 10x: Compact Groups From the Hamiltonian",
+    "author": "Lera",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/marculera/df-thc-10x-compact-groups-from-the-hamiltonian"
+  },
+  {
+    "ref": "dishantvaswani/google-quantum-compilation-starter-notebook",
+    "title": "Google Quantum Compilation Starter Notebook",
+    "author": "Dishant Vaswani",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/dishantvaswani/google-quantum-compilation-starter-notebook"
+  },
+  {
+    "ref": "haoxiangxuexi/exp-205-qc-23",
+    "title": "exp-205-qc-23",
+    "author": "suhan",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/haoxiangxuexi/exp-205-qc-23"
+  },
+  {
+    "ref": "nicks037/notebookf0cc1222d0",
+    "title": "notebookf0cc1222d0",
+    "author": "Nicks Seringian",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/nicks037/notebookf0cc1222d0"
+  },
+  {
+    "ref": "leotang09/vqcc-t7421-submission",
+    "title": "VQCC T7421 Submission",
+    "author": "Leo Tang",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/leotang09/vqcc-t7421-submission"
+  },
+  {
+    "ref": "cosmorin/quantum-somejoint-22-75-guard-verified",
+    "title": "Quantum SomeJoint 22 75 Guard Verified",
+    "author": "cosmorin",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/cosmorin/quantum-somejoint-22-75-guard-verified"
+  },
+  {
+    "ref": "kaiwalyaatulraut/quantum-ai",
+    "title": "Quantum AI",
+    "author": "KAIWALYA RAUT",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/kaiwalyaatulraut/quantum-ai"
+  },
+  {
+    "ref": "vyassenthilkumar/verified-assembly-of-public-qcc-circuits",
+    "title": "Verified Assembly of Public QCC Circuits",
+    "author": "Vyas Senthilkumar",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/vyassenthilkumar/verified-assembly-of-public-qcc-circuits"
+  },
+  {
+    "ref": "samehbenhouria/verify-first-baselines-and-verification-protocol",
+    "title": "Verify-First: Baselines and Verification Protocol",
+    "author": "Sameh Ben Houria",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/samehbenhouria/verify-first-baselines-and-verification-protocol"
+  },
+  {
+    "ref": "gedouluhui/qcc-heliosli-v12-22-7003-local-gm-verified-fork",
+    "title": "QCC heliosli v12 22.7003 local GM (verified fork)",
+    "author": "gedouluhui",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/gedouluhui/qcc-heliosli-v12-22-7003-local-gm-verified-fork"
+  },
+  {
+    "ref": "gedouluhui/qcc-22-67-local-gm-full-xor-chem-verified-fork",
+    "title": "QCC 22.67 local GM full-XOR chem (verified fork)",
+    "author": "gedouluhui",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/gedouluhui/qcc-22-67-local-gm-full-xor-chem-verified-fork"
+  },
+  {
+    "ref": "kawh1111/qcomp-harvest-2234",
+    "title": "Qcomp harvest 2234",
+    "author": "kawh1111",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/kawh1111/qcomp-harvest-2234"
+  },
+  {
+    "ref": "harshitsama/quantum-circuits-marginal-value-calculator",
+    "title": "Quantum Circuits Marginal Value Calculator",
+    "author": "Harshit Kumar",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/harshitsama/quantum-circuits-marginal-value-calculator"
+  },
+  {
+    "ref": "chaitanyajamble/google-quantum-ai-verifiable-quantum-circuit-10",
+    "title": "Google Quantum AI - Verifiable Quantum Circuit 10",
+    "author": "Chaitanya Jamble",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/chaitanyajamble/google-quantum-ai-verifiable-quantum-circuit-10"
+  },
+  {
+    "ref": "clarelaurent/reciprocal-root-quantized-table-study",
+    "title": "Reciprocal Root Quantized Table Study",
+    "author": "Clare Laurent",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/clarelaurent/reciprocal-root-quantized-table-study"
+  },
+  {
+    "ref": "yuki16/google-quantum-vqcc-baseline-repro-and-dfthcsos-sw",
+    "title": "Google_Quantum_VQCC_baseline_repro_and_dfthcsos_sw",
+    "author": "yuki16",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/yuki16/google-quantum-vqcc-baseline-repro-and-dfthcsos-sw"
+  },
+  {
+    "ref": "saurabhkumar234/dqi-width-anatomy-897-qubits",
+    "title": "DQI Width Anatomy 897 Qubits",
+    "author": "100rabh",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/saurabhkumar234/dqi-width-anatomy-897-qubits"
+  },
+  {
+    "ref": "kawh1111/qcomp-harvest-210",
+    "title": "Qcomp harvest 210",
+    "author": "kawh1111",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/kawh1111/qcomp-harvest-210"
+  },
+  {
+    "ref": "dungluongtuan/22-34-lb-reproducible-best-of-public-portfolio",
+    "title": "22.34 LB Reproducible Best-of-Public Portfolio",
+    "author": "Chi\u1ebfc l\u00e1",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/dungluongtuan/22-34-lb-reproducible-best-of-public-portfolio"
+  },
+  {
+    "ref": "manwithacat/dqi-salt-check-public-frontier",
+    "title": "DQI Salt Check: Public Frontier",
+    "author": "manwithacat",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/manwithacat/dqi-salt-check-public-frontier"
+  },
+  {
+    "ref": "manwithacat/prove-angle-k-for-every-measurement-outcome",
+    "title": "Prove ANGLE_k for every measurement outcome",
+    "author": "manwithacat",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/manwithacat/prove-angle-k-for-every-measurement-outcome"
+  },
+  {
+    "ref": "manwithacat/kickmix-fork-on-kaggle-same-results-less-memory",
+    "title": "kickmix fork on Kaggle: same results, less memory",
+    "author": "manwithacat",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/manwithacat/kickmix-fork-on-kaggle-same-results-less-memory"
+  },
+  {
+    "ref": "username1357/qcc-portfolio-21-34",
+    "title": "QCC portfolio 21 34",
+    "author": "username1357",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/username1357/qcc-portfolio-21-34"
+  },
+  {
+    "ref": "saurabhkumar234/quantum-v2-assembled-frontier-portfolio",
+    "title": "Quantum V2 Assembled Frontier Portfolio",
+    "author": "100rabh",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/saurabhkumar234/quantum-v2-assembled-frontier-portfolio"
+  },
+  {
+    "ref": "username1357/qcc-portfolio-manifest",
+    "title": "QCC portfolio manifest",
+    "author": "username1357",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/username1357/qcc-portfolio-manifest"
+  },
+  {
+    "ref": "chaitanyajamble/google-quantum-ai-verifiable-quantum-circuit-4",
+    "title": "Google Quantum AI - Verifiable Quantum Circuit  4",
+    "author": "Chaitanya Jamble",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/chaitanyajamble/google-quantum-ai-verifiable-quantum-circuit-4"
+  },
+  {
+    "ref": "saddamaditya/apex-portfolio-fused-dqi-c46-chemistry",
+    "title": "Apex Portfolio: Fused DQI & C46 Chemistry",
+    "author": "Maman Salto",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/saddamaditya/apex-portfolio-fused-dqi-c46-chemistry"
+  },
+  {
+    "ref": "xhsmsuper/qcc-mix-submit",
+    "title": "QCC Mix Submit",
+    "author": "xhsmsuper",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/xhsmsuper/qcc-mix-submit"
+  },
+  {
+    "ref": "chaitanyajamble/google-quantum-ai-verifiable-quantum-circuit-3",
+    "title": "Google Quantum AI - Verifiable Quantum Circuit  3",
+    "author": "Chaitanya Jamble",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/chaitanyajamble/google-quantum-ai-verifiable-quantum-circuit-3"
+  },
+  {
+    "ref": "saurabhkumar234/quantum-baseline-milestone-entry",
+    "title": "Quantum Baseline Milestone Entry",
+    "author": "100rabh",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/saurabhkumar234/quantum-baseline-milestone-entry"
+  },
+  {
+    "ref": "saddamaditya/quantum-circuit-profiler-flame-charts-anatomy",
+    "title": "Quantum Circuit Profiler: Flame Charts & Anatomy",
+    "author": "Maman Salto",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/saddamaditya/quantum-circuit-profiler-flame-charts-anatomy"
+  },
+  {
+    "ref": "saddamaditya/fused-decoder-c59-architecture-qcc-sota",
+    "title": "Fused Decoder & C59 Architecture \u2014 QCC SOTA",
+    "author": "Maman Salto",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/saddamaditya/fused-decoder-c59-architecture-qcc-sota"
+  },
+  {
+    "ref": "username1357/qcc-portfolio-20-42",
+    "title": "QCC portfolio 20 42",
+    "author": "username1357",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/username1357/qcc-portfolio-20-42"
+  },
+  {
+    "ref": "chaitanyajamble/google-quantum-ai-verifiable-quantum-circuit-2",
+    "title": "Google Quantum AI - Verifiable Quantum Circuit  2",
+    "author": "Chaitanya Jamble",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/chaitanyajamble/google-quantum-ai-verifiable-quantum-circuit-2"
+  },
+  {
+    "ref": "saddamaditya/quantum-compiler-lab-taylor-dqi-j5-chemistry",
+    "title": "Quantum Compiler Lab: Taylor DQI & J5 Chemistry",
+    "author": "Maman Salto",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/saddamaditya/quantum-compiler-lab-taylor-dqi-j5-chemistry"
+  },
+  {
+    "ref": "cosmorin/quantum-mrmeows-v7-reproduction",
+    "title": "Quantum mrmeows V7 reproduction",
+    "author": "cosmorin",
+    "votes": 0,
+    "views": 0,
+    "url": "https://www.kaggle.com/code/cosmorin/quantum-mrmeows-v7-reproduction"
+  }
+]

@@ -6,11 +6,12 @@ set to zero here; follow with cont.py to recover error_2.
 
   python src/ctrunc.py IN.npz OUT.npz C_NEW
 """
+import os
 import sys
 
 import numpy as np
 
-sys.path.insert(0, r"C:\Users\rusta\qcc\src")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import dft_eval as de  # noqa: E402
 
 

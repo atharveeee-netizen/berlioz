@@ -7,13 +7,14 @@ finish.py (one-body words for error_1) and gauge.py.
   python src/lamopt.py IN.npz OUT.npz [--steps 3000 --cap 0.0193]
 """
 import argparse
+import os
 import sys
 import time
 
 import numpy as np
 import torch
 
-sys.path.insert(0, r"C:\Users\rusta\qcc\src")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import dft_eval as de  # noqa: E402
 from qat import Problem, decode, dev, DT, N  # noqa: E402
 

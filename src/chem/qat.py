@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import dft_eval as de  # noqa: E402
 
 N = 76
-dev = torch.device("cuda")
+dev = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 DT = torch.float64
 
 

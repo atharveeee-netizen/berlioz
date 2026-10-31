@@ -11,7 +11,13 @@ from pathlib import Path
 
 import numpy as np
 
-sys.path[:0] = [os.environ.get("QCC_VERIFIERS", "data/verifiers"), os.path.dirname(os.path.abspath(__file__))]
+_chem_dir = os.path.dirname(os.path.abspath(__file__))
+_repo_root = os.path.dirname(os.path.dirname(_chem_dir))
+sys.path[:0] = [
+    os.environ.get("QCC_VERIFIERS", os.path.join(_repo_root, "verifiers")),
+    _chem_dir,
+    _repo_root,
+]
 import angles_qrom as AQ  # noqa: E402
 
 ap = argparse.ArgumentParser()
