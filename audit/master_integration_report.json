@@ -1,0 +1,71 @@
+{
+  "timestamp_utc": "2026-10-31T02:48:36Z",
+  "root": "C:\\Users\\noobg\\.gemini\\antigravity-ide\\scratch\\berlioz",
+  "gates": {
+    "G0_preflight": {
+      "status": "PASS",
+      "file_count": 18,
+      "zip_size_bytes": 78665545,
+      "uncompressed_bytes": 552137124,
+      "zip_sha256": "f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234",
+      "missing_files": [],
+      "extra_files": []
+    },
+    "G1_cost_model": {
+      "status": "PASS",
+      "invsqrt_q": 62,
+      "invsqrt_static_toffolis": 1502,
+      "invsqrt_t_like": 13,
+      "dqi_q": 889,
+      "dqi_static_toffolis": 434512,
+      "chem_factors": {
+        "R": 8,
+        "B": 143,
+        "C": 60
+      }
+    },
+    "G2_certificates": {
+      "status": "PASS",
+      "gf2_12_arithmetic": "VERIFIED",
+      "eckart_young_r_times_c": 480,
+      "eckart_young_floor": 290
+    },
+    "G3_semantic_verification": {
+      "status": "PASS",
+      "invsqrt": {
+        "cost": 101011.76138240828,
+        "ratio": 20.559726959448536,
+        "time_s": 0.11093497276306152
+      },
+      "dqi": {
+        "cost": 2573875414922.0293,
+        "ratio": 9.495200677540671,
+        "time_s": 27.719165086746216,
+        "val_err": 0,
+        "phase_err": 0
+      },
+      "chem": {
+        "cost": 337993966.8794745,
+        "ratio": 9.927986642176107,
+        "time_s": 44.59959626197815,
+        "lambda_eff": 48.323649398441965
+      },
+      "composite_score": 12.467926256773138
+    },
+    "G4_adversarial_security": {
+      "status": "PASS",
+      "live_zip_valid": true,
+      "path_traversal_defeated": true,
+      "corrupt_zip_defeated": true
+    },
+    "G5_provenance": {
+      "status": "PASS",
+      "provenance_files_checked": 86,
+      "provenance_files_matched": 86
+    }
+  },
+  "benchmarks": {},
+  "composite": {},
+  "overall_status": "ALL_GATES_PASSED",
+  "total_audit_time_s": 77.37
+}
