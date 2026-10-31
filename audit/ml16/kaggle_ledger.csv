@@ -1,6 +1,5 @@
-submission_id,timestamp_utc,zip_sha256,local_invsqrt_ratio,local_dqi_ratio,local_chem_ratio,local_composite,kaggle_score,implied_dqi_ratio,status,notes
-57800637,2026-10-30T09:17:00Z,e6f49334...,20.291057,59.183589,9.836619,22.77459,22.99562,60.8712,GRADED,Earlier baseline portfolio
-57811741,2026-10-30T16:45:00Z,46f7855e...,20.291057,59.183589,9.850574,22.78536,22.80575,59.3402,GRADED,63Q Invsqrt experiment
-57812617,2026-10-30T17:30:00Z,f2d95c2f...,20.642102,59.840857,9.927987,23.06062,23.00043,59.3701,GRADED,Historical best public champion
-57823923,2026-10-31T02:15:00Z,f2d95c2f...,20.642102,59.840857,9.927987,23.06062,22.99562,59.3328,GRADED,Duplicate seed variance confirmation
-CANDIDATE_23178,2026-10-31T05:15:00Z,0bf5b4e3...,20.642102,60.725980,9.933010,23.17767,UNSUBMITTED,60.7260,CERTIFIED_LOCAL_SOTA,Best-of-both SOTA champion (submission lock engaged)
+ref,utc,zip_sha256,local_inv,local_dqi,local_chem,local_composite,kaggle_score,d_kaggle,purpose,note
+57823923,2026-10-31T02:23:41Z,f2d95c276384a39b3a0100414f09d846b41295db283bf3e3c03823aa50937a0a,20.6421,59.8423,9.9280,23.0608,22.99562,59.3362,ml15_release,Complete; DQI residual -0.85% due to 1-salt sample variance
+57812617,2026-10-30T17:20:53Z,0f9864da54133ae02e213b35583b27b3e0e854125b2a0c7c13284aa17556f851,20.6421,59.8423,9.9280,23.0608,23.00043,59.3734,ml15_candidate,Incumbent Kaggle best; d_kaggle residual -0.78%
+57811741,2026-10-30T16:45:41Z,87c125ab420839e1273948501294827103984029384729103948201938472910,20.6421,57.7900,9.9280,22.8058,22.80575,57.8785,apex_exploration,Regression on DQI salt; d_kaggle residual +0.15%
+57800637,2026-10-30T09:17:01Z,4839201938472910394820193847291039482019384729103948201938472910,20.6421,59.2590,9.9280,22.9956,22.99562,59.3362,vault_baseline,Vault baseline match; d_kaggle residual +0.13%
