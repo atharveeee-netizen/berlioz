@@ -1,0 +1,40 @@
+{
+  "baseline_run_utc": "2026-10-31T05:36:40Z",
+  "status": "QUICK_TEST_PASS",
+  "invsqrt": {
+    "qubits": 62,
+    "t_equiv": 1622.7,
+    "cost": 100608.68,
+    "ratio": 20.64210,
+    "k_failures": 0,
+    "determinism_variance": 0.0,
+    "delta_vs_stated_table_pct": 0.00
+  },
+  "dqi": {
+    "qubits": 889,
+    "mean_dynamic_toffolis": 427471.2,
+    "shots_evaluated": 256,
+    "R_0_factor": 1.19126046,
+    "k_failures": 0,
+    "cost": 402454582311.96,
+    "ratio": 60.72598,
+    "shot_std_error": 312.4,
+    "delta_vs_stated_table_pct": 0.00
+  },
+  "chemistry": {
+    "qubits": 430,
+    "total_toffolis": 16266.0,
+    "lambda_eff": 48.2992,
+    "cost": 337823023.22,
+    "ratio": 9.93301,
+    "determinism_variance": 0.0,
+    "delta_vs_stated_table_pct": 0.00
+  },
+  "composite_score_host_R": 23.17767,
+  "theoretical_score_R_1": 24.57001,
+  "tolerance_check": {
+    "allowed_delta_pct": 0.05,
+    "all_within_tolerance": true,
+    "verdict": "PASS"
+  }
+}
