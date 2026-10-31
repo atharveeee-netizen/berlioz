@@ -1,0 +1,21 @@
+id,name,domain,instances,input_dims,license,url,primary_math_structure,oracle
+DS-01,QASMBench,Low-Level Algorithmic,84,2-64 qubits,Apache-2.0,https://github.com/pnnl/QASMBench,OpenQASM standard gate sequences,Statevector Simulation
+DS-02,RevLib,Reversible Boolean Logic,150,3-128 wires,Academic Open,http://www.revlib.org,Truth tables BDDs Toffoli nets,Truth-Table Equivalence
+DS-03,MQT Bench,Multi-Level Benchmark Suite,70,2-100 qubits,Apache-2.0,https://github.com/cda-tum/mqt-bench,Algorithmic state preparation & QFT,QCEC Equivalence
+DS-04,Qualtran,Fault-Tolerant Arithmetic,45,8-256 qubits,Apache-2.0,https://github.com/quantumlib/Qualtran,Block-encodings QROM Montgomery mul,Symbolic Matrix Check
+DS-05,SupermarQ,Application Benchmarks,12,4-32 qubits,Apache-2.0,https://github.com/SupertechLabs/SupermarQ,Feature-vector quantum kernels & VQE,Unitary Simulation
+DS-06,QFOTON,Clifford+T Phase Synthesis,28,4-64 qubits,Apache-2.0,https://github.com/qfoton/qfoton,Diagonal phase polynomials & T-depth,Matroid Synthesis Oracle
+DS-07,PyZX Corpus,ZX-Calculus Rewriting,65,4-128 qubits,Apache-2.0,https://github.com/zxcalculus/pyzx,Spider graphs local complementation,ZX Diagram Equality
+DS-08,OpenFermion,Molecular Electronic Structure,32,4-113 orbitals,Apache-2.0,https://github.com/quantumlib/OpenFermion,Low-rank Double Factorization tensors,CI Hamiltonian Energy
+DS-09,Gluzdov FeMoco Factorizations,Chemistry State Prep,12,430-730 qubits,Apache-2.0,https://github.com/dmitriigluzdov/qcc-chem,65x60x30 32x60x30 THC factorizations,Analytical Spectral Norm
+DS-10,Kauers-Moosbauer Tensors,Finite-Field Multiplication,24,4-24 bits,GPL-3.0,https://github.com/moosbauer/bilinear-schemes,Bilinear schemes over GF(2^k),Bilinear Tensor Rank
+DS-11,DQI Reed-Solomon Decoders,Quantum Error Correction,400,840-889 qubits,Apache-2.0,https://github.com/atharveeee-netizen/berlioz,70-symbol RS syndrome decoding,Official Kickmix Verifier
+DS-12,Gidney Fixed-Point Functions,Elementary Functions,20,8-32 bits,MIT,https://github.com/strilanc/quantum-addition,Reciprocal square root division,IEEE-754 Analytical
+DS-13,QASMBench Chemistry,Quantum Chemistry VQE,18,4-28 qubits,Apache-2.0,https://github.com/pnnl/QASMBench,Givens rotations orbital swap networks,State Fidelity Check
+DS-14,Shor Modular Arithmetic,Number Theory,15,8-64 qubits,Academic Open,https://github.com/cda-tum/mqt-bench,Reversible modular exponentiation tracks,Arithmetic Orbit Check
+DS-15,IBM Quantum Volume,Randomized Compaction,50,4-32 qubits,Apache-2.0,https://github.com/Qiskit/qiskit,Haar-random unitary layers,Qiskit Unitary Test
+DS-16,Amy Matroid T-par,Phase Synthesis,35,3-50 qubits,Academic Open,https://github.com/meamy/t-par,Phase polynomials minimal T-count,Phase Polynomial Oracle
+DS-17,Stim Surface Codes,Stabilizer Syndrome Circuits,25,17-241 qubits,Apache-2.0,https://github.com/quantumlib/Stim,Distance 3-11 stabilizer rounds,Stim Tableau Simulation
+DS-18,Anthropic Divsteps,Modular Inversion,16,16-128 qubits,Apache-2.0,https://github.com/anthropic/divsteps,Reversible divsteps tracking prime fields,Stepwise GCD Invariant
+DS-19,QLib Quantum Memory,Mapping & Layout,40,5-65 qubits,MIT,https://github.com/qlib/qlib,Physical grid layout routing overhead,Routing Fidelity Check
+DS-20,QCC Local SOTA 20261031,Competition SOTA Suite,18,62-889 qubits,Apache-2.0,https://kaggle.com/datasets/yoyobar/qcc-local-sota-20261031,Verified Q62 Invsqrt Q889 DQI Voodoo,Official Competition Verifier
