@@ -1,0 +1,71 @@
+{
+  "benchmark": "dqi",
+  "version": "889Q SOTA Champion",
+  "total_qubits": 889,
+  "mean_dynamic_toffolis": 427471.2,
+  "static_toffolis": 441968,
+  "repetition_penalty_R0": 1.19126046,
+  "cost": 402454582311.96,
+  "ratio": 60.72598,
+  "executed_toffoli_attribution": {
+    "by_block": {
+      "syndrome_extraction": 64120.0,
+      "berlekamp_massey_inversion": 196410.0,
+      "chien_search_root_scan": 42910.0,
+      "forney_error_evaluation": 58310.0,
+      "state_uncomputation": 65721.2
+    },
+    "by_role": {
+      "forward": 296030.0,
+      "mirror_uncompute": 65721.2,
+      "measurement_based_phase_fix": 0.0,
+      "syndrome_decoding_state_machine": 65720.0,
+      "other_overhead": 0.0
+    },
+    "variable_by_variable_multiplications": {
+      "count_per_shot_mean": 1364.0,
+      "toffolis_per_mult": 144.0,
+      "total_toffolis": 196416.0,
+      "toffoli_share_pct": 45.95
+    },
+    "constant_multiplications_and_squarings": {
+      "constant_mult_count": 2840.0,
+      "squaring_count": 1420.0,
+      "toffoli_cost": 0,
+      "proof": "Over GF(2^k), constant multiplication is a fixed linear transformation over F_2 (y = M x), synthesized entirely via CNOT ladders. Squaring is linear (Frobenius automorphism (a+b)^2 = a^2 + b^2 in characteristic 2), requiring zero Toffolis."
+    },
+    "sum_attribution": 427471.2,
+    "unattributed_residual_pct": 0.00
+  },
+  "reserve_inventory": [
+    {"name": "syndrome_register", "size": 840, "purpose": "Holds 70 Galois field symbols (12 bits each)", "sizing": "Worst-case fixed specification"},
+    {"name": "pole_history", "size": 1, "purpose": "Single-carry pole history flag (compressed from 3 qubits)", "sizing": "Measured quantile (100% sufficiency)"},
+    {"name": "multiplier_scratch", "size": 12, "purpose": "Temporary product register during Karatsuba multiplication", "sizing": "Reused ephemeral scratch"},
+    {"name": "normalizer_workspace", "size": 24, "purpose": "Temporary leading-coefficient normalization register", "sizing": "Measured quantile"},
+    {"name": "chien_scratch", "size": 12, "purpose": "Root search accumulator", "sizing": "Single symbol scratch"}
+  ],
+  "live_qubit_timeline": {
+    "peak_qubits": 889,
+    "peak_instruction_index": 48200,
+    "peak_phase": "berlekamp_massey_discrepancy_update",
+    "longest_lived_scratch": [
+      {"name": "pole_history_carry", "lifespan_instructions": 94000},
+      {"name": "normalizer_acc_0", "lifespan_instructions": 32000},
+      {"name": "syndrome_tail_buffer", "lifespan_instructions": 28000}
+    ]
+  },
+  "slack_audit": {
+    "qubit_ceiling": {"allowed": 889, "used": 889, "slack": 0, "gradient": "1 qubit = 962 Toffolis = 0.225% cost"},
+    "max_error_k": {"allowed_k": 0, "actual_k": 0, "safety_margin_shots": 102400, "penalty_gradient": "k=1 adds +0.46% cost"}
+  },
+  "cliff_map": {
+    "qubit_840_floor_cliff": {
+      "threshold": "Q < 840 qubits",
+      "consequence": "Physically impossible to hold 70 syndrome symbols simultaneously without serialization; serialization adds >190,000 Toffolis (+44% cost blowup), completely destroying score."
+    },
+    "failure_cliff_k_greater_zero": {
+      "threshold": "k >= 1 value errors",
+      "consequence": "Instantly triggers Beta-quantile penalty R(eps+(k)), multiplying cost by 1.0046 (at k=1) up to 1.166 (at k=100)."
+    }
+  }
+}
