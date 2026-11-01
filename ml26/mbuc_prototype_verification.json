@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "experiment": "ML26-DQI-5",
+    "title": "Measurement-Based Uncomputation and Pauli-Frame Tracking Analysis",
+    "field": "GF(2^12)",
+    "benchmark": "Benchmark II (DQI)",
+    "total_unit_tests": 51,
+    "tests_passed": 51,
+    "total_value_errors": 0,
+    "total_phase_errors": 0,
+    "status": "ALL_TESTS_PASS_ZERO_ERROR"
+  },
+  "unit_test_summary": {
+    "and_gate_mbuc": {
+      "num_toffoli_like": 1,
+      "value_error": false,
+      "phase_error": false
+    },
+    "gf2_mul_mbuc_batch_50": {
+      "tests_run": 50,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "toffoli_per_mul": 63,
+      "sample_tests": [
+        {
+          "test_id": 1,
+          "val_x": 2620,
+          "val_y": 457,
+          "value_error": false,
+          "phase_error": false,
+          "status": "PASS"
+        },
+        {
+          "test_id": 2,
+          "val_x": 103,
+          "val_y": 3038,
+          "value_error": false,
+          "phase_error": false,
+          "status": "PASS"
+        },
+        {
+          "test_id": 3,
+          "val_x": 1127,
+          "val_y": 1004,
+          "value_error": false,
+          "phase_error": false,
+          "status": "PASS"
+        },
+        {
+          "test_id": 4,
+          "val_x": 915,
+          "val_y": 572,
+          "value_error": false,
+          "phase_error": false,
+          "status": "PASS"
+        },
+        {
+          "test_id": 5,
+          "val_x": 3017,
+          "val_y": 420,
+          "value_error": false,
+          "phase_error": false,
+          "status": "PASS"
+        }
+      ]
+    }
+  },
+  "candidate_evaluations": {
+    "candidate_1_chien_zero_hold_ladder": {
+      "name": "Chien Search Zero-Hold Ladder (11 ANDs / point)",
+      "instances": 4025,
+      "gates_per_instance": 11,
+      "coherent_uncompute_toffolis": 44275,
+      "mbuc_uncompute_toffolis": 0,
+      "toffolis_saved": 44275,
+      "hmr_measurements": 44275,
+      "clifford_cz_corrections": 44275,
+      "qubit_overhead": 0,
+      "feasibility": "PROVEN_AND_IMPLEMENTED_IN_CHAMPION",
+      "notes": "Del_and uses HMR + CZ if b0; halves Toffolis from 88,550 to 44,275"
+    },
+    "candidate_2_ribm_discrepancy_products": {
+      "name": "RiBM Discrepancy Multiplications (init_gf2_mul)",
+      "instances": 1890,
+      "coherent_uncompute_toffolis": 79380,
+      "mbuc_uncompute_toffolis": 0,
+      "toffolis_saved": 79380,
+      "hmr_measurements": 22680,
+      "clifford_cz_corrections": 136080,
+      "qubit_overhead": 0,
+      "feasibility": "VERIFIED_CORRECT_AND_PROMOTABLE",
+      "notes": "Del_gf2_mul uses 12 HMR + bilinear CZ network; eliminates 79.4k uncompute Toffolis"
+    },
+    "candidate_3_forney_inverse_scaffold": {
+      "name": "Forney Field Inversion Squaring Scaffold",
+      "instances": 70,
+      "coherent_uncompute_toffolis": 11760,
+      "mbuc_uncompute_toffolis": 0,
+      "toffolis_saved": 11760,
+      "hmr_measurements": 3360,
+      "clifford_cz_corrections": 20160,
+      "qubit_overhead": 0,
+      "feasibility": "VERIFIED_CORRECT_AND_PROMOTABLE",
+      "notes": "Scaffold products uncomputed via del_gf2_mul with zero Toffolis"
+    },
+    "candidate_4_eea_division_ladder": {
+      "name": "EEA Division Ladder Quotients (q_i = B/A)",
+      "instances": 70,
+      "coherent_uncompute_toffolis": 242400,
+      "mbuc_uncompute_toffolis": "NON_CLIFFORD",
+      "toffolis_saved": 0,
+      "hmr_measurements": 0,
+      "clifford_cz_corrections": "REQUIRES_NON_CLIFFORD_FEED_FORWARD",
+      "qubit_overhead": "N/A",
+      "feasibility": "FALSIFIED_CANNOT_USE_CLIFFORD_MBUC",
+      "notes": "Quotient inversion requires non-Clifford phase (-1)^{B*A^-1}; MBUC fails to eliminate Toffolis"
+    },
+    "candidate_5_input_syndromes": {
+      "name": "Direct Syndrome Input Registers S0..S69",
+      "instances": 70,
+      "coherent_uncompute_toffolis": "N/A",
+      "mbuc_uncompute_toffolis": "ILLEGAL",
+      "toffolis_saved": 0,
+      "hmr_measurements": 0,
+      "clifford_cz_corrections": "N/A",
+      "qubit_overhead": "N/A",
+      "feasibility": "FALSIFIED_VIOLATES_SUPERPOSITION_CONTRACT",
+      "notes": "Syndromes are in quantum superposition; measuring collapses state and incurs 100% value error"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "protocol": "Masterloop 23 Track B - Chemistry R=10 QROM Resource Report",
+    "factorization": "fact/dfthc_r10_b129_c60_brot8.npz",
+    "rank_r": 10,
+    "bases_b": 129,
+    "ensemble_c": 60,
+    "orbitals_n": 76,
+    "brot": 8,
+    "lambda_eff": 48.0311413197687
+  },
+  "incumbent_r8": {
+    "rank": 8,
+    "bases": 143,
+    "lambda_eff": 48.29920925404513,
+    "total_toffolis": 16266.0,
+    "angle_toffolis_2pass": 8336.0,
+    "prep_toffolis": 7930,
+    "total_qubits": 430,
+    "cost": 337823023.2223082,
+    "ratio": 9.933010356453256
+  },
+  "candidate_r10_4address_j3": {
+    "rank": 10,
+    "bases": 129,
+    "batch_size_j": 3,
+    "circuits_count": 25,
+    "lambda_eff": 48.0311413197687,
+    "angle_toffolis_1pass": 10850,
+    "angle_toffolis_2pass": 21700.0,
+    "prep_toffolis": 9072,
+    "total_toffolis": 30772.0,
+    "max_circuit_qubits": 103,
+    "total_qubits": 415,
+    "cost": 613375926.4871478,
+    "ratio": 5.470706370126587,
+    "pebbled_init_tested": true,
+    "anf_lookup_erasure_tested": true,
+    "ancilla_cleanup": "100.0% clean to |0>"
+  },
+  "candidate_r10_2address_j7": {
+    "rank": 10,
+    "bases": 129,
+    "batch_size_j": 7,
+    "circuits_count": 11,
+    "lambda_eff": 48.0311413197687,
+    "angle_toffolis_1pass": 8503,
+    "angle_toffolis_2pass": 17006.0,
+    "prep_toffolis": 9072,
+    "total_toffolis": 26078.0,
+    "max_circuit_qubits": 124,
+    "total_qubits": 447,
+    "cost": 559892578.1916069,
+    "ratio": 5.993291783137694,
+    "ancilla_cleanup": "100.0% clean to |0>"
+  }
+}

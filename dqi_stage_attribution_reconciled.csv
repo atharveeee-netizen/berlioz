@@ -1,0 +1,13 @@
+stage_id,stage_name,pipeline_role,static_toffolis,dynamic_mean_toffolis,percent_of_dynamic_total,scratch_qubits_active,reversible_cleanup_type,optimization_opportunity
+1,mask_projection,forward_setup,0,0.0,0.00%,0,none,deterministic classical projection (0 Toffolis)
+2,initial,forward_setup,0,0.0,0.00%,0,none,linear pointer initialization over F2 (0 Toffolis)
+3,extract,forward_compute,66240,64120.0,15.00%,24,unextract,Hankel power-sum extraction across 34 paired heads
+4,synthesis,forward_compute,32580,31540.0,7.38%,36,unsynthesis,Berlekamp-Massey discrepancy updates
+5,convert,forward_compute,60320,58310.0,13.64%,49,unconvert,rational Padé root basis conversion
+6,scan,active_phase_search,44275,42910.0,10.04%,12,self_restoring,Chien search root detection via 4025 zero-hold evaluations
+7,unconvert,uncompute_cleanup,59915,57920.0,13.55%,49,backward_mirror,Padé basis uncomputation (target for Pauli frame MBUC)
+8,unsynthesis,uncompute_cleanup,53680,51880.0,12.14%,36,backward_mirror,polynomial uncomputation (bypassed by RiBM)
+9,unextract,uncompute_cleanup,124958,120791.2,28.25%,24,backward_mirror,Hankel power-sum uncomputation (target for shared AND reuse)
+10,uninitial,cleanup_pointers,0,0.0,0.00%,0,none,pointer restoration over F2 (0 Toffolis)
+11,restore_masks,cleanup_verification,0,0.0,0.00%,0,none,classical outcome verification (0 Toffolis)
+total,total_pipeline,complete,441968,427471.2,100.00%,49,complete,forward=153970.0 (36.02%) | scan=42910.0 (10.04%) | uncompute=230591.2 (53.94%)

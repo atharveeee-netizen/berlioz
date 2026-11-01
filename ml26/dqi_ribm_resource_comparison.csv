@@ -1,0 +1,11 @@
+Stage,Incumbent_Algorithm,Incumbent_Static_Toffolis,Incumbent_Dynamic_Toffolis,RiBM_Algorithm,RiBM_Static_Toffolis,RiBM_Dynamic_Toffolis,Delta_Dynamic_Toffolis,Mechanism_and_Attribution
+Syndrome_Input,Direct_Register_Read,0,0.0,Direct_Register_Read,0,0.0,0.0,Identical input register schema (S0..S69)
+Initial_Shift_Loop,Left_Align_Syndromes,420,380.2,Left_Align_Syndromes,420,380.2,0.0,Identical syndrome pre-alignment
+Key_Equation_Solver_Forward,Synchronized_EEA_with_Division,32580,24850.4,Inversionless_BM_Cross_Multiplication,236950,236950.0,+212099.6,Replaces division ladder with 1890 discrepancy mults and 4970 polynomial mults
+Division_Inversion_Uncompute,Reverse_EEA_Division_Ladder,242400,242400.0,None_Zero_Inversions,0,0.0,-242400.0,Elimination of all 70 finite field division uncomputations
+Chien_Search_Root_Finding,Independent_Zero_Hold_Evaluation,44275,44275.0,Projective_Zero_Hold_Evaluation,44275,44275.0,0.0,Identical root evaluation on projective polynomial [Lambda]
+Forney_Evaluator,Evaluation_and_Quotient,45000,45000.0,Projective_Quotient_Cancellation,45000,45000.0,0.0,Scale factor c cancels identically in Forney quotient
+MBUC_Phase_Kickback,Pauli_Frame_CNOT_Kickback,0,0.0,Pauli_Frame_CNOT_Kickback,0,0.0,0.0,Phase kickback invariant to projective representation
+Polynomial_Uncompute_and_Cleanup,Reverse_EEA_Polynomial_Rollback,53680,48820.6,Temporary_AND_and_Pauli_Frame_Cleanup,78535,78535.4,+29714.8,Cleanup of RiBM multiplication intermediates via Pauli frame tracking
+Reverse_Syndrome_Restoration,Reverse_Shift_Loop,23613,21745.0,Reverse_Shift_Loop,23613,21745.0,0.0,Restoration of syndrome registers S0..S69 to input state
+Total_Decoder_Execution,Proos_Zalka_EEA,441968,427471.2,Projective_RiBM,428793,340640.4,-86830.8,Net 20.31% dynamic Toffoli reduction (Score moves from 23.18 to 25.00)

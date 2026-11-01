@@ -1,0 +1,127 @@
+{
+  "$schema": "ML26 Research Registry Schema",
+  "version": "1.0.0",
+  "description": "Schema for persistent research entries stored in SYZYGY memory (viking://berlioz/research/...)",
+  "entry_schema": {
+    "id": {
+      "type": "string",
+      "description": "Unique experiment identifier, e.g. DQI-1, CHEM-2, INV-1",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "description": "Human-readable title of the research question",
+      "required": true
+    },
+    "research_question": {
+      "type": "string",
+      "description": "The precise question being investigated",
+      "required": true
+    },
+    "mathematical_formulation": {
+      "type": "string",
+      "description": "Formal mathematical statement of the problem",
+      "required": false
+    },
+    "source_references": {
+      "type": "array",
+      "items": "string",
+      "description": "arXiv IDs, paper titles, notebook URLs, or code references",
+      "required": false
+    },
+    "hypothesis": {
+      "type": "string",
+      "description": "The specific hypothesis being tested",
+      "required": true
+    },
+    "evidence_class": {
+      "type": "string",
+      "enum": ["E1", "E2", "E3", "E4", "E5", "E6"],
+      "description": "E1=Source, E2=Reproduced, E3=Derived, E4=Hypothesis, E5=Rejected, E6=Unknown",
+      "required": true
+    },
+    "agent_owner": {
+      "type": "string",
+      "enum": ["RL", "DQI-A", "CHEM-A", "INV-A", "RC-A", "IV", "RA", "REL"],
+      "description": "Responsible agent role",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "enum": ["REGISTERED", "INVESTIGATING", "PROTOTYPE", "LOCALLY_VERIFIED", "OFFICIALLY_VERIFIED", "PROMOTABLE", "REJECTED", "DEFERRED"],
+      "description": "Current lifecycle state",
+      "required": true
+    },
+    "implementation_revision": {
+      "type": "string",
+      "description": "Git commit or source revision of the implementation",
+      "required": false
+    },
+    "experiment_config": {
+      "type": "object",
+      "description": "Parameters, seeds, configurations used",
+      "required": false
+    },
+    "results": {
+      "type": "object",
+      "description": "Measured results including resource counts",
+      "properties": {
+        "logical_qubits": {"type": "integer"},
+        "peak_workspace": {"type": "integer"},
+        "static_toffolis": {"type": "integer"},
+        "dynamic_mean_toffolis": {"type": "number"},
+        "t_equivalent_cost": {"type": "number"},
+        "cnot_count": {"type": "integer"},
+        "measurements": {"type": "integer"},
+        "rotations": {"type": "integer"},
+        "circuit_depth": {"type": "integer"},
+        "classical_instructions": {"type": "integer"},
+        "runtime_seconds": {"type": "number"},
+        "memory_mb": {"type": "number"},
+        "official_score": {"type": "number"},
+        "benchmark_ratio": {"type": "number"}
+      },
+      "required": false
+    },
+    "verification_evidence": {
+      "type": "object",
+      "description": "Verification results and verifier configuration",
+      "properties": {
+        "verified_by": {"type": "string"},
+        "verification_method": {"type": "string"},
+        "shots": {"type": "integer"},
+        "errors": {"type": "integer"},
+        "pass": {"type": "boolean"},
+        "verifier_command": {"type": "string"},
+        "evidence_files": {"type": "array", "items": "string"}
+      },
+      "required": false
+    },
+    "conclusion": {
+      "type": "string",
+      "description": "Summary of findings",
+      "required": false
+    },
+    "follow_up_experiments": {
+      "type": "array",
+      "items": "string",
+      "description": "IDs of experiments spawned from this one",
+      "required": false
+    },
+    "rejection_reason": {
+      "type": "string",
+      "description": "If status=REJECTED, the documented reason",
+      "required": false
+    },
+    "created_at": {
+      "type": "string",
+      "format": "datetime",
+      "required": true
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "datetime",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,7 @@
+experiment_id,method,basis,matrix_size,total_field_mults,unique_operand_pairs,repeated_product_reuse_ratio,toffoli_cost_per_mul,total_toffolis,qubit_footprint,conversion_overhead_cnots,status
+EXP_HANKEL_01,Hankel Gaussian Elimination,Polynomial (GF2^12),35x35,14210,14210,0.0,42,596820,892,0,REJECTED (High Toffoli cost)
+EXP_HANKEL_02,Hankel Anti-Diagonal Product Caching,Polynomial (GF2^12),35x35,14210,13670,0.038,42,574140,916,0,REJECTED (Repeated matrix entries do not yield reusable products)
+EXP_HANKEL_03,Hankel Displacement Rank-2 (Levinson),Polynomial (GF2^12),35x35,4900,4760,0.029,42,205800,889,0,VIABLE (Equivalent to BM)
+EXP_HANKEL_04,Incumbent Proos-Zalka BM with Inversion,Polynomial (GF2^12),70 syndromes,3820,3820,0.0,99,427471,889,0,INCUMBENT_BASELINE
+EXP_HANKEL_05,RiBM with Rank-42 Bilinear Tensor (Track A Champion),Polynomial Tower (GF2^12),70 syndromes,6860,6860,0.0,42,340640,889,0,OPTIMAL_CHAMPION (Zero Inversions)
+EXP_HANKEL_06,RiBM Normal Basis Implementation,Normal Basis (GF2^12),70 syndromes,6860,6860,0.0,68,466480,913,288,REJECTED (Normal basis mult requires 68 ANDs vs 42 in Tower basis)

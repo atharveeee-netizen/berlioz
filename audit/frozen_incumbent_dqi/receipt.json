@@ -1,0 +1,29 @@
+{
+  "file": "dqi.kmb",
+  "source": "submission.zip",
+  "size_bytes": 534922902,
+  "sha256": "73e1b187b288f3cdc7d345214dd78ae6857d2f419041caf02bf3e29d26f7e6f2",
+  "num_qubits": 889,
+  "num_bits": 101281,
+  "num_instructions": 59040109,
+  "num_toffoli_like": 441968,
+  "stats": {
+    "NEG": 2191,
+    "BIT_INVERT": 2801626,
+    "BIT_STORE0": 124888,
+    "BIT_STORE1": 16704,
+    "X": 249260,
+    "Z": 62000,
+    "R": 73414,
+    "HMR": 96208,
+    "CX": 52593204,
+    "CZ": 904813,
+    "SWAP": 1615271,
+    "CSWAP": 13848,
+    "CCX": 425896,
+    "CCZ": 2224,
+    "INFO_TAG": 16592,
+    "POP_CONDITION": 20985,
+    "PUSH_CONDITION": 20985
+  }
+}

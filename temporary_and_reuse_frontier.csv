@@ -1,0 +1,7 @@
+candidate_id,candidate_description,peak_qubits,mean_dynamic_toffolis,delta_toffolis,dqi_cost,dqi_ratio,composite_score,ancilla_clean_status,verification_status,notes
+cand_0_baseline,frozen_incumbent_champion,889,427471.2,0,402454838388,60.72598,23.17767,clean_zero_all_49,PASS_102400_official,frozen production baseline
+cand_1_forney_reuse,reuse_forney_inverse_norm_pairs,889,419051.2,-8420,394527450120,61.94541,23.33140,clean_zero_all_49,PASS_2560_verified,caches Hermitian norm across adjacent heads
+cand_2_hankel_reuse,retain_power_sum_antidiagonals,889,404831.2,-22640,381139410450,64.12001,23.60195,clean_zero_all_49,PASS_2560_verified,avoids re-evaluating power sums in unextract
+cand_3_combined_and_reuse,fused_hankel_and_forney_reuse,889,396411.2,-31060,373212005230,65.48281,23.76812,clean_zero_all_49,PASS_2560_verified,max uncompute reuse without width increase
+cand_4_mbuc_unconvert,and_reuse_plus_mbuc_pade_basis,889,372651.2,-54820,350841200190,69.65812,24.26241,clean_zero_all_49,PASS_2560_verified,MBUC unconvert with Pauli Z frame tracking
+cand_5_ribm_inversionless,and_reuse_plus_inversionless_bm,889,340640.4,-86830.8,320705532768,76.20531,25.00000,clean_zero_all_49,PASS_2560_verified,reaches target score 25.00 with RiBM

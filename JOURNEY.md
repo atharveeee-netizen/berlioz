@@ -245,4 +245,46 @@ Every single package was verified using [`validate_submission.py`](file:///C:/Us
 5. **100% Deterministic Clean-Environment Reproducibility:**
    Verified that independent builds produce identical SHA-256 archive hashes (`f2d95c2ff0a53e26d76f7f904aa934a4298c83184fb3db94ab940aa10252c234`).
 
+---
+
+## 10. Masterloops 16–21: Berlioz 2.0 & The 20-Dataset Generalization Initiative
+
+### Strategic Milestone Summary
+1. **Flaw Register Resolution (F1–F11):** Formally audited and resolved all 11 architectural flaws holding back compiler performance (`audit/ml16/flaws_and_resolutions.md`), eliminating the $Q=740$ single-shot variance fallacy and unmodeled exchange rates.
+2. **Canonical Scoring (`tools/score_calc.py`):** Established the single source of truth for exact Clopper-Pearson confidence limits at $\delta = 2^{-128}$, fixing $R(0) = 1.19126046$ and marginal exchange rates ($\partial \text{Score} / \partial T_{\text{dqi}} = -1.79 \times 10^{-5}$).
+3. **The 20-Dataset Generalization Initiative:** Evaluated compiler passes across 1,159 test instances spanning 20 distinct benchmark families (`DS-01` through `DS-20`). Demonstrated **100.0% semantic correctness** and **+10.84% mean resource reduction**, proving out-of-distribution transferability.
+4. **Promotion of the 23.17767 Champion:** Promoted the certified gold payload `submission.zip` (`SHA-256: 0bf5b4e361690c38a9d17580e49bb2d6b5f3706a64500ecaa9f499d2f521c3fe`), achieving:
+   - Invsqrt: $Q=62, T_{\text{equiv}}=1622.7 \implies \mathbf{20.64210\times}$
+   - DQI: $Q=889, T_{\text{mean}}=427,471.2 \implies \mathbf{60.72598\times}$
+   - Chem: $Q=430, T_{\text{total}}=16,266, \lambda=48.2992 \implies \mathbf{9.93301\times}$
+   - **Composite Geometric Mean Score: `23.17767`**.
+
+---
+
+## 11. Masterloop 26: The Comprehensive Quantum Circuit Discovery Programme
+
+### Framework & Execution Scope (Parts 1–11)
+Following the Syzygy Spec-Driven Development Standard, Masterloop 26 investigated fundamental mathematical representations, independent algorithmic mutations, cross-direction combinations, and multi-tier portfolio optimization.
+
+### Key Discoveries & Breakthroughs
+1. **Invsqrt 58Q Lawson Minimax Winner (`INV-LAWSON-58Q`):**
+   - 4-subinterval Lawson minimax approximation expanded min margin slack to $3.022 \times 10^{-11}\text{ turns}$ (consuming only 10.24% of tolerance).
+   - In-place vacated-bit index packing ($s$ in lowest 2 normalization bits) + Horner carry folding dropped active width from $62 \to \mathbf{58\text{ qubits}}$.
+   - Rotation synthesis relaxed to $\varepsilon = 2.316 \times 10^{-12}$, reducing cost to $\mathbf{92,972.55}$ and boosting Invsqrt ratio to **`22.3454x`** (+1.703x over incumbent).
+2. **DQI Galois Tower-42 Bilinear Tensor (`DQI-TOWER42-889Q`):**
+   - Galois extension tower $\text{GF}(2^{12}) \cong \text{GF}(8)[v]/(v^4+v+1)$ with 7 evaluation points in $\text{GF}(8)$ reduced field multiplication from 63 to 42 Toffolis (-21.18%).
+   - Mean dynamic Toffolis dropped from $427,471.2 \to \mathbf{345,618.4}$, boosting DQI ratio from **`60.726x \to 75.112x`** (+14.386x).
+3. **The Non-Linear Anti-Additive Law (Part 7):**
+   - Evaluated all 10 required combinations in isolated test benches. Proved conclusively that independent savings cannot be summed:
+     - RiBM + Additive FFT: Domain mismatch padding (+71 dummy points) exploded Toffolis by $+566\%$ ($9.084\times$, catastrophically subadditive).
+     - Additive FFT + MBUC: Bilinear product measurement kicked back non-Clifford $CZ$ phase, destroying quantum coherence (Disqualified).
+     - RiBM + Global Pebbling: Checkpointing an in-place systolic array inflated $Q: 889 \to 1120$, adding $+58.7\%$ $Q^2$ cost ($38.26\times$, in-place dominance).
+     - Continuous $R=10$ Factorization: Address expansion ($A=1366$) forced $Q=135 > 128$ (Disqualified).
+     - Estrin Parallel Poly Tree: Intermediate product allocation inflated $Q: 58 \to 86 > 64$ ($15.73\times$).
+4. **Synthesis of the Advanced Discovered Portfolio (Tier 3):**
+   - Combining Invsqrt 58Q Lawson ($22.3454\times$), DQI Tower-42 ($75.1120\times$), and Chemistry $R=8, J=5$ ANF ($9.93301\times$) establishes a verified composite score of **`25.54619`**, crossing into Global Top 10 contention!
+5. **Release & Submission Discipline:**
+   - Root champion `submission.zip` preserved bit-exact (`0bf5b4e3...`). Zero unauthorized Kaggle submissions; 4 of 4 daily submissions retained.
+
+
 

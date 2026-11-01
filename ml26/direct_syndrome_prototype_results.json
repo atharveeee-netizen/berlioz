@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "experiment": "ML26-DQI-3",
+    "title": "Direct Syndrome-to-Error Decoding Feasibility and Architecture Exploration",
+    "field": "GF(2^12)",
+    "code": "RS(4095, 4025), t=35",
+    "syndrome_bits": 840,
+    "error_entropy_bits": 705.97,
+    "redundancy_bits": 134.03
+  },
+  "combinatorial_space": {
+    "total_correctable_error_patterns": "3.2891e+212",
+    "log2_total_patterns": 705.97,
+    "weight_breakdown_sample": [
+      {
+        "weight": 1,
+        "patterns_scientific": "1.6482e+07",
+        "bits": 23.97
+      },
+      {
+        "weight": 2,
+        "patterns_scientific": "1.3580e+14",
+        "bits": 46.95
+      },
+      {
+        "weight": 3,
+        "patterns_scientific": "7.4573e+20",
+        "bits": 69.34
+      },
+      {
+        "weight": 4,
+        "patterns_scientific": "3.0706e+27",
+        "bits": 91.31
+      },
+      {
+        "weight": 5,
+        "patterns_scientific": "1.0112e+34",
+        "bits": 112.96
+      },
+      {
+        "weight": 17,
+        "patterns_scientific": "1.3291e+108",
+        "bits": 359.18
+      },
+      {
+        "weight": 35,
+        "patterns_scientific": "3.2891e+212",
+        "bits": 705.97
+      }
+    ]
+  },
+  "infeasible_approaches_summary": {
+    "full_lookup_table": {
+      "memory_bytes": "1.9856e+216",
+      "qrom_qubits": "1.5886e+217",
+      "circuit_toffolis": "1.5886e+217",
+      "verdict": "DISQUALIFIED_PHYSICALLY_IMPOSSIBLE",
+      "reason": "Exceeds atoms in observable universe (~10^80) by over 100 orders of magnitude"
+    },
+    "meet_in_the_middle_split_17": {
+      "table_entries": "1.3291e+108",
+      "table_bits": 359.18,
+      "table_bytes": "1.3956e+110",
+      "verdict": "DISQUALIFIED_PHYSICALLY_IMPOSSIBLE",
+      "reason": "Split table requires 10^106 entries, completely intractable"
+    },
+    "grover_quantum_search": {
+      "search_space_N": "3.2891e+212",
+      "grover_iterations": "1.4244e+106",
+      "oracle_toffolis_per_iteration": 206570,
+      "total_grover_toffolis": "2.9424e+111",
+      "verdict": "DISQUALIFIED_EXPONENTIALLY_WORSE",
+      "reason": "Grover search takes 10^111 Toffolis vs 3.4x10^5 for classical RiBM; quantum speedup fails on exponential algebraic spaces"
+    },
+    "peterson_gorenstein_zierler": {
+      "inversion_multiplications_t35": 15516,
+      "inversion_toffolis_t35": 651672,
+      "verdict": "REJECTED_SUBOPTIMAL",
+      "reason": "O(t^3) Gaussian elimination costs >640k Toffolis, strictly worse than O(t^2) RiBM"
+    }
+  },
+  "algebraic_prototype_verifications": {
+    "weight_1_fast_path": {
+      "test_cases_run": 20,
+      "test_cases_passed": 20,
+      "detector_toffoli_cost": 2898,
+      "qubit_overhead": 140,
+      "verdict": "NOT_RECOMMENDED",
+      "reason": "Branch multiplexing and detector cost (2,898 T + 140 Q) cancel statistical benefit (<3% frequency)"
+    },
+    "projective_ribm_dominance": {
+      "status": "AUTHORITATIVE_CHAMPION",
+      "dynamic_toffolis": 340640.4,
+      "qubits": 889,
+      "algorithmic_class": "O(t^2) Inversionless Berlekamp-Massey + Projective Forney",
+      "verdict": "OPTIMAL_KNOWN_ARCHITECTURE"
+    }
+  }
+}

@@ -1,0 +1,703 @@
+{
+  "audit_metadata": {
+    "protocol": "Masterloop 23 Track A - RiBM Classical Equivalence",
+    "finite_field": "GF(2^12)",
+    "modulus": "0x1053",
+    "primitive_element": 2,
+    "codeword_length": 4095,
+    "syndromes": 70,
+    "max_correctable_errors": 35,
+    "timestamp": "2026-10-31T09:28:26Z"
+  },
+  "branch_coverage": {
+    "delta_zero_tested": true,
+    "delta_nonzero_k_ge_0_tested": true,
+    "delta_nonzero_k_lt_0_tested": true,
+    "total_branch_executions": {
+      "delta_zero": 2487,
+      "delta_nonzero_k_ge_0": 649,
+      "delta_nonzero_k_lt_0": 644
+    }
+  },
+  "test_cases": [
+    {
+      "case_id": "zero_errors",
+      "error_weight": 0,
+      "degree_std": 0,
+      "degree_ribm": 0,
+      "proportionality_c": 1,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p0_v1",
+      "error_weight": 1,
+      "positions": [
+        0
+      ],
+      "values": [
+        1
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 1,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p0_v2",
+      "error_weight": 1,
+      "positions": [
+        0
+      ],
+      "values": [
+        2
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 2195,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p0_v4094",
+      "error_weight": 1,
+      "positions": [
+        0
+      ],
+      "values": [
+        4094
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 3081,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p0_v4095",
+      "error_weight": 1,
+      "positions": [
+        0
+      ],
+      "values": [
+        4095
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 3850,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p1_v1",
+      "error_weight": 1,
+      "positions": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 2195,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p1_v2",
+      "error_weight": 1,
+      "positions": [
+        1
+      ],
+      "values": [
+        2
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 2101,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p1_v4094",
+      "error_weight": 1,
+      "positions": [
+        1
+      ],
+      "values": [
+        4094
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 2161,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p1_v4095",
+      "error_weight": 1,
+      "positions": [
+        1
+      ],
+      "values": [
+        4095
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 2291,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p2047_v1",
+      "error_weight": 1,
+      "positions": [
+        2047
+      ],
+      "values": [
+        1
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 2154,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p2047_v2",
+      "error_weight": 1,
+      "positions": [
+        2047
+      ],
+      "values": [
+        2
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 2944,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p2047_v4094",
+      "error_weight": 1,
+      "positions": [
+        2047
+      ],
+      "values": [
+        4094
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 1909,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p2047_v4095",
+      "error_weight": 1,
+      "positions": [
+        2047
+      ],
+      "values": [
+        4095
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 2252,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p4093_v1",
+      "error_weight": 1,
+      "positions": [
+        4093
+      ],
+      "values": [
+        1
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 3701,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p4093_v2",
+      "error_weight": 1,
+      "positions": [
+        4093
+      ],
+      "values": [
+        2
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 3179,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p4093_v4094",
+      "error_weight": 1,
+      "positions": [
+        4093
+      ],
+      "values": [
+        4094
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 2791,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p4093_v4095",
+      "error_weight": 1,
+      "positions": [
+        4093
+      ],
+      "values": [
+        4095
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 3487,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p4094_v1",
+      "error_weight": 1,
+      "positions": [
+        4094
+      ],
+      "values": [
+        1
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 3179,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p4094_v2",
+      "error_weight": 1,
+      "positions": [
+        4094
+      ],
+      "values": [
+        2
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 1,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p4094_v4094",
+      "error_weight": 1,
+      "positions": [
+        4094
+      ],
+      "values": [
+        4094
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 2555,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p4094_v4095",
+      "error_weight": 1,
+      "positions": [
+        4094
+      ],
+      "values": [
+        4095
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 1268,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_2",
+      "error_weight": 2,
+      "degree_std": 2,
+      "degree_ribm": 2,
+      "proportionality_c": 1183,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_3",
+      "error_weight": 3,
+      "degree_std": 3,
+      "degree_ribm": 3,
+      "proportionality_c": 3290,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_4",
+      "error_weight": 4,
+      "degree_std": 4,
+      "degree_ribm": 4,
+      "proportionality_c": 1321,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_5",
+      "error_weight": 5,
+      "degree_std": 5,
+      "degree_ribm": 5,
+      "proportionality_c": 2498,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_6",
+      "error_weight": 6,
+      "degree_std": 6,
+      "degree_ribm": 6,
+      "proportionality_c": 1899,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_7",
+      "error_weight": 7,
+      "degree_std": 7,
+      "degree_ribm": 7,
+      "proportionality_c": 1296,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_8",
+      "error_weight": 8,
+      "degree_std": 8,
+      "degree_ribm": 8,
+      "proportionality_c": 688,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_9",
+      "error_weight": 9,
+      "degree_std": 9,
+      "degree_ribm": 9,
+      "proportionality_c": 3394,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_10",
+      "error_weight": 10,
+      "degree_std": 10,
+      "degree_ribm": 10,
+      "proportionality_c": 3345,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_11",
+      "error_weight": 11,
+      "degree_std": 11,
+      "degree_ribm": 11,
+      "proportionality_c": 2826,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_12",
+      "error_weight": 12,
+      "degree_std": 12,
+      "degree_ribm": 12,
+      "proportionality_c": 66,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_13",
+      "error_weight": 13,
+      "degree_std": 13,
+      "degree_ribm": 13,
+      "proportionality_c": 662,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_14",
+      "error_weight": 14,
+      "degree_std": 14,
+      "degree_ribm": 14,
+      "proportionality_c": 3085,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_15",
+      "error_weight": 15,
+      "degree_std": 15,
+      "degree_ribm": 15,
+      "proportionality_c": 3597,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_16",
+      "error_weight": 16,
+      "degree_std": 16,
+      "degree_ribm": 16,
+      "proportionality_c": 1505,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_17",
+      "error_weight": 17,
+      "degree_std": 17,
+      "degree_ribm": 17,
+      "proportionality_c": 2348,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_18",
+      "error_weight": 18,
+      "degree_std": 18,
+      "degree_ribm": 18,
+      "proportionality_c": 3330,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_19",
+      "error_weight": 19,
+      "degree_std": 19,
+      "degree_ribm": 19,
+      "proportionality_c": 888,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_20",
+      "error_weight": 20,
+      "degree_std": 20,
+      "degree_ribm": 20,
+      "proportionality_c": 698,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_21",
+      "error_weight": 21,
+      "degree_std": 21,
+      "degree_ribm": 21,
+      "proportionality_c": 2753,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_22",
+      "error_weight": 22,
+      "degree_std": 22,
+      "degree_ribm": 22,
+      "proportionality_c": 3656,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_23",
+      "error_weight": 23,
+      "degree_std": 23,
+      "degree_ribm": 23,
+      "proportionality_c": 2300,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_24",
+      "error_weight": 24,
+      "degree_std": 24,
+      "degree_ribm": 24,
+      "proportionality_c": 51,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_25",
+      "error_weight": 25,
+      "degree_std": 25,
+      "degree_ribm": 25,
+      "proportionality_c": 220,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_26",
+      "error_weight": 26,
+      "degree_std": 26,
+      "degree_ribm": 26,
+      "proportionality_c": 3608,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_27",
+      "error_weight": 27,
+      "degree_std": 27,
+      "degree_ribm": 27,
+      "proportionality_c": 1749,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_28",
+      "error_weight": 28,
+      "degree_std": 28,
+      "degree_ribm": 28,
+      "proportionality_c": 2081,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_29",
+      "error_weight": 29,
+      "degree_std": 29,
+      "degree_ribm": 29,
+      "proportionality_c": 3771,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_30",
+      "error_weight": 30,
+      "degree_std": 30,
+      "degree_ribm": 30,
+      "proportionality_c": 2261,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_31",
+      "error_weight": 31,
+      "degree_std": 31,
+      "degree_ribm": 31,
+      "proportionality_c": 2651,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_32",
+      "error_weight": 32,
+      "degree_std": 32,
+      "degree_ribm": 32,
+      "proportionality_c": 1336,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_33",
+      "error_weight": 33,
+      "degree_std": 33,
+      "degree_ribm": 33,
+      "proportionality_c": 3420,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_34",
+      "error_weight": 34,
+      "degree_std": 34,
+      "degree_ribm": 34,
+      "proportionality_c": 81,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "random_t_35",
+      "error_weight": 35,
+      "degree_std": 35,
+      "degree_ribm": 35,
+      "proportionality_c": 150,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "total_tests_conducted": 55,
+    "total_tests_passed": 55,
+    "pass_rate_percent": 100.0,
+    "full_capacity_t35_verified": true,
+    "zero_discrepancy_verified": true,
+    "all_branches_exercised": true,
+    "forney_downstream_invariance_proven": true
+  }
+}

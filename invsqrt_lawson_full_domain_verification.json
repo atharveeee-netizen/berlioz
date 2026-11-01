@@ -1,0 +1,44 @@
+{
+  "protocol": "Masterloop 23 Track C - 58Q Invsqrt Lawson Full Domain Verification",
+  "input_domain": {
+    "min_x": 1,
+    "max_x": 3133452,
+    "tested_points": 102004,
+    "width_qubits": 22,
+    "beta": 1.0
+  },
+  "lawson_minimax_fitting": {
+    "intervals": 4,
+    "degree": 3,
+    "refinement_algorithm": "Single-pass Newton Raphson",
+    "max_relative_approximation_error": 6.105660257246295e-09,
+    "relative_error_bound_pass": true,
+    "worst_error_over_tolerance": 0.10243598095843666,
+    "worst_case_x": 1572848
+  },
+  "rotation_resynthesis": {
+    "num_rotations": 41,
+    "min_margin_turns": 3.118669869720849e-11,
+    "synthesis_epsilon": 2.389656183338257e-12,
+    "t_gates_per_rotation": 26.919547082675155,
+    "total_t_gates": 1110.6694303896813,
+    "phase_error_compliance": "PASS (100.0% within tolerance)"
+  },
+  "resource_and_cost_accounting": {
+    "active_qubits": 58,
+    "mean_dynamic_toffolis": 1332.435,
+    "t_equivalent_cost": 1610.1023575974202,
+    "t_equivalent_target_satisfied": false,
+    "candidate_cost": 93385.93674065037,
+    "reference_cost": 2076774.233715282,
+    "improvement_ratio": 22.23861864215015,
+    "frozen_62q_incumbent_ratio": 20.6421,
+    "delta_ratio": 1.5965186421501514
+  },
+  "register_reclamation": {
+    "eliminated_unary_register_qubits": 2,
+    "eliminated_carry_buffer_qubits": 2,
+    "net_qubit_reduction": 4,
+    "ancilla_cleanup": "100.0% clean to |0>"
+  }
+}

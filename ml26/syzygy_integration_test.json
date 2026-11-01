@@ -1,0 +1,32 @@
+{
+  "test_name": "syzygy_integration_test",
+  "timestamp": "2026-10-31T09:51:15Z",
+  "tests": [
+    {
+      "name": "memory_write",
+      "status": "PASS",
+      "details": "9 research entries stored"
+    },
+    {
+      "name": "memory_read",
+      "status": "PASS",
+      "details": "DQI-1 round-trip verified"
+    },
+    {
+      "name": "incumbent_store",
+      "status": "PASS",
+      "details": "Incumbent frozen with correct SHA-256"
+    },
+    {
+      "name": "list_prefix",
+      "status": "PASS",
+      "details": "10 entries under viking://berlioz/"
+    },
+    {
+      "name": "schema_compliance",
+      "status": "PASS",
+      "details": "All entries follow research_registry_schema.json"
+    }
+  ],
+  "overall": "PASS"
+}

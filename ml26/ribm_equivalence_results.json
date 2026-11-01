@@ -1,0 +1,528 @@
+{
+  "audit_metadata": {
+    "protocol": "Masterloop 26 Experiment DQI-1 RiBM Classical Equivalence",
+    "finite_field": "GF(2^12)",
+    "modulus": "0x1053",
+    "primitive_element": 2,
+    "codeword_length": 4095,
+    "syndromes": 70,
+    "max_correctable_errors": 35,
+    "timestamp": "2026-10-31T14:29:31Z"
+  },
+  "test_cases": [
+    {
+      "case_id": "zero_errors",
+      "error_weight": 0,
+      "degree_std": 0,
+      "degree_ribm": 0,
+      "proportionality_c": 1,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p0_v1",
+      "error_weight": 1,
+      "positions": [
+        0
+      ],
+      "values": [
+        1
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 1,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p0_v2",
+      "error_weight": 1,
+      "positions": [
+        0
+      ],
+      "values": [
+        2
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 2195,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p0_v4095",
+      "error_weight": 1,
+      "positions": [
+        0
+      ],
+      "values": [
+        4095
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 3850,
+      "roots_matched": true,
+      "forney_magnitudes_matched": true,
+      "status": "PASS"
+    },
+    {
+      "case_id": "single_boundary_p1_v1",
+      "error_weight": 1,
+      "positions": [
+        1
+      ],
+      "values": [
+        1
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 2195,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "single_boundary_p1_v2",
+      "error_weight": 1,
+      "positions": [
+        1
+      ],
+      "values": [
+        2
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 2101,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "single_boundary_p1_v4095",
+      "error_weight": 1,
+      "positions": [
+        1
+      ],
+      "values": [
+        4095
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 2291,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "single_boundary_p4094_v1",
+      "error_weight": 1,
+      "positions": [
+        4094
+      ],
+      "values": [
+        1
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 3179,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "single_boundary_p4094_v2",
+      "error_weight": 1,
+      "positions": [
+        4094
+      ],
+      "values": [
+        2
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 1,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "single_boundary_p4094_v4095",
+      "error_weight": 1,
+      "positions": [
+        4094
+      ],
+      "values": [
+        4095
+      ],
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 1268,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_1",
+      "error_weight": 1,
+      "degree_std": 1,
+      "degree_ribm": 1,
+      "proportionality_c": 2704,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_2",
+      "error_weight": 2,
+      "degree_std": 2,
+      "degree_ribm": 2,
+      "proportionality_c": 3163,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_3",
+      "error_weight": 3,
+      "degree_std": 3,
+      "degree_ribm": 3,
+      "proportionality_c": 3891,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_4",
+      "error_weight": 4,
+      "degree_std": 4,
+      "degree_ribm": 4,
+      "proportionality_c": 282,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_5",
+      "error_weight": 5,
+      "degree_std": 5,
+      "degree_ribm": 5,
+      "proportionality_c": 2101,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_6",
+      "error_weight": 6,
+      "degree_std": 6,
+      "degree_ribm": 6,
+      "proportionality_c": 2984,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_7",
+      "error_weight": 7,
+      "degree_std": 7,
+      "degree_ribm": 7,
+      "proportionality_c": 1578,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_8",
+      "error_weight": 8,
+      "degree_std": 8,
+      "degree_ribm": 8,
+      "proportionality_c": 3281,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_9",
+      "error_weight": 9,
+      "degree_std": 9,
+      "degree_ribm": 9,
+      "proportionality_c": 3365,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_10",
+      "error_weight": 10,
+      "degree_std": 10,
+      "degree_ribm": 10,
+      "proportionality_c": 2778,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_11",
+      "error_weight": 11,
+      "degree_std": 11,
+      "degree_ribm": 11,
+      "proportionality_c": 1768,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_12",
+      "error_weight": 12,
+      "degree_std": 12,
+      "degree_ribm": 12,
+      "proportionality_c": 2513,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_13",
+      "error_weight": 13,
+      "degree_std": 13,
+      "degree_ribm": 13,
+      "proportionality_c": 2975,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_14",
+      "error_weight": 14,
+      "degree_std": 14,
+      "degree_ribm": 14,
+      "proportionality_c": 2903,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_15",
+      "error_weight": 15,
+      "degree_std": 15,
+      "degree_ribm": 15,
+      "proportionality_c": 43,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_16",
+      "error_weight": 16,
+      "degree_std": 16,
+      "degree_ribm": 16,
+      "proportionality_c": 2112,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_17",
+      "error_weight": 17,
+      "degree_std": 17,
+      "degree_ribm": 17,
+      "proportionality_c": 3315,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_18",
+      "error_weight": 18,
+      "degree_std": 18,
+      "degree_ribm": 18,
+      "proportionality_c": 127,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_19",
+      "error_weight": 19,
+      "degree_std": 19,
+      "degree_ribm": 19,
+      "proportionality_c": 2179,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_20",
+      "error_weight": 20,
+      "degree_std": 20,
+      "degree_ribm": 20,
+      "proportionality_c": 1513,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_21",
+      "error_weight": 21,
+      "degree_std": 21,
+      "degree_ribm": 21,
+      "proportionality_c": 1422,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_22",
+      "error_weight": 22,
+      "degree_std": 22,
+      "degree_ribm": 22,
+      "proportionality_c": 2481,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_23",
+      "error_weight": 23,
+      "degree_std": 23,
+      "degree_ribm": 23,
+      "proportionality_c": 3772,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_24",
+      "error_weight": 24,
+      "degree_std": 24,
+      "degree_ribm": 24,
+      "proportionality_c": 1241,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_25",
+      "error_weight": 25,
+      "degree_std": 25,
+      "degree_ribm": 25,
+      "proportionality_c": 3175,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_26",
+      "error_weight": 26,
+      "degree_std": 26,
+      "degree_ribm": 26,
+      "proportionality_c": 3012,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_27",
+      "error_weight": 27,
+      "degree_std": 27,
+      "degree_ribm": 27,
+      "proportionality_c": 2068,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_28",
+      "error_weight": 28,
+      "degree_std": 28,
+      "degree_ribm": 28,
+      "proportionality_c": 2688,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_29",
+      "error_weight": 29,
+      "degree_std": 29,
+      "degree_ribm": 29,
+      "proportionality_c": 710,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_30",
+      "error_weight": 30,
+      "degree_std": 30,
+      "degree_ribm": 30,
+      "proportionality_c": 1429,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_31",
+      "error_weight": 31,
+      "degree_std": 31,
+      "degree_ribm": 31,
+      "proportionality_c": 3141,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_32",
+      "error_weight": 32,
+      "degree_std": 32,
+      "degree_ribm": 32,
+      "proportionality_c": 285,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_33",
+      "error_weight": 33,
+      "degree_std": 33,
+      "degree_ribm": 33,
+      "proportionality_c": 926,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_34",
+      "error_weight": 34,
+      "degree_std": 34,
+      "degree_ribm": 34,
+      "proportionality_c": 3785,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    },
+    {
+      "case_id": "random_weight_35",
+      "error_weight": 35,
+      "degree_std": 35,
+      "degree_ribm": 35,
+      "proportionality_c": 1283,
+      "roots_matched": true,
+      "forney_magnitudes_matched": false,
+      "status": "FAIL"
+    }
+  ],
+  "branch_coverage": {
+    "delta_zero_tested": true,
+    "delta_nonzero_k_ge_0_tested": true,
+    "delta_nonzero_k_lt_0_tested": true,
+    "total_branch_executions": {
+      "delta_zero": 1875,
+      "delta_nonzero_k_ge_0": 639,
+      "delta_nonzero_k_lt_0": 636
+    }
+  }
+}

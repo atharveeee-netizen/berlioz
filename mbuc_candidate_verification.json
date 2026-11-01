@@ -1,0 +1,12 @@
+{
+  "benchmark": "dqi_mbuc_uncomputation_prototype",
+  "coherent_toffolis_per_and": 2,
+  "mbuc_toffolis_per_and": 1,
+  "mbuc_hmr_measurements": 1,
+  "mbuc_cz_pauli_corrections": 1,
+  "toffoli_savings_per_uncompute": 1,
+  "input_control_restoration": "100.0% clean",
+  "target_truth_table_match": true,
+  "ancilla_zero_state_cleanup": true,
+  "verification_result": "PASS"
+}

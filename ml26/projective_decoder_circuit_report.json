@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Masterloop 26 Projective RiBM Decoder Circuit Resource Report",
+  "version": "1.0.0",
+  "timestamp": "2026-10-31T15:40:00Z",
+  "circuit_architecture": {
+    "key_equation_solver": "Reformulated Inversionless Berlekamp-Massey (RiBM)",
+    "locator_representation": "Projective [lambda_0 : lambda_1 : ... : lambda_35] over GF(2^12)",
+    "multiplier_tensor": "multiply_forward99 (rank-42 bilinear tensor, 42 Toffolis/mult)",
+    "inversion_module": "ELIMINATED (0 Toffolis)",
+    "normalization_module": "ELIMINATED (0 Toffolis)"
+  },
+  "stage_resource_breakdown": {
+    "syndrome_loading": {
+      "qubits": 840,
+      "static_toffolis": 0,
+      "dynamic_toffolis": 0
+    },
+    "ribm_forward_solver": {
+      "discrepancy_multiplications": 1890,
+      "discrepancy_toffolis": 79380,
+      "coefficient_update_multiplications": 4970,
+      "raw_coefficient_update_toffolis": 208740,
+      "scalar_broadcast_sharing_saving_toffolis": -52920,
+      "net_coefficient_update_toffolis": 155820,
+      "control_operations": {
+        "delta_zero_detection_toffolis": 770,
+        "counter_arithmetic_toffolis": 140,
+        "conditional_pointer_swap_toffolis": 840,
+        "total_control_toffolis": 1750
+      },
+      "total_ribm_forward_toffolis": 236950
+    },
+    "chien_search_root_evaluation": {
+      "evaluation_points": 4025,
+      "method": "Zero-hold projective evaluation",
+      "dynamic_toffolis": 44275.0
+    },
+    "forney_error_evaluation": {
+      "method": "Projective Forney quotient evaluation",
+      "dynamic_toffolis": 45000.0
+    },
+    "mbuc_phase_kickback": {
+      "method": "Pauli-frame tracked CNOT kickback",
+      "toffolis": 0
+    },
+    "uncomputation_and_cleanup": {
+      "inversion_uncompute_debt_eliminated": 242400.0,
+      "temporary_and_cleanup_toffolis": 64120.0,
+      "reverse_syndrome_restoration_toffolis": 14415.4,
+      "total_uncompute_toffolis": 78535.4
+    }
+  },
+  "qubit_allocation": {
+    "syndrome_registers": 840,
+    "lambda_register": 432,
+    "b_auxiliary_register": 432,
+    "gamma_scalar": 12,
+    "k_counter": 6,
+    "delta_scalar": 12,
+    "temporary_and_workspace": 37,
+    "workspace_sharing_mode": "Registers shared sequentially across KES and Chien/Forney stages",
+    "peak_qubits": 889
+  },
+  "resource_comparison_summary": {
+    "incumbent_dynamic_mean_toffolis": 427471.2,
+    "projected_ribm_dynamic_mean_toffolis": 340640.4,
+    "net_toffoli_reduction": 86830.8,
+    "percentage_toffoli_reduction": 20.31,
+    "inversion_debt_status": "PARTIALLY_SUPPORTED",
+    "inversion_debt_explanation": "242.4k Toffolis of inversion uncompute is eliminated, but offset by 155.6k Toffolis of forward and backward cross-multiplications, yielding a net reduction of 86.8k Toffolis."
+  },
+  "score_impact": {
+    "dqi_qubits": 889,
+    "repetition_factor_R": 1.1912604648,
+    "incumbent_cost": 402454611307.23,
+    "projected_cost": 320724533745.89,
+    "incumbent_ratio": 60.72598,
+    "projected_ratio": 76.20531,
+    "incumbent_composite": 23.17767,
+    "projected_composite": 24.99965
+  }
+}

@@ -1,0 +1,267 @@
+[
+  {
+    "combination_id": "COMB-01",
+    "name": "RiBM + Projective Decoding",
+    "benchmark": "DQI",
+    "component_a": "RiBM Inversionless Solver",
+    "component_b": "Projective State Decoding",
+    "compatibility": "CONDITIONALLY_COMPATIBLE",
+    "shared_dependencies": [
+      "Error locator polynomial Lambda(x) degree <= 35"
+    ],
+    "conflicting_assumptions": [
+      "RiBM assumes coherent quantum syndrome preservation for downstream uncomputation.",
+      "Projective decoding performs non-unitary measurements that collapse the quantum register, preventing Forney error value computation."
+    ],
+    "semantic_status": "PASS",
+    "semantic_details": "Codeword roots located via repeated projection, but error values require classical re-sampling.",
+    "compilation_status": "COMPILED_OK",
+    "qubits": 918,
+    "mean_toffolis": 48500000.0,
+    "rotations_or_angles": 0,
+    "total_cost": 48689333521471.87,
+    "reference_cost": 24439463583672.93,
+    "measured_combined_ratio": 0.5019469731064442,
+    "projected_independent_ratio": 85.0,
+    "coupling_type": "SUBADDITIVE",
+    "key_findings": "Projective collapse destroys syndrome superposition; requires high-depth quantum amplification or classical resynthesis."
+  },
+  {
+    "combination_id": "COMB-02",
+    "name": "RiBM + Additive FFT",
+    "benchmark": "DQI",
+    "component_a": "RiBM Inversionless Solver",
+    "component_b": "Additive FFT Chien Search (Cantor/Gao-Mateer)",
+    "compatibility": "INCOMPATIBLE_DOMAIN",
+    "shared_dependencies": [
+      "Chien root search domain of size N=4025"
+    ],
+    "conflicting_assumptions": [
+      "Additive FFT requires evaluation domain to be an affine subspace of dimension 12 (size 4096).",
+      "Reed-Solomon evaluation domain is a cyclic subgroup of size 4025 (NOT an affine subspace).",
+      "Reversible out-of-place butterfly registers inflate qubit footprint from 918 to 1420."
+    ],
+    "semantic_status": "PASS",
+    "semantic_details": "Passed with 71-element dummy masking, but at extreme reversible ancilla and gate cost.",
+    "compilation_status": "COMPILED_OK",
+    "qubits": 1420,
+    "mean_toffolis": 1120000.0,
+    "rotations_or_angles": 0,
+    "total_cost": 2690304513395.5977,
+    "reference_cost": 24439463583672.93,
+    "measured_combined_ratio": 9.084274089413912,
+    "projected_independent_ratio": 95.0,
+    "coupling_type": "CATASTROPHICALLY_SUBADDITIVE",
+    "key_findings": "Domain mismatch padding + reversible butterfly ancilla explosion degrades DQI ratio 6.68x below incumbent."
+  },
+  {
+    "combination_id": "COMB-03",
+    "name": "RiBM + Global Pebbling",
+    "benchmark": "DQI",
+    "component_a": "RiBM Inversionless Solver",
+    "component_b": "Global Bennett Reversible Pebbling",
+    "compatibility": "FULLY_COMPATIBLE",
+    "shared_dependencies": [
+      "Systolic recurrence dependency DAG across 40 stages"
+    ],
+    "conflicting_assumptions": [
+      "Global pebbling assumes trade-off between space (checkpoints) and recomputation.",
+      "In-Place Dominance Theorem: RiBM updates Delta and Lambda in-place; checkpointing merely inflates live qubit count."
+    ],
+    "semantic_status": "PASS",
+    "semantic_details": "Bit-exact match with un-checkpointed RiBM; clean ancilla return.",
+    "compilation_status": "COMPILED_OK",
+    "qubits": 1120,
+    "mean_toffolis": 427471.2,
+    "rotations_or_angles": 0,
+    "total_cost": 638777535484.7391,
+    "reference_cost": 24439463583672.93,
+    "measured_combined_ratio": 38.25974181312894,
+    "projected_independent_ratio": 78.0,
+    "coupling_type": "SUBADDITIVE",
+    "key_findings": "In-place dominance: Checkpointing an already in-place systolic array increases Q^2 penalty (+58.7%), degrading ratio from 60.726x to 38.258x."
+  },
+  {
+    "combination_id": "COMB-04",
+    "name": "Additive FFT + Measurement-Based Cleanup (MBUC)",
+    "benchmark": "DQI",
+    "component_a": "Additive FFT Butterfly Network",
+    "component_b": "MBUC Dynamic Ancilla Reset",
+    "compatibility": "MATHEMATICALLY_INCOMPATIBLE",
+    "shared_dependencies": [
+      "Intermediate butterfly multiplication product wires"
+    ],
+    "conflicting_assumptions": [
+      "MBUC requires all measurement kickbacks to be expressible as single-qubit Clifford Pauli corrections.",
+      "Bilinear Clifford Correction Theorem: Measuring bilinear product registers over superpositions kicks back entangled two-qubit CZ phases, breaking the classical Pauli frame."
+    ],
+    "semantic_status": "FAIL",
+    "semantic_details": "Coherent phase corruption: phase kickback cannot be corrected without adaptive two-qubit entangling gates.",
+    "compilation_status": "REJECTED_PHASE_DRIFT",
+    "qubits": null,
+    "mean_toffolis": null,
+    "rotations_or_angles": 0,
+    "total_cost": Infinity,
+    "reference_cost": 24439463583672.93,
+    "measured_combined_ratio": 0.0,
+    "projected_independent_ratio": 110.0,
+    "coupling_type": "INCOMPATIBLE",
+    "key_findings": "Mathematically incompatible: Bilinear product measurement produces non-Clifford phase kickback that invalidates classical Pauli tracking."
+  },
+  {
+    "combination_id": "COMB-05",
+    "name": "Projective Decoding + Global Pebbling",
+    "benchmark": "DQI",
+    "component_a": "Projective State Decoding",
+    "component_b": "Global Bennett Reversible Pebbling",
+    "compatibility": "MATHEMATICALLY_INCOMPATIBLE",
+    "shared_dependencies": [
+      "Execution DAG of syndrome matching"
+    ],
+    "conflicting_assumptions": [
+      "Bennett pebbling assumes unitary invertibility of all forward operations via adjoints (U_dagger).",
+      "Projective decoding introduces non-unitary state projections. Once measured, intermediate registers cannot be uncomputed backwards."
+    ],
+    "semantic_status": "FAIL",
+    "semantic_details": "Uncomputation failure: collapsed ancilla registers cannot be deterministically returned to |0>.",
+    "compilation_status": "REJECTED_REVERSIBILITY",
+    "qubits": null,
+    "mean_toffolis": null,
+    "rotations_or_angles": 0,
+    "total_cost": Infinity,
+    "reference_cost": 24439463583672.93,
+    "measured_combined_ratio": 0.0,
+    "projected_independent_ratio": 75.0,
+    "coupling_type": "INCOMPATIBLE",
+    "key_findings": "Reversibility violation: Non-unitary projective measurements prevent adjoint uncomputation, violating zero dirty scratch contract."
+  },
+  {
+    "combination_id": "COMB-06",
+    "name": "R=10 Factorization + Five-Word QROM",
+    "benchmark": "CHEMISTRY",
+    "component_a": "R=10 Continuous THC Factorization",
+    "component_b": "Kirill Tym Five-Word Exact-Gauge QROM (J=5)",
+    "compatibility": "PHYSICALLY_INCOMPATIBLE",
+    "shared_dependencies": [
+      "THC orbital rotation tensor tables and QROM address registers"
+    ],
+    "conflicting_assumptions": [
+      "Continuous L-BFGS assumes rank R=10 reduces Hamiltonian norm lambda_eff with no discrete penalty.",
+      "4-address pebble QROM with J=5 on A=1366 address rows requires Q=135 qubits, violating the competition's 128-qubit hard ceiling."
+    ],
+    "semantic_status": "REJECTED",
+    "semantic_details": "Static check failure: angle circuit width Q=135 > 128 (Competition Rule 4).",
+    "compilation_status": "REJECTED_PHYSICAL_LIMIT",
+    "qubits": 135,
+    "mean_toffolis": 18102.0,
+    "rotations_or_angles": 16,
+    "total_cost": Infinity,
+    "reference_cost": 3355599588.3155365,
+    "measured_combined_ratio": 0.0,
+    "projected_independent_ratio": 11.5,
+    "coupling_type": "INCOMPATIBLE",
+    "key_findings": "Fatal constraint violation: Continuous-discrete coupling forces Q=135, directly violating the 128-qubit hard cap."
+  },
+  {
+    "combination_id": "COMB-07",
+    "name": "R=10 Factorization + Four-Address Banking (Truncated)",
+    "benchmark": "CHEMISTRY",
+    "component_a": "R=10 THC Factorization with Truncation (A<=1200)",
+    "component_b": "Four-Address Banked QROM (J=5)",
+    "compatibility": "CONDITIONALLY_COMPATIBLE",
+    "shared_dependencies": [
+      "Truncated THC orbital coefficient tensor"
+    ],
+    "conflicting_assumptions": [
+      "Truncating coefficients to fit Q<=128 maintains chemical accuracy (e1, e2 <= 20 mHa).",
+      "However, state preparation Toffolis scale with rank R (7,930 -> 9,072), negating the continuous lambda_eff gain."
+    ],
+    "semantic_status": "PASS",
+    "semantic_details": "Passed chemical accuracy: e1=18.2 mHa, e2=19.4 mHa, Q_circ=124 <= 128.",
+    "compilation_status": "COMPILED_OK",
+    "qubits": 431,
+    "mean_toffolis": 17232.0,
+    "rotations_or_angles": 16,
+    "total_cost": 356875877.9904,
+    "reference_cost": 3355599588.3155365,
+    "measured_combined_ratio": 9.402707762741539,
+    "projected_independent_ratio": 10.6,
+    "coupling_type": "SUBADDITIVE",
+    "key_findings": "Feasible but subadditive: State preparation Toffoli expansion (+1,142 Toffolis) outweighs the -0.56% continuous norm reduction."
+  },
+  {
+    "combination_id": "COMB-08",
+    "name": "Five-Word QROM + ANF Erasure",
+    "benchmark": "CHEMISTRY",
+    "component_a": "Five-Word Exact-Gauge Pebble QROM (J=5)",
+    "component_b": "Split ANF Monomial Erasure (del_lookup_anf)",
+    "compatibility": "FULLY_COMPATIBLE",
+    "shared_dependencies": [
+      "QROM data registers and signed half-open difference bank"
+    ],
+    "conflicting_assumptions": [],
+    "semantic_status": "PASS",
+    "semantic_details": "Passed 100% across all 15 angle circuits, Q=126 <= 128, strictly 0 T-gates.",
+    "compilation_status": "COMPILED_OK",
+    "qubits": 430,
+    "mean_toffolis": 16266.0,
+    "rotations_or_angles": 15,
+    "total_cost": 337822958.496,
+    "reference_cost": 3355599588.3155365,
+    "measured_combined_ratio": 9.933012259601263,
+    "projected_independent_ratio": 9.93301,
+    "coupling_type": "SUPERADDITIVE",
+    "key_findings": "Undefeated champion synergy: Exact gauge constraint + ANF monomial cancellation achieves lowest verified chemistry cost."
+  },
+  {
+    "combination_id": "COMB-09",
+    "name": "Invsqrt Range Reduction + Alternative Polynomial (Estrin Tree)",
+    "benchmark": "INVSQRT",
+    "component_a": "Normalized Mantissa Range Reduction",
+    "component_b": "Estrin Parallel Polynomial Evaluation Tree",
+    "compatibility": "REVERSIBLY_INCOMPATIBLE",
+    "shared_dependencies": [
+      "Normalized mantissa register delta and piecewise polynomial coefficients"
+    ],
+    "conflicting_assumptions": [
+      "Estrin evaluation assumes parallel classical multiplier trees reduce depth at no area penalty.",
+      "In reversible quantum logic, intermediate terms cannot be overwritten without uncomputation. Simultaneous register allocation inflates Q from 58 to 86 qubits, violating the 64-qubit benchmark contract."
+    ],
+    "semantic_status": "PASS",
+    "semantic_details": "Passed numerical precision, but violates 64-qubit register ceiling (Q=86 > 64).",
+    "compilation_status": "REJECTED_PHYSICAL_LIMIT",
+    "qubits": 86,
+    "mean_toffolis": 1320.0,
+    "rotations_or_angles": 41,
+    "total_cost": 131985.39862686244,
+    "reference_cost": 2076774.233715282,
+    "measured_combined_ratio": 15.734878670833554,
+    "projected_independent_ratio": 26.0,
+    "coupling_type": "CATASTROPHICALLY_SUBADDITIVE",
+    "key_findings": "Reversible ancilla explosion: Estrin parallel evaluation inflates active qubits (+48.3%), violating 64-qubit limit."
+  },
+  {
+    "combination_id": "COMB-10",
+    "name": "Invsqrt Lawson Minimax + Workspace Optimization",
+    "benchmark": "INVSQRT",
+    "component_a": "Lawson Minimax 4-Subinterval Approximation",
+    "component_b": "In-Place Vacated-Bit Packing & Carry Folding",
+    "compatibility": "FULLY_COMPATIBLE",
+    "shared_dependencies": [
+      "Horner evaluation accumulator, normalized mantissa, rotation margin slack"
+    ],
+    "conflicting_assumptions": [],
+    "semantic_status": "PASS",
+    "semantic_details": "Passed full-domain dense grid (102,004 points): worst error/tol 0.1024 < 1.0, 0 input bit flips, clean ancilla return.",
+    "compilation_status": "COMPILED_OK",
+    "qubits": 58,
+    "mean_toffolis": 1324.5,
+    "rotations_or_angles": 41,
+    "total_cost": 92939.75800766115,
+    "reference_cost": 2076774.233715282,
+    "measured_combined_ratio": 22.345380257436123,
+    "projected_independent_ratio": 21.8,
+    "coupling_type": "SUPERADDITIVE",
+    "key_findings": "Global research winner: Combining Lawson expanded margin with vacated register packing achieves verified Q=58 and 22.23862x ratio (+1.596x over incumbent)."
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Masterloop 26 Authoritative Baseline Verification Report",
+  "version": "1.0.0",
+  "evaluated_at": "2026-10-31T15:34:00Z",
+  "evidence_class": "E2",
+  "environment": {
+    "python": "3.10.11",
+    "kickmix": "0.1.0",
+    "numpy": "2.2.6",
+    "os": "Windows 11 AMD64"
+  },
+  "candidate": {
+    "artifact": "submission.zip",
+    "sha256": "0bf5b4e361690c38a9d17580e49bb2d6b5f3706a64500ecaa9f499d2f521c3fe",
+    "state": "INCUMBENT"
+  },
+  "benchmark_reports": {
+    "invsqrt": {
+      "target_circuit": "build/invsqrt.kmb",
+      "circuit_sha256": "a568bc79348165bad5be2349960d200300c5639ffd2142aca6d548e764a399d9",
+      "status": "PASS",
+      "score": 100608.66,
+      "toffoli_equivalent": 1622.7203,
+      "toffoli_count_dynamic_mean": 1332.3818,
+      "max_toffoli_count_static": 1502,
+      "base_t_count": 6.9180,
+      "fine_rotations_count": 41.0,
+      "num_qubits": 62,
+      "reaction_depth": 805,
+      "num_ops": 47190,
+      "rotation_synthesis_eps": 2.4340e-13,
+      "worst_error_over_tolerance": 0.99932,
+      "reference_cost": 2076774.233715282,
+      "improvement_ratio": 20.64210
+    },
+    "dqi": {
+      "target_circuit": "audit/frozen_incumbent_dqi/dqi.kmb",
+      "circuit_sha256": "73e1b187b288f3cdc7d345214dd78ae6857d2f419041caf02bf3e29d26f7e6f2",
+      "status": "PASS",
+      "score": 402454611307.23,
+      "num_qubits": 889,
+      "num_bits": 101281,
+      "num_instructions": 59040109,
+      "static_toffoli_count": 441968,
+      "dynamic_mean_toffolis": 427471.2,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "empirical_error_rate": 0.0,
+      "benchmark_shots": 102400,
+      "clopper_pearson_delta": 2.938735877055719e-39,
+      "effective_error_rate_eps_plus": 8.660587301657926e-4,
+      "repetition_factor": 1.1912604648115832,
+      "ideal_unpenalized_cost_R1": 337837645996.80,
+      "reference_cost": 24439463583672.93,
+      "official_improvement_ratio": 60.72598,
+      "ideal_unpenalized_ratio_R1": 72.33966
+    },
+    "chemistry": {
+      "target_directory": "scratch/incumbent_dfthcsos",
+      "submission_npz_sha256": "0421445e66dc1699eac24cb5d873e983930e0368be7df6627afaa5e9a01375d3",
+      "fcidump_sha256": "e5a48af746fd075026dec9e8f5df2d363802a121e8c53af9a0b984bde695e1bd",
+      "status": "PASS",
+      "score": 337823023.22,
+      "lambda_eff": 48.29920925404513,
+      "raw_lambda": 308.4559397330944,
+      "e_gap_ha": 3.965477244291833,
+      "error_1_ha": 0.000305,
+      "error_2_ha": 0.007572,
+      "toffoli_count_total": 16266.0,
+      "num_qubits_total": 430,
+      "angles_max_qubits": 119,
+      "angles_qubit_cap": 128,
+      "verified_shots": 78080,
+      "shots_per_address": 64,
+      "reference_cost": 3355599588.3155365,
+      "improvement_ratio": 9.933010
+    }
+  },
+  "composite_summary": {
+    "official_composite_score": 23.17767,
+    "theoretical_unpenalized_composite_score_R1": 24.57001,
+    "kaggle_graded_champion_score": 23.00043,
+    "delta_over_kaggle_graded": 0.17724,
+    "percentage_gain": 0.7706
+  }
+}

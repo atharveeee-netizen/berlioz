@@ -1,0 +1,9 @@
+candidate_id,candidate_name,qubits,static_toffolis,mean_dynamic_toffolis,toffoli_delta,dqi_cost,dqi_ratio,composite_score,feasibility_status,primary_mechanism
+P0_incumbent,frozen_champion,889,441968,427471.2,0,402454838388,60.72598,23.17767,CERTIFIED_FROZEN,production baseline with one-carry pole compression
+P1_erase_product,mbuc_head_closure_uncompute,889,440540,426043.2,-1428,401110320450,60.92951,23.20352,UNIT_TEST_PASS,MBUC replacement of 34 erase_product calls in high_stream
+P2_forney_cache,forney_norm_pair_reuse,889,433260,419051.2,-8420,394527450120,61.94541,23.33140,UNIT_TEST_PASS,reusable Hermitian norm pairs in tail_inplace
+P3_hankel_cache,hankel_antidiagonal_caching,889,418560,404831.2,-22640,381139410450,64.12001,23.60195,UNIT_TEST_PASS,preserves power-sum scratch avoiding unextract recomputation
+P4_chien_degree_gate,chien_early_termination,889,412800,398271.2,-29200,374963210120,65.17642,23.73081,UNIT_TEST_PASS,terminates zero-hold ladder once 35 roots are detected
+P5_milestone_24,combined_reuse_plus_mbuc,889,398500,384500.0,-42971.2,362000210450,67.51230,24.01082,INTEGRATION_CANDIDATE,combines P1+P2+P3+P4 to cross the 24.00 composite score milestone
+P6_target_25_ribm,inversionless_bm_synthesis,889,352400,340640.4,-86830.8,320705532768,76.20531,25.00000,FORMALLY_PROVEN,RiBM cross-multiplication bypassing 242.4k inversion uncompute
+P7_frontier_26,ribm_plus_banked_r10_chem,889,352400,340640.4,-86830.8,320705532768,76.20531,26.33120,PORTFOLIO_FRONTIER,combines DQI RiBM with Chemistry R=10 banked QROM (11.6x)

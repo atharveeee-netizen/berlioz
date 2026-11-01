@@ -1,0 +1,1009 @@
+{
+  "metadata": {
+    "experiment": "ML26-DQI-2",
+    "title": "Chien Search and Multipoint Evaluation Equivalence Verification",
+    "field": "GF(2^12)",
+    "primitive_polynomial": "x^12 + x^6 + x^4 + x + 1 (0x1053)",
+    "domain_size": 4025,
+    "max_degree_t": 35,
+    "num_test_patterns": 50,
+    "verdict": "VERIFIED_EQUIVALENT_AND_EARLY_TERMINATION_SUPERIOR"
+  },
+  "aggregate_summary": {
+    "total_test_patterns": 50,
+    "bit_exact_matches": 50,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "standard_chien_mean_evaluations": 4025.0,
+    "standard_chien_mean_toffolis": 44275.0,
+    "early_termination_mean_evaluations": 3678.02,
+    "early_termination_mean_toffolis": 40464.22,
+    "mean_evaluations_saved": 346.98,
+    "mean_toffolis_saved": 3810.78,
+    "mean_percentage_saved": 8.62
+  },
+  "individual_tests": [
+    {
+      "test_id": 1,
+      "error_weight_t": 1,
+      "degree_lambda": 1,
+      "true_error_positions_sample": [
+        2069
+      ],
+      "max_root_position": 2069,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 2070,
+      "early_termination_toffolis": 22776,
+      "evaluations_saved": 1955,
+      "percentage_evaluations_saved": 48.57,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 2,
+      "error_weight_t": 2,
+      "degree_lambda": 2,
+      "true_error_positions_sample": [
+        108,
+        2465
+      ],
+      "max_root_position": 2465,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 2466,
+      "early_termination_toffolis": 27132,
+      "evaluations_saved": 1559,
+      "percentage_evaluations_saved": 38.73,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 3,
+      "error_weight_t": 3,
+      "degree_lambda": 3,
+      "true_error_positions_sample": [
+        814,
+        2298,
+        2932
+      ],
+      "max_root_position": 2932,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 2933,
+      "early_termination_toffolis": 32269,
+      "evaluations_saved": 1092,
+      "percentage_evaluations_saved": 27.13,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 4,
+      "error_weight_t": 4,
+      "degree_lambda": 4,
+      "true_error_positions_sample": [
+        1718,
+        2232,
+        2661,
+        2872
+      ],
+      "max_root_position": 2872,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 2873,
+      "early_termination_toffolis": 31609,
+      "evaluations_saved": 1152,
+      "percentage_evaluations_saved": 28.62,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 5,
+      "error_weight_t": 5,
+      "degree_lambda": 5,
+      "true_error_positions_sample": [
+        902,
+        1139,
+        1839,
+        2413,
+        3315
+      ],
+      "max_root_position": 3315,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3316,
+      "early_termination_toffolis": 36482,
+      "evaluations_saved": 709,
+      "percentage_evaluations_saved": 17.61,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 6,
+      "error_weight_t": 6,
+      "degree_lambda": 6,
+      "true_error_positions_sample": [
+        26,
+        653,
+        2859,
+        3108,
+        3300
+      ],
+      "max_root_position": 3560,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3561,
+      "early_termination_toffolis": 39177,
+      "evaluations_saved": 464,
+      "percentage_evaluations_saved": 11.53,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 7,
+      "error_weight_t": 7,
+      "degree_lambda": 7,
+      "true_error_positions_sample": [
+        636,
+        881,
+        1138,
+        1393,
+        1731
+      ],
+      "max_root_position": 3920,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3921,
+      "early_termination_toffolis": 43137,
+      "evaluations_saved": 104,
+      "percentage_evaluations_saved": 2.58,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 8,
+      "error_weight_t": 8,
+      "degree_lambda": 8,
+      "true_error_positions_sample": [
+        379,
+        396,
+        418,
+        1378,
+        1408
+      ],
+      "max_root_position": 3471,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3472,
+      "early_termination_toffolis": 38198,
+      "evaluations_saved": 553,
+      "percentage_evaluations_saved": 13.74,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 9,
+      "error_weight_t": 9,
+      "degree_lambda": 9,
+      "true_error_positions_sample": [
+        177,
+        511,
+        1083,
+        1881,
+        2196
+      ],
+      "max_root_position": 3985,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3986,
+      "early_termination_toffolis": 43852,
+      "evaluations_saved": 39,
+      "percentage_evaluations_saved": 0.97,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 10,
+      "error_weight_t": 10,
+      "degree_lambda": 10,
+      "true_error_positions_sample": [
+        322,
+        1200,
+        1550,
+        2261,
+        2533
+      ],
+      "max_root_position": 3777,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3778,
+      "early_termination_toffolis": 41564,
+      "evaluations_saved": 247,
+      "percentage_evaluations_saved": 6.14,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 11,
+      "error_weight_t": 11,
+      "degree_lambda": 11,
+      "true_error_positions_sample": [
+        187,
+        284,
+        326,
+        787,
+        933
+      ],
+      "max_root_position": 3166,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3167,
+      "early_termination_toffolis": 34843,
+      "evaluations_saved": 858,
+      "percentage_evaluations_saved": 21.32,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 12,
+      "error_weight_t": 12,
+      "degree_lambda": 12,
+      "true_error_positions_sample": [
+        413,
+        666,
+        953,
+        1138,
+        1494
+      ],
+      "max_root_position": 3549,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3550,
+      "early_termination_toffolis": 39056,
+      "evaluations_saved": 475,
+      "percentage_evaluations_saved": 11.8,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 13,
+      "error_weight_t": 13,
+      "degree_lambda": 13,
+      "true_error_positions_sample": [
+        292,
+        700,
+        858,
+        1093,
+        1455
+      ],
+      "max_root_position": 3836,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3837,
+      "early_termination_toffolis": 42213,
+      "evaluations_saved": 188,
+      "percentage_evaluations_saved": 4.67,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 14,
+      "error_weight_t": 14,
+      "degree_lambda": 14,
+      "true_error_positions_sample": [
+        669,
+        899,
+        1002,
+        1105,
+        1328
+      ],
+      "max_root_position": 3790,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3791,
+      "early_termination_toffolis": 41707,
+      "evaluations_saved": 234,
+      "percentage_evaluations_saved": 5.81,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 15,
+      "error_weight_t": 15,
+      "degree_lambda": 15,
+      "true_error_positions_sample": [
+        131,
+        229,
+        271,
+        864,
+        938
+      ],
+      "max_root_position": 3862,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3863,
+      "early_termination_toffolis": 42499,
+      "evaluations_saved": 162,
+      "percentage_evaluations_saved": 4.02,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 16,
+      "error_weight_t": 16,
+      "degree_lambda": 16,
+      "true_error_positions_sample": [
+        571,
+        585,
+        870,
+        1010,
+        1084
+      ],
+      "max_root_position": 3745,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3746,
+      "early_termination_toffolis": 41212,
+      "evaluations_saved": 279,
+      "percentage_evaluations_saved": 6.93,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 17,
+      "error_weight_t": 17,
+      "degree_lambda": 17,
+      "true_error_positions_sample": [
+        192,
+        372,
+        566,
+        898,
+        1076
+      ],
+      "max_root_position": 3677,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3678,
+      "early_termination_toffolis": 40464,
+      "evaluations_saved": 347,
+      "percentage_evaluations_saved": 8.62,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 18,
+      "error_weight_t": 18,
+      "degree_lambda": 18,
+      "true_error_positions_sample": [
+        260,
+        449,
+        626,
+        655,
+        1029
+      ],
+      "max_root_position": 3977,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3978,
+      "early_termination_toffolis": 43764,
+      "evaluations_saved": 47,
+      "percentage_evaluations_saved": 1.17,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 19,
+      "error_weight_t": 19,
+      "degree_lambda": 19,
+      "true_error_positions_sample": [
+        47,
+        456,
+        469,
+        647,
+        1092
+      ],
+      "max_root_position": 3860,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3861,
+      "early_termination_toffolis": 42477,
+      "evaluations_saved": 164,
+      "percentage_evaluations_saved": 4.07,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 20,
+      "error_weight_t": 20,
+      "degree_lambda": 20,
+      "true_error_positions_sample": [
+        13,
+        435,
+        731,
+        814,
+        1078
+      ],
+      "max_root_position": 3980,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3981,
+      "early_termination_toffolis": 43797,
+      "evaluations_saved": 44,
+      "percentage_evaluations_saved": 1.09,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 21,
+      "error_weight_t": 21,
+      "degree_lambda": 21,
+      "true_error_positions_sample": [
+        2,
+        79,
+        458,
+        626,
+        661
+      ],
+      "max_root_position": 3905,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3906,
+      "early_termination_toffolis": 42972,
+      "evaluations_saved": 119,
+      "percentage_evaluations_saved": 2.96,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 22,
+      "error_weight_t": 22,
+      "degree_lambda": 22,
+      "true_error_positions_sample": [
+        237,
+        283,
+        322,
+        350,
+        515
+      ],
+      "max_root_position": 4005,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 4006,
+      "early_termination_toffolis": 44072,
+      "evaluations_saved": 19,
+      "percentage_evaluations_saved": 0.47,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 23,
+      "error_weight_t": 23,
+      "degree_lambda": 23,
+      "true_error_positions_sample": [
+        676,
+        823,
+        867,
+        1085,
+        1276
+      ],
+      "max_root_position": 3950,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3951,
+      "early_termination_toffolis": 43467,
+      "evaluations_saved": 74,
+      "percentage_evaluations_saved": 1.84,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 24,
+      "error_weight_t": 24,
+      "degree_lambda": 24,
+      "true_error_positions_sample": [
+        29,
+        86,
+        128,
+        241,
+        262
+      ],
+      "max_root_position": 3708,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3709,
+      "early_termination_toffolis": 40805,
+      "evaluations_saved": 316,
+      "percentage_evaluations_saved": 7.85,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 25,
+      "error_weight_t": 25,
+      "degree_lambda": 25,
+      "true_error_positions_sample": [
+        386,
+        397,
+        541,
+        779,
+        877
+      ],
+      "max_root_position": 3831,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3832,
+      "early_termination_toffolis": 42158,
+      "evaluations_saved": 193,
+      "percentage_evaluations_saved": 4.8,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 26,
+      "error_weight_t": 26,
+      "degree_lambda": 26,
+      "true_error_positions_sample": [
+        221,
+        248,
+        403,
+        447,
+        574
+      ],
+      "max_root_position": 3538,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3539,
+      "early_termination_toffolis": 38935,
+      "evaluations_saved": 486,
+      "percentage_evaluations_saved": 12.07,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 27,
+      "error_weight_t": 27,
+      "degree_lambda": 27,
+      "true_error_positions_sample": [
+        60,
+        207,
+        308,
+        382,
+        401
+      ],
+      "max_root_position": 3969,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3970,
+      "early_termination_toffolis": 43676,
+      "evaluations_saved": 55,
+      "percentage_evaluations_saved": 1.37,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 28,
+      "error_weight_t": 28,
+      "degree_lambda": 28,
+      "true_error_positions_sample": [
+        8,
+        239,
+        240,
+        634,
+        674
+      ],
+      "max_root_position": 3967,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3968,
+      "early_termination_toffolis": 43654,
+      "evaluations_saved": 57,
+      "percentage_evaluations_saved": 1.42,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 29,
+      "error_weight_t": 29,
+      "degree_lambda": 29,
+      "true_error_positions_sample": [
+        205,
+        232,
+        234,
+        249,
+        278
+      ],
+      "max_root_position": 3935,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3936,
+      "early_termination_toffolis": 43302,
+      "evaluations_saved": 89,
+      "percentage_evaluations_saved": 2.21,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 30,
+      "error_weight_t": 30,
+      "degree_lambda": 30,
+      "true_error_positions_sample": [
+        162,
+        335,
+        536,
+        836,
+        977
+      ],
+      "max_root_position": 3856,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3857,
+      "early_termination_toffolis": 42433,
+      "evaluations_saved": 168,
+      "percentage_evaluations_saved": 4.17,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 31,
+      "error_weight_t": 31,
+      "degree_lambda": 31,
+      "true_error_positions_sample": [
+        38,
+        281,
+        297,
+        300,
+        409
+      ],
+      "max_root_position": 3832,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3833,
+      "early_termination_toffolis": 42169,
+      "evaluations_saved": 192,
+      "percentage_evaluations_saved": 4.77,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 32,
+      "error_weight_t": 32,
+      "degree_lambda": 32,
+      "true_error_positions_sample": [
+        32,
+        424,
+        438,
+        472,
+        550
+      ],
+      "max_root_position": 3845,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3846,
+      "early_termination_toffolis": 42312,
+      "evaluations_saved": 179,
+      "percentage_evaluations_saved": 4.45,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 33,
+      "error_weight_t": 33,
+      "degree_lambda": 33,
+      "true_error_positions_sample": [
+        14,
+        39,
+        180,
+        208,
+        308
+      ],
+      "max_root_position": 4013,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 4014,
+      "early_termination_toffolis": 44160,
+      "evaluations_saved": 11,
+      "percentage_evaluations_saved": 0.27,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 34,
+      "error_weight_t": 34,
+      "degree_lambda": 34,
+      "true_error_positions_sample": [
+        147,
+        163,
+        171,
+        421,
+        522
+      ],
+      "max_root_position": 3988,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3989,
+      "early_termination_toffolis": 43885,
+      "evaluations_saved": 36,
+      "percentage_evaluations_saved": 0.89,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 35,
+      "error_weight_t": 35,
+      "degree_lambda": 35,
+      "true_error_positions_sample": [
+        101,
+        158,
+        442,
+        633,
+        652
+      ],
+      "max_root_position": 3998,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3999,
+      "early_termination_toffolis": 43995,
+      "evaluations_saved": 26,
+      "percentage_evaluations_saved": 0.65,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 36,
+      "error_weight_t": 8,
+      "degree_lambda": 8,
+      "true_error_positions_sample": [
+        817,
+        911,
+        1250,
+        1432,
+        1885
+      ],
+      "max_root_position": 3761,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3762,
+      "early_termination_toffolis": 41388,
+      "evaluations_saved": 263,
+      "percentage_evaluations_saved": 6.53,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 37,
+      "error_weight_t": 2,
+      "degree_lambda": 2,
+      "true_error_positions_sample": [
+        3257,
+        3568
+      ],
+      "max_root_position": 3568,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3569,
+      "early_termination_toffolis": 39265,
+      "evaluations_saved": 456,
+      "percentage_evaluations_saved": 11.33,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 38,
+      "error_weight_t": 18,
+      "degree_lambda": 18,
+      "true_error_positions_sample": [
+        96,
+        284,
+        791,
+        913,
+        932
+      ],
+      "max_root_position": 3960,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3961,
+      "early_termination_toffolis": 43577,
+      "evaluations_saved": 64,
+      "percentage_evaluations_saved": 1.59,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 39,
+      "error_weight_t": 16,
+      "degree_lambda": 16,
+      "true_error_positions_sample": [
+        113,
+        156,
+        444,
+        472,
+        731
+      ],
+      "max_root_position": 4018,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 4019,
+      "early_termination_toffolis": 44215,
+      "evaluations_saved": 6,
+      "percentage_evaluations_saved": 0.15,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 40,
+      "error_weight_t": 15,
+      "degree_lambda": 15,
+      "true_error_positions_sample": [
+        473,
+        778,
+        1043,
+        1284,
+        1415
+      ],
+      "max_root_position": 3684,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3685,
+      "early_termination_toffolis": 40541,
+      "evaluations_saved": 340,
+      "percentage_evaluations_saved": 8.45,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 41,
+      "error_weight_t": 9,
+      "degree_lambda": 9,
+      "true_error_positions_sample": [
+        6,
+        181,
+        1786,
+        2129,
+        2205
+      ],
+      "max_root_position": 3791,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3792,
+      "early_termination_toffolis": 41718,
+      "evaluations_saved": 233,
+      "percentage_evaluations_saved": 5.79,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 42,
+      "error_weight_t": 7,
+      "degree_lambda": 7,
+      "true_error_positions_sample": [
+        807,
+        1491,
+        2746,
+        2946,
+        3018
+      ],
+      "max_root_position": 3851,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3852,
+      "early_termination_toffolis": 42378,
+      "evaluations_saved": 173,
+      "percentage_evaluations_saved": 4.3,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 43,
+      "error_weight_t": 35,
+      "degree_lambda": 35,
+      "true_error_positions_sample": [
+        286,
+        510,
+        521,
+        712,
+        785
+      ],
+      "max_root_position": 3886,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3887,
+      "early_termination_toffolis": 42763,
+      "evaluations_saved": 138,
+      "percentage_evaluations_saved": 3.43,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 44,
+      "error_weight_t": 6,
+      "degree_lambda": 6,
+      "true_error_positions_sample": [
+        1,
+        1232,
+        1244,
+        1663,
+        2244
+      ],
+      "max_root_position": 3414,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3415,
+      "early_termination_toffolis": 37571,
+      "evaluations_saved": 610,
+      "percentage_evaluations_saved": 15.16,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 45,
+      "error_weight_t": 28,
+      "degree_lambda": 28,
+      "true_error_positions_sample": [
+        347,
+        695,
+        860,
+        875,
+        1162
+      ],
+      "max_root_position": 3931,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3932,
+      "early_termination_toffolis": 43258,
+      "evaluations_saved": 93,
+      "percentage_evaluations_saved": 2.31,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 46,
+      "error_weight_t": 3,
+      "degree_lambda": 3,
+      "true_error_positions_sample": [
+        382,
+        1372,
+        3352
+      ],
+      "max_root_position": 3352,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3353,
+      "early_termination_toffolis": 36889,
+      "evaluations_saved": 672,
+      "percentage_evaluations_saved": 16.7,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 47,
+      "error_weight_t": 2,
+      "degree_lambda": 2,
+      "true_error_positions_sample": [
+        3076,
+        3899
+      ],
+      "max_root_position": 3899,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3900,
+      "early_termination_toffolis": 42906,
+      "evaluations_saved": 125,
+      "percentage_evaluations_saved": 3.11,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 48,
+      "error_weight_t": 6,
+      "degree_lambda": 6,
+      "true_error_positions_sample": [
+        815,
+        920,
+        962,
+        1271,
+        2755
+      ],
+      "max_root_position": 3303,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3304,
+      "early_termination_toffolis": 36350,
+      "evaluations_saved": 721,
+      "percentage_evaluations_saved": 17.91,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 49,
+      "error_weight_t": 14,
+      "degree_lambda": 14,
+      "true_error_positions_sample": [
+        100,
+        189,
+        298,
+        603,
+        1002
+      ],
+      "max_root_position": 3629,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3630,
+      "early_termination_toffolis": 39936,
+      "evaluations_saved": 395,
+      "percentage_evaluations_saved": 9.81,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    },
+    {
+      "test_id": 50,
+      "error_weight_t": 15,
+      "degree_lambda": 15,
+      "true_error_positions_sample": [
+        22,
+        604,
+        796,
+        999,
+        1572
+      ],
+      "max_root_position": 3656,
+      "standard_chien_evaluations": 4025,
+      "standard_chien_toffolis": 44275,
+      "early_termination_evaluations": 3657,
+      "early_termination_toffolis": 40233,
+      "evaluations_saved": 368,
+      "percentage_evaluations_saved": 9.14,
+      "equivalence_status": "BIT_EXACT_MATCH"
+    }
+  ]
+}

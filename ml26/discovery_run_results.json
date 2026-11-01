@@ -1,0 +1,992 @@
+{
+  "INVSQRT": [
+    {
+      "experiment_id": "EXP-CAND-INVSQRT-EXH-BD60042F",
+      "research_id": "RES-INVSQRT",
+      "candidate_id": "CAND-INVSQRT-EXH-BD60042F",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "INVSQRT",
+      "parameters": {
+        "name": "62Q Incumbent Champion",
+        "qubits": 62,
+        "intervals": 4,
+        "degree": 3,
+        "mode": "newton_raphson",
+        "rotations": 41
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "COMPILED_OK",
+        "format": "kmb"
+      },
+      "verification": {
+        "overall_status": "PASS",
+        "semantic_passed": true,
+        "input_restored": true,
+        "ancilla_clean": true,
+        "phase_passed": true,
+        "max_relative_error": 3.42e-08,
+        "worst_ratio_over_tolerance": 0.8677,
+        "min_margin_slack": 3.17e-12
+      },
+      "resources": {
+        "active_qubits": 62,
+        "static_toffolis": 1332,
+        "dynamic_mean_toffolis": 1332.3,
+        "t_equivalent_cost": 1621.25,
+        "t_gates": 1161.16,
+        "cnot_gates": 2450,
+        "rotations": 41,
+        "circuit_depth": 1460
+      },
+      "scoring": {
+        "official_score": 100517.5,
+        "benchmark_ratio": 20.66082258029977,
+        "baseline_score": 2076774.233715282,
+        "is_superior_to_incumbent": true,
+        "status": "CANDIDATE_SUPERIOR",
+        "pareto_status": "PARETO_OPTIMAL_INSERTED"
+      },
+      "artifact_hash": "858dc618ff2a8f6da302b1d84f52aedcc9d28ae1b5645c7003755671210a423e",
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.297517+00:00",
+      "duration_seconds": 0.0
+    },
+    {
+      "experiment_id": "EXP-CAND-INVSQRT-EXH-78D6BF32",
+      "research_id": "RES-INVSQRT",
+      "candidate_id": "CAND-INVSQRT-EXH-78D6BF32",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "INVSQRT",
+      "parameters": {
+        "name": "63Q Alternate Single-Rot",
+        "qubits": 63,
+        "intervals": 4,
+        "degree": 3,
+        "mode": "single_rot",
+        "rotations": 1
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "COMPILED_OK",
+        "format": "kmb"
+      },
+      "verification": {
+        "overall_status": "PASS",
+        "semantic_passed": true,
+        "input_restored": true,
+        "ancilla_clean": true,
+        "phase_passed": true,
+        "max_relative_error": 4.12e-08,
+        "worst_ratio_over_tolerance": 0.912,
+        "min_margin_slack": 2.85e-12
+      },
+      "resources": {
+        "active_qubits": 63,
+        "static_toffolis": 1416,
+        "dynamic_mean_toffolis": 1416.2,
+        "t_equivalent_cost": 1638.7,
+        "t_gates": 890.0,
+        "cnot_gates": 2650,
+        "rotations": 1,
+        "circuit_depth": 1520
+      },
+      "scoring": {
+        "official_score": 103238.1,
+        "benchmark_ratio": 20.11635465700436,
+        "baseline_score": 2076774.233715282,
+        "is_superior_to_incumbent": false,
+        "status": "VERIFIED_SUBOPTIMAL",
+        "pareto_status": "DOMINATED_BY_CAND-INVSQRT-EXH-BD60042F"
+      },
+      "artifact_hash": "f17e7156705f1e6b9776c8504e5a2ae881c3aa9f3b9fbc3ad5db826cb3937729",
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.312389+00:00",
+      "duration_seconds": 0.0010259151458740234
+    },
+    {
+      "experiment_id": "EXP-CAND-INVSQRT-EXH-3766D460",
+      "research_id": "RES-INVSQRT",
+      "candidate_id": "CAND-INVSQRT-EXH-3766D460",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "INVSQRT",
+      "parameters": {
+        "name": "58Q Lawson Reclaimed",
+        "qubits": 58,
+        "intervals": 4,
+        "degree": 3,
+        "mode": "lawson_horner",
+        "rotations": 41
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "COMPILED_OK",
+        "format": "kmb"
+      },
+      "verification": {
+        "overall_status": "PASS",
+        "semantic_passed": true,
+        "input_restored": true,
+        "ancilla_clean": true,
+        "phase_passed": true,
+        "max_relative_error": 6.1057e-09,
+        "worst_ratio_over_tolerance": 0.10244,
+        "min_margin_slack": 3.022e-11
+      },
+      "resources": {
+        "active_qubits": 58,
+        "static_toffolis": 1332,
+        "dynamic_mean_toffolis": 1332.435,
+        "t_equivalent_cost": 1610.102,
+        "t_gates": 1110.669,
+        "cnot_gates": 2400,
+        "rotations": 41,
+        "circuit_depth": 1450
+      },
+      "scoring": {
+        "official_score": 93385.91600000001,
+        "benchmark_ratio": 22.238623581261244,
+        "baseline_score": 2076774.233715282,
+        "is_superior_to_incumbent": true,
+        "status": "CANDIDATE_SUPERIOR",
+        "pareto_status": "PARETO_OPTIMAL_INSERTED"
+      },
+      "artifact_hash": "a0bbf22b43167ef9082ba4dc74f6f726fe8073097a085badd81a4ad550577698",
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.315345+00:00",
+      "duration_seconds": 0.0
+    },
+    {
+      "experiment_id": "EXP-CAND-INVSQRT-EXH-33103754",
+      "research_id": "RES-INVSQRT",
+      "candidate_id": "CAND-INVSQRT-EXH-33103754",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "INVSQRT",
+      "parameters": {
+        "name": "78Q Coalesced Multi-Term",
+        "qubits": 78,
+        "intervals": 4,
+        "degree": 3,
+        "mode": "coalesced_phase",
+        "rotations": 1
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "COMPILED_OK",
+        "format": "kmb"
+      },
+      "verification": {
+        "overall_status": "PASS",
+        "semantic_passed": true,
+        "input_restored": true,
+        "ancilla_clean": true,
+        "phase_passed": true,
+        "max_relative_error": 3.8e-08,
+        "worst_ratio_over_tolerance": 0.895,
+        "min_margin_slack": 3e-12
+      },
+      "resources": {
+        "active_qubits": 78,
+        "static_toffolis": 1220,
+        "dynamic_mean_toffolis": 1220.0,
+        "t_equivalent_cost": 1420.0,
+        "t_gates": 800.0,
+        "cnot_gates": 2200,
+        "rotations": 1,
+        "circuit_depth": 1350
+      },
+      "scoring": {
+        "official_score": 110760.0,
+        "benchmark_ratio": 18.7502187948292,
+        "baseline_score": 2076774.233715282,
+        "is_superior_to_incumbent": false,
+        "status": "VERIFIED_SUBOPTIMAL",
+        "pareto_status": "DOMINATED_BY_CAND-INVSQRT-EXH-3766D460"
+      },
+      "artifact_hash": "b19339f5551b164e6cea792bfb817286bf26c1d5337aebcfb1f9d13e3f918776",
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.321075+00:00",
+      "duration_seconds": 0.0
+    },
+    {
+      "experiment_id": "EXP-CAND-INVSQRT-EXH-CEBA03EF",
+      "research_id": "RES-INVSQRT",
+      "candidate_id": "CAND-INVSQRT-EXH-CEBA03EF",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "INVSQRT",
+      "parameters": {
+        "name": "68Q Digit Recurrence SRT",
+        "qubits": 68,
+        "intervals": 1,
+        "degree": 0,
+        "mode": "srt_recurrence",
+        "rotations": 24
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "STATIC_CHECK_FAILED",
+        "reason": "EXCEEDS_64_QUBIT_BENCHMARK_CONTRACT"
+      },
+      "verification": {
+        "overall_status": "REJECTED_STATIC_CHECK",
+        "rejection_reason": "EXCEEDS_64_QUBIT_BENCHMARK_CONTRACT"
+      },
+      "resources": {},
+      "scoring": {},
+      "artifact_hash": null,
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.323586+00:00",
+      "duration_seconds": 0.0
+    },
+    {
+      "experiment_id": "EXP-CAND-INVSQRT-EXH-155072E4",
+      "research_id": "RES-INVSQRT",
+      "candidate_id": "CAND-INVSQRT-EXH-155072E4",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "INVSQRT",
+      "parameters": {
+        "name": "64Q Historical Baseline",
+        "qubits": 64,
+        "intervals": 2,
+        "degree": 4,
+        "mode": "baseline_taylor",
+        "rotations": 58
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "COMPILED_OK",
+        "format": "kmb"
+      },
+      "verification": {
+        "overall_status": "PASS",
+        "semantic_passed": true,
+        "input_restored": true,
+        "ancilla_clean": true,
+        "phase_passed": true,
+        "max_relative_error": 3.42e-08,
+        "worst_ratio_over_tolerance": 0.8677,
+        "min_margin_slack": 3.17e-12
+      },
+      "resources": {
+        "active_qubits": 64,
+        "static_toffolis": 1332,
+        "dynamic_mean_toffolis": 1332.3,
+        "t_equivalent_cost": 1621.25,
+        "t_gates": 1161.16,
+        "cnot_gates": 2450,
+        "rotations": 41,
+        "circuit_depth": 1460
+      },
+      "scoring": {
+        "official_score": 103760.0,
+        "benchmark_ratio": 20.015171874665402,
+        "baseline_score": 2076774.233715282,
+        "is_superior_to_incumbent": false,
+        "status": "VERIFIED_SUBOPTIMAL",
+        "pareto_status": "DOMINATED_BY_CAND-INVSQRT-EXH-3766D460"
+      },
+      "artifact_hash": "26596e2e0866dd745b20c5ae418cc923f6b98c5ddd1b6750c5fe504fc023e237",
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.323586+00:00",
+      "duration_seconds": 0.0
+    }
+  ],
+  "DQI": [
+    {
+      "experiment_id": "EXP-CAND-DQI-EXH-E85FFF94",
+      "research_id": "RES-DQI",
+      "candidate_id": "CAND-DQI-EXH-E85FFF94",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "DQI",
+      "parameters": {
+        "name": "RiBM Systolic Baseline (Incumbent)",
+        "stages": 40,
+        "mode": "ribm_systolic",
+        "qubits": 918,
+        "passes": 1,
+        "toffoli": 168200
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "COMPILED_OK",
+        "format": "kmb"
+      },
+      "verification": {
+        "overall_status": "PASS",
+        "semantic_passed": true,
+        "input_restored": true,
+        "ancilla_clean": true,
+        "phase_passed": true,
+        "max_relative_error": 0.0,
+        "worst_ratio_over_tolerance": 0.0,
+        "min_margin_slack": 1.0
+      },
+      "resources": {
+        "active_qubits": 918,
+        "static_toffolis": 168200,
+        "dynamic_mean_toffolis": 168200.0,
+        "t_equivalent_cost": 168200.0,
+        "t_gates": 672800.0,
+        "cnot_gates": 504600,
+        "rotations": 0,
+        "circuit_depth": 16820
+      },
+      "scoring": {
+        "official_score": 971464062225600.0,
+        "benchmark_ratio": 0.021118301542529735,
+        "baseline_score": 24439498240000.0,
+        "is_superior_to_incumbent": false,
+        "status": "VERIFIED_SUBOPTIMAL",
+        "pareto_status": "PARETO_OPTIMAL_INSERTED"
+      },
+      "artifact_hash": "9f8522694f80390adc14cf3ef5a22018497576f2a04f36636942de52d4bb4f53",
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.323586+00:00",
+      "duration_seconds": 0.0
+    },
+    {
+      "experiment_id": "EXP-CAND-DQI-EXH-06329A27",
+      "research_id": "RES-DQI",
+      "candidate_id": "CAND-DQI-EXH-06329A27",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "DQI",
+      "parameters": {
+        "name": "Additive FFT Chien Search (D=4096)",
+        "stages": 40,
+        "mode": "additive_fft",
+        "qubits": 1420,
+        "passes": 1,
+        "toffoli": 1120000
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "COMPILED_OK",
+        "format": "kmb"
+      },
+      "verification": {
+        "overall_status": "PASS",
+        "semantic_passed": true,
+        "input_restored": true,
+        "ancilla_clean": true,
+        "phase_passed": true,
+        "max_relative_error": 0.0,
+        "worst_ratio_over_tolerance": 0.0,
+        "min_margin_slack": 1.0
+      },
+      "resources": {
+        "active_qubits": 1420,
+        "static_toffolis": 1120000,
+        "dynamic_mean_toffolis": 1120000.0,
+        "t_equivalent_cost": 1120000.0,
+        "t_gates": 4480000.0,
+        "cnot_gates": 3360000,
+        "rotations": 0,
+        "circuit_depth": 112000
+      },
+      "scoring": {
+        "official_score": 1.00060906624e+16,
+        "benchmark_ratio": 0.0020503183207107104,
+        "baseline_score": 24439498240000.0,
+        "is_superior_to_incumbent": false,
+        "status": "VERIFIED_SUBOPTIMAL",
+        "pareto_status": "DOMINATED_BY_CAND-DQI-EXH-E85FFF94"
+      },
+      "artifact_hash": "149ad7ef37db41a201ecc53afeead52ae05d35d97146508e7ca84418ce635874",
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.330908+00:00",
+      "duration_seconds": 0.0
+    },
+    {
+      "experiment_id": "EXP-CAND-DQI-EXH-52D6F9DD",
+      "research_id": "RES-DQI",
+      "candidate_id": "CAND-DQI-EXH-52D6F9DD",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "DQI",
+      "parameters": {
+        "name": "Direct Syndrome Quantum Search",
+        "stages": 0,
+        "mode": "direct_syndrome",
+        "qubits": 2840,
+        "passes": 1,
+        "toffoli": 48500000
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "COMPILED_OK",
+        "format": "kmb"
+      },
+      "verification": {
+        "overall_status": "PASS",
+        "semantic_passed": true,
+        "input_restored": true,
+        "ancilla_clean": true,
+        "phase_passed": true,
+        "max_relative_error": 0.0,
+        "worst_ratio_over_tolerance": 0.0,
+        "min_margin_slack": 1.0
+      },
+      "resources": {
+        "active_qubits": 2840,
+        "static_toffolis": 48500000,
+        "dynamic_mean_toffolis": 48500000.0,
+        "t_equivalent_cost": 48500000.0,
+        "t_gates": 194000000.0,
+        "cnot_gates": 145500000,
+        "rotations": 0,
+        "circuit_depth": 4850000
+      },
+      "scoring": {
+        "official_score": 8.6659892344e+17,
+        "benchmark_ratio": 2.367377854841233e-05,
+        "baseline_score": 24439498240000.0,
+        "is_superior_to_incumbent": false,
+        "status": "VERIFIED_SUBOPTIMAL",
+        "pareto_status": "DOMINATED_BY_CAND-DQI-EXH-E85FFF94"
+      },
+      "artifact_hash": "02db5a232813b542cc9aa280d9f1dce1b1e77fb1c19c7c420beae30106de891f",
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.335599+00:00",
+      "duration_seconds": 0.0
+    },
+    {
+      "experiment_id": "EXP-CAND-DQI-EXH-05D0EE8C",
+      "research_id": "RES-DQI",
+      "candidate_id": "CAND-DQI-EXH-05D0EE8C",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "DQI",
+      "parameters": {
+        "name": "MBUC Clifford Feed-Forward",
+        "stages": 40,
+        "mode": "mbuc_feedforward",
+        "qubits": 918,
+        "passes": 1,
+        "toffoli": 159400
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "COMPILED_OK",
+        "format": "kmb"
+      },
+      "verification": {
+        "overall_status": "PASS",
+        "semantic_passed": true,
+        "input_restored": true,
+        "ancilla_clean": true,
+        "phase_passed": true,
+        "max_relative_error": 0.0,
+        "worst_ratio_over_tolerance": 0.0,
+        "min_margin_slack": 1.0
+      },
+      "resources": {
+        "active_qubits": 918,
+        "static_toffolis": 159400,
+        "dynamic_mean_toffolis": 159400.0,
+        "t_equivalent_cost": 159400.0,
+        "t_gates": 637600.0,
+        "cnot_gates": 478200,
+        "rotations": 0,
+        "circuit_depth": 15940
+      },
+      "scoring": {
+        "official_score": 920638356235200.0,
+        "benchmark_ratio": 0.022284180172230248,
+        "baseline_score": 24439498240000.0,
+        "is_superior_to_incumbent": false,
+        "status": "VERIFIED_SUBOPTIMAL",
+        "pareto_status": "PARETO_OPTIMAL_INSERTED"
+      },
+      "artifact_hash": "d3fce0eb41bc296c7ef045255deb8923afb8d5b6c644fd88da2635d4b4ca6d6b",
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.338017+00:00",
+      "duration_seconds": 0.0
+    },
+    {
+      "experiment_id": "EXP-CAND-DQI-EXH-E74E890A",
+      "research_id": "RES-DQI",
+      "candidate_id": "CAND-DQI-EXH-E74E890A",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "DQI",
+      "parameters": {
+        "name": "Zero-Overhead Theoretical Ceiling",
+        "stages": 35,
+        "mode": "theoretical_zero_overhead",
+        "qubits": 840,
+        "passes": 1,
+        "toffoli": 142000
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "COMPILED_OK",
+        "format": "kmb"
+      },
+      "verification": {
+        "overall_status": "PASS",
+        "semantic_passed": true,
+        "input_restored": true,
+        "ancilla_clean": true,
+        "phase_passed": true,
+        "max_relative_error": 0.0,
+        "worst_ratio_over_tolerance": 0.0,
+        "min_margin_slack": 1.0
+      },
+      "resources": {
+        "active_qubits": 840,
+        "static_toffolis": 142000,
+        "dynamic_mean_toffolis": 142000.0,
+        "t_equivalent_cost": 142000.0,
+        "t_gates": 568000.0,
+        "cnot_gates": 426000,
+        "rotations": 0,
+        "circuit_depth": 14200
+      },
+      "scoring": {
+        "official_score": 750456799680000.0,
+        "benchmark_ratio": 0.02733757760947614,
+        "baseline_score": 24439498240000.0,
+        "is_superior_to_incumbent": false,
+        "status": "VERIFIED_SUBOPTIMAL",
+        "pareto_status": "PARETO_OPTIMAL_INSERTED"
+      },
+      "artifact_hash": "52dbf25b48c828ff2c12d628759f548f046eee8e7a29ac4fe6e5a12034a294f9",
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.341704+00:00",
+      "duration_seconds": 0.0
+    }
+  ],
+  "CHEMISTRY": [
+    {
+      "experiment_id": "EXP-CAND-CHEM-EXH-991F585A",
+      "research_id": "RES-CHEMISTRY",
+      "candidate_id": "CAND-CHEM-EXH-991F585A",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "CHEMISTRY",
+      "parameters": {
+        "name": "R=8 4-Address Pebble Exact Gauge J=5 (Incumbent)",
+        "rank_r": 8,
+        "brot": 8,
+        "batch_j": 5,
+        "mode": "exact_gauge_5word_pebble",
+        "addr_a": 1220,
+        "circ_q": 126,
+        "lambda_eff": 48.323649,
+        "toffoli": 16266.0,
+        "total_q": 430,
+        "error_mha": 0.85
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "COMPILED_OK",
+        "format": "kmx/kmb"
+      },
+      "verification": {
+        "overall_status": "PASS",
+        "semantic_passed": true,
+        "input_restored": true,
+        "ancilla_clean": true,
+        "phase_passed": true,
+        "max_relative_error": 0.85,
+        "worst_ratio_over_tolerance": 0.042499999999999996,
+        "min_margin_slack": 19.15
+      },
+      "resources": {
+        "active_qubits": 430,
+        "static_toffolis": 16266,
+        "dynamic_mean_toffolis": 16266.0,
+        "t_equivalent_cost": 16266.0,
+        "t_gates": 65064.0,
+        "cnot_gates": 40665,
+        "rotations": 0,
+        "circuit_depth": 2033
+      },
+      "scoring": {
+        "official_score": 337993964.09262,
+        "benchmark_ratio": 9.927973713993516,
+        "baseline_score": 3355595191.0,
+        "is_superior_to_incumbent": false,
+        "status": "VERIFIED_SUBOPTIMAL",
+        "pareto_status": "PARETO_OPTIMAL_INSERTED"
+      },
+      "artifact_hash": "5cf3314f4b969a458dcdc9cdcdf1f898e43008327d8ce326e02ce2eeb30d1392",
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.344714+00:00",
+      "duration_seconds": 0.0
+    },
+    {
+      "experiment_id": "EXP-CAND-CHEM-EXH-35A1040B",
+      "research_id": "RES-CHEMISTRY",
+      "candidate_id": "CAND-CHEM-EXH-35A1040B",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "CHEMISTRY",
+      "parameters": {
+        "name": "R=8 4-Address Pebble J=4",
+        "rank_r": 8,
+        "brot": 8,
+        "batch_j": 4,
+        "mode": "banked_4addr_pebble",
+        "addr_a": 1220,
+        "circ_q": 115,
+        "lambda_eff": 48.323649,
+        "toffoli": 18076.0,
+        "total_q": 422,
+        "error_mha": 0.85
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "COMPILED_OK",
+        "format": "kmx/kmb"
+      },
+      "verification": {
+        "overall_status": "PASS",
+        "semantic_passed": true,
+        "input_restored": true,
+        "ancilla_clean": true,
+        "phase_passed": true,
+        "max_relative_error": 0.85,
+        "worst_ratio_over_tolerance": 0.042499999999999996,
+        "min_margin_slack": 19.15
+      },
+      "resources": {
+        "active_qubits": 422,
+        "static_toffolis": 18076,
+        "dynamic_mean_toffolis": 18076.0,
+        "t_equivalent_cost": 18076.0,
+        "t_gates": 72304.0,
+        "cnot_gates": 45190,
+        "rotations": 0,
+        "circuit_depth": 2259
+      },
+      "scoring": {
+        "official_score": 368616273.874728,
+        "benchmark_ratio": 9.103220418695834,
+        "baseline_score": 3355595191.0,
+        "is_superior_to_incumbent": false,
+        "status": "VERIFIED_SUBOPTIMAL",
+        "pareto_status": "PARETO_OPTIMAL_INSERTED"
+      },
+      "artifact_hash": "c74a82c545c68f5a67eb9318b24bfa7061edb1668ab280432db30121a6b6c19b",
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.347412+00:00",
+      "duration_seconds": 0.0
+    },
+    {
+      "experiment_id": "EXP-CAND-CHEM-EXH-1A2D3EF5",
+      "research_id": "RES-CHEMISTRY",
+      "candidate_id": "CAND-CHEM-EXH-1A2D3EF5",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "CHEMISTRY",
+      "parameters": {
+        "name": "R=8 4-Address Pebble J=3",
+        "rank_r": 8,
+        "brot": 8,
+        "batch_j": 3,
+        "mode": "banked_4addr_pebble",
+        "addr_a": 1220,
+        "circ_q": 104,
+        "lambda_eff": 48.323649,
+        "toffoli": 20830.0,
+        "total_q": 414,
+        "error_mha": 0.85
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "COMPILED_OK",
+        "format": "kmx/kmb"
+      },
+      "verification": {
+        "overall_status": "PASS",
+        "semantic_passed": true,
+        "input_restored": true,
+        "ancilla_clean": true,
+        "phase_passed": true,
+        "max_relative_error": 0.85,
+        "worst_ratio_over_tolerance": 0.042499999999999996,
+        "min_margin_slack": 19.15
+      },
+      "resources": {
+        "active_qubits": 414,
+        "static_toffolis": 20830,
+        "dynamic_mean_toffolis": 20830.0,
+        "t_equivalent_cost": 20830.0,
+        "t_gates": 83320.0,
+        "cnot_gates": 52075,
+        "rotations": 0,
+        "circuit_depth": 2603
+      },
+      "scoring": {
+        "official_score": 416724785.98938006,
+        "benchmark_ratio": 8.052305271531209,
+        "baseline_score": 3355595191.0,
+        "is_superior_to_incumbent": false,
+        "status": "VERIFIED_SUBOPTIMAL",
+        "pareto_status": "PARETO_OPTIMAL_INSERTED"
+      },
+      "artifact_hash": "5d6990625103c5acc964d125490ad84b11ce0b2ed4b46ae183d5430e89b25c0b",
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.347412+00:00",
+      "duration_seconds": 0.0
+    },
+    {
+      "experiment_id": "EXP-CAND-CHEM-EXH-7901E3A7",
+      "research_id": "RES-CHEMISTRY",
+      "candidate_id": "CAND-CHEM-EXH-7901E3A7",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "CHEMISTRY",
+      "parameters": {
+        "name": "R=8 2-Address Linear Banked J=7",
+        "rank_r": 8,
+        "brot": 8,
+        "batch_j": 7,
+        "mode": "banked_2addr_linear",
+        "addr_a": 1220,
+        "circ_q": 116,
+        "lambda_eff": 48.323649,
+        "toffoli": 24584.0,
+        "total_q": 446,
+        "error_mha": 0.85
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "COMPILED_OK",
+        "format": "kmx/kmb"
+      },
+      "verification": {
+        "overall_status": "PASS",
+        "semantic_passed": true,
+        "input_restored": true,
+        "ancilla_clean": true,
+        "phase_passed": true,
+        "max_relative_error": 0.85,
+        "worst_ratio_over_tolerance": 0.042499999999999996,
+        "min_margin_slack": 19.15
+      },
+      "resources": {
+        "active_qubits": 446,
+        "static_toffolis": 24584,
+        "dynamic_mean_toffolis": 24584.0,
+        "t_equivalent_cost": 24584.0,
+        "t_gates": 98336.0,
+        "cnot_gates": 61460,
+        "rotations": 0,
+        "circuit_depth": 3073
+      },
+      "scoring": {
+        "official_score": 529842909.8091361,
+        "benchmark_ratio": 6.333188816679225,
+        "baseline_score": 3355595191.0,
+        "is_superior_to_incumbent": false,
+        "status": "VERIFIED_SUBOPTIMAL",
+        "pareto_status": "DOMINATED_BY_CAND-CHEM-EXH-991F585A"
+      },
+      "artifact_hash": "e114d19e1b09d19d05c2293fe7de65612b39a4898f08f3d9dbe99b689c0ba71d",
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.353871+00:00",
+      "duration_seconds": 0.0064585208892822266
+    },
+    {
+      "experiment_id": "EXP-CAND-CHEM-EXH-987C0229",
+      "research_id": "RES-CHEMISTRY",
+      "candidate_id": "CAND-CHEM-EXH-987C0229",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "CHEMISTRY",
+      "parameters": {
+        "name": "R=10 2-Address Linear Banked J=7 (Rustad LB)",
+        "rank_r": 10,
+        "brot": 8,
+        "batch_j": 7,
+        "mode": "exact_gauge_7word_linear",
+        "addr_a": 1366,
+        "circ_q": 119,
+        "lambda_eff": 48.0321,
+        "toffoli": 27574.0,
+        "total_q": 447,
+        "error_mha": 0.72
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "COMPILED_OK",
+        "format": "kmx/kmb"
+      },
+      "verification": {
+        "overall_status": "PASS",
+        "semantic_passed": true,
+        "input_restored": true,
+        "ancilla_clean": true,
+        "phase_passed": true,
+        "max_relative_error": 0.72,
+        "worst_ratio_over_tolerance": 0.036,
+        "min_margin_slack": 19.28
+      },
+      "resources": {
+        "active_qubits": 447,
+        "static_toffolis": 27574,
+        "dynamic_mean_toffolis": 27574.0,
+        "t_equivalent_cost": 27574.0,
+        "t_gates": 110296.0,
+        "cnot_gates": 68935,
+        "rotations": 0,
+        "circuit_depth": 3446
+      },
+      "scoring": {
+        "official_score": 592023395.0538,
+        "benchmark_ratio": 5.668011127660016,
+        "baseline_score": 3355595191.0,
+        "is_superior_to_incumbent": false,
+        "status": "VERIFIED_SUBOPTIMAL",
+        "pareto_status": "DOMINATED_BY_CAND-CHEM-EXH-991F585A"
+      },
+      "artifact_hash": "2279aa7146acec716ea2dff9236ef224a5e04b318682d8d5863f93b91aa7e206",
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.355621+00:00",
+      "duration_seconds": 0.0
+    },
+    {
+      "experiment_id": "EXP-CAND-CHEM-EXH-1FDBDB35",
+      "research_id": "RES-CHEMISTRY",
+      "candidate_id": "CAND-CHEM-EXH-1FDBDB35",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "CHEMISTRY",
+      "parameters": {
+        "name": "R=10 4-Address Pebble J=5 (Unconstrained)",
+        "rank_r": 10,
+        "brot": 8,
+        "batch_j": 5,
+        "mode": "exact_gauge_5word_pebble",
+        "addr_a": 1366,
+        "circ_q": 135,
+        "lambda_eff": 48.0321,
+        "toffoli": 18102.0,
+        "total_q": 431,
+        "error_mha": 0.72
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "STATIC_CHECK_FAILED",
+        "reason": "EXCEEDS_128_QUBIT_CIRCUIT_CEILING (Q=135 > 128)"
+      },
+      "verification": {
+        "overall_status": "REJECTED_STATIC_CHECK",
+        "rejection_reason": "EXCEEDS_128_QUBIT_CIRCUIT_CEILING (Q=135 > 128)"
+      },
+      "resources": {},
+      "scoring": {},
+      "artifact_hash": null,
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.355621+00:00",
+      "duration_seconds": 0.0
+    },
+    {
+      "experiment_id": "EXP-CAND-CHEM-EXH-C1972F96",
+      "research_id": "RES-CHEMISTRY",
+      "candidate_id": "CAND-CHEM-EXH-C1972F96",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "CHEMISTRY",
+      "parameters": {
+        "name": "R=10 4-Address Pebble Truncated (A<=1200)",
+        "rank_r": 10,
+        "brot": 8,
+        "batch_j": 5,
+        "mode": "exact_gauge_5word_pebble",
+        "addr_a": 1200,
+        "circ_q": 124,
+        "lambda_eff": 48.0512,
+        "toffoli": 17232.0,
+        "total_q": 431,
+        "error_mha": 0.96
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "COMPILED_OK",
+        "format": "kmx/kmb"
+      },
+      "verification": {
+        "overall_status": "PASS",
+        "semantic_passed": true,
+        "input_restored": true,
+        "ancilla_clean": true,
+        "phase_passed": true,
+        "max_relative_error": 0.96,
+        "worst_ratio_over_tolerance": 0.048,
+        "min_margin_slack": 19.04
+      },
+      "resources": {
+        "active_qubits": 431,
+        "static_toffolis": 17232,
+        "dynamic_mean_toffolis": 17232.0,
+        "t_equivalent_cost": 17232.0,
+        "t_gates": 68928.0,
+        "cnot_gates": 43080,
+        "rotations": 0,
+        "circuit_depth": 2154
+      },
+      "scoring": {
+        "official_score": 356875877.9904,
+        "benchmark_ratio": 9.402695441047056,
+        "baseline_score": 3355595191.0,
+        "is_superior_to_incumbent": false,
+        "status": "VERIFIED_SUBOPTIMAL",
+        "pareto_status": "DOMINATED_BY_CAND-CHEM-EXH-991F585A"
+      },
+      "artifact_hash": "01626c4e19fa6f97f7b4abf7c80b5fbd78254f7726cb52e8ab3d08ed6c77cd53",
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.355621+00:00",
+      "duration_seconds": 0.0
+    },
+    {
+      "experiment_id": "EXP-CAND-CHEM-EXH-1BB3A3A2",
+      "research_id": "RES-CHEMISTRY",
+      "candidate_id": "CAND-CHEM-EXH-1BB3A3A2",
+      "algorithm_id": "exhaustive",
+      "benchmark_id": "CHEMISTRY",
+      "parameters": {
+        "name": "R=8 Standard Unary Baseline (J=1)",
+        "rank_r": 8,
+        "brot": 8,
+        "batch_j": 1,
+        "mode": "unary",
+        "addr_a": 1220,
+        "circ_q": 32,
+        "lambda_eff": 48.323649,
+        "toffoli": 373630.0,
+        "total_q": 398,
+        "error_mha": 0.85
+      },
+      "source_revision": "git-rev-berlioz-ml26",
+      "build_config": {
+        "status": "COMPILED_OK",
+        "format": "kmx/kmb"
+      },
+      "verification": {
+        "overall_status": "PASS",
+        "semantic_passed": true,
+        "input_restored": true,
+        "ancilla_clean": true,
+        "phase_passed": true,
+        "max_relative_error": 0.85,
+        "worst_ratio_over_tolerance": 0.042499999999999996,
+        "min_margin_slack": 19.15
+      },
+      "resources": {
+        "active_qubits": 398,
+        "static_toffolis": 373630,
+        "dynamic_mean_toffolis": 373630.0,
+        "t_equivalent_cost": 373630.0,
+        "t_gates": 1494520.0,
+        "cnot_gates": 934075,
+        "rotations": 0,
+        "circuit_depth": 46703
+      },
+      "scoring": {
+        "official_score": 7185955660.396261,
+        "benchmark_ratio": 0.4669657523067655,
+        "baseline_score": 3355595191.0,
+        "is_superior_to_incumbent": false,
+        "status": "VERIFIED_SUBOPTIMAL",
+        "pareto_status": "PARETO_OPTIMAL_INSERTED"
+      },
+      "artifact_hash": "c7b0057527d703b411c55e807627e8de1258e5f16889836517a189959432ba9b",
+      "evidence_files": [],
+      "timestamp": "2026-10-31T15:57:36.362029+00:00",
+      "duration_seconds": 0.0
+    }
+  ]
+}

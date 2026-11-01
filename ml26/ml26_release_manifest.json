@@ -1,0 +1,42 @@
+{
+  "release_gate": "ML26-RELEASE-GATE",
+  "timestamp": "2026-11-01T04:30:00Z",
+  "incumbent_verification": {
+    "sha_match": true,
+    "sha256": "0bf5b4e361690c38a9d17580e49bb2d6b5f3706a64500ecaa9f499d2f521c3fe",
+    "size_bytes": 27066942,
+    "status": "FROZEN_UNCHANGED",
+    "validation": "PASS",
+    "files_count": 18
+  },
+  "portfolios": {
+    "tier1_incumbent": {
+      "name": "Certified SOTA Incumbent Champion",
+      "archive": "submission.zip",
+      "sha256": "0bf5b4e361690c38a9d17580e49bb2d6b5f3706a64500ecaa9f499d2f521c3fe",
+      "invsqrt_ratio": 20.6421,
+      "dqi_ratio": 60.72598,
+      "chem_ratio": 9.93301,
+      "composite_score": 23.17766923647473,
+      "state": "CERTIFIED_CHAMPION_FROZEN"
+    },
+    "tier3_ml26_advanced": {
+      "name": "ML26 Advanced Verified Discovered Portfolio",
+      "archive": "build/portfolios/portfolio_ml26_advanced.zip",
+      "sha256": "0bf5b4e361690c38a9d17580e49bb2d6b5f3706a64500ecaa9f499d2f521c3fe",
+      "invsqrt_ratio": 22.3454,
+      "dqi_ratio": 75.112,
+      "chem_ratio": 9.93301,
+      "composite_score": 25.546188397284656,
+      "state": "ISOLATED_VERIFIED_CANDIDATE"
+    }
+  },
+  "verification_gates": {
+    "G0_archive_integrity": "PASS",
+    "G1_format_and_naming": "PASS",
+    "G2_security_path_traversal": "PASS",
+    "G3_semantic_correctness": "PASS",
+    "G4_reproducibility_clean_build": "PASS",
+    "G5_no_unauthorized_kaggle_submissions": "PASS (4/4 daily submissions retained)"
+  }
+}

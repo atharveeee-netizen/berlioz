@@ -1,0 +1,6 @@
+Candidate_ID,Subcircuit_Name,Instances_Executed,Coherent_Uncompute_Toffolis,MBUC_Uncompute_Toffolis,Toffolis_Saved,HMR_Measurements,Clifford_CZ_Corrections,Feasibility_Verdict,Technical_Mechanism
+candidate_1_chien_zero_hold_ladder,Chien Search Zero-Hold Ladder (11 ANDs / point),4025,44275,0,44275,44275,44275,PROVEN_AND_IMPLEMENTED_IN_CHAMPION,Del_and uses HMR + CZ if b0; halves Toffolis from 88;550 to 44;275
+candidate_2_ribm_discrepancy_products,RiBM Discrepancy Multiplications (init_gf2_mul),1890,79380,0,79380,22680,136080,VERIFIED_CORRECT_AND_PROMOTABLE,Del_gf2_mul uses 12 HMR + bilinear CZ network; eliminates 79.4k uncompute Toffolis
+candidate_3_forney_inverse_scaffold,Forney Field Inversion Squaring Scaffold,70,11760,0,11760,3360,20160,VERIFIED_CORRECT_AND_PROMOTABLE,Scaffold products uncomputed via del_gf2_mul with zero Toffolis
+candidate_4_eea_division_ladder,EEA Division Ladder Quotients (q_i = B/A),70,242400,NON_CLIFFORD,0,0,REQUIRES_NON_CLIFFORD_FEED_FORWARD,FALSIFIED_CANNOT_USE_CLIFFORD_MBUC,Quotient inversion requires non-Clifford phase (-1)^{B*A^-1}; MBUC fails to eliminate Toffolis
+candidate_5_input_syndromes,Direct Syndrome Input Registers S0..S69,70,N/A,ILLEGAL,0,0,N/A,FALSIFIED_VIOLATES_SUPERPOSITION_CONTRACT,Syndromes are in quantum superposition; measuring collapses state and incurs 100% value error

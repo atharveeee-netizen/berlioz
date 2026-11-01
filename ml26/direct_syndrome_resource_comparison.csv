@@ -1,0 +1,11 @@
+Architecture,Algorithmic_Class,Qubit_Count_Q,Forward_Toffolis,Uncompute_Toffolis,Dynamic_Total_Toffolis,CNOT_Count,Memory_Bytes_Required,Official_Cost_C,Feasibility_Verdict,Core_Failure_or_Success_Mechanism
+Full_Lookup_Table_QROM,Tabular_Memory_Readout,1.99e+216,3.29e+212,0,3.29e+212,6.50e+212,1.99e+216,1.55e+645,DISQUALIFIED,Exceeds observable universe matter-energy by over 130 orders of magnitude
+Meet_in_the_Middle_w17,Combinatorial_Hash_Search,1.86e+108,1.78e+106,0,1.78e+106,3.50e+106,1.86e+108,7.31e+322,DISQUALIFIED,Half-space error table requires 10^106 entries, completely intractable
+Syndrome_Subspace_Decomposition,Linear_Subspace_Projection,889,0,0,0,150000,0,Infinite_Error,DISQUALIFIED,MDS property of Reed-Solomon codes forbids independent coordinate decoupling
+Peterson_Gorenstein_Zierler,Matrix_Inversion_Hankel,1240,651672,651672,1392619,2400000,0,2.55e+12,REJECTED,O(t^3) Gaussian elimination requires 1.39M Toffolis, 4.1x worse than RiBM
+Welch_Berlekamp_Algorithm,Rational_Interpolation,48300,5910000,0,5910000,12000000,0,1.64e+16,REJECTED,Operates on received words N=4025 rather than 2t=70 syndromes, causing massive Q^2 penalty
+Gao_Euclidean_Interpolation,High_Degree_Polynomial_EEA,98304,10000000,0,10000000,25000000,0,1.15e+17,REJECTED,Initial modulus degree 4095 requires over 10M Toffolis
+Grover_Quantum_Search,Amplitude_Amplification,3100,1.47e+111,1.47e+111,2.94e+111,8.50e+111,0,3.37e+118,DISQUALIFIED,Quantum quadratic speedup requires 10^106 iterations, 10^105x slower than RiBM
+Weight_1_Fast_Path_Bypass,Algebraic_Ratio_Detector,1029,343778,0,343778,1950000,0,4.31e+11,REJECTED,Adds 140 qubits and 3.1k Toffolis to all shots; Q^2 expansion increases total cost by 7.1%
+Incumbent_Proos_Zalka_EEA,Synchronized_Extended_Euclid,889,185071,242400,427471,1850000,0,4.02e+11,INCUMBENT,Forward EEA with reverse division ladder uncomputation
+Projective_RiBM_DQI1,Inversionless_BM_and_Projective_Forney,889,340640,0,340640,1850000,0,3.21e+11,CHAMPION,Optimal O(t^2) recurrence with zero inversion uncomputations (Score 25.00)

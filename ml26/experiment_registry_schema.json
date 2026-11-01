@@ -1,0 +1,95 @@
+{
+  "$schema": "ML26 Experiment Registry Schema",
+  "version": "1.0.0",
+  "description": "Schema for individual experiment records stored in SYZYGY memory (viking://berlioz/experiments/...)",
+  "entry_schema": {
+    "experiment_id": {
+      "type": "string",
+      "description": "Unique experiment ID, e.g. DQI-1-RUN-003",
+      "required": true
+    },
+    "research_id": {
+      "type": "string",
+      "description": "Parent research question ID from research_registry",
+      "required": true
+    },
+    "candidate_id": {
+      "type": "string",
+      "description": "Candidate identifier for tracking across experiments",
+      "required": true
+    },
+    "algorithm_id": {
+      "type": "string",
+      "description": "Algorithm variant being tested",
+      "required": true
+    },
+    "parameters": {
+      "type": "object",
+      "description": "All experiment parameters including seeds and configs",
+      "required": true
+    },
+    "source_revision": {
+      "type": "string",
+      "description": "Git commit or file hash of the source used",
+      "required": true
+    },
+    "build_config": {
+      "type": "object",
+      "description": "Build command, flags, and environment details",
+      "required": true
+    },
+    "verification_command": {
+      "type": "string",
+      "description": "Exact command used for verification",
+      "required": false
+    },
+    "resource_extraction_command": {
+      "type": "string",
+      "description": "Exact command used to extract resource metrics",
+      "required": false
+    },
+    "results": {
+      "type": "object",
+      "description": "Complete measured results",
+      "properties": {
+        "status": {"type": "string", "enum": ["PASS", "FAIL", "ERROR", "TIMEOUT", "NOT_RUN"]},
+        "logical_qubits": {"type": "integer"},
+        "peak_workspace": {"type": "integer"},
+        "static_toffolis": {"type": "integer"},
+        "dynamic_mean_toffolis": {"type": "number"},
+        "t_equivalent_cost": {"type": "number"},
+        "cnot_count": {"type": "integer"},
+        "measurements": {"type": "integer"},
+        "rotations": {"type": "integer"},
+        "circuit_depth": {"type": "integer"},
+        "official_score": {"type": "number"},
+        "benchmark_ratio": {"type": "number"},
+        "composite_contribution": {"type": "number"},
+        "error_rate": {"type": "number"},
+        "runtime_seconds": {"type": "number"}
+      },
+      "required": true
+    },
+    "artifact_hash": {
+      "type": "string",
+      "description": "SHA-256 of compiled artifact if applicable",
+      "required": false
+    },
+    "evidence_files": {
+      "type": "array",
+      "items": "string",
+      "description": "Paths to evidence files produced",
+      "required": false
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "datetime",
+      "required": true
+    },
+    "duration_seconds": {
+      "type": "number",
+      "description": "Wall-clock time for the experiment",
+      "required": false
+    }
+  }
+}

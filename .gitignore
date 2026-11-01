@@ -13,5 +13,6 @@ scratch/
 build/
 dist/
 audit/baseline_vault/
+audit/frozen_incumbent_dqi/*.kmb
 .DS_Store
 

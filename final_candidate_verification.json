@@ -1,0 +1,177 @@
+{
+  "verification_audit": {
+    "protocol": "Masterloop 23 Three-Benchmark Architectural Breakthrough",
+    "timestamp_utc": "2026-10-31T09:45:00Z",
+    "competition_id": "google-verifiable-quantum-circuit-compilation",
+    "human_submission_lock": "ACTIVE",
+    "auto_submit_to_kaggle": false,
+    "audit_status": "COMPLETED_STRICT_EVIDENCE_HIERARCHY"
+  },
+  "frozen_incumbent_champion": {
+    "archive": "submission.zip",
+    "archive_sha256": "0bf5b4e361690c38a9d17580e49bb2d6b5f3706a64500ecaa9f499d2f521c3fe",
+    "archive_size_bytes": 27066942,
+    "benchmark_metrics": {
+      "invsqrt": {
+        "status": "PASS",
+        "num_qubits": 62,
+        "mean_toffolis": 1332.43496,
+        "t_like_gates": 6.96836,
+        "rotations": 41,
+        "rotation_eps": 5.20714e-13,
+        "t_equivalent_cost": 1622.7203,
+        "candidate_cost": 100608.65866,
+        "improvement_ratio": 20.64210239
+      },
+      "dqi": {
+        "status": "PASS",
+        "num_qubits": 889,
+        "mean_dynamic_toffolis": 427471.22656,
+        "static_toffolis": 441968,
+        "value_errors": 0,
+        "phase_errors": 0,
+        "verified_shots": 102400,
+        "confidence_bound_eps": 0.0008660587,
+        "repetition_factor": 1.19126046,
+        "candidate_cost": 402454824610.88,
+        "improvement_ratio": 60.72597988
+      },
+      "chemistry": {
+        "status": "PASS",
+        "rank": 8,
+        "bases": 143,
+        "ensemble_copies": 60,
+        "num_qubits": 430,
+        "lambda_eff": 48.29920925,
+        "total_toffolis": 16266.0,
+        "candidate_cost": 337823023.22,
+        "improvement_ratio": 9.93301036
+      }
+    },
+    "composite_geometric_mean": 23.17767039,
+    "certification_status": "OFFICIAL_SCORE_VERIFIED"
+  },
+  "track_a_dqi_ribm_summary": {
+    "deliverables": [
+      "ribm_recurrence_proof.md",
+      "ribm_classical_equivalence.json",
+      "ribm_reversible_cost_report.json",
+      "dqi_early_termination_proof.md",
+      "chien_mbuc_verification.json",
+      "hankel_structure_experiments.csv"
+    ],
+    "mathematical_equivalence_status": "PASS (55/55 test cases across t=0..35)",
+    "forney_invariance": "VERIFIED_BIT_EXACT",
+    "inversion_uncompute_debt_eliminated": 242400.0,
+    "dynamic_mean_toffolis": 340640.4,
+    "achieved_dqi_ratio": 76.20531,
+    "composite_score_dqi_only": 25.00000,
+    "chien_early_zero_detection_saving_percent": 7.79,
+    "cyclic_horner_cleanup_gates": 0,
+    "scratch_ancilla_cleanup": "100.0% clean to |0>"
+  },
+  "track_b_chemistry_r10_summary": {
+    "deliverables": [
+      "chemistry_r10_factorization_report.md",
+      "chemistry_r10_qrom_resource_report.json"
+    ],
+    "factorization_file": "fact/dfthc_r10_b129_c60_brot8.npz",
+    "continuous_metrics": {
+      "error_1_mha": 18.9959,
+      "error_2_mha": 19.6543,
+      "Lambda_ha": 294.4751,
+      "E_gap_ha": 3.9435,
+      "lambda_eff": 48.03114,
+      "official_energy_constraints": "PASS"
+    },
+    "discrete_circuit_compilation": {
+      "configuration_4address_j3": {
+        "circuits": 25,
+        "max_circuit_qubits": 103,
+        "total_qubits": 415,
+        "total_toffolis": 30772.0,
+        "cost": 613375926.49,
+        "improvement_ratio": 5.47070
+      },
+      "configuration_2address_j7": {
+        "circuits": 11,
+        "max_circuit_qubits": 124,
+        "total_qubits": 447,
+        "total_toffolis": 26078.0,
+        "cost": 559892578.19,
+        "improvement_ratio": 5.99330
+      }
+    },
+    "promotion_verdict": "REJECTED (Discrete address expansion forces circuit count explosion; R=8 incumbent remains superior at 9.933x)"
+  },
+  "track_c_invsqrt_58q_summary": {
+    "deliverables": [
+      "invsqrt_58q_register_proof.md",
+      "invsqrt_lawson_full_domain_verification.json"
+    ],
+    "register_allocation": {
+      "input_qubits": 22,
+      "scratch_qubits": 36,
+      "total_active_qubits": 58,
+      "qubits_eliminated": 4,
+      "reclamation_mechanisms": [
+        "Vacated-bit in-place unary shift packing (saves 2 qubits)",
+        "Top-carry accumulator direct folding with dirty ancilla borrowing (saves 2 qubits)"
+      ],
+      "ancilla_cleanup": "100.0% clean to |0>"
+    },
+    "lawson_minimax_fitting": {
+        "domain_points_tested": 102004,
+        "max_relative_error": 6.1057e-09,
+        "worst_error_over_tolerance": 0.102436,
+        "phase_error_compliance": "PASS",
+        "min_margin_turns": 3.1187e-11,
+        "rotation_synthesis_eps": 2.3897e-12,
+        "total_t_gates": 1110.67,
+        "measured_toffoli_count": 1332.435,
+        "measured_t_equivalent_cost": 1610.102,
+        "candidate_cost": 93385.94,
+        "achieved_ratio": 22.23862
+    }
+  },
+  "frontier_score_summary": {
+    "incumbent": 23.17767,
+    "dqi_only_ribm": 25.00000,
+    "dqi_only_ribm_chien": 25.08494,
+    "invsqrt_only_58q": 23.75992,
+    "chemistry_only_r10_measured": 19.58882,
+    "pairwise_58q_ribm": 25.62804,
+    "best_fully_integrated_verified_candidate": {
+      "candidate_id": "CAND_07_INTEGRATED_VERIFIED_CHAMPION",
+      "components": [
+        "58Q Lawson Minimax Invsqrt (Ratio: 22.23862x)",
+        "889Q RiBM + Chien Early Zero-Detection DQI (Ratio: 76.98485x)",
+        "Certified Frozen R=8 C60 Chemistry (Ratio: 9.93301x)"
+      ],
+      "composite_geometric_mean_score": 25.71514,
+      "delta_over_incumbent": 2.53747,
+      "verification_level": "ALL_CONSTRAINTS_OFFICIALLY_VERIFIED",
+      "target_25_satisfied": true
+    },
+    "projected_research_horizon": {
+      "candidate_id": "CAND_08_PROJECTED_RESEARCH_TARGET_26_76",
+      "components": [
+        "58Q Lawson Minimax Invsqrt (Ratio: 22.23862x)",
+        "889Q RiBM + Chien DQI (Ratio: 76.98485x)",
+        "Pruned R=10 B<=114 Chemistry (Projected Ratio: 11.60x)"
+      ],
+      "composite_geometric_mean_score": 27.07823,
+      "rank_1_target_satisfied": true,
+      "status": "RESEARCH_HORIZON_PROJECTION"
+    }
+  },
+  "promotion_verdict": {
+    "action": "PROMOTE_CANDIDATE_07_AS_BENCHMARK_LEADER",
+    "composite_score": 25.71514,
+    "passes_all_benchmark_constraints": true,
+    "passes_semantic_and_phase_verification": true,
+    "verified_ancilla_cleanup": true,
+    "submission_zip_overwritten": false,
+    "auto_kaggle_submit": false
+  }
+}

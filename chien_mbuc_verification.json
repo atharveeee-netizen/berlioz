@@ -1,0 +1,129 @@
+{
+  "audit_metadata": {
+    "protocol": "Masterloop 23 Chien MBUC and Early Termination Audit",
+    "codeword_evaluations": 4025,
+    "tested_patterns": 50,
+    "timestamp": "2026-10-31T09:31:13Z"
+  },
+  "chien_root_verification": {
+    "all_roots_verified_bit_exact": true,
+    "total_injected_roots": 1013,
+    "total_recovered_roots": 1013,
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "early_termination_resource_metrics": {
+    "baseline_evaluations_per_pattern": 4025,
+    "mean_early_termination_evaluations": 3711.34,
+    "mean_saving_percent": 7.79,
+    "mean_zero_detection_toffolis_saved": 3450.3
+  },
+  "mbuc_feed_forward_accounting": {
+    "phase_kickback_formula": "(-1) ** sum(popcount(e_j & M_j))",
+    "feed_forward_gates": "Classical bit conditioning (0 Toffolis)",
+    "correction_gates": "CZ for MBUC uncompute (0 Toffolis, Clifford hierarchy)",
+    "cyclic_horner_cleanup_cost": 0
+  },
+  "sample_patterns": [
+    {
+      "test_id": 0,
+      "error_weight": 31,
+      "root_count": 31,
+      "max_root_position": 3917,
+      "evaluations_full": 4025,
+      "evaluations_early": 3918,
+      "evaluation_saving_percent": 2.66,
+      "root_positions_exact_match": true
+    },
+    {
+      "test_id": 1,
+      "error_weight": 34,
+      "root_count": 34,
+      "max_root_position": 3923,
+      "evaluations_full": 4025,
+      "evaluations_early": 3924,
+      "evaluation_saving_percent": 2.51,
+      "root_positions_exact_match": true
+    },
+    {
+      "test_id": 2,
+      "error_weight": 34,
+      "root_count": 34,
+      "max_root_position": 3880,
+      "evaluations_full": 4025,
+      "evaluations_early": 3881,
+      "evaluation_saving_percent": 3.58,
+      "root_positions_exact_match": true
+    },
+    {
+      "test_id": 3,
+      "error_weight": 3,
+      "root_count": 3,
+      "max_root_position": 3702,
+      "evaluations_full": 4025,
+      "evaluations_early": 3703,
+      "evaluation_saving_percent": 8.0,
+      "root_positions_exact_match": true
+    },
+    {
+      "test_id": 4,
+      "error_weight": 8,
+      "root_count": 8,
+      "max_root_position": 3284,
+      "evaluations_full": 4025,
+      "evaluations_early": 3285,
+      "evaluation_saving_percent": 18.39,
+      "root_positions_exact_match": true
+    },
+    {
+      "test_id": 5,
+      "error_weight": 22,
+      "root_count": 22,
+      "max_root_position": 3997,
+      "evaluations_full": 4025,
+      "evaluations_early": 3998,
+      "evaluation_saving_percent": 0.67,
+      "root_positions_exact_match": true
+    },
+    {
+      "test_id": 6,
+      "error_weight": 32,
+      "root_count": 32,
+      "max_root_position": 3952,
+      "evaluations_full": 4025,
+      "evaluations_early": 3953,
+      "evaluation_saving_percent": 1.79,
+      "root_positions_exact_match": true
+    },
+    {
+      "test_id": 7,
+      "error_weight": 7,
+      "root_count": 7,
+      "max_root_position": 3073,
+      "evaluations_full": 4025,
+      "evaluations_early": 3074,
+      "evaluation_saving_percent": 23.63,
+      "root_positions_exact_match": true
+    },
+    {
+      "test_id": 8,
+      "error_weight": 21,
+      "root_count": 21,
+      "max_root_position": 3809,
+      "evaluations_full": 4025,
+      "evaluations_early": 3810,
+      "evaluation_saving_percent": 5.34,
+      "root_positions_exact_match": true
+    },
+    {
+      "test_id": 9,
+      "error_weight": 23,
+      "root_count": 23,
+      "max_root_position": 3891,
+      "evaluations_full": 4025,
+      "evaluations_early": 3892,
+      "evaluation_saving_percent": 3.3,
+      "root_positions_exact_match": true
+    }
+  ]
+}

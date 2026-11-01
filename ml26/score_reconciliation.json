@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ML26 Complete Score and Baseline Reconciliation",
+  "version": "1.0.0",
+  "timestamp": "2026-10-31T15:32:00Z",
+  "candidate_states": {
+    "INCUMBENT": "Verified current champion",
+    "EXPERIMENTAL": "Candidate being developed",
+    "LOCALLY_VERIFIED": "Passed defined local correctness tests",
+    "OFFICIALLY_VERIFIED": "Passed the applicable complete official-strength verification",
+    "PROMOTABLE": "All correctness, resource, provenance, and packaging requirements passed",
+    "REJECTED": "Failed a defined requirement"
+  },
+  "reconciliation": {
+    "dqi": {
+      "metric_reconciliation": {
+        "qubits": {
+          "historical_claim": 889,
+          "verified_measurement": 889,
+          "status": "RECONCILED_MATCH"
+        },
+        "static_toffolis": {
+          "historical_claim": 441968,
+          "verified_measurement": 441968,
+          "status": "RECONCILED_MATCH"
+        },
+        "dynamic_mean_toffolis": {
+          "historical_claim": 427471.2,
+          "verified_measurement": 427471.2,
+          "quick_256shot_sample": 427476.05,
+          "delta_from_quick_sample": 4.85,
+          "status": "RECONCILED_MATCH"
+        },
+        "speculative_386k_claim": {
+          "historical_claim": 386000.0,
+          "origin": "Uncomputation unverified forward-pass projection or speculative early termination model",
+          "actual_measured": 427471.2,
+          "status": "FALSIFIED_HISTORICAL_PROJECTION",
+          "reconciliation_note": "No compiled artifact in the repository achieves 386k dynamic Toffolis with full uncomputation and zero errors. 427,471.2 is the authoritative measured figure."
+        },
+        "ratio_discrepancy_72_vs_60": {
+          "ideal_ratio_R1": 72.33966,
+          "official_ratio_R_clopper": 60.72598,
+          "repetition_factor": 1.1912604648,
+          "status": "RECONCILED_MATHEMATICAL_IDENTITY",
+          "reconciliation_note": "72.33966 / 1.19126046 = 60.72598. The 72.34 figure is unpenalized theoretical cost (R=1). The official competition score strictly uses Clopper-Pearson R=1.19126 at delta=2^-128 and N=102,400 shots."
+        },
+        "quick_verification_256shot_behavior": {
+          "shots": 256,
+          "empirical_error_rate": 0.0,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "eps_plus_at_256": 0.292893,
+          "verifier_gate": "eps_plus < 1/16 (0.0625)",
+          "outcome": "Simulates successfully and confirms 0 errors + 427,476 Toffolis, but official verify() raises AssertionError because N=256 cannot satisfy Clopper-Pearson bound at delta=2^-128. Minimum N required for eps+ < 1/16 is 1,375 shots."
+        }
+      }
+    },
+    "chemistry": {
+      "metric_reconciliation": {
+        "ml16_baseline_fact_r8_champion": {
+          "source": "fact/r8_champion/submission.npz",
+          "lambda_eff": 48.323602,
+          "total_toffolis": 16266.0,
+          "total_qubits": 430,
+          "cost": 337993822.4,
+          "ratio": 9.92799
+        },
+        "current_sota_submission_zip": {
+          "source": "submission.zip[dfthcsos/submission.npz]",
+          "lambda_eff": 48.299209,
+          "total_toffolis": 16266.0,
+          "total_qubits": 430,
+          "cost": 337823023.22,
+          "ratio": 9.93301
+        },
+        "delta": {
+          "lambda_eff_improvement": -0.024393,
+          "cost_reduction": -170799.18,
+          "ratio_gain": 0.00502,
+          "status": "RECONCILED_OPTIMIZED_WEIGHTS",
+          "reconciliation_note": "submission.zip contains gauge-optimized W/offset_W arrays that achieve lambda_eff = 48.2992, superior to fact/r8_champion."
+        }
+      }
+    },
+    "invsqrt": {
+      "metric_reconciliation": {
+        "63q_alternate": {
+          "qubits": 63,
+          "cost": 103238.32,
+          "ratio": 20.11631
+        },
+        "62q_champion": {
+          "qubits": 62,
+          "t_equiv": 1622.7203,
+          "cost": 100608.66,
+          "ratio": 20.64210,
+          "status": "RECONCILED_CHAMPION"
+        }
+      }
+    },
+    "portfolio_composite": {
+      "kaggle_graded_baseline_57811741": {
+        "submission_id": "57811741",
+        "graded_score": 22.80575,
+        "rank": 275
+      },
+      "kaggle_graded_champion_57812617": {
+        "submission_id": "57812617",
+        "graded_score": 23.00043,
+        "utc": "2026-10-30T17:20:53Z"
+      },
+      "ml16_local_composite": {
+        "r_inv": 20.64208,
+        "r_dqi": 59.84230,
+        "r_chem": 9.92800,
+        "composite_score": 23.06081
+      },
+      "current_certified_incumbent": {
+        "r_inv": 20.64210,
+        "r_dqi": 60.72598,
+        "r_chem": 9.93301,
+        "composite_score": 23.17767,
+        "delta_over_kaggle_graded": 0.17724,
+        "percentage_gain": 0.7706
+      },
+      "unpenalized_theoretical_ceiling": {
+        "r_inv": 20.64210,
+        "r_dqi_r1": 72.33966,
+        "r_chem": 9.93301,
+        "composite_score": 24.57001
+      }
+    }
+  }
+}

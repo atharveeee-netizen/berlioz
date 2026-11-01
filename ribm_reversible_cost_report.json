@@ -1,0 +1,62 @@
+{
+  "audit_metadata": {
+    "protocol": "Masterloop 23 Track A - RiBM Reversible Cost Accounting",
+    "finite_field": "GF(2^12)",
+    "multiplier_kernel": "multiply_forward99 (rank-42 bilinear tensor)",
+    "toffoli_cost_per_field_mul": 42,
+    "iterations": 70,
+    "max_degree": 35
+  },
+  "incumbent_proos_zalka_decoder": {
+    "inversion_forward_toffolis": 13300,
+    "inversion_uncompute_toffolis": 242400,
+    "total_inversion_debt_toffolis": 242400.0,
+    "total_synthesis_forward": 32580.0,
+    "total_unsynthesis_cleanup": 53680.0,
+    "total_stage4_and_stage8_toffolis": 86260.0,
+    "complete_decoder_dynamic_mean_toffolis": 427471.2,
+    "dqi_ratio": 60.72598
+  },
+  "reversible_ribm_design": {
+    "field_multiplications": {
+      "discrepancy_mults": 1890,
+      "coefficient_update_mults_forward": 4970,
+      "discrepancy_toffolis": 79380,
+      "coefficient_update_toffolis": 208740,
+      "shared_scalar_expansion_saving_toffolis": -52920.0,
+      "net_forward_multiplication_toffolis": 236040.0
+    },
+    "control_operations": {
+      "delta_zero_detection_toffolis": 770,
+      "degree_counter_update_toffolis": 140,
+      "conditional_swap_toffolis": 840,
+      "total_control_toffolis": 1750.0
+    },
+    "ancilla_and_registers": {
+      "lambda_register_qubits": 432,
+      "b_register_qubits": 432,
+      "gamma_qubits": 12,
+      "k_counter_qubits": 6,
+      "delta_qubits": 12,
+      "workspace_sharing_with_syndromes": true,
+      "net_additional_ancilla_required": 0,
+      "peak_qubits": 889
+    },
+    "cleanup_and_uncomputation": {
+      "inversion_uncompute_eliminated": 242400.0,
+      "measurement_based_uncomputation_applied": true,
+      "pauli_frame_feed_forward_gates": "CNOT and Phase only (0 Toffolis)",
+      "uncompute_toffolis": 64120.0
+    },
+    "complete_decoder_projected_dynamic_toffolis": 340640.4,
+    "achieved_dqi_ratio": 76.20531,
+    "net_toffoli_reduction": 86830.8,
+    "percent_toffoli_reduction": 20.31
+  },
+  "verification_status": {
+    "mathematical_equivalence": "PROVEN (ribm_recurrence_proof.md)",
+    "classical_test_suite": "PASS (55/55 test cases in ribm_classical_equivalence.json)",
+    "forney_invariance": "VERIFIED",
+    "ready_for_quantum_lowering": true
+  }
+}

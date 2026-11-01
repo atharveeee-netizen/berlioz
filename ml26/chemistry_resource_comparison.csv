@@ -1,0 +1,11 @@
+Candidate_ID,Name,Architecture,Rank_R,brot,J,A,Circuits,Circ_Qubits,Qubit_Cap_Pass,Total_Qubits,Angles_Toffoli,Total_Toffoli,Lambda_eff,Energy_Err_mHa,Metric_Score,Ratio_vs_Incumbent,Status
+CAND-QROM-001,"R=8 4-Address Pebble Exact Gauge J=5 (Incumbent Champion)",exact_gauge_5word_pebble,8,8,5,1220,15,126,YES,430,8336,16266,48.323649,0.85,337993964.09,1.0000,VERIFIED_FEASIBLE
+CAND-QROM-002,"R=8 4-Address Pebble J=4",banked_4addr_pebble,8,8,4,1220,19,115,YES,422,10146,18076,48.323649,0.85,368616273.87,1.0906,VERIFIED_FEASIBLE
+CAND-QROM-003,"R=8 4-Address Pebble J=3",banked_4addr_pebble,8,8,3,1220,25,104,YES,414,12900,20830,48.323649,0.85,416724785.99,1.2329,VERIFIED_FEASIBLE
+CAND-QROM-004,"R=8 2-Address Linear Banked J=7",banked_2addr_linear,8,8,7,1220,11,116,YES,446,16654,24584,48.323649,0.85,529842909.81,1.5676,VERIFIED_FEASIBLE
+CAND-QROM-005,"R=10 2-Address Linear Banked J=7 (Rustad LB Reproduction)",exact_gauge_7word_linear,10,8,7,1366,11,119,YES,447,18502,27574,48.032100,0.72,592023395.05,1.7516,VERIFIED_FEASIBLE
+CAND-QROM-006,"R=10 4-Address Pebble J=5 (Unconstrained)",exact_gauge_5word_pebble,10,8,5,1366,15,135,NO,431,9030,18102,48.032100,0.72,INF,DISQUALIFIED,REJECTED_QUBIT_CAP_EXCEEDED
+CAND-QROM-007,"R=10 4-Address Pebble J=5 (Truncated Coeffs A<=1220)",exact_gauge_5word_pebble,10,8,5,1200,15,124,YES,431,8160,17232,48.051200,0.96,356875877.99,1.0559,VERIFIED_FEASIBLE
+CAND-QROM-008,"R=8 4-Address Pebble High Precision (brot=10, J=3)",banked_4addr_pebble,8,10,3,1220,25,122,YES,723,13450,20364,48.323649,0.42,711477395.89,2.1050,VERIFIED_FEASIBLE
+CAND-QROM-009,"R=8 Standard Unary Iteration Baseline (J=1)",unary,8,8,1,1220,75,32,YES,398,365700,373630,48.323649,0.85,7185955660.40,21.2606,VERIFIED_FEASIBLE
+CAND-QROM-010,"R=6 4-Address Pebble J=5 (Under-Parameterized)",exact_gauge_5word_pebble,6,8,5,1080,15,117,YES,427,7560,14685,51.420000,4.20,322428852.90,0.9539,VERIFIED_FEASIBLE
