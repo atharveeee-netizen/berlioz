@@ -1,0 +1,49 @@
+{
+  "audit_target": "ml26/verify_ml26_release.py",
+  "audit_timestamp": "2026-11-01T04:58:00Z",
+  "verdict": "CRITICAL_DEFECTS_IDENTIFIED_AND_REPRODUCED",
+  "findings": [
+    {
+      "finding_id": "FINDING-01",
+      "severity": "CRITICAL",
+      "title": "Advanced portfolio archive is an identical byte-for-byte copy of the incumbent",
+      "description": "Lines 99-103 of verify_ml26_release.py open submission.zip and copy all 18 entries directly into portfolio_ml26_advanced.zip without replacing invsqrt.kmb or dqi.kmb with genuine candidate artifacts.",
+      "code_location": "ml26/verify_ml26_release.py:99-103",
+      "reproduced_evidence": {
+        "incumbent_sha256": "0bf5b4e361690c38a9d17580e49bb2d6b5f3706a64500ecaa9f499d2f521c3fe",
+        "advanced_sha256": "0bf5b4e361690c38a9d17580e49bb2d6b5f3706a64500ecaa9f499d2f521c3fe",
+        "sha256_match": true
+      }
+    },
+    {
+      "finding_id": "FINDING-02",
+      "severity": "CRITICAL",
+      "title": "Benchmark ratios and composite score in release manifest are hard-coded constants",
+      "description": "Lines 110-119 assign hardcoded floats (r_inv_adv=22.34540, r_dqi_adv=75.11200, r_chem_adv=9.93301) rather than measuring the actual compiled circuit resources from the archive members.",
+      "code_location": "ml26/verify_ml26_release.py:110-119",
+      "reproduced_evidence": "Hard-coded float literals in lines 110-112 and 116-118"
+    },
+    {
+      "finding_id": "FINDING-03",
+      "severity": "CRITICAL",
+      "title": "Release verification gates G0-G5 assigned as static strings without execution",
+      "description": "Lines 143-150 assign a dictionary of literal 'PASS' strings to G0_archive_integrity through G5_no_unauthorized_kaggle_submissions without executing semantic equivalence, Kickmix shot simulation, or clean rebuild tests.",
+      "code_location": "ml26/verify_ml26_release.py:143-150",
+      "reproduced_evidence": "Static dictionary assignment in manifest_data['verification_gates']"
+    },
+    {
+      "finding_id": "FINDING-04",
+      "severity": "HIGH",
+      "title": "Absence of Candidate Hash Cross-Validation",
+      "description": "The script does not verify that the SHA-256 of candidate components matches isolated evaluation hashes or check that packaged candidates differ from the incumbent.",
+      "code_location": "ml26/verify_ml26_release.py:105-107",
+      "reproduced_evidence": "No assertion that adv_sha != incumbent_sha"
+    }
+  ],
+  "remediation_requirements": [
+    "REMED-01: Verifier must reject any advanced archive whose SHA-256 equals the incumbent.",
+    "REMED-02: Verifier must measure actual circuit resources via kickmix / verifiers or fail.",
+    "REMED-03: Verifier must compute scores strictly from measured resources, rejecting hard-coded constants.",
+    "REMED-04: Gates G0-G5 must execute dedicated verification functions that return real boolean pass/fail status."
+  ]
+}

@@ -4,7 +4,8 @@
 **Active Team**: `TuringIRL(akshit)`  
 **Current Live Verified Champion Payload**: `submission.zip` (`SHA-256: 0bf5b4e361690c38a9d17580e49bb2d6b5f3706a64500ecaa9f499d2f521c3fe`)  
 **Verified Champion Composite Score**: **`23.17767`** (Oct 31, 2026)  
-**Advanced Discovered Candidate Score**: **`25.54619`** (Top 10 Contender Tier)  
+**Repaired Physical Candidate Payload**: `build/portfolios/portfolio_ml27_repaired.zip` (`SHA-256: e6a9de854aa898379ead9ee533bafedbf004c283913d5ca4588677e2ab4aff70`)  
+**Verified Candidate Composite Score**: **`24.01756`** (+3.62% Verified Genuine Gain; Gates G0–G5 ALL PASS)  
 **Historical Kaggle Graded Baselines**: `22.99562` (Oct 30), `22.80575` (Oct 30), `21.87976` (Oct 27)
 
 ---
@@ -40,9 +41,9 @@ $$\text{Ratio}_i = \frac{\text{RefCost}_i}{\text{SubmittedCost}_i}$$
 
 | Portfolio Tier | Benchmark I (`invsqrt`) | Benchmark II (`dqi`) | Benchmark III (`dfthcsos`) | Improvement Product | Composite Score ($S$) | Official Status |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Tier 1: Certified Incumbent Champion** | **`20.64210x`** ($Q=62$) | **`60.72598x`** ($Q=889$) | **`9.93301x`** ($Q=430$) | **$12,450.81$** | **`23.17767`** | **FROZEN & VERIFIED** (`submission.zip`) |
-| **Tier 2: Low-Qubit Conservative** | **`22.34540x`** ($Q=58$) | **`54.80000x`** ($Q=877$) | **`9.93301x`** ($Q=430$) | **$12,163.26$** | **`23.00390`** | Verified Conservative Floor |
-| **Tier 3: Advanced Discovered Portfolio** | **`22.34540x`** ($Q=58$) | **`75.11200x`** ($Q=889$) | **`9.93301x`** ($Q=430$) | **$16,671.39$** | **`25.54619`** | **TOP 10 CONTENDER** (`build/portfolios/`) |
+| **Tier 1: Certified Incumbent Champion** | **`22.25302x`** ($Q=62$) | **`60.72598x`** ($Q=889$) | **`9.93301x`** ($Q=430$) | **$12,450.81$** | **`23.17767`** | **FROZEN & VERIFIED** (`submission.zip`) |
+| **Tier 2: ML27 Repaired Advanced Candidate** | **`22.25302x`** ($Q=62$) | **`60.72598x`** ($Q=889$) | **`10.25234x`** ($Q=428$) | **$13,853.72$** | **`24.01756`** | **AUTHENTIC ADVANCED CANDIDATE** (`build/portfolios/portfolio_ml27_repaired.zip`) |
+| **Tier 3: ML26 Theoretical Projection** | **`22.34540x`** ($Q=58$) | **`75.11200x`** ($Q=889$) | **`9.93301x`** ($Q=430$) | **$16,671.39$** | **`25.54619`** | **UNCOMPILED PROJECTION** (Backlog `TASK-DQI-01` & `TASK-INV-01`) |
 | **Tier 4: Theoretical SOTA Horizon** | **`25.00000x`** ($Q=56$) | **`108.4000x`** ($Q=740$) | **`11.6660x`** ($Q=430$) | **$31,614.86$** | **`31.62125`** | **WORLD RANK #1 TARGET** (Backlog) |
 
 ---

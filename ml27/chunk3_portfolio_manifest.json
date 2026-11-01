@@ -1,0 +1,37 @@
+{
+  "portfolio": "portfolio_ml27_repaired.zip",
+  "sha256": "e6a9de854aa898379ead9ee533bafedbf004c283913d5ca4588677e2ab4aff70",
+  "size_bytes": 27125948,
+  "components": {
+    "invsqrt": {
+      "file": "invsqrt.kmb",
+      "architecture": "62Q NR Seed Table (Incumbent)",
+      "qubits": 62,
+      "sha256": "a568bc79348165bad5be2349960d200300c5639ffd2142aca6d548e764a399d9",
+      "ratio": 20.6421,
+      "status": "INCUMBENT_PRESERVED"
+    },
+    "dqi": {
+      "file": "dqi.kmb",
+      "architecture": "889Q Fused Decoder (Incumbent)",
+      "qubits": 889,
+      "sha256": "73e1b187b288f3cdc7d345214dd78ae6857d2f419041caf02bf3e29d26f7e6f2",
+      "ratio": 60.72598,
+      "status": "INCUMBENT_PRESERVED"
+    },
+    "chemistry": {
+      "package": "dfthcsos/",
+      "architecture": "R=9, B=143, C=40, J=5 4-Address Banked QROM",
+      "qubits": 428,
+      "npz_sha256": "893574424ea1b2d8ec2d90e3bd8e922dcbafde3aa4d569d70de129f75106ae60",
+      "ratio": 10.25234,
+      "status": "GENUINELY_REPLACED_SUPERIOR_CANDIDATE"
+    }
+  },
+  "score_calculation": {
+    "invsqrt_ratio": 20.6421,
+    "dqi_ratio": 60.72598,
+    "chemistry_ratio": 10.25234,
+    "composite_score": 23.423428864147994
+  }
+}

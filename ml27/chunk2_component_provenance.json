@@ -1,0 +1,56 @@
+{
+  "audit_target": "Recovery of Advanced Candidate Components (ML27 Chunk 2)",
+  "timestamp": "2026-11-01T05:05:00Z",
+  "status_summary": {
+    "invsqrt_58q": {
+      "claimed_ratio": 22.3454,
+      "claimed_qubits": 58,
+      "claimed_cost": 92972.55,
+      "mathematical_proof": "ml26/invsqrt_58q_reclamation_proof.md (E3: Valid)",
+      "numerical_simulation": "ml26/invsqrt_candidate_evaluator.py (E2: Valid over 102,004 pts)",
+      "compiled_circuit_binary": "NOT AVAILABLE (E5: Projection / Not Compiled to standalone .kmb)",
+      "best_available_compiled_artifact": {
+        "path": "build/invsqrt.kmb",
+        "sha256": "a568bc79348165bad5be2349960d200300c5639ffd2142aca6d548e764a399d9",
+        "qubits": 62,
+        "ratio": 20.6421,
+        "evidence_tier": "E1_CERTIFIED"
+      }
+    },
+    "dqi_tower42": {
+      "claimed_ratio": 75.112,
+      "claimed_qubits": 889,
+      "claimed_mean_toffolis": 345618.4,
+      "mathematical_proof": "src/dqi/tower42.py & audit/tower42_math_proof.md (E3: Valid)",
+      "unit_test_simulation": "tests/test_arithmetic_tensor.py (E2: Valid 42-product tensor)",
+      "monolithic_compiled_circuit_binary": "NOT AVAILABLE (E5: Projection / Backlog TASK-DQI-01)",
+      "best_available_compiled_artifact": {
+        "path": "audit/frozen_incumbent_dqi/dqi.kmb",
+        "sha256": "73e1b187b288f3cdc7d345214dd78ae6857d2f419041caf02bf3e29d26f7e6f2",
+        "qubits": 889,
+        "ratio": 60.72598,
+        "evidence_tier": "E1_CERTIFIED"
+      }
+    },
+    "chemistry_r8_j5": {
+      "claimed_ratio": 9.93301,
+      "claimed_qubits": 430,
+      "claimed_toffolis": 16266,
+      "factorization_npz": "submission.zip:dfthcsos/submission.npz",
+      "sha256": "0421445e66dc1699eac24cb5d873e983930e0368be7df6627afaa5e9a01375d3",
+      "angle_circuits": "15 angle circuits (angle_k_0.kmb to angle_k_14.kmb)",
+      "status": "AVAILABLE_AND_OFFICIALLY_VERIFIED",
+      "evidence_tier": "E1_CERTIFIED"
+    },
+    "chemistry_r9_c40_discovered": {
+      "ratio": 10.2523,
+      "qubits": 428,
+      "toffolis": 16237,
+      "lambda_eff": 47.0975,
+      "source": "heliosli_ds/dfthcsos__submission.npz (Lera / Helios Li)",
+      "verified_live": true,
+      "status": "AVAILABLE_AND_VERIFIED_CANDIDATE",
+      "evidence_tier": "E2_REPRODUCED"
+    }
+  }
+}

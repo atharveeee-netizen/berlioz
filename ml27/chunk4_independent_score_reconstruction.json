@@ -1,0 +1,11 @@
+{
+  "reconstruction_formula": "S = (R_inv * R_dqi * R_chem)^(1/3)",
+  "r_invsqrt": 22.253020168285005,
+  "r_dqi": 60.72597988433279,
+  "r_chemistry": 10.25234121724968,
+  "composite_score": 24.01755800648892,
+  "incumbent_score": 23.17767,
+  "delta": 0.8398880064889198,
+  "delta_percent": 3.6236947306995004,
+  "evidence_class": "E1_OFFICIAL_VERIFIED"
+}

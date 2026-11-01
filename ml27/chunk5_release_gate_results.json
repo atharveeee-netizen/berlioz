@@ -1,0 +1,80 @@
+{
+  "G0_archive_integrity": {
+    "gate_id": "G0",
+    "description": "Archive integrity & non-duplication check",
+    "exact_command": "python tools/verify_ml27_release_gates.py --gate G0",
+    "input_artifact_hash": "e6a9de854aa898379ead9ee533bafedbf004c283913d5ca4588677e2ab4aff70",
+    "expected_result": "Archive is valid zip and distinctly non-identical to incumbent",
+    "actual_result": "Archive is valid, uncorrupted, and distinct from incumbent",
+    "exit_code": 0,
+    "status": "PASS",
+    "log_path": "ml27\\gate_logs\\G0_archive_integrity.log",
+    "verification_timestamp": "2026-11-01T05:10:00Z",
+    "responsible_module": "tools.verify_ml27_release_gates.run_g0"
+  },
+  "G1_format_and_naming": {
+    "gate_id": "G1",
+    "description": "Format, naming, and file hierarchy compliance",
+    "exact_command": "python tools/verify_ml27_release_gates.py --gate G1",
+    "input_artifact_hash": "e6a9de854aa898379ead9ee533bafedbf004c283913d5ca4588677e2ab4aff70",
+    "expected_result": "Exact 18 files with competition directory hierarchy",
+    "actual_result": "All 18 required members match competition layout",
+    "exit_code": 0,
+    "status": "PASS",
+    "log_path": "ml27\\gate_logs\\G1_format_and_naming.log",
+    "verification_timestamp": "2026-11-01T05:10:00Z",
+    "responsible_module": "tools.verify_ml27_release_gates.run_g1"
+  },
+  "G2_security_path_traversal": {
+    "gate_id": "G2",
+    "description": "Security & path traversal audit",
+    "exact_command": "python tools/verify_ml27_release_gates.py --gate G2",
+    "input_artifact_hash": "e6a9de854aa898379ead9ee533bafedbf004c283913d5ca4588677e2ab4aff70",
+    "expected_result": "Zero zip-slip traversal sequences and zero script payloads",
+    "actual_result": "No path traversal, no script injections",
+    "exit_code": 0,
+    "status": "PASS",
+    "log_path": "ml27\\gate_logs\\G2_security_path_traversal.log",
+    "verification_timestamp": "2026-11-01T05:10:00Z",
+    "responsible_module": "tools.verify_ml27_release_gates.run_g2"
+  },
+  "G3_semantic_correctness": {
+    "gate_id": "G3",
+    "description": "Semantic correctness & constraint verification",
+    "exact_command": "python tools/verify_ml27_release_gates.py --gate G3",
+    "input_artifact_hash": "e6a9de854aa898379ead9ee533bafedbf004c283913d5ca4588677e2ab4aff70",
+    "expected_result": "Official benchmark verification PASS on all 3 components within strict ceilings",
+    "actual_result": "Full semantic checks passed across all benchmarks",
+    "exit_code": 0,
+    "status": "PASS",
+    "log_path": "ml27\\gate_logs\\G3_semantic_correctness.log",
+    "verification_timestamp": "2026-11-01T05:10:00Z",
+    "responsible_module": "tools.verify_ml27_release_gates.run_g3"
+  },
+  "G4_reproducibility_clean_build": {
+    "gate_id": "G4",
+    "description": "Reproducibility & clean build test",
+    "exact_command": "python tools/verify_ml27_release_gates.py --gate G4",
+    "input_artifact_hash": "e6a9de854aa898379ead9ee533bafedbf004c283913d5ca4588677e2ab4aff70",
+    "expected_result": "Deterministic archive SHA matches manifest metadata exactly",
+    "actual_result": "Deterministic build reproduced and validated against manifest",
+    "exit_code": 0,
+    "status": "PASS",
+    "log_path": "ml27\\gate_logs\\G4_reproducibility_clean_build.log",
+    "verification_timestamp": "2026-11-01T05:10:00Z",
+    "responsible_module": "tools.verify_ml27_release_gates.run_g4"
+  },
+  "G5_no_unauthorized_kaggle_submissions": {
+    "gate_id": "G5",
+    "description": "Zero unauthorized Kaggle submissions",
+    "exact_command": "python tools/verify_ml27_release_gates.py --gate G5",
+    "input_artifact_hash": "e6a9de854aa898379ead9ee533bafedbf004c283913d5ca4588677e2ab4aff70",
+    "expected_result": "Zero submissions executed; 4/4 daily submission quota preserved",
+    "actual_result": "Zero Kaggle submissions executed; 4/4 daily budget preserved",
+    "exit_code": 0,
+    "status": "PASS",
+    "log_path": "ml27\\gate_logs\\G5_no_unauthorized_kaggle_submissions.log",
+    "verification_timestamp": "2026-11-01T05:10:00Z",
+    "responsible_module": "tools.verify_ml27_release_gates.run_g5"
+  }
+}

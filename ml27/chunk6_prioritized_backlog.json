@@ -1,0 +1,94 @@
+{
+  "readiness_gate": "ML27-OPTIMIZATION-READINESS-GATE",
+  "timestamp": "2026-11-01T05:30:00Z",
+  "active_verified_baseline": {
+    "portfolio_archive": "build/portfolios/portfolio_ml27_repaired.zip",
+    "archive_sha256": "e6a9de854aa898379ead9ee533bafedbf004c283913d5ca4588677e2ab4aff70",
+    "composite_score": 24.01755800648892,
+    "r_invsqrt": 22.253020168285005,
+    "r_dqi": 60.72597988433279,
+    "r_chemistry": 10.25234121724968,
+    "frozen_incumbent_sha256": "0bf5b4e361690c38a9d17580e49bb2d6b5f3706a64500ecaa9f499d2f521c3fe",
+    "frozen_incumbent_score": 23.17766923647473
+  },
+  "prioritized_backlog": [
+    {
+      "task_id": "TASK-DQI-01",
+      "name": "Monolithic Tower-42 Galois Field Multiplier Inlining",
+      "benchmark": "dqi",
+      "current_baseline_artifact": "dqi.kmb",
+      "current_baseline_sha256": "73e1b187b288f3cdc7d345214dd78ae6857d2f419041caf02bf3e29d26f7e6f2",
+      "current_baseline_qubits": 889,
+      "current_baseline_dynamic_toffolis": 427471.2,
+      "current_baseline_ratio": 60.72598,
+      "hypothesis": "Replacing the 63-Toffoli standard Karatsuba multiplier with the 42-Toffoli Galois extension tensor GF(2^12) ~= GF(8)[v]/(v^4+v+1) directly within the monolithic Kickmix compiled circuit lowers dynamic Toffolis by ~19% without expanding active qubit count beyond 889Q.",
+      "mathematical_derivation": "GF(2^12) represented as degree-4 extension of GF(8). Karatsuba over degree 4 requires 9 products in GF(8); evaluation at 7 points in GF(8) requires 7 products in GF(8). Each GF(8) multiplication uses 6 Toffolis via Mastrovito bilinear form. Total: 7 * 6 = 42 Toffolis vs 63 Toffolis baseline.",
+      "critical_constraints": [
+        "Circuit must strictly maintain Q <= 900 ceiling (target: <= 889)",
+        "Zero Z_POW gates permitted in DAG",
+        "Full Kickmix 256-shot semantic test must produce 0 value errors and 0 phase errors",
+        "Reversible scratch cleanup must leave zero dirty ancillas"
+      ],
+      "projected_ratio_ceiling": 75.112,
+      "evidence_level": "E3_FORMAL_TENSOR_VERIFIED_CIRCUIT_PENDING"
+    },
+    {
+      "task_id": "TASK-DQI-02",
+      "name": "Syndrome Register In-Place Wire Reuse",
+      "benchmark": "dqi",
+      "current_baseline_artifact": "dqi.kmb",
+      "current_baseline_sha256": "73e1b187b288f3cdc7d345214dd78ae6857d2f419041caf02bf3e29d26f7e6f2",
+      "current_baseline_qubits": 889,
+      "hypothesis": "Syndrome bits are read-only after the disparity calculation in each decoding round; uncomputing intermediate disparity registers and reusing their allocated wires for subsequent error locator evaluations reduces active qubit width from 889Q towards 740Q.",
+      "mathematical_derivation": "Liveness analysis on the 889Q DAG reveals 149 syndrome/disparity ancilla wires have disjoint lifetimes after round t=18. Under linear register reuse, wires W_i with dead intervals [t_end(W_i), infty) can be remapped without quantum cloning.",
+      "critical_constraints": [
+        "Must formally prove zero information leakage from unreclaimed registers",
+        "Must verify all 70 Reed-Solomon decoding error weight branches",
+        "Must prevent Bennett pebbling memory expansion traps"
+      ],
+      "projected_ratio_ceiling": 108.4,
+      "evidence_level": "E5_THEORETICAL_LIVENESS_MODEL"
+    },
+    {
+      "task_id": "TASK-CHEM-01",
+      "name": "J=7 Packed Pebble Angle Compilation on Verified Factorization",
+      "benchmark": "dfthcsos",
+      "current_baseline_artifact": "dfthcsos/",
+      "current_baseline_sha256": "893574424ea1b2d8ec2d90e3bd8e922dcbafde3aa4d569d70de129f75106ae60",
+      "current_baseline_qubits": 428,
+      "current_baseline_toffolis": 16237.0,
+      "current_baseline_lambda": 47.0975,
+      "current_baseline_ratio": 10.25234,
+      "hypothesis": "Batching rotation synthesis across J=7 orbital pairs instead of J=5 reduces angle circuit count from 15 to 11 while maintaining per-circuit qubit ceiling Q_angle <= 128 and energy error e2 <= 0.020 mHa.",
+      "mathematical_derivation": "With L=9 rank blocks and J=7 orbital batching, ceil(76 / 7) = 11 angle circuits. State preparation QROM addresses contract from 15 to 11 stages, saving 4 state prep cycles (~1,800 Toffolis).",
+      "critical_constraints": [
+        "Maximum angle circuit width must stay strictly <= 128 qubits",
+        "Angle circuits must contain strictly 0 T-like gates",
+        "Total Chemistry qubits must remain <= 430",
+        "Energy error 2 must strictly remain <= 0.02000000 mHa"
+      ],
+      "projected_ratio_ceiling": 11.666,
+      "evidence_level": "E5_HYPOTHESIS_ON_VERIFIED_R9_FACTORIZATION"
+    },
+    {
+      "task_id": "TASK-INV-01",
+      "name": "Single-Rotation Seed Table Factoring & Lawson 58Q Lowering",
+      "benchmark": "invsqrt",
+      "current_baseline_artifact": "invsqrt.kmb",
+      "current_baseline_sha256": "a568bc79348165bad5be2349960d200300c5639ffd2142aca6d548e764a399d9",
+      "current_baseline_qubits": 62,
+      "current_baseline_cost": 93325.5,
+      "current_baseline_ratio": 22.25302,
+      "hypothesis": "Lowering the mathematically proven 58Q Lawson minimax polynomial circuit into a concrete .kmb binary, combined with sharing the rotation synthesis stage for the seed table, drops billed cost from 93,325 to <= 83,071.",
+      "mathematical_derivation": "Horner polynomial evaluation with 4 subintervals on x in [1, 3133452] allows in-place carry folding into vacated exponent bits, saving 4 ancilla qubits (Q: 62 -> 58). Single-rotation seed table factoring synthesizes 1 rotation per interval instead of 2.",
+      "critical_constraints": [
+        "Circuit must compile to valid .kmb binary format",
+        "Active qubits must be <= 58",
+        "Numerical error over all 200,540,928 points must stay <= 2^-10",
+        "Must verify zero phase drift"
+      ],
+      "projected_ratio_ceiling": 25.0,
+      "evidence_level": "E3_PROOF_VALIDATED_BINARY_LOWERING_REQUIRED"
+    }
+  ]
+}

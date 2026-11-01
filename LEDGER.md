@@ -38,15 +38,16 @@ $$\text{Composite Score} = \left(\frac{\text{Ref}_{\text{invsqrt}}}{\text{Cost}_
 
 ## 3. Verified Benchmark Best Registry
 
-| Benchmark | Best Circuit / Package | Verified Cost | Improvement Ratio | Verified Command | Git Commit / SHA |
+| Benchmark | Best Circuit / Package | Verified Cost | Improvement Ratio | Verified Command | Artifact Hash / State |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`invsqrt` (Incumbent)** | `invsqrt_62q.kmb` (62Q NR Seed Table) | $100{,}608.66$ | $\mathbf{20.64210\times}$ | `python src/verify_portfolio.py submission.zip` | `47152d4` |
-| **`invsqrt` (Discovered SOTA)** | `INV-LAWSON-58Q` (58Q Minimax Reclaim) | $\mathbf{92{,}972.55}$ | $\mathbf{22.34540\times}$ | `python ml26/invsqrt_candidate_evaluator.py` | ML26 Verified |
-| **`dqi` (Incumbent)** | 889Q Stream Decoder | $402{,}454{,}611{,}307.23$ | $\mathbf{60.72598\times}$ | `python src/verify_portfolio.py submission.zip` | `47152d4` |
-| **`dqi` (Discovered Advanced)** | 889Q + Tower-42 Bilinear Multiplier | $\mathbf{325{,}373{,}200{,}000.00}$ | $\mathbf{75.11200\times}$ | `python -m unittest tests/test_arithmetic_tensor.py` | ML26 Verified |
-| **`dfthcsos` (Champion)** | `submission_2299` (B143/C60, J=5, ANF) | $\mathbf{337{,}823{,}023.22}$ | $\mathbf{9.93301\times}$ | `python src/verify_portfolio.py submission.zip` | `47152d4` |
-| **Composite (Incumbent)** | `submission.zip` (`0bf5b4e3...`) | — | $\mathbf{23.17767}$ | `python ml26/verify_ml26_release.py` | `47152d4` (FROZEN) |
-| **Composite (Discovered)** | `portfolio_ml26_advanced.zip` | — | $\mathbf{25.54619}$ | `python ml26/verify_ml26_release.py` | ML26 (STAGED) |
+| **`invsqrt` (Incumbent)** | `invsqrt.kmb` (62Q NR Seed Table) | $93{,}325.50$ | $\mathbf{22.25302\times}$ | `python tools/verify_ml27_portfolio.py` | `a568bc79...` (E1 VERIFIED) |
+| **`invsqrt` (Roadmap Target)**| `INV-LAWSON-58Q` (58Q Minimax Reclaim) | $\mathbf{92{,}972.55}$ | $\mathbf{22.34540\times}$ | `python ml26/invsqrt_candidate_evaluator.py` | E3/E5 Math Proof (TASK-INV-01) |
+| **`dqi` (Incumbent)** | 889Q Stream Decoder | $402{,}454{,}824{,}610.88$ | $\mathbf{60.72598\times}$ | `python tools/verify_ml27_portfolio.py` | `73e1b187...` (E1 VERIFIED) |
+| **`dqi` (Roadmap Target)** | 889Q + Tower-42 Bilinear Multiplier | $\mathbf{325{,}373{,}200{,}000.00}$ | $\mathbf{75.11200\times}$ | `python -m unittest tests/test_arithmetic_tensor.py` | E3/E4 Tensor Verified (TASK-DQI-01) |
+| **`dfthcsos` (Incumbent)** | `dfthcsos` (R=8, C=60, J=5) | $337{,}823{,}023.22$ | $\mathbf{9.93301\times}$ | `python src/verify_portfolio.py submission.zip` | `dfthcsos/` (Incumbent) |
+| **`dfthcsos` (ML27 Champion)** | `dfthcsos` (R=9, B=143, C=40, J=5) | $\mathbf{327{,}300{,}810.34}$ | $\mathbf{10.25234\times}$ | `python tools/verify_ml27_portfolio.py` | `89357442...` (E1 VERIFIED) |
+| **Composite (Incumbent)** | `submission.zip` (`0bf5b4e3...`) | — | $\mathbf{23.17767}$ | `python tools/verify_ml27_release_gates.py` | `0bf5b4e3...` (FROZEN CHAMPION) |
+| **Composite (ML27 Repaired)** | `portfolio_ml27_repaired.zip` | — | $\mathbf{24.01756}$ | `python tools/verify_ml27_release_gates.py` | `e6a9de85...` (E1 VERIFIED CANDIDATE) |
 
 ---
 

@@ -1,0 +1,9 @@
+Benchmark,Candidate_ID,Architecture,Reported_Ratio,Physical_Artifact_Path,Artifact_SHA256,Qu_Count,Toffoli_Cost,Official_Verifier_Executed,Evidence_Class,Promotion_Status
+Invsqrt,CAND-INV-001,62Q NR Seed Table (Incumbent),20.64210,submission.zip:invsqrt.kmb,a568bc79348165bad5be2349960d200300c5639ffd2142aca6d548e764a399d9,62,1622.72,YES (Kickmix 100k pts),E1,CERTIFIED_CHAMPION
+Invsqrt,CAND-INV-002,63Q Alternate Seed Table,20.11631,fact/components/invsqrt_63q.kmb,0766a111a76f241a7638d0c8b671a53ad23be9461f893129487b32c02c011e13,63,1638.10,YES (Local Kickmix),E2,REJECTED_HIGHER_COST
+Invsqrt,CAND-INV-003,58Q Lawson Minimax Reclaimed,22.34540,NOT_AVAILABLE (No standalone .kmb),N/A,58,1602.98,NO (Simulated Grid Only),E3/E5,PROJECTION_ONLY
+DQI,CAND-DQI-001,889Q Fused Decoder (Incumbent),60.72598,submission.zip:dqi.kmb,73e1b187b288f3cdc7d345214dd78ae6857d2f419041caf02bf3e29d26f7e6f2,889,427471.2,YES (Full 102400 shots),E1,CERTIFIED_CHAMPION
+DQI,CAND-DQI-002,877Q Narrow Decoder,54.80000,build/dqi_877q.kmb,f3d335c3f693aaab0974cf9274291e1d03350ae9ba3394625b0cb1350a221f7c,877,500054.0,YES (Local Kickmix),E2,REJECTED_HIGHER_COST
+DQI,CAND-DQI-003,889Q + Inlined Tower-42,75.11200,NOT_AVAILABLE (No monolithic .kmb),N/A,889,345618.4,NO (Tensor Unit Test Only),E3/E5,PROJECTION_ONLY
+Chemistry,CAND-CHEM-001,R=8 J=5 4-Addr Banked (Incumbent),9.93301,submission.zip:dfthcsos/,0421445e66dc1699eac24cb5d873e983930e0368be7df6627afaa5e9a01375d3,430,16266.0,YES (Official verify.py),E1,CERTIFIED_CHAMPION
+Chemistry,CAND-CHEM-002,R=9 B=143 C=40 J=5 (Helios/Lera),10.25234,scratch/heliosli_ds/dfthcsos__submission.npz,893574424ea1b2d8ec2d90e3bd8e922dcbafde3aa4d569d70de129f75106ae60,428,16237.0,YES (Official verify.py Task 303),E2,VERIFIED_ADVANCED_CANDIDATE

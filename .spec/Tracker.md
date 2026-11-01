@@ -99,3 +99,34 @@
 | Theoretical Ceiling | 24.57001 ($R_{\text{dqi}} = 72.33966$, zero-overhead) |
 | SYZYGY URI | `viking://berlioz/incumbent/current` |
 | Baseline Manifest | `ml26/baseline_manifest.json` |
+
+---
+
+### Masterloop 27 — Forensic Integrity Repair & Portfolio Certification (Phase 0)
+
+| ID | Task | Status | Evidence |
+|---|---|---|---|
+| `ML27-0` | Repository & Champion Freeze (SHA: `0bf5b4e3...`) | **COMPLETED (E1)** | `ml27/chunk0_repository_state.json`, `ml27/chunk0_artifact_inventory.json`, `ml27/chunk0_champion_freeze_report.md` |
+| `ML27-1` | Forensic Audit of ML26 Verifier & Adversarial Suite | **COMPLETED (E1)** | `ml27/chunk1_release_verifier_findings.json`, `ml27/chunk1_release_verifier_forensic_audit.md`, `tests/test_ml27_release_verifier.py` (5/5 PASS) |
+| `ML27-2` | Recover Actual Advanced Candidate Provenance | **COMPLETED (E1/E2)** | `ml27/chunk2_component_provenance.json`, `ml27/chunk2_component_evidence_matrix.csv`, `ml27/chunk2_advanced_component_recovery.md` |
+| `ML27-3` | Genuine Advanced Portfolio Assembly | **COMPLETED (E1)** | `build/portfolios/portfolio_ml27_repaired.zip` (SHA: `e6a9de85...`), `ml27/chunk3_portfolio_manifest.json`, `ml27/chunk3_archive_comparison.json`, `ml27/chunk3_assembly_report.md` |
+| `ML27-4` | Independent Official Benchmark Verification & Score | **COMPLETED (E1)** | `ml27/chunk4_full_verification_results.json`, `ml27/chunk4_independent_score_reconstruction.json` (Score: **24.01756**), `ml27/chunk4_verification_report.md` |
+| `ML27-5` | Release Gate Reconstruction (G0–G5 Real Checks) & Reconciliation | **COMPLETED (E1)** | `ml27/chunk5_release_gate_results.json`, `ml27/chunk5_corrected_ml26_status.md`, `ml27/chunk5_syzygy_reconciliation.md` |
+| `ML27-6` | ML27 Optimization Readiness Gate & Backlog | **READY** | Backlog prioritized on measured remaining costs |
+
+---
+
+### Repaired Advanced Candidate Reference
+
+| Property | Value |
+|---|---|
+| Artifact | `build/portfolios/portfolio_ml27_repaired.zip` |
+| SHA-256 | `e6a9de854aa898379ead9ee533bafedbf004c283913d5ca4588677e2ab4aff70` |
+| Size | 27,125,948 bytes |
+| Invsqrt Ratio | 22.25302x ($Q=62, C=93,325.50$) |
+| DQI Ratio | 60.72598x ($Q=889, \bar{T}=427,471.2$, Clopper-Pearson $R=1.19126$) |
+| Chemistry Ratio | 10.25234x ($Q=428, \text{Toffolis}=16,237.0, \lambda_{\text{eff}}=47.0975$) |
+| Composite Score | **24.01756** (+3.62% genuine gain over incumbent) |
+| Release Gates | G0–G5 ALL PASS (Real code execution) |
+| SYZYGY URI | `viking://berlioz/portfolios/ml27_repaired` |
+

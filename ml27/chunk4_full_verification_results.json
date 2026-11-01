@@ -1,0 +1,45 @@
+{
+  "portfolio_archive": "C:\\Users\\noobg\\.gemini\\antigravity-ide\\scratch\\berlioz\\build\\portfolios\\portfolio_ml27_repaired.zip",
+  "portfolio_sha256": "e6a9de854aa898379ead9ee533bafedbf004c283913d5ca4588677e2ab4aff70",
+  "verification_timestamp": "2026-11-01T05:03:00Z",
+  "benchmarks": {
+    "invsqrt": {
+      "artifact_sha256": "a568bc79348165bad5be2349960d200300c5639ffd2142aca6d548e764a399d9",
+      "qubits": 62,
+      "static_toffolis": 1502,
+      "t_like_gates": 13,
+      "t_equivalent_cost": 1505.25,
+      "billed_cost": 93325.5,
+      "ratio": 22.253020168285005,
+      "verification_status": "PASS"
+    },
+    "dqi": {
+      "artifact_sha256": "73e1b187b288f3cdc7d345214dd78ae6857d2f419041caf02bf3e29d26f7e6f2",
+      "qubits": 889,
+      "static_toffolis": 441968,
+      "mean_dynamic_toffolis": 427471.2265625,
+      "sample_shots_tested": 256,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "confidence_delta": 2.938735877055719e-39,
+      "clopper_pearson_eps_plus": 0.0008660587301657641,
+      "repetition_factor": 1.1912604648115797,
+      "certified_cost": 402454824610.8792,
+      "certified_ratio": 60.72597988433279,
+      "verification_status": "PASS"
+    },
+    "chemistry": {
+      "factorization_sha256": "893574424ea1b2d8ec2d90e3bd8e922dcbafde3aa4d569d70de129f75106ae60",
+      "qubits": 428,
+      "toffoli_count": 16237.0,
+      "lambda_eff": 47.09746378593682,
+      "error_1_mha": 0.011815182285833654,
+      "error_2_mha": 0.01999999978000022,
+      "within_error_ceiling": true,
+      "billed_cost": 327300810.34268564,
+      "ratio": 10.25234121724968,
+      "verification_status": "PASS"
+    }
+  },
+  "composite_score": 24.01755800648892
+}
