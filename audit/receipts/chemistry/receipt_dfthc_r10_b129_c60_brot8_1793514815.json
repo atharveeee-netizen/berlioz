@@ -1,0 +1,42 @@
+{
+  "receipt_version": "ML28-WS1-V1",
+  "timestamp_utc": "2026-11-01T06:33:35Z",
+  "classification": "OFFICIAL",
+  "benchmark": "CHEMISTRY",
+  "notes": "R=10, C=60 candidate verified PASS; state prep Toffoli inflation makes ratio 5.47x vs candidate 10.25x.",
+  "environment": {
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python_version": "3.10.11",
+    "cpu_count": 16
+  },
+  "verifier": {
+    "path": "verifiers\\dfthcsos\\verify.py",
+    "sha256": "0775be7a528922367caebe9e4d051d6199811f1aefeaa4b793eaaa4621b8ec9d",
+    "git_blob": "89fa1c4918e7564aab0b8fba440d059afb9a2605",
+    "arguments": {
+      "addr": 4,
+      "J": 3
+    }
+  },
+  "target": {
+    "path": "fact\\dfthc_r10_b129_c60_brot8.npz",
+    "sha256": "27dda66f38c60821665cfc74e51d1bd2bfd2a7f0d902dbaffcdc5b26543dadad",
+    "size_bytes": 3062892
+  },
+  "results": {
+    "status": "PASS",
+    "score": 613375926.487,
+    "ratio": 5.470706370127905,
+    "qubits": 415,
+    "toffoli_count": 30772.0,
+    "verified_shots": 87424,
+    "benchmark_specific": {
+      "lambda_eff": 48.03114,
+      "error_1": 0.018996,
+      "error_2": 0.019654
+    }
+  },
+  "execution": {
+    "duration_seconds": 38.5
+  }
+}

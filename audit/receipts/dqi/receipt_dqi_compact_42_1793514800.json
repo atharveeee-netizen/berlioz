@@ -1,0 +1,39 @@
+{
+  "receipt_version": "ML28-WS1-V1",
+  "timestamp_utc": "2026-11-01T06:33:20Z",
+  "classification": "PILOT",
+  "benchmark": "DQI",
+  "notes": "Uncompacted scaffold expansion; 1907 qubits strictly dominated by 889Q champion.",
+  "environment": {
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python_version": "3.10.11",
+    "cpu_count": 16
+  },
+  "verifier": {
+    "path": "verifiers\\dqi\\verify_submission_dqi.py",
+    "sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+    "git_blob": "4e8d1174ffca976f5a89d43f97643ba9614c9d6e",
+    "arguments": {
+      "num_shots": 0
+    }
+  },
+  "target": {
+    "path": "build\\dqi_compact_42.kmb",
+    "sha256": "97018c0fb3beb965dabc06a900f2bc99e055521c3a1e66c053e9b647538143a4",
+    "size_bytes": 828334716
+  },
+  "results": {
+    "status": "REJECTED_QUBIT_LIMIT",
+    "score": Infinity,
+    "ratio": 0.0,
+    "qubits": 1907,
+    "toffoli_count": 5044893,
+    "verified_shots": 0,
+    "benchmark_specific": {
+      "error": "Active qubits 1907 exceeds limit <= 903"
+    }
+  },
+  "execution": {
+    "duration_seconds": 0.5
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "total_circuit_qubits": 889,
+  "total_circuit_toffolis": 456456,
+  "total_multiplier_calls": 0,
+  "total_multiplier_toffolis": 0,
+  "callsites": []
+}

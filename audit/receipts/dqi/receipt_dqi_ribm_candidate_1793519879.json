@@ -1,0 +1,44 @@
+{
+  "receipt_version": "ML28-WS1-V1",
+  "timestamp_utc": "2026-11-01T07:57:59Z",
+  "classification": "PILOT",
+  "benchmark": "DQI",
+  "notes": "Step 4 DQI RiBM verified candidate with 0 value/phase errors across all 256 shots and 889 qubits.",
+  "environment": {
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python_version": "3.10.11",
+    "cpu_count": 16
+  },
+  "verifier": {
+    "path": "verifiers\\dqi\\verify_submission_dqi.py",
+    "sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+    "git_blob": "4e8d1174ffca976f5a89d43f97643ba9614c9d6e",
+    "arguments": {
+      "num_shots": 256,
+      "scaling": "Clopper-Pearson 102400-shot analytic"
+    }
+  },
+  "target": {
+    "path": "build\\circuits\\dqi_ribm_candidate.kmb",
+    "sha256": "6349d2bc82eb1ef3a4e8c52c71a312823d756532517463b5e18eb25cc81195a8",
+    "size_bytes": 544080148
+  },
+  "results": {
+    "status": "PASS",
+    "score": 412308610653.25,
+    "ratio": 59.27468636891124,
+    "qubits": 889,
+    "toffoli_count": 437950.12,
+    "verified_shots": 256,
+    "benchmark_specific": {
+      "value_errors": 0,
+      "phase_errors": 0,
+      "empirical_error_rate": 0.0,
+      "effective_error_rate": 0.00086605873,
+      "circuit_sha256": "6349d2bc82eb1ef3a4e8c52c71a312823d756532517463b5e18eb25cc81195a8"
+    }
+  },
+  "execution": {
+    "duration_seconds": 35.0
+  }
+}

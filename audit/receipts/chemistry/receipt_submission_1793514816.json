@@ -1,0 +1,40 @@
+{
+  "receipt_version": "ML28-WS1-V1",
+  "timestamp_utc": "2026-11-01T06:33:36Z",
+  "classification": "PILOT",
+  "benchmark": "CHEMISTRY",
+  "notes": "J=7 2-address banked QROM increases qubits to 444; ratio 6.76x strictly dominated by J=5 candidate.",
+  "environment": {
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python_version": "3.10.11",
+    "cpu_count": 16
+  },
+  "verifier": {
+    "path": "verifiers\\dfthcsos\\verify.py",
+    "sha256": "0775be7a528922367caebe9e4d051d6199811f1aefeaa4b793eaaa4621b8ec9d",
+    "git_blob": "89fa1c4918e7564aab0b8fba440d059afb9a2605",
+    "arguments": {
+      "addr": 2,
+      "J": 7
+    }
+  },
+  "target": {
+    "path": "build\\chem_j7_test\\submission.npz",
+    "sha256": "0ad1363272489555e4a0088b56ca7566e355e8db43bc95c2708c00e2fb8a459e",
+    "size_bytes": 1211598
+  },
+  "results": {
+    "status": "PASS",
+    "score": 496119973.77,
+    "ratio": 6.76368573274009,
+    "qubits": 444,
+    "toffoli_count": 23725.0,
+    "verified_shots": 87424,
+    "benchmark_specific": {
+      "lambda_eff": 47.09746
+    }
+  },
+  "execution": {
+    "duration_seconds": 25.0
+  }
+}

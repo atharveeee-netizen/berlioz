@@ -130,3 +130,20 @@
 | Release Gates | G0–G5 ALL PASS (Real code execution) |
 | SYZYGY URI | `viking://berlioz/portfolios/ml27_repaired` |
 
+---
+
+### Masterloop 28 — TASK-DQI-01 Audit & SOTA Frontier
+
+| ID | Task | Status | Evidence |
+|---|---|---|---|
+| `TASK-DQI-01` | Gate 1 Multiplication Census & Opportunity Proof | **GATE_1_STOP_APPLIED** | `ml28/task_dqi_01_gate1_audit_report.md`, `ml28/production_dqi_multiplier_census.json` (4,756/4,756 width-12 calls already rank-42; 0 replacements possible) |
+| `ML28-P0` | Ground Truth Audit & 24.01756 Reconciliation | **COMPLETED** | `ml28/phase0_ground_truth_audit.md` (Measured portfolio score: 23.42774; 20.66080x Invsqrt, 60.72598x DQI, 10.25234x Chem) |
+| `ML28-P1` | Official Verification Receipts System | **COMPLETED** | `tools/receipt_system.py`, `audit/receipts/` |
+| `ML28-P2` | Full-Domain (3.13M Input) Margin Proof | **COMPLETED** | `ml28/phase2_margin_doubling_report.md` (Min margin: 58.59M, 1.218% tol, cliff edge confirmed) |
+| `ML28-P3` | 58Q Lawson / DQI-42 / Chem J=7 Optimization Screen | **COMPLETED** | `ml28/phase3_4_execution_report.md` (Lawson fails phase; J=7 dominated by J=5) |
+| `ML28-DQI02-1` | Step 1: Reversible Quantum RiBM Synthesis Module | **COMPLETED** | `src/dqi/quantum_ribm_synthesis.py`, `viking://berlioz/ml28/chunk1_ribm_synthesis` |
+| `ML28-DQI02-2` | Step 2: Quantum RiBM Simulation & Clean Ancilla Verification | **COMPLETED** | `tests/test_quantum_ribm_harness.py` (0 value/phase errors, clean restoration), `viking://berlioz/ml28/chunk2_unit_test` |
+| `ML28-DQI02-3` | Step 3: Physical Candidate Circuit Compilation (889Q) | **COMPLETED** | `src/dqi/build_ribm_candidate.py`, `build/circuits/dqi_ribm_candidate.kmb` (544 MB, 889Q <= 903, SHA: `6349d2bc...`), `viking://berlioz/ml28/chunk3_candidate_circuit` |
+| `ML28-DQI02-4` | Step 4: Official DQI Verifier Execution & Signed Receipt | **COMPLETED** | `verifiers/dqi/verify_submission_dqi.py` (256 shots, 0/256 value/phase errors, PASS), `audit/receipts/dqi/receipt_dqi_ribm_candidate_1793519879.json`, `viking://berlioz/ml28/chunk4_certified_portfolio` |
+
+

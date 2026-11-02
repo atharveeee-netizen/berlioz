@@ -1,0 +1,27 @@
+[
+  {
+    "gate": "ccz",
+    "location": "profile_toffoli_origins.py:46 (spy_ccz)",
+    "count": 727598
+  },
+  {
+    "gate": "ccx",
+    "location": "profile_toffoli_origins.py:30 (spy_ccx)",
+    "count": 526034
+  },
+  {
+    "gate": "init_and",
+    "location": "profile_toffoli_origins.py:34 (spy_init_and)",
+    "count": 75270
+  },
+  {
+    "gate": "del_and",
+    "location": "profile_toffoli_origins.py:38 (spy_del_and)",
+    "count": 61705
+  },
+  {
+    "gate": "cswap",
+    "location": "profile_toffoli_origins.py:42 (spy_cswap)",
+    "count": 1382
+  }
+]

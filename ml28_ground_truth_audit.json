@@ -1,0 +1,423 @@
+{
+  "archives": {
+    "submission.zip": {
+      "path": "submission.zip",
+      "size_bytes": 27066942,
+      "sha256": "0bf5b4e361690c38a9d17580e49bb2d6b5f3706a64500ecaa9f499d2f521c3fe",
+      "members": [
+        {
+          "filename": "dfthcsos/angle_k_0.kmb",
+          "file_size": 400395,
+          "compress_size": 35538,
+          "sha256": "9c31da0c1d047e7dcac638df807d3cef96eac6f736a8838a0ae6943e9c46c74f"
+        },
+        {
+          "filename": "dfthcsos/angle_k_1.kmb",
+          "file_size": 400453,
+          "compress_size": 35552,
+          "sha256": "39b8d10098be097f75148639ee302249bdabe112a9278a48565eadb0cb86810b"
+        },
+        {
+          "filename": "dfthcsos/angle_k_10.kmb",
+          "file_size": 352755,
+          "compress_size": 31998,
+          "sha256": "e75f6b0685d754bf76f3f4d62589bf1d07b118faeeb0ab8745833733286db2fc"
+        },
+        {
+          "filename": "dfthcsos/angle_k_11.kmb",
+          "file_size": 308137,
+          "compress_size": 28463,
+          "sha256": "773e54f6f0d7c3f769db433f263d541cdcff1076fb75109740907e3249996141"
+        },
+        {
+          "filename": "dfthcsos/angle_k_12.kmb",
+          "file_size": 352979,
+          "compress_size": 31922,
+          "sha256": "d86ca7ddd984059ded765b953cc936388517a7ca5789676ae90910a2be89769d"
+        },
+        {
+          "filename": "dfthcsos/angle_k_13.kmb",
+          "file_size": 308119,
+          "compress_size": 28244,
+          "sha256": "50d82cf65116f06c0fe469ebba312f72675b277263461ab88b4d15eca947c050"
+        },
+        {
+          "filename": "dfthcsos/angle_k_14.kmb",
+          "file_size": 352701,
+          "compress_size": 32929,
+          "sha256": "ae2070998e31b7e05d01183914df20b6974c1760bddf90d1adac86ea75c7bf3f"
+        },
+        {
+          "filename": "dfthcsos/angle_k_2.kmb",
+          "file_size": 394618,
+          "compress_size": 36219,
+          "sha256": "2e8dfdeb69c496e9e510fe99722153663760980d45c35ad9b72e79ba799dde49"
+        },
+        {
+          "filename": "dfthcsos/angle_k_3.kmb",
+          "file_size": 396782,
+          "compress_size": 36313,
+          "sha256": "13817cf8d36ea112e62d7863edde2193aa5907dd0605612c4f0e1e54bacc173b"
+        },
+        {
+          "filename": "dfthcsos/angle_k_4.kmb",
+          "file_size": 356137,
+          "compress_size": 31916,
+          "sha256": "8dce8f4a380998d818bf8a08e4f3daa62aaeb31a25d084aa57549f931a937f3d"
+        },
+        {
+          "filename": "dfthcsos/angle_k_5.kmb",
+          "file_size": 310562,
+          "compress_size": 28528,
+          "sha256": "42cf7d76ef0f0b36640a9e65005214fdd4d9a9bb82b8cef6e658dbbdd8417099"
+        },
+        {
+          "filename": "dfthcsos/angle_k_6.kmb",
+          "file_size": 351298,
+          "compress_size": 31844,
+          "sha256": "7fd7bd333b1427ecf546b0c27717ed9428e255e5165c4db14e5f95f8af45c838"
+        },
+        {
+          "filename": "dfthcsos/angle_k_7.kmb",
+          "file_size": 304732,
+          "compress_size": 28284,
+          "sha256": "809a775b98836ee00e8783d3f616bb8517bb3a3621978bc704d20b543a8df4ec"
+        },
+        {
+          "filename": "dfthcsos/angle_k_8.kmb",
+          "file_size": 352967,
+          "compress_size": 31881,
+          "sha256": "42d0deb376981d0470bebdd370ca2adf79685b4bf3e6909be262e2beced030ec"
+        },
+        {
+          "filename": "dfthcsos/angle_k_9.kmb",
+          "file_size": 307434,
+          "compress_size": 28366,
+          "sha256": "f1c49e7cf8e4f3a9adaffe167d2bbe21497a52eca2c7d09f765fc5a125e304c3"
+        },
+        {
+          "filename": "dfthcsos/submission.npz",
+          "file_size": 1999484,
+          "compress_size": 1327022,
+          "sha256": "0421445e66dc1699eac24cb5d873e983930e0368be7df6627afaa5e9a01375d3"
+        },
+        {
+          "filename": "dqi.kmb",
+          "file_size": 534922902,
+          "compress_size": 25212770,
+          "sha256": "73e1b187b288f3cdc7d345214dd78ae6857d2f419041caf02bf3e29d26f7e6f2"
+        },
+        {
+          "filename": "invsqrt.kmb",
+          "file_size": 468143,
+          "compress_size": 47011,
+          "sha256": "a568bc79348165bad5be2349960d200300c5639ffd2142aca6d548e764a399d9"
+        }
+      ]
+    },
+    "portfolio_ml27_repaired.zip": {
+      "path": "build\\portfolios\\portfolio_ml27_repaired.zip",
+      "size_bytes": 27125948,
+      "sha256": "e6a9de854aa898379ead9ee533bafedbf004c283913d5ca4588677e2ab4aff70",
+      "members": [
+        {
+          "filename": "dfthcsos/angle_k_0.kmb",
+          "file_size": 453962,
+          "compress_size": 41955,
+          "sha256": "d52f249c5ddedc698c3add5a6cfdf7bb2a66b50e157927a1c17d06988a95e259"
+        },
+        {
+          "filename": "dfthcsos/angle_k_1.kmb",
+          "file_size": 448085,
+          "compress_size": 41752,
+          "sha256": "0d16c5108e48e40931d87f1e3ee12d4486e932b341989ce909a47b032e5a7745"
+        },
+        {
+          "filename": "dfthcsos/angle_k_10.kmb",
+          "file_size": 400612,
+          "compress_size": 37585,
+          "sha256": "e2668bf5666ca1e49541bef7a255b2100a8a513188fadef3a8dd4e892cfe2094"
+        },
+        {
+          "filename": "dfthcsos/angle_k_11.kmb",
+          "file_size": 406276,
+          "compress_size": 37862,
+          "sha256": "5f69f385cb2040e7124e11e1cedb7cea0e0ffa6ad13abe81b2a337744cb9c2ac"
+        },
+        {
+          "filename": "dfthcsos/angle_k_12.kmb",
+          "file_size": 400502,
+          "compress_size": 37668,
+          "sha256": "f86995a0ea1990a11a43f1812f47e00a77658f71cc544d44bd5003e616111272"
+        },
+        {
+          "filename": "dfthcsos/angle_k_13.kmb",
+          "file_size": 401708,
+          "compress_size": 37551,
+          "sha256": "4390c8114e191b0c74ccd8b6302e5e0ded4e8cb412a3f146eea9887551658876"
+        },
+        {
+          "filename": "dfthcsos/angle_k_14.kmb",
+          "file_size": 400193,
+          "compress_size": 37571,
+          "sha256": "62bec7cf502a9e5d49823f8f571164dbd8a56c1d5fc0e46a7f93ff200d57b156"
+        },
+        {
+          "filename": "dfthcsos/angle_k_2.kmb",
+          "file_size": 451996,
+          "compress_size": 41674,
+          "sha256": "b7b73491d3aeb59c70d023704df9f2ad69eb96c9d1f9e9920d33d60bd7852d11"
+        },
+        {
+          "filename": "dfthcsos/angle_k_3.kmb",
+          "file_size": 456266,
+          "compress_size": 41837,
+          "sha256": "c2437ad406d3772e961e7229580fba7b68c036b97ce36b4067c865e3af729f00"
+        },
+        {
+          "filename": "dfthcsos/angle_k_4.kmb",
+          "file_size": 397777,
+          "compress_size": 37520,
+          "sha256": "0df35ae1cb26d3bc09f022b2a397a8b07e5c322283d2c8cf0a53a4bb11b9dd47"
+        },
+        {
+          "filename": "dfthcsos/angle_k_5.kmb",
+          "file_size": 401580,
+          "compress_size": 37802,
+          "sha256": "a9a649997bf0696a659c8cbf9e778f92bee2816b6212febc898ed51450ae42c3"
+        },
+        {
+          "filename": "dfthcsos/angle_k_6.kmb",
+          "file_size": 404097,
+          "compress_size": 37658,
+          "sha256": "715673382c491b796865dbba235687eafebd16c745872d20f7ae1808f88a62ae"
+        },
+        {
+          "filename": "dfthcsos/angle_k_7.kmb",
+          "file_size": 404041,
+          "compress_size": 37803,
+          "sha256": "31e004f932d42750e1dda98abdf3e0097941cb1b1bbd353ed692e52098119cfb"
+        },
+        {
+          "filename": "dfthcsos/angle_k_8.kmb",
+          "file_size": 400918,
+          "compress_size": 37556,
+          "sha256": "046ac97b8c6ac9e1895a1da5dc89ea5df55bf487b1822d2ba11697c948145ff9"
+        },
+        {
+          "filename": "dfthcsos/angle_k_9.kmb",
+          "file_size": 402097,
+          "compress_size": 37471,
+          "sha256": "10c37a55ab902357cf60c5cf529de0eec9e9497a03f0b2ad7a9888d26d9c1e63"
+        },
+        {
+          "filename": "dfthcsos/submission.npz",
+          "file_size": 2033028,
+          "compress_size": 1282760,
+          "sha256": "893574424ea1b2d8ec2d90e3bd8e922dcbafde3aa4d569d70de129f75106ae60"
+        },
+        {
+          "filename": "dqi.kmb",
+          "file_size": 534922902,
+          "compress_size": 25212770,
+          "sha256": "73e1b187b288f3cdc7d345214dd78ae6857d2f419041caf02bf3e29d26f7e6f2"
+        },
+        {
+          "filename": "invsqrt.kmb",
+          "file_size": 468143,
+          "compress_size": 47011,
+          "sha256": "a568bc79348165bad5be2349960d200300c5639ffd2142aca6d548e764a399d9"
+        }
+      ]
+    },
+    "portfolio_ml27_phase1b.zip": {
+      "path": "build\\portfolios\\portfolio_ml27_phase1b.zip",
+      "size_bytes": 27295234,
+      "sha256": "a729ab40941de7866f2a95b89b7c5697cb64afbf7a4419ec4a33b42c6b502c96",
+      "members": [
+        {
+          "filename": "dfthcsos/angle_k_0.kmb",
+          "file_size": 328093,
+          "compress_size": 27254,
+          "sha256": "a630b32ace1767a36a37b641dbc2a696b9e12eb13c64104cbf513f665b81cc1c"
+        },
+        {
+          "filename": "dfthcsos/angle_k_1.kmb",
+          "file_size": 326286,
+          "compress_size": 27183,
+          "sha256": "0bb209419db53a003cdf5d45844cfb4e6709bb5c8f36e50a8043cf2164756ab3"
+        },
+        {
+          "filename": "dfthcsos/angle_k_10.kmb",
+          "file_size": 325048,
+          "compress_size": 27157,
+          "sha256": "d67a9e50aefbe28c25ba56153f379d4acae888c298490a6b76b0651a6039f913"
+        },
+        {
+          "filename": "dfthcsos/angle_k_11.kmb",
+          "file_size": 324644,
+          "compress_size": 27256,
+          "sha256": "d26cb3a897d8a3265b7556ef419c2eb7ec694482f0dc20112e5564e6ebcb5249"
+        },
+        {
+          "filename": "dfthcsos/angle_k_12.kmb",
+          "file_size": 326087,
+          "compress_size": 27266,
+          "sha256": "73e8ac7e46a57e532795e4aaa9695b82b7bcab2af1d5794fa2b5f513a4a34816"
+        },
+        {
+          "filename": "dfthcsos/angle_k_13.kmb",
+          "file_size": 328844,
+          "compress_size": 27357,
+          "sha256": "4b559e2d8b06ef99929a3458be46ff5faa7b4b01d7402b59c39173115188149d"
+        },
+        {
+          "filename": "dfthcsos/angle_k_14.kmb",
+          "file_size": 331930,
+          "compress_size": 27276,
+          "sha256": "45bb009d37da89a9a3e9f83075e097c846aead15c5bd0a6ea650a9a8ef5dcfe2"
+        },
+        {
+          "filename": "dfthcsos/angle_k_15.kmb",
+          "file_size": 327021,
+          "compress_size": 27419,
+          "sha256": "883e750eee976e32a69c4b137e36a3d6ad1e22269ef5b79f06da26da201b1076"
+        },
+        {
+          "filename": "dfthcsos/angle_k_16.kmb",
+          "file_size": 327285,
+          "compress_size": 27283,
+          "sha256": "01ea05ead77654ea60ac833f299e7bc812ad88307c7ff020083ffc8d6cde1de7"
+        },
+        {
+          "filename": "dfthcsos/angle_k_17.kmb",
+          "file_size": 327749,
+          "compress_size": 27289,
+          "sha256": "168fe1099707aee540651e30a2b39c783096583f9405230f0bb7ba514092ba40"
+        },
+        {
+          "filename": "dfthcsos/angle_k_18.kmb",
+          "file_size": 327389,
+          "compress_size": 27262,
+          "sha256": "cebe0f610ad090d39b60814c714cfcb8321a8277586f0ccb735be90ee3924282"
+        },
+        {
+          "filename": "dfthcsos/angle_k_19.kmb",
+          "file_size": 328243,
+          "compress_size": 27308,
+          "sha256": "db8ecb33479cf5811331ed98d5f7c9574cec517a40f28d7adbe86d72cfffed18"
+        },
+        {
+          "filename": "dfthcsos/angle_k_2.kmb",
+          "file_size": 329779,
+          "compress_size": 27279,
+          "sha256": "08677506495002dbc83f86c11db0425a7d33b867f13072b6f9f4ee460eec2279"
+        },
+        {
+          "filename": "dfthcsos/angle_k_20.kmb",
+          "file_size": 328852,
+          "compress_size": 27273,
+          "sha256": "48da3c25c4ff41e3b4a3eae3502e8b39e94ef4df58d0071464342a5e56738abf"
+        },
+        {
+          "filename": "dfthcsos/angle_k_21.kmb",
+          "file_size": 325698,
+          "compress_size": 27143,
+          "sha256": "e472df086da9b7267d42c928818bc317add4ba219998cd6183e44d83cbbacd07"
+        },
+        {
+          "filename": "dfthcsos/angle_k_22.kmb",
+          "file_size": 327912,
+          "compress_size": 27444,
+          "sha256": "6bee295850874a4fb44102611392860aa7b53305018bdc5257b8983cf5b5a898"
+        },
+        {
+          "filename": "dfthcsos/angle_k_23.kmb",
+          "file_size": 330306,
+          "compress_size": 27322,
+          "sha256": "1f6dc9acde5ba902cd9709630ed92dbe3ed19b0e5f5aef59bebb280d1b9da3c2"
+        },
+        {
+          "filename": "dfthcsos/angle_k_24.kmb",
+          "file_size": 332168,
+          "compress_size": 27393,
+          "sha256": "f0446c33c51126ad9d6fedb455ebf7c5f45019c35986d20f89ca531505bdf6cb"
+        },
+        {
+          "filename": "dfthcsos/angle_k_3.kmb",
+          "file_size": 327080,
+          "compress_size": 27134,
+          "sha256": "cc4db5b974ca74a0791ae2d476d5d79324c609a169f875bc1f86da0242273a3c"
+        },
+        {
+          "filename": "dfthcsos/angle_k_4.kmb",
+          "file_size": 328002,
+          "compress_size": 27311,
+          "sha256": "f530c4093a63cd4a957b340a3de4c535994a242a8dc402a5fd493e6d226c3450"
+        },
+        {
+          "filename": "dfthcsos/angle_k_5.kmb",
+          "file_size": 330382,
+          "compress_size": 27363,
+          "sha256": "1796420f37c6177e2968f6f2e98c9a96da77f77a6c64bc053649099ec8fa9d1d"
+        },
+        {
+          "filename": "dfthcsos/angle_k_6.kmb",
+          "file_size": 330340,
+          "compress_size": 27294,
+          "sha256": "a18276c720293c3e83990f4b41b3ff7ca3f59ce9a100ba6fa2467ed51d8ade57"
+        },
+        {
+          "filename": "dfthcsos/angle_k_7.kmb",
+          "file_size": 328753,
+          "compress_size": 27205,
+          "sha256": "6c535b48676005bbf073936a5aed9516578abfcd05b1a218912a6ba2e748b29f"
+        },
+        {
+          "filename": "dfthcsos/angle_k_8.kmb",
+          "file_size": 326430,
+          "compress_size": 27279,
+          "sha256": "cefda262823fc38f6c6c2e58f096b5a69751e49dc9e96049fb0eae9c3dcad84a"
+        },
+        {
+          "filename": "dfthcsos/angle_k_9.kmb",
+          "file_size": 329805,
+          "compress_size": 27326,
+          "sha256": "675a4346617cf0ef1ffa09614168220e1d3f0d80da6307a92b8ed20b43dcb9b1"
+        },
+        {
+          "filename": "dfthcsos/submission.npz",
+          "file_size": 1422702,
+          "compress_size": 1350015,
+          "sha256": "3eb805d7cbc874aa0e5757fdd1069e3db7ce062f92d3ca85b947611b734c670e"
+        },
+        {
+          "filename": "dqi.kmb",
+          "file_size": 534922902,
+          "compress_size": 25212770,
+          "sha256": "73e1b187b288f3cdc7d345214dd78ae6857d2f419041caf02bf3e29d26f7e6f2"
+        },
+        {
+          "filename": "invsqrt.kmb",
+          "file_size": 468143,
+          "compress_size": 47011,
+          "sha256": "a568bc79348165bad5be2349960d200300c5639ffd2142aca6d548e764a399d9"
+        }
+      ]
+    }
+  },
+  "verifiers": {
+    "verifiers\\invsqrt\\verify_submission_invsqrt.py": {
+      "size_bytes": 17210,
+      "sha256": "ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a"
+    },
+    "verifiers\\dqi\\verify_submission_dqi.py": {
+      "size_bytes": 20959,
+      "sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65"
+    },
+    "verifiers\\dfthcsos\\verify.py": {
+      "size_bytes": 31752,
+      "sha256": "0775be7a528922367caebe9e4d051d6199811f1aefeaa4b793eaaa4621b8ec9d"
+    }
+  }
+}

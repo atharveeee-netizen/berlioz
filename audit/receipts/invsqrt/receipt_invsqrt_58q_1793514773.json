@@ -1,0 +1,40 @@
+{
+  "receipt_version": "ML28-WS1-V1",
+  "timestamp_utc": "2026-11-01T06:32:53Z",
+  "classification": "PILOT",
+  "benchmark": "INVSQRT",
+  "notes": "Incomplete Horner expansion; phase error at x=1 exceeds tolerance.",
+  "environment": {
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python_version": "3.10.11",
+    "cpu_count": 16
+  },
+  "verifier": {
+    "path": "verifiers\\invsqrt\\verify_submission_invsqrt.py",
+    "sha256": "ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a",
+    "git_blob": "1fa529e9790a5cb000ee7f084e197c9252e5f9d7",
+    "arguments": {
+      "max_x": 1024,
+      "shots_per_x": 1
+    }
+  },
+  "target": {
+    "path": "build\\circuits\\invsqrt_58q.kmb",
+    "sha256": "4f4de1d0417b649e3dada7087f86ef708ca49a3b942fc720f0b7780b029a2d78",
+    "size_bytes": 7511
+  },
+  "results": {
+    "status": "REJECTED_PHASE_ERROR",
+    "score": Infinity,
+    "ratio": 0.0,
+    "qubits": 53,
+    "toffoli_count": 233,
+    "verified_shots": 1,
+    "benchmark_specific": {
+      "error": "x=1: phase error -0.500 turns exceeds tolerance"
+    }
+  },
+  "execution": {
+    "duration_seconds": 0.45
+  }
+}

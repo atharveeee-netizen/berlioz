@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-11-01T05:35:00Z",
+  "dqi_audit": {
+    "n_shots_official": 102400,
+    "delta": 2.938735877055719e-39,
+    "log2_delta": -128.0,
+    "eps_plus_exact": 0.0008660587301657926,
+    "r_repetition_exact": 1.1912604648115832,
+    "empirical_mean_toffolis": 427471.2265625,
+    "certified_cost": 402454824610.8792,
+    "certified_ratio": 60.72597988433279
+  },
+  "chemistry_audit": {
+    "npz_sha256": "893574424ea1b2d8ec2d90e3bd8e922dcbafde3aa4d569d70de129f75106ae60",
+    "status": "PASS",
+    "qubits": 428,
+    "toffoli_count": 16237.0,
+    "lambda_eff_unrounded": 47.09746378593682,
+    "error_1_unrounded_mha": 0.011815182285833654,
+    "error_2_unrounded_mha": 0.01999999978000022,
+    "error_2_hex": "0x1.47ae143e682c0p-6",
+    "ceiling_mha": 0.02,
+    "margin_to_ceiling_mha": 2.1999977881104194e-10,
+    "strictly_valid": true,
+    "score_unrounded": 327300810.34268564,
+    "ratio_unrounded": 10.25234121724968
+  },
+  "audit_verdict": "HARDENING_GATE_ALL_VERIFIED_PASS"
+}

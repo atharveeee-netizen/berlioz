@@ -54,9 +54,11 @@ $$\text{Ratio}_i = \frac{\text{RefCost}_i}{\text{SubmittedCost}_i}$$
    - 4-subinterval Lawson minimax approximation expanded min margin slack to $3.022 \times 10^{-11}\text{ turns}$ (consuming only 10.24% of tolerance).
    - In-place vacated-bit index packing ($s$ in lowest 2 normalization bits) + Horner carry folding dropped active width from $62 \to \mathbf{58\text{ qubits}}$.
    - Rotation synthesis relaxed to $\varepsilon = 2.316 \times 10^{-12}$, reducing cost to $\mathbf{92,972.55}$ and boosting Invsqrt ratio to **`22.3454x`** (+1.703x over incumbent).
-2. **DQI Galois Tower-42 Bilinear Tensor (`DQI-TOWER42-889Q`):**
-   - Galois extension tower $\text{GF}(2^{12}) \cong \text{GF}(8)[v]/(v^4+v+1)$ with 7 evaluation points in $\text{GF}(8)$ reduced field multiplication from 63 to 42 Toffolis (-21.18%).
-   - Mean dynamic Toffolis dropped from $427,471.2 \to \mathbf{345,618.4}$, boosting DQI ratio from **`60.726x \to 75.112x`** (+14.386x).
+2. **DQI Galois Tower-42 Bilinear Tensor Audit (`TASK-DQI-01 Gate 1`):**
+   - **Forensic Finding:** All 4,756 width-12 multiplication callsites in the 889Q production circuit (`team-1028-narrow240`) **already utilize the 42-product tensor** (`ar.mul_xor0` with 0 scratch qubits).
+   - The historical claim of 63-to-42 product replacement applied only when comparing the naive 1,893Q reference circuit (5.725M Toffolis) to Avazaku's 1,895Q prototype (4.503M Toffolis).
+   - The 889Q champion's measured 427,471.2 dynamic Toffolis already reflect the 42-product tensor. The projected drop to 345,618.4 Toffolis (75.112x) was a double-counting phantom.
+   - Per Gate 1 mandate, execution stopped to prevent fabricating a gain. True DQI opportunities lie in uncomputation MBUC (230.5k dynamic Toffolis) and Projective-State RiBM (86.8k dynamic Toffolis).
 3. **The Non-Linear Anti-Additive Law (Part 7):**
    - Proved conclusively across 10 isolated combinations that independent savings cannot be summed:
      - RiBM + Additive FFT: Domain mismatch padding (+71 dummy points) exploded Toffolis by $+566\%$ ($9.084\times$, catastrophically subadditive).

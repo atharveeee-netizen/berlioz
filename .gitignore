@@ -14,5 +14,7 @@ build/
 dist/
 audit/baseline_vault/
 audit/frozen_incumbent_dqi/*.kmb
+temp_inv_speed/
+tools/rea/
 .DS_Store
 

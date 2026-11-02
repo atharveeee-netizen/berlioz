@@ -1,0 +1,25 @@
+{
+  "portfolio": "portfolio_ml27_phase1b.zip",
+  "archive_sha256": "a729ab40941de7866f2a95b89b7c5697cb64afbf7a4419ec4a33b42c6b502c96",
+  "invsqrt": {
+    "score": 93325.5,
+    "ratio": 22.253020168285005,
+    "status": "PASS"
+  },
+  "dqi": {
+    "score": 402454824610.8792,
+    "ratio": 60.72597988433279,
+    "status": "PASS"
+  },
+  "chemistry": {
+    "score": 613375926.4871477,
+    "ratio": 5.470706370126588,
+    "lambda_eff": 48.03114131976869,
+    "toffoli": 30772.0,
+    "qubits": 415,
+    "error_1": 0.01899591608958122,
+    "error_2": 0.019654313960090087,
+    "status": "PASS"
+  },
+  "composite_score": 19.480598676630105
+}
